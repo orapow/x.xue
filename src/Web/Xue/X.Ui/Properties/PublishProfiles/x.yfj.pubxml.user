@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Pub\x.yfj</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App.ashx">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="bin/Aliyun.MNS.dll">
+      <publishTime>04/28/2017 14:33:48</publishTime>
+    </File>
+    <File Include="bin/Enyim.Caching.dll">
+      <publishTime>04/07/2017 10:53:03</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>04/07/2017 10:53:03</publishTime>
+    </File>
+    <File Include="bin/NVelocity.dll">
+      <publishTime>04/07/2017 10:53:03</publishTime>
+    </File>
+    <File Include="bin/X.App.dll">
+      <publishTime>05/09/2017 09:31:20</publishTime>
+    </File>
+    <File Include="bin/X.Core.dll">
+      <publishTime>05/02/2017 15:50:11</publishTime>
+    </File>
+    <File Include="bin/X.Data.dll">
+      <publishTime>05/04/2017 10:48:52</publishTime>
+    </File>
+    <File Include="bin/X.Json.dll">
+      <publishTime>04/07/2017 10:53:03</publishTime>
+    </File>
+    <File Include="bin/X.Ui.dll">
+      <publishTime>05/09/2017 09:31:20</publishTime>
+    </File>
+    <File Include="bin/X.Web.dll">
+      <publishTime>05/08/2017 16:58:03</publishTime>
+    </File>
+    <File Include="dat/cfg.x">
+      <publishTime>05/02/2017 17:33:32</publishTime>
+    </File>
+    <File Include="dat/codes.x">
+      <publishTime>05/09/2017 09:30:03</publishTime>
+    </File>
+    <File Include="dat/urls.x">
+      <publishTime>05/02/2017 14:28:04</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="global.asax">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/css/mgr/x.grid.css">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/css/mgr/x.page.css">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/css/wx/style.css">
+      <publishTime>05/08/2017 09:58:35</publishTime>
+    </File>
+    <File Include="res/css/x.dialog.css">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/css/x.form.css">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/dialog.bg.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/avi.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/bmp.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/css.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/doc.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/docx.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/flv.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/html.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/jpg.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/js.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/mov.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/mp3.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/mp4.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/pdf.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/png.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/ppt.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/pptx.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/rar.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/swf.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/ttf.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/wav.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/wmv.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/xls.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/xlsx.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/xml.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/files/zip.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/loading.gif">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/logo.png">
+      <publishTime>04/28/2017 13:52:05</publishTime>
+    </File>
+    <File Include="res/img/mgr/wx_k.jpg">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/mgr/wx_top.jpg">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/mgr/wx_video.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/mgr/wx_voice.gif">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/mgr/wx_voice.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/tip.jpg">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/4.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/as.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/bc_02.jpg">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/cb_03.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/cv.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/dd_03.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/df.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/dff_09.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/dff_12.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/dfg_02.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/ds.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/ds_06.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fd_03.jpg">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fg.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fgb.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fgf_03.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fgf_06.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fgh.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fg_02.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fg_05.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fg_07.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fg_09.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fg_11.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fj.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fs.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/fy_03.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/gd.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/gg.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/gggg.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/gh.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/ghj.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/ghk.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/gij.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/gu.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/hbj_03.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/hbj_05.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/hg.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/hi.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/iu.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/ji.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/jni.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/kgt.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/line.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/nk.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/sd.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/sf.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/tel.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/tf.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/tj_12.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/tj_13.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/tu.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/ugh.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/uig.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/uigi.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/uih.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/vc.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/xc_06.jpg">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/zas.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/zd_03.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/下拉.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/个人 %281%29.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/分类.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/加入购物车.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/加号.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/勾 %281%29.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/勾.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/售后 %281%29.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/售后 %282%29.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/售后.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/基础建材 %281%29.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/基础建材 %282%29.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/基础建材.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/客服.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/密码.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/我的.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/搜索_搜索.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/时间.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/正品安全.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/油漆.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/泥木.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/电子电工.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/确定.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/购物车.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/通知送货36.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/限时购.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/img/wx/首页-首页.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/js/highcharts.js">
+      <publishTime>04/20/2017 15:10:08</publishTime>
+    </File>
+    <File Include="res/js/jq_1.10.1.js">
+      <publishTime>05/03/2017 15:42:36</publishTime>
+    </File>
+    <File Include="res/js/jq_2.1.4.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/js/v.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/js/wx/jquery.SuperSlide.2.1.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/js/wx/scroll.js">
+      <publishTime>05/05/2017 12:26:09</publishTime>
+    </File>
+    <File Include="res/js/wx/swiper.min.js">
+      <publishTime>05/03/2017 16:51:59</publishTime>
+    </File>
+    <File Include="res/js/wx/swp.min.js">
+      <publishTime>05/04/2017 15:23:56</publishTime>
+    </File>
+    <File Include="res/js/x.form.js">
+      <publishTime>05/09/2017 10:18:36</publishTime>
+    </File>
+    <File Include="res/js/x.grid.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/js/x.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/bs/bootstrap.zip">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/bs/v2.3.2.css">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/bs/v2.3.2.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/bs/v3.3.5.css">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/code/code.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/code/prism.css">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/code/prism.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/code/vs.css">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/dp/v2.1.css">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/dp/v2.1.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/hchart/hcharts.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/icon/font/FontAwesome.otf">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/icon/font/icon.eot">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/icon/font/icon.svg">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/icon/font/icon.ttf">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/icon/font/icon.woff">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/icon/v3.0.css">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/dialogs/image/image.css">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/dialogs/image/image.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/dialogs/image/images/close.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/dialogs/image/images/upload1.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/dialogs/image/images/upload2.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/lang/zh-cn/images/copy.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/lang/zh-cn/images/imglabel.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/lang/zh-cn/images/localimage.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/lang/zh-cn/images/music.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/lang/zh-cn/images/upload.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/lang/zh-cn/zh-cn.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/css/umeditor.min.css">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/caret.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/close.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/icons.gif">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/icons.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/ok.gif">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/pop-bg.png">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/spacer.gif">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/themes/default/images/videologo.gif">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/umeditor.config.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/umeditor.min - 复制.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="res/plug/um/umeditor.min.js">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="tpl/com/dict.html">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="tpl/com/err.html">
+      <publishTime>04/28/2017 17:32:33</publishTime>
+    </File>
+    <File Include="tpl/com/getpos.html">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="tpl/com/_head.html">
+      <publishTime>04/07/2017 10:53:04</publishTime>
+    </File>
+    <File Include="tpl/mgr/admin/edit.html">
+      <publishTime>05/02/2017 15:41:47</publishTime>
+    </File>
+    <File Include="tpl/mgr/admin/list.html">
+      <publishTime>05/02/2017 15:28:15</publishTime>
+    </File>
+    <File Include="tpl/mgr/ads/edit.html">
+      <publishTime>05/09/2017 10:22:20</publishTime>
+    </File>
+    <File Include="tpl/mgr/ads/list.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/article/edit.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/article/list.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/brand/edit.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/brand/list.html">
+      <publishTime>05/05/2017 14:10:51</publishTime>
+    </File>
+    <File Include="tpl/mgr/cate/edit.html">
+      <publishTime>05/05/2017 15:37:18</publishTime>
+    </File>
+    <File Include="tpl/mgr/cate/list.html">
+      <publishTime>05/02/2017 13:59:36</publishTime>
+    </File>
+    <File Include="tpl/mgr/city/edit.html">
+      <publishTime>05/08/2017 09:31:53</publishTime>
+    </File>
+    <File Include="tpl/mgr/city/list.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/com/err.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/com/_head.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/deposit/list.html">
+      <publishTime>05/02/2017 11:42:04</publishTime>
+    </File>
+    <File Include="tpl/mgr/deposit/manual.html">
+      <publishTime>05/02/2017 14:01:20</publishTime>
+    </File>
+    <File Include="tpl/mgr/dict/edit.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/dict/list.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/goods/edit.html">
+      <publishTime>05/05/2017 14:33:25</publishTime>
+    </File>
+    <File Include="tpl/mgr/goods/list.html">
+      <publishTime>05/02/2017 10:09:33</publishTime>
+    </File>
+    <File Include="tpl/mgr/index.html">
+      <publishTime>05/05/2017 15:36:34</publishTime>
+    </File>
+    <File Include="tpl/mgr/level/edit.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/level/list.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/login.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/main.html">
+      <publishTime>05/02/2017 10:05:08</publishTime>
+    </File>
+    <File Include="tpl/mgr/order/cash.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/order/detail.html">
+      <publishTime>05/08/2017 10:35:23</publishTime>
+    </File>
+    <File Include="tpl/mgr/order/list.html">
+      <publishTime>05/02/2017 11:35:28</publishTime>
+    </File>
+    <File Include="tpl/mgr/order/manual.html">
+      <publishTime>04/28/2017 09:23:51</publishTime>
+    </File>
+    <File Include="tpl/mgr/order/print.html">
+      <publishTime>05/08/2017 10:30:53</publishTime>
+    </File>
+    <File Include="tpl/mgr/order/send.html">
+      <publishTime>05/02/2017 11:05:02</publishTime>
+    </File>
+    <File Include="tpl/mgr/refund/edit.html">
+      <publishTime>04/14/2017 09:20:38</publishTime>
+    </File>
+    <File Include="tpl/mgr/refund/list.html">
+      <publishTime>05/02/2017 11:29:13</publishTime>
+    </File>
+    <File Include="tpl/mgr/sale/edit.html">
+      <publishTime>05/03/2017 11:12:54</publishTime>
+    </File>
+    <File Include="tpl/mgr/sale/list.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/sender/edit.html">
+      <publishTime>05/02/2017 10:42:13</publishTime>
+    </File>
+    <File Include="tpl/mgr/sender/list.html">
+      <publishTime>05/08/2017 10:59:06</publishTime>
+    </File>
+    <File Include="tpl/mgr/setup.html">
+      <publishTime>05/02/2017 14:40:04</publishTime>
+    </File>
+    <File Include="tpl/mgr/sman/edit.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/sman/list.html">
+      <publishTime>04/14/2017 10:38:12</publishTime>
+    </File>
+    <File Include="tpl/mgr/sman/stati.html">
+      <publishTime>04/28/2017 14:00:49</publishTime>
+    </File>
+    <File Include="tpl/mgr/stand/edit.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/stand/list.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/user/attr.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/mgr/user/list.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/sder/bind.html">
+      <publishTime>05/09/2017 09:27:11</publishTime>
+    </File>
+    <File Include="tpl/sder/detail.html">
+      <publishTime>05/08/2017 16:54:39</publishTime>
+    </File>
+    <File Include="tpl/sder/list.html">
+      <publishTime>05/08/2017 16:51:04</publishTime>
+    </File>
+    <File Include="tpl/wx/addr/edit.html">
+      <publishTime>05/05/2017 16:17:19</publishTime>
+    </File>
+    <File Include="tpl/wx/addr/list.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/wx/arti/detail.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/wx/bind.html">
+      <publishTime>05/09/2017 09:19:12</publishTime>
+    </File>
+    <File Include="tpl/wx/fpwd.html">
+      <publishTime>05/09/2017 09:20:22</publishTime>
+    </File>
+    <File Include="tpl/wx/goods/detail.html">
+      <publishTime>05/08/2017 09:55:06</publishTime>
+    </File>
+    <File Include="tpl/wx/goods/list - 复制.html">
+      <publishTime>05/03/2017 15:37:24</publishTime>
+    </File>
+    <File Include="tpl/wx/goods/list.html">
+      <publishTime>05/09/2017 08:49:08</publishTime>
+    </File>
+    <File Include="tpl/wx/goods/sale.html">
+      <publishTime>05/08/2017 09:55:11</publishTime>
+    </File>
+    <File Include="tpl/wx/goods/search.html">
+      <publishTime>05/05/2017 11:29:52</publishTime>
+    </File>
+    <File Include="tpl/wx/index - 复制%282%29.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/wx/index - 复制.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/wx/index.html">
+      <publishTime>05/08/2017 09:54:57</publishTime>
+    </File>
+    <File Include="tpl/wx/login.html">
+      <publishTime>05/09/2017 09:16:57</publishTime>
+    </File>
+    <File Include="tpl/wx/no.html">
+      <publishTime>04/07/2017 10:53:05</publishTime>
+    </File>
+    <File Include="tpl/wx/order/detail.html">
+      <publishTime>05/08/2017 14:23:11</publishTime>
+    </File>
+    <File Include="tpl/wx/order/list.html">
+      <publishTime>05/05/2017 17:10:24</publishTime>
+    </File>
+    <File Include="tpl/wx/order/refund.html">
+      <publishTime>05/05/2017 17:10:30</publishTime>
+    </File>
+    <File Include="tpl/wx/order/succ.html">
+      <publishTime>04/28/2017 09:23:51</publishTime>
+    </File>
+    <File Include="tpl/wx/reg.html">
+      <publishTime>05/09/2017 09:17:03</publishTime>
+    </File>
+    <File Include="tpl/wx/user/cart.html">
+      <publishTime>05/09/2017 08:55:15</publishTime>
+    </File>
+    <File Include="tpl/wx/user/deposit.html">
+      <publishTime>05/05/2017 16:22:35</publishTime>
+    </File>
+    <File Include="tpl/wx/user/index.html">
+      <publishTime>05/08/2017 15:42:03</publishTime>
+    </File>
+    <File Include="tpl/wx/user/mpwd.html">
+      <publishTime>05/08/2017 14:58:38</publishTime>
+    </File>
+    <File Include="tpl/wx/user/setting.html">
+      <publishTime>05/09/2017 09:26:11</publishTime>
+    </File>
+    <File Include="tpl/wx/user/update.html">
+      <publishTime>04/14/2017 09:20:38</publishTime>
+    </File>
+    <File Include="tpl/wx/_foot.html">
+      <publishTime>05/09/2017 09:09:56</publishTime>
+    </File>
+    <File Include="tpl/wx/_head.html">
+      <publishTime>05/03/2017 15:58:14</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/28/2017 09:29:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
