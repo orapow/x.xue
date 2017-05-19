@@ -38,15 +38,14 @@ namespace X.App.Apis.mgr.admin
             }
             else
             {
-                ad = DB.x_mgr.SingleOrDefault(o => o.name == name || o.uid == uid);
+                ad = DB.x_mgr.SingleOrDefault(o => o.name == name || o.uin == uid);
                 if (ad != null) throw new XExcep("0x0007");
                 ad = new x_mgr();
             }
-            ad.uid = uid;
+            ad.uin = uid;
             if (!string.IsNullOrEmpty(password)) ad.pwd = Secret.MD5(password);
             ad.name = name;
             ad.tel = tel;
-            ad.role_id = role;
             ad.email = mail;
             ad.ctime = DateTime.Now;
 

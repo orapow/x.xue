@@ -321,7 +321,7 @@ namespace X.Web.Com
                 }
                 else
                 {
-                    sb_html.Append("<span class='btn' x-to='" + to + "' x-src='" + src + "' name='" + name + "' x-val='' title='" + title + "' x-check='" + (no == 1 ? "{\"no\":true}" : "") + "' title='" + (string.IsNullOrEmpty(tip) ? "请选择 " + title : tip) + "' onclick='x.pick.show(this)'><span class='text' txt=''>请选择</span><i class='icon-caret-down'></i></span>");
+                    sb_html.Append("<span class='btn' x-to='" + to + "' x-src='" + src + "' name='" + name + "' x-val='' title='" + title + "' x-check='" + (no == 1 ? "{\"no\":true}" : "") + "' title='" + (string.IsNullOrEmpty(tip) ? "请选择 " + title : tip) + "' onclick='x.pick.show(this)'><span class='text' txt=''>" + (string.IsNullOrEmpty(tip) ? "请选择" : tip) + "</span><i class='icon-caret-down'></i></span>");
                 }
                 //else
                 //{

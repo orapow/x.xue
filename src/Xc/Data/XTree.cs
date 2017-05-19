@@ -44,8 +44,8 @@ namespace X.Data
                     var t = tn.pn;
                     for (; t.pn != null;)
                     {
-                        if (t.ide == t.pn.childs.Count - 1) { name = "<span style='display:inline-block;width:10px;'></span>" + name; }//<span style='display:inline-block;width:14px;'></span>
-                        else name = "<span style='display:inline-block;width:10px;'></span>" + name;//│
+                        if (t.ide == t.pn.childs.Count - 1) { name = "　" + name; }//<span style='display:inline-block;width:14px;'></span>
+                        else name = "　" + name;//│
                         t = t.pn;
                     }
                 }
@@ -68,14 +68,14 @@ namespace X.Data
             {
                 if (d == 0)
                 {
-                    var w = new ManualResetEvent(false);
-                    new Thread(() =>
-                    {
-                        n.AddNode(ent);
-                        getChild(ent, d + 1);
-                        w.Set();
-                    }).Start();
-                    wh.Add(w);
+                    //var w = new ManualResetEvent(false);
+                    //new Thread(() =>
+                    //{
+                    n.AddNode(ent);
+                    getChild(ent, d + 1);
+                    //    w.Set();
+                    //}).Start();
+                    //wh.Add(w);
                 }
                 else
                 {

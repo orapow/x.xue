@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using X.Web.Apis;
 using X.Web.Com;
-using X.App.Apis;
-using X.App.Apis.mgr.order;
 using X.Core.Utility;
 
-namespace X.App.Apis.mgr {
+namespace X.App.Apis.mgr
+{
     public class index : Api {
         //public String require { get; set; }
 

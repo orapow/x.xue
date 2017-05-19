@@ -18,16 +18,16 @@ namespace X.App.Apis.mgr.admin {
                     //orderby ad.ctime descending
                     select new {
                         ad.mgr_id,
-                        ad.uid,
+                        ad.uin,
                         ad.name,
                         ad.tel,
-                        role = (ad.role_id == 3) ? "总管理员" : (ad.role_id == 2 ? "财务" : "客服"),
+                        //role = (ad.role_id == 3) ? "总管理员" : (ad.role_id == 2 ? "财务" : "客服"),
                         ad.email
                         //ad.pwd
                     };
 
             if (!string.IsNullOrEmpty(key)) {
-                q = q.Where(o => o.tel.Contains(key) || o.name.Contains(key) || o.uid.Contains(key));
+                q = q.Where(o => o.tel.Contains(key) || o.name.Contains(key) || o.uin.Contains(key));
             }
 
             r.items = q.Skip((page - 1) * limit).Take(limit);

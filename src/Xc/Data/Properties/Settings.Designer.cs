@@ -53,5 +53,16 @@ namespace X.Data.Properties {
                 return ((string)(this["x_yfjConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.0.119;Initial Catalog=x.xue;Persist Security Info=True;User I" +
+            "D=sa;Password=sa123")]
+        public string x_xueConnectionString {
+            get {
+                return ((string)(this["x_xueConnectionString"]));
+            }
+        }
     }
 }
