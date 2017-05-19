@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    #parse("mgr/com/_head.html")
+    <title>试题编辑 - $cfg.name</title>
+    <link href="/plug/um/themes/default/css/umeditor.min.css" rel="stylesheet" />
+    <script src="/plug/um/umeditor.question.config.js"></script>
+    <script src="/plug/um/umeditor.min.js"></script>
+    <style type="text/css">
+        #id_name { width: 800px; }
+        .edui-container { display: inline-block; vertical-align: top; }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <span class="main">试题编辑</span> - <span class="sub">试题管理</span>
+    </div>
+    <x:form api="mgr.question.save">
+        <input type="hidden" name="id" value="$!item.question_id" x-check="" />
+        <x:row>
+            <x:pick title="科目" src="url:/mgr/subject/select.html" name="sub" count="1" def="$!sub" no="1" to="bk" callback="sub_selected" />
+            <x:pick title="教材" src="url:/mgr/book/select{p}.html" name="bk" count="1" def="$!bk" no="1" to="cp" />
+            <x:pick title="章节" src="url:/mgr/chapter/select-{p}.html" name="cp" count="1" def="$!cp" no="1" />
+        </x:row>
+        <x:row>
+            <x:pick title="题型" src="dict:question.topic" name="topic" count="1" def="$!item.topic" />
+            <x:pick title="题类" src="dict:question.type" name="type" count="1" def="$!item.type" />
+            <x:pick title="难易度" src="dict:question.easy" name="easy" count="1" def="$!item.easy" />
+        </x:row>
+        <x:pick title="知识点" src="url:/mgr/knowledge/select-{p}.html" name="kg" count="5" def="$!kg" no="1" />
+        <x:text title="题目" name="name" size="6" def="$!item.title" tp="3" chk="no" />
+        <x:text title="来源" name="src" size="4" def="$!item.src" />
+        <div class="btns">
+            <button type="submit" class="btn btn-primary"><i class="icon-ok"></i>提交保存</button>
+        </div>
+    </x:form>
+    <br />
+    <br />
+    <script type="text/javascript">
+
+        var ue_name = UM.getEditor('id_name', { initialFrameHeight: 200 });
+
+        $(function () {
+            $("form:eq(0)").xform({
+                callback: function (d) {
+                    if (!d.issucc) return;
+                    if ("$!id") { document.location.href = "list.html"; return; }
+
+                    x.confirm("是否继续添加", function () {
+                        try {
+                            $("[name='kg']").attr("x-val", "").find("span").text("请选择");
+                            $("#id_kgs").val("");
+                            $("#id_src").val("");
+                            ue_name.setContent("");
+                        } catch (e) { }
+                    }, function () {
+                        document.location.href = "list.html";
+                    });
+                }
+            });
+
+            if ("$!id") {
+                $("[name='bk']").attr("x-parms", "$!item.subject");
+                $("[name='kg']").attr("x-parms", "$!item.subject");
+                $("[name='cp']").attr("x-parms", "$!item.book");
+            }
+        });
+
+        function sub_selected(ids, vals) {
+            $("[name='kg']").attr("x-parms", ids);
+        }
+
+        function show_knowledge() {
+            var sb = $("[name='sub']").attr("x-val");
+            x.openwin("/mgr/knowledge/choose-" + sb + ".html", "选择知识点", function (d) {
+                $("#id_kg").val(d.vals);
+                $("#id_kgs").val(d.ids);
+            });
+        }
+
+    </script>
+</body>
+</html>

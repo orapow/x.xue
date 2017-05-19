@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    #parse("mgr/com/_head.html")
+    <title>试题仓库 - $cfg.name</title>
+</head>
+<body>
+    <div class="title">
+        <span class="main">试题仓库</span> - <span class="sub">试题管理</span>
+    </div>
+    <div class="search">
+        <x:form>
+            <x:pick tip="科目" src="url:/mgr/subject/select.html" name="sub" count="1" />
+            <x:pick tip="题型" src="dict:question.topic" name="tp" count="1" />
+            <x:pick tip="题类" src="dict:question.type" name="ty" count="1" />
+            <x:pick tip="难易度" src="dict:question.easy" name="ey" count="1" />
+            <x:text title="搜索：来源、内容" name="key" size="4"/>
+            <button type="submit" class="btn btn-primary"><i class="icon-search"></i>搜索</button>
+            <button type="reset" class="btn"><i class="icon-remove"></i>清除</button>
+            <div class="btns">
+                <a class="btn btn-primary" id="btn_add" href="edit.html"><i class="icon-plus"></i>录入试题</a>
+            </div>
+        </x:form>
+    </div>
+    <div class="gridpanel">
+    </div>
+    <script type="text/javascript">
+        $("form:eq(0)").xform({
+            callback: function (d) {
+                d.page = 1;
+                g.getlist(d);
+            }
+        })
+
+        var cfg = {
+            el: ".gridpanel",
+            searchcon: { page: 1, limit: 30 },
+            api: "mgr.question.list",
+            fs: [
+                { t: "科目", f: "{sub}", w: 120 },
+                //{ t: "教材", f: "{bk}", w: 80, align: "center" },
+                //{ t: "章节", f: "{cp}", w: 120, align: "center" },
+                { t: "题型", f: "{tp}", w: 60, align: "center" },
+                { t: "题类", f: "{ty}", w: 60, align: "center" },
+                { t: "难易度", f: "{ey}", w: 60, align: "center" },
+                { t: "题目", f: "{title}", w: 320 },
+                { t: "知识点", f: "{kg}", w: 140 },
+                { t: "入库时间", f: "{ctime}", w: 100, align: "center" },
+            ],
+            btns: [
+                { txt: "编辑", ico: "edit", link: "edit-{id}.html", confirm: false },
+                { txt: "删除", ico: "remove", act: "del" }
+            ]
+        };
+
+        cfg.cellclick = function (act, d) {
+            switch (act) {
+                case "del":
+                    dodel(d.value);
+                    break;
+                case "edit":
+                    show_edit(d.value);
+                    break;
+            }
+        };
+
+        var g = x.grid.init(cfg);
+
+        function dodel(id) {
+            x.doapi("mgr.question.del", { id: id, }, function () {
+                g.getlist();
+            });
+        }
+
+    </script>
+</body>
+</html>

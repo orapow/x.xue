@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    #parse("mgr/com/_head.html")
+    <title>编辑章节 - $cfg.name</title>
+    <style type="text/css">
+        body { margin: 0; }
+    </style>
+</head>
+<body>
+    <x:form api="mgr.chapter.save">
+        <input type="hidden" name="id" value="$!item.id" x-check="" />
+        <x:row>
+            <x:pick title="科目" src="url:/mgr/subject/select.html" name="sub" count="1" def="$!sub" chk="no" to="book" />
+            <x:pick title="教材" src="url:/mgr/book/select{p}.html" name="book" count="1" def="$!bkv" chk="no" to="upv" />
+        </x:row>
+        <x:pick title="上级" src="url:/mgr/chapter/select-$!{item.value}{p}.html" name="upv" count="1" def="$!up" />
+        <x:text title="名称" name="name" size="3" def="$!item.name" />
+        <x:text title="排序" name="sort" size="3" def="#if($id>0)$!item.sort#else 99#end" />
+        <div class="btns">
+            <button type="submit" class="btn btn-primary"><i class="icon-ok"></i>提交保存</button>
+        </div>
+    </x:form>
+    <br />
+    <br />
+    <script type="text/javascript">
+        $("form:eq(0)").xform({
+            callback: function (d) {
+                if (!d.issucc) return;
+                if ("$!id") { x.closewin(); return; }
+                x.confirm("是否继续添加", function () {
+                    $("#id_name").val("").focus();
+                }, function () {
+                    setTimeout(function () { x.closewin(); }, 500);
+                });
+            }
+        });
+        $(function () {
+            $("#id_name").focus();
+            $("[name='upv']").attr("x-parms", "$!bk");
+            $("[name='book']").attr("x-parms", "$!sub".split("|")[0]);
+        });
+    </script>
+</body>
+</html>

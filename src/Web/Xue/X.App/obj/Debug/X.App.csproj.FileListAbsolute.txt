@@ -16,7 +16,6 @@ D:\Pro\x.yfj\src\Web\Yfj\X.App\obj\Debug\X.App.dll
 D:\Pro\x.yfj\src\Web\Yfj\X.App\obj\Debug\X.App.pdb
 D:\Pro\x.xue\src\Web\Xue\X.App\bin\Debug\X.App.dll
 D:\Pro\x.xue\src\Web\Xue\X.App\bin\Debug\X.App.pdb
-D:\Pro\x.xue\src\Web\Xue\X.App\bin\Debug\Aliyun.MNS.dll
 D:\Pro\x.xue\src\Web\Xue\X.App\bin\Debug\X.Core.dll
 D:\Pro\x.xue\src\Web\Xue\X.App\bin\Debug\X.Data.dll
 D:\Pro\x.xue\src\Web\Xue\X.App\bin\Debug\X.Web.dll

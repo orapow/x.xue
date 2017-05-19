@@ -15,7 +15,7 @@ namespace X.App.Apis.mgr
         /// <summary>
         /// 用户名
         /// </summary>
-        public string uid { get; set; }
+        public string uin { get; set; }
         /// <summary>
         /// 密码
         /// </summary>
@@ -27,10 +27,10 @@ namespace X.App.Apis.mgr
 
         protected override XResp Execute()
         {
-            var c = CacheHelper.Get<string>("img.code." + uid);
-            CacheHelper.Remove("img.code." + uid);
+            var c = CacheHelper.Get<string>("img.code." + uin);
+            CacheHelper.Remove("img.code." + uin);
             if (c == null || c != code) throw new XExcep("0x0022");
-            var ad = DB.x_mgr.SingleOrDefault(o => o.uid == uid);
+            var ad = DB.x_mgr.SingleOrDefault(o => o.uin == uin);
 
             if (ad == null || ad.pwd != Secret.MD5(pwd)) throw new XExcep("0x0023");
             var ukey = Guid.NewGuid().ToString();

@@ -86,7 +86,8 @@ namespace X.Data
     {
     }
 
-    partial class x_sales {
+    partial class x_sales
+    {
     }
 
     partial class x_favorite
@@ -139,19 +140,16 @@ namespace X.Data
             var list = GetDictList(code, "00", db);
             if (list == null || list.Count == 0) return string.Empty;
 
-            var val = (value + "").Trim().Split(',');
+            var val = (value + "").Trim(); //.Split(',');
             var dicts = list.FindAll(o =>
             {
-                return val.Contains(o.value); //val.IndexOf(String.Format(",{0},", o.value)) >= 0;
+                return val == o.value || val.Contains("[" + o.value + "]"); //val.IndexOf(String.Format(",{0},", o.value)) >= 0;
             });
             if (dicts == null || dicts.Count == 0) return string.Empty;
             var ns = string.Empty;
             foreach (var d in dicts)
             {
-                if (!string.IsNullOrEmpty(ns))
-                {
-                    ns += split;
-                }
+                if (!string.IsNullOrEmpty(ns)) ns += split;
                 ns += d.name;
             }
             return ns;
@@ -172,7 +170,7 @@ namespace X.Data
                 var q = from c in db.x_dict
                         where c.code == code
                         select c;
-                list = q.ToList();
+                list = q.OrderByDescending(o => o.sort).ThenBy(o => o.dict_id).ToList();
                 if (list == null || list.Count == 0) return null;
                 CacheHelper.Save(key, list);
             }

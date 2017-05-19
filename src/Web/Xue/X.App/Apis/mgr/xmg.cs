@@ -36,7 +36,8 @@ namespace X.App.Apis.mgr {
         /// 是否有权限
         /// </summary>
         private bool HasPower() {
-            return mg.role_id < 3 ? mg.role_id == powercode : true;
+            return true;
+            //return mg.role_id < 3 ? mg.role_id == powercode : true;
         }
 
         /// <summary>

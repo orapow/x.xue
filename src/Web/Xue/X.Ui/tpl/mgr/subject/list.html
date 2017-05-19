@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    #parse("mgr/com/_head.html")
+    <title>科目管理 - $cfg.name</title>
+</head>
+<body>
+    <div class="title">
+        <span class="main">科目管理</span> - <span class="sub">字典配置</span>
+    </div>
+    <div class="search">
+        <x:form>
+            <x:pick title="学段" src="dict:xx.age" name="age" count="1" /><x:text name="key" tip="搜索名称" size="4" />
+            <button type="submit" class="btn btn-primary"><i class="icon-search"></i>搜索</button>
+            <button type="reset" class="btn"><i class="icon-remove"></i>清除</button>
+            <div class="btns">
+                <a class="btn btn-primary" id="btn_add" onclick="show_edit()"><i class="icon-plus"></i>新增科目</a>
+            </div>
+        </x:form>
+    </div>
+    <div class="gridpanel">
+    </div>
+    <script type="text/javascript">
+
+        $("form:eq(0)").xform({
+            callback: function (d) {
+                d.page = 1;
+                ct = d.cate;
+                g.getlist(d);
+            }
+        })
+
+        var cfg = {
+            el: ".gridpanel",
+            searchcon: { page: 1 },
+            api: "mgr.subject.list",
+            fs: [
+                { t: "科目", f: "{name}", w: 120, align: "left" },
+                { t: "排序", f: "{sort}", w: 80, align: "center" },
+            ],
+            btns: []
+        };
+
+        cfg.getbtns = function (d) {
+            var btns = [];
+            if (d.upv == "") btns.push({ txt: "子级", ico: "plus", act: "sub", confirm: false });
+            else {
+                btns.push({ txt: "编辑", ico: "edit", act: "edit", confirm: false });
+                btns.push({ txt: "删除", ico: "remove", act: "del" });
+            }
+            return btns;
+        }
+
+        cfg.cellclick = function (act, d) {
+            switch (act) {
+                case "del":
+                    dodel(d.value);
+                    break;
+                case "edit":
+                    show_edit(d.value);
+                    break;
+            }
+        };
+
+        var g = x.grid.init(cfg);
+
+        function dodel(id) {
+            x.doapi("mgr.subject.del", { id: id, }, function () {
+                g.getlist();
+            });
+        }
+
+        function show_edit(id) {
+            x.openwin("edit-" + (id || "") + "-" + ct + ".html", "编辑科目", function () {
+                g.getlist();
+            }, { w: 400, h: 300 });
+        }
+    </script>
+</body>
+</html>

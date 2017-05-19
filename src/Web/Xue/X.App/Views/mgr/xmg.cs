@@ -33,7 +33,8 @@ namespace X.App.Views.mgr
         /// </summary>
         public bool HasPower()
         {
-            return mg.role_id < 3 ? mg.role_id == powercode || powercode == 0 : true;
+            return true ;
+            //return mg.role_id < 3 ? mg.role_id == powercode || powercode == 0 : true;
         }
 
         /// <summary>
@@ -54,13 +55,13 @@ namespace X.App.Views.mgr
             var id = GetReqParms("mgr_ad");// Context.Request.Cookies["ad"];
             if (string.IsNullOrEmpty("ad")) throw new XExcep("0x0006");
 
-            //mg = DB.x_mgr.FirstOrDefault(o => o.mgr_id == 1);
-            mg = CacheHelper.Get<x_mgr>("mgr." + id); //CacheHelper.Get<x_mgr>("mgr." + id);
+            mg = DB.x_mgr.FirstOrDefault(o => o.mgr_id == 1);
+            //mg = CacheHelper.Get<x_mgr>("mgr." + id); //CacheHelper.Get<x_mgr>("mgr." + id);
             if (mg == null) throw new XExcep("0x0004");
-            var dt = DB.x_dict.FirstOrDefault(o => o.value == mg.city + "" && o.code == "sys.city");
+            //var dt = DB.x_dict.FirstOrDefault(o => o.value == mg.city + "" && o.code == "sys.city");
 
-            dict.Add("isbase", dt.f1);
-            dict.Add("cname", dt.name);
+            //dict.Add("isbase", dt.f1);
+            //dict.Add("cname", dt.name);
 
             ValidPower();
 
