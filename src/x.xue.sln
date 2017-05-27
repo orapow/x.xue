@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X.Ui", "Web\Xue\X.Ui\X.Ui.c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X.Test", "Test\X.Test\X.Test.csproj", "{E618CFB1-1556-41E7-8F54-28E3F9F9A392}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "Test\WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{6D6084FF-718F-4961-AE7F-9A7A60D3CEC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xx.tool", "Test\WindowsFormsApplication1\xx.tool.csproj", "{6D6084FF-718F-4961-AE7F-9A7A60D3CEC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

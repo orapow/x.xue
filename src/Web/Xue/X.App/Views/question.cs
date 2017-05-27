@@ -56,6 +56,7 @@ namespace X.App.Views
                 dict.Add("b2", book.value);
                 ques = ques.Where(o => (o.book + "") == bk);
             }
+            dict["bk"] = bk;
 
             dict.Add("topics", ques.GroupBy(o => o.topic).Select(o => o.Key).ToList().ToDictionary(v => v.Value + "", n => GetDictName("question.topic", n.Value)));
             dict.Add("ques", ques.OrderByDescending(o => o.mtime).Take(30).ToList().Select(o => new
