@@ -174,7 +174,6 @@
     <Content Include="res\plug\um\umeditor.config.js" />
     <Content Include="res\plug\um\umeditor.min - 复制.js" />
     <Content Include="res\plug\um\umeditor.min.js" />
-    <Content Include="tpl\add_tm.html" />
     <Content Include="tpl\com\err.html" />
     <Content Include="tpl\mgr\admin\edit.html" />
     <Content Include="tpl\mgr\admin\list.html" />
@@ -197,18 +196,17 @@
     <Content Include="tpl\mgr\login.html" />
     <Content Include="tpl\mgr\subject\edit.html" />
     <Content Include="tpl\mgr\subject\list.html" />
+    <Content Include="tpl\paper - 复制%282%29.html" />
+    <Content Include="tpl\paper - 复制.html" />
+    <Content Include="tpl\paper.html" />
     <Content Include="tpl\user\下载记录.html" />
     <Content Include="tpl\user\个人信息.html" />
     <Content Include="tpl\user\修改头像.html" />
     <Content Include="tpl\user\安全管理.html" />
     <Content Include="tpl\user\我的收藏.html" />
     <Content Include="tpl\question.html" />
-    <Content Include="tpl\reg.html" />
-    <Content Include="tpl\login.html" />
     <Content Include="tpl\user\组卷记录.html" />
     <Content Include="tpl\user\订单管理.html" />
-    <Content Include="tpl\reg2.html" />
-    <Content Include="tpl\index.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

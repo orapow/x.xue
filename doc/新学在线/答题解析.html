@@ -1,0 +1,640 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>答题解析</title>
+    <script>
+        (function(doc, win) {
+            // 基于 window.screen.width 实现自适应布局
+            var screenWidth = 0,
+                size = 'XL',
+                root = doc.documentElement;
+            if (window.screen && screen.width) {
+                screenWidth = screen.width;
+                if (screenWidth >= 1200) size = 'XL'; // 大屏 - 1200px         
+                else if (screenWidth < 1200) size = 'XS'; // 小屏 - 1000px
+            }
+            root.className += " " + size; // 标记CSS
+            win.SIZE = size; // 标记JS        
+        })(document, window);
+
+        window.OT2 = {}; // 全局命名空间
+        OT2.AboveIE9 = true; // 默认非iE或IE9及以上
+        OT2.ns = function(name) {
+            var container = OT2;
+            var parts = name.split('.');
+            var current = '';
+            if (parts[0] == 'OT2') parts.shift();
+            while (current = parts.shift()) {
+                if (!container[current]) container[current] = {};
+                container = container[current];
+            }
+            return container;
+        };
+                USER = {"uid":7589453,"username":"18601283842_tC\/Bcj","email":"","mobile":18601283842,"regip":"112.82.243.89","regdate":1489479626,"regsource":0,"lastloginip":0,"lastlogintime":0,"avatar":{"small_avatar":"http:\/\/uc.21cnjy.com\/avatar.php?uid=7589453&size=small","big_avatar":"http:\/\/uc.21cnjy.com\/avatar.php?uid=7589453&size=big"},"realname":"18601283842","gender":0,"identity":0,"xd":"","chid":"","district":null,"school":0,"school_permit_id":0,"parent":"","signature":"","memberProfile":{"uid":7589453,"realname":"18601283842","gender":0,"birthyear":0,"birthmonth":0,"birthday":0,"constellation":"","zodiac":"","telephone":"","mobile":"","idcardtype":"","idcard":"","address":"","zipcode":"","nationality":"","birthprovince":"","birthcity":"","birthdist":"","birthcommunity":"","resideprovince":"","residecity":"","residedist":"","residecommunity":"","residesuite":"","graduateschool":"","company":"","education":"","occupation":"","position":"","revenue":"","affectivestatus":"","lookingfor":"","bloodtype":"","height":"","weight":"","alipay":"","icq":"","qq":"","yahoo":"","msn":"","taobao":"","site":"","bio":"","interest":"","jbadminid":0,"bkadminid":0,"flagtype":1,"field1":0,"field2":"","field3":"","field4":null,"field5":0,"field6":0,"field7":null,"field8":""},"school_inf":null,"baseSchool":null,"tokenA":{"id":20004,"uid":7589453,"access_token":"q_LcjlrUq26l5u6H3h58JRh72w82731P","access_type":0,"dateline":1489479627},"tikuAdmin":false,"testLimit":null,"basketLimit":30,"isVip":false} ;
+                OT2.CSRF = {"_csrf": "TldLVDF4M2QAAD5mYD9mUiwfDWcIAgAwBS8yAAEbZid8GQ1gUjxaCg=="} ;
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/my.css"/>
+    <link rel="stylesheet" href="css/base.min.css">
+    <link rel="stylesheet" href="css/spriter-mix.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+<!--    <link rel="stylesheet" type="text/css" href="css/manual.min.css"/>-->
+
+    <link rel="stylesheet" href="css/inner-user.min.css">
+    <link rel="stylesheet" href="css/ui-dialog.css">
+    <link rel="stylesheet" type="text/css" href="css/ui-dialog.css"/>
+    <!--<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/util.min.js"></script>
+    </head>
+
+    <body>
+<div class="head">
+      <div class="head01">
+    <p>新学网在线-组卷</p>
+    <a href="#">个人中心</a> </div>
+    </div>
+<div class="top-navbox">
+      <div class="top-nav g-container">
+    <div class="nav-items"> <a href="#" class="item">当前：<span>高中语文</span><i class="icona-tri2"></i></a>
+          <div class="item-list">
+        <div class="list-xx">
+              <h3>小学</h3>
+              <a href="#">语文</a> <a href="#">数学</a> <a href="#">英语</a> <a href="#">科学</a> <a href="#">政治思品</a> </div>
+        <div class="list-cz">
+              <h3>初中</h3>
+              <a href="#">语文</a> <a href="#">数学</a> <a href="#">英语</a> <a href="#">科学</a> <a href="#">物理</a> <a href="#">化学</a> <a href="#">历史</a> <a href="#">政治思品</a> <a href="#">地理</a> <a href="#">历史与社会</a> <a href="#">生物</a> </div>
+        <div class="list-gz">
+              <h3>高中</h3>
+              <a href="#">语文</a> <a href="#">数学</a> <a href="#">英语</a> <a href="#">物理</a> <a href="#">化学</a> <a href="#">历史</a> <a href="#">政治思品</a> <a href="#">地理</a> <a href="#">生物</a> </div>
+      </div>
+        </div>
+    <div class="nav-list">
+          <ul>
+        <li> <a class="" href="#">首页</a> </li>
+        <li class="complex-nav-item"> <a href="javascript:;" class="active">手动组卷</a>
+              <div class="dd-list"> <a href="#"><i>章节同步选题</i></a> <a href="#"><i>知识点选题</i></a> </div>
+            </li>
+        <li class="complex-nav-item"> <a href="javascript:;" class="">智能组卷</a>
+              <div class="dd-list"> <a href="#"><i>章节智能组卷</i></a> <a href="#"><i>知识点智能组卷</i></a> <a href="#"><i>双向细目表组卷</i></a> </div>
+            </li>
+        <li> <a class="" href="http://zujuan.21cnjy.com/paper">试卷库</a> </li>
+        <li> <a class="" href="http://zujuan.21cnjy.com/subject">专题特供</a> </li>
+      </ul>
+        </div>
+  </div>
+    </div>
+<!--头部导航部分结束-->
+
+      <!--头部结束-->
+      <div class="breadcrumb g-container"> <i class="icona-dingwei"></i>当前位置： <a href="#">首页</a> <b>&gt;</b> <a href="#">高中语文</a> </div>
+      
+      <input type="hidden" name="categories" value="6136">
+      <div class="search-list g-container">
+    <div class=" f-fl f-w">
+	
+        <div class="dj-preview">
+            <div  class="f-usn" onselectstart="return false" oncontextmenu="return false">
+            <li data-qid="3356238" class="beauty-man visible-ake">
+    <div class="search-exam dj-search-exam">
+        <div class="exam-head">
+            <p class="exam-head-left">
+                <span>题型：问答题</span><i class="line"></i>
+                <span>题类：常考题</span><i class="line"></i>
+                <span>难易度：普通</span>
+            </p>
+             
+            <p class="exam-head-right">
+			    <span></span>		
+	        </p>
+        </div><div class="exam-con">
+                
+		
+			<div class="exam-q">
+			阅读《再别康桥》，回答问题<br>&nbsp;“金柳”“青荇”等意象在诗中有什么表达效果？诗人为何“甘心做一条水草”？
+			</div>
+			
+			
+		
+		
+
+	</div>
+        <div class="analyticbox-brick analyticbox-brick-normal">
+<div class="analyticbox">
+    <span class="exam-point">【考点】</span>
+    <div class="analyticbox-body">
+        
+            再别康桥
+        
+    </div>
+</div>
+
+<div class="analyticbox">
+    <span class="exam-answer">【答案】</span>
+    <div class="analyticbox-body">
+    
+    诗人将“河畔的金柳”比喻为“夕阳中的新娘”，既写出了柳枝的娉婷袅袅、妩媚多姿，也表达了诗人对母校的极度迷恋之情。河底的泥是“软”的，青荇的色泽是“油油的”，写出了景物的质感美。“招摇”将青荇拟人化，写出了它的动态美，写出了康桥对诗人的欢迎。“甘心做一条水草”写出了诗人对康桥永久、热烈的爱恋之情。
+    </div>
+</div>
+
+    
+        
+    <div class="analyticbox analyticbox1">
+         <span class="exam-analytic">【解析】</span> 
+        <div class="analyticbox-body">
+            【分析】“金柳”“青荇”是柔美而抒情的事物，结合诗中“那河畔的金柳，是夕阳中的新娘”，“软泥上的青荇，油油的在水底招摇”，重点写出金柳、新娘、青荇、招摇的特点；结合上下文，由于康河的明静和自由自在的状况,自由、美正是徐志摩所追求的，因此“甘心做一条水草”。 &nbsp;&nbsp;
+        </div>
+    </div>
+     
+    
+
+</div><div class="exam-foot">
+            <p class="exam-foot-left">
+                <a href="javascript:;" onclick="OT2.QCollect(this, 3356238 )"><i class="icona-shoucang"></i>收藏</a>
+                <a href="javascript:;" onclick="new OT2.ErrorReport( 3356238 )"><i class="icona-jiucuo"></i>纠错</a>
+            </p>
+            <p class="exam-foot-right">
+                <span>组卷次数：7次</span>
+                
+                <a class="addbtn J_AddQuestion" href="javascript:;"><b>+</b>选题</a>
+                
+            </p>
+        </div>
+    </div>
+</li></div>
+
+                        <div class="keen">
+                <div class="keen-title">
+                    <span>举一反三</span>
+                </div>
+
+                <div class="keen-con">
+                                        <div class="item">
+                        <i class="icona-ellipsegray"></i>
+                        <div><a href="/question/detail/1295145">下列诗句中没有错别字的一项是（&nbsp;&nbsp;&nbsp; ）</a></div>
+                    </div>
+                                        <div class="item">
+                        <i class="icona-ellipsegray"></i>
+                        <div><a href="/question/detail/3356231">下列加下划线字的注音全都正确的一项是（&nbsp; ）</a></div>
+                    </div>
+                                        <div class="item">
+                        <i class="icona-ellipsegray"></i>
+                        <div><a href="/question/detail/3356234">阅读课文《再别康桥》，回答问题<br>下列对诗歌二、三两节的解说，不恰当的一项是（&nbsp;&nbsp; ）</a></div>
+                    </div>
+                                        <div class="item">
+                        <i class="icona-ellipsegray"></i>
+                        <div><a href="/question/detail/3356236">阅读课文《再别康桥》，回答问题<br><h1>“那河畔的金柳，是夕阳中的新娘”一句用了什么修辞手法？有何表达效果？结合诗句作简要分析。</h1></a></div>
+                    </div>
+                                        <div class="item">
+                        <i class="icona-ellipsegray"></i>
+                        <div><a href="/question/detail/3356237">阅读课文《再别康桥》，回答问题<br>&nbsp;“轻轻的我走了”如果换成“我轻轻的走了”，在语言和情感表达上有何差异？</a></div>
+                    </div>
+                                        <div class="item">
+                        <i class="icona-ellipsegray"></i>
+                        <div><a href="/question/detail/3356240">阅读《再别康桥》，回答问题<br>第一节和最后一节，语意相似，节奏相同，构成回环呼应的结构形式，这对于表达揭示主题起什么作用？开头的“轻轻的”与结尾的“悄悄的”能不能对换？</a></div>
+                    </div>
+                                    </div>
+
+            </div>
+                    </div>
+    </div>
+	<div class="dj-about">
+	        		<div class="dj-img">
+                <a href="/help/request" target="_blank">
+                    <img src="images/paper.png" alt="">
+                </a>
+		</div>
+	        		<div class="dj-detail">
+			<h1>相关试卷</h1>
+			<ul>
+                                    <li>
+                        <a target="_blank" href="/paper/view/173758" title="天津市武清区杨村第一中学2017届高三下学期第二次月考语文试题">天津市武清区杨村第一中学2017届高三下学期第二次月考语文试题</a>
+                    </li>
+                                    <li>
+                        <a target="_blank" href="/paper/view/173744" title="四川省宜宾市一中2016-2017学年高一（B部）下学期第一次月考语文试题">四川省宜宾市一中2016-2017学年高一（B部）下学期第一次月考语文试题</a>
+                    </li>
+                                    <li>
+                        <a target="_blank" href="/paper/view/173726" title="四川省绵阳南山中学2017届高三下学期3月月考试卷 语文">四川省绵阳南山中学2017届高三下学期3月月考试卷 语文</a>
+                    </li>
+                                    <li>
+                        <a target="_blank" href="/paper/view/173725" title="四川省泸州市泸化中学2016-2017学年高一下学期第一次月考语文试题">四川省泸州市泸化中学2016-2017学年高一下学期第一次月考语文试题</a>
+                    </li>
+                                    <li>
+                        <a target="_blank" href="/paper/view/173723" title="四川省成都市彭州中学2016-2017学年高一3月月考语文试题">四川省成都市彭州中学2016-2017学年高一3月月考语文试题</a>
+                    </li>
+                			</ul>
+		</div>
+	    
+	    
+	    <div id="kt5u"> 
+
+</div> 
+	    
+    </div>
+</div>
+
+<!--试题篮-->
+
+<div class="basket" id="J_Basket">
+      <div class="basket-tit">
+    <p><i class="icona-gouwulan"></i><em>试题篮</em></p>
+    <span><i class="icona-gouwuleft"></i></span> </div>
+      <div class="basket-con">
+    <div class="basket-count01">
+          <div class="basket-head"> 共计：（<span>0</span>）道题 </div>
+          <div class="baskrt-list"> </div>
+        </div>
+    <div class="basket-foot"> <a id="to-paper-admin-edit" data-method="post" class="basket-btn" href="http://zujuan.21cnjy.com/paper/admin-edit" style="display: none">编辑</a> <a id="to-paper-edit" data-method="post" class="basket-btn" href="http://zujuan.21cnjy.com/paper/edit" style="">生成试卷</a> <a id="to-paper-admin-cancel" class="basket-btn" href="http://zujuan.21cnjy.com/question" style="display: none">取消</a> </div>
+  </div>
+    </div>
+<script>
+    $(function () {
+        var cachePaper = null;
+        try {
+            cachePaper = JSON3.parse(OT2.LocalData.get('basket_cachePid'));
+        }
+        catch (e) {
+
+        }
+        var admin_url = '/paper/admin-edit';
+        if(cachePaper){
+            var pid = cachePaper.pid;
+            admin_url += '?pid='+pid+'&clean=0';
+            $('#to-paper-admin-edit').show().attr({href:admin_url});
+            $('#to-paper-admin-cancel').show().click(function () {
+
+                OT2.LocalData.remove(cachePaper.paper_key);
+                OT2.LocalData.remove('basket_cacheObj');
+                OT2.LocalData.remove('basket_cachePid');
+            });
+            $('.basket-tit').css({background: '#ffb03d none repeat scroll 0 0'});
+        }else{
+            $('#to-paper-edit').show();
+        }
+
+        $(".basket-foot a[data-method='post']").click(function(){
+            if(typeof USER.uid === 'undefined'){
+                OT2.Global.initLogin();
+                return false;
+            }
+            var cacheObj = {};
+            try {
+                cacheObj = JSON3.parse(OT2.LocalData.get('basket_cacheObj')) || {};
+            }
+            catch (e) {
+
+            }
+            var qids = [];
+            _.each(cacheObj, function (v) {
+                if (v.xd == OT2.xd_chid.xd && v.xk == OT2.xd_chid.chid) {
+                    qids.push(v.id);
+                }
+            });
+            if (typeof USER.basketLimit === 'undefined') USER.basketLimit = 30; // 未登录默认三十条
+            var len = qids.length;
+            if (len == 0) {
+                OT2.Util.alert('试题篮是空的，请添加试题！');
+                return false;
+            }
+            if(len > USER.basketLimit){
+                OT2.Util.alert('试题篮试题数量超过限制');
+                return false;
+            }
+            $(this).attr({
+                'data-params': JSON3.stringify({
+                    'qids':qids
+                })
+            });
+            //alert(0);
+            return true;
+        });
+    })
+
+</script><script type="text/template" data-template="errorReport">
+    <div class="error-con">
+	<form action="">
+		<input type="hidden" name="qid" value="<%= qid %>" />
+		<p>*请输入您遇到的错误，错误一经确认，我们会给予您一定的奖励</p>
+		<textarea name="message"></textarea>
+		<div class="warn"></div>
+	</form>
+</div></script> 
+<script type="text/template" data-template="question-item">
+    <li data-qid="<%= id %>">
+    <div class="search-exam">
+        <div class="exam-head">
+            <p class="exam-head-left">
+                <span>题型：<%= type %></span><i class="line"></i>
+                <span>题类：<%= exam_type %></span><i class="line"></i>
+                <span>难易度：<%= difficult_index %></span>
+            </p>
+             <p class="exam-head-right">
+			<span><%= question_from %></span>		
+	    </p>
+        </div>
+        <div class="exam-foot">
+            <p class="exam-foot-left">
+                <a target="_blank" href="/question/detail/<%= id %>"><i class="icona-jiexi"></i>查看解析</a>
+                <a href="javascript:;" onclick="OT2.QCollect(this, <%= id %> )"><i class="<% if (is_collect == '收藏') { %>icona-shoucang<% } else { %>icona-quxiaosc<% }%>"></i><%= is_collect %></a>
+                <a href="javascript:;" onclick="new OT2.ErrorReport( <%= id %> )"><i class="icona-jiucuo"></i>纠错</a>
+            </p>
+            <p class="exam-foot-right">
+                <span>组卷次数：<%= save_num %>次</span>
+                <% if (!added) { %>
+                <a class="addbtn J_AddQuestion" href="javascript:;"><b>+</b>选题</a>
+                <%  } else { %>
+                <a class="removebtn J_AddQuestion" href="javascript:;"><b>-</b>移除</a>
+                <% } %>
+            </p>
+        </div>
+    </div>
+</li></script> 
+<script type="text/template" data-template="question-txt">
+    	<div class="exam-con">
+		<div class="exam-q">
+		<% if (Number(parent_id) == 0) { %><%= index+1 %>. <% } else { %>（<%= index+1 %>）、<% } %><%= question_text %>
+		</div>
+		<% if ('12'.indexOf(question_type) > -1) { %>
+			<div class="exam-s">
+				<% _.each(options, function(v, k) { %>
+				<span class="op-item"><span class="op-item-nut"><%= k %>、</span><span class="op-item-meat"><%= v %></span></span>
+				<% }) %>
+			</div>
+		<% } %>
+		<% if (question_type == '6') { %>
+			<% _.each(options, function(v, k) { %>
+			<div class="f-cb">
+				<div class="exam-mynum">（<%= k+1 %>）</div>
+				<div class="w">
+					<div class="exam-s exam-sw">
+						<% _.each(v, function(val, key) { %>
+						<span class="op-item"><span class="op-item-nut"><%= key %>、</span><span class="op-item-meat"><%= val %></span></span>
+						<% }) %>
+					</div>
+				</div>
+			</div>
+			<% }) %>
+		<% } %>
+		<% if (question_type == '7') { %>
+		<div class="exam-qlist"></div>
+		<% } %>
+
+	</div></script> 
+<script type="text/template" data-template="errorReport">
+    <div class="error-con">
+	<form action="">
+		<input type="hidden" name="qid" value="<%= qid %>" />
+		<p>*请输入您遇到的错误，错误一经确认，我们会给予您一定的奖励</p>
+		<textarea name="message"></textarea>
+		<div class="warn"></div>
+	</form>
+</div></script> 
+<script type="text/x-template-underscore" data-template="exam-point">
+<% if (q.knowledge) { %>
+<div class="analyticbox">
+    <span class="exam-point">【考点】</span>
+    <div class="analyticbox-body">
+        <% if (q.knowledge) { %>
+            <%= _.pluck(q.knowledge, 'name').join("；") %>
+        <% } else { %>
+            &nbsp; &nbsp;
+        <% } %>
+    </div>
+</div>
+<% } %>
+</script> 
+<script type="text/x-template-underscore" data-template="exam-answer">
+<% if (user.uid && 
+        (('46'.indexOf(q.question_type) > -1 && q.answer_json) || 
+        ('1235'.indexOf(q.question_type) > -1 && q.answer))) { %>
+<div class="analyticbox">
+    <span class="exam-answer">【答案】</span>
+    <div class="analyticbox-body">
+    <% 
+        var answer_html = null;
+        if (q.question_type == '4') {
+            answer_html = _.map(q.answer_json, function(v, k) {
+                return "【第" + (k+1) + "空】" + v.toString();
+            }).join("<br>");
+        }
+        else if (q.question_type == '6') {
+            answer_html = _.map(q.answer_json, function(v, k) {
+                return "<span>（" + (k+1) + "）、" + v.join('') + "</span>";
+            }).join('');
+        }
+       else if(q.question_type == '3'){
+            answer_html = q.answer == 'A' ? '正确':'错误';
+        }
+        else {
+            answer_html = q.answer;
+        }
+
+    %>
+    <%= answer_html %>
+    </div>
+</div>
+<% } %>
+</script> 
+<script type="text/x-template-underscore" data-template="exam-explanation">
+<% if (user.uid) { %>
+    <% if ( typeof q.explanation !=='undefined') { %>
+        <% if(q.explanation) { %>
+<div class="analyticbox analyticbox1">
+    <span class="exam-analytic">【解析】</span> 
+    <div class="analyticbox-body">
+        <%= q.explanation %> &nbsp;&nbsp;
+    </div>
+</div>
+<% } %>
+    <% } else { %>
+<div class="analyticbox-tips">抱歉，在当前页面查看解析的功能仅限于“组卷通”用户！<a href="/help/request" target="_blank">用户升级</a></div>
+    <% } %>
+
+<% } else { %>
+<div class="analyticbox-tips">抱歉，您未登录！暂时无法查看答案与解析，<a href="/login" onclick="OT2.Global.initLogin(); return false;">点击登录</a></div>
+<% } %>
+</script> 
+<script type="text/javascript" src="js/get-parameters"></script> 
+<!--/*<script src="js/tree.min.js"></script>*/-->
+<script src="js/question-txt.min.js"></script> 
+<script src="js/question.min.js"></script> 
+<script src="js/q-list.min.js"></script> 
+<script src="js/element.min.js"></script>
+<div style="position: absolute; display: none;"></div>
+<script>
+    var MockDataTestPaper = [{"head_title":"题目","questions":[{"question_id":"3356238","question_type":"5","question_channel_type":"9","question_status":"2","chid":"2","xd":"3","parent_id":"0","is_objective":"0","difficult_index":"3","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"11","question_source":"人教版（新课程标准）高中语文必修一第一单元 2 诗两首-再别康桥同步练习","mode":"3","kid_num":"1","paperid":"117089","save_num":"5","oldqid":"0","paper":null,"question_text":"阅读《再别康桥》，回答问题<br/>&nbsp;“金柳”“青荇”等意象在诗中有什么表达效果？诗人为何“甘心做一条水草”？","options":"","knowledge":{"19606":{"kid":"19606","name":"再别康桥"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":5},"sort":1,"sort2":1},{"question_id":"3356240","question_type":"5","question_channel_type":"9","question_status":"2","chid":"2","xd":"3","parent_id":"0","is_objective":"0","difficult_index":"3","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"11","question_source":"人教版（新课程标准）高中语文必修一第一单元 2 诗两首-再别康桥同步练习","mode":"3","kid_num":"1","paperid":"117089","save_num":"1","oldqid":"0","paper":null,"question_text":"阅读《再别康桥》，回答问题<br/>第一节和最后一节，语意相似，节奏相同，构成回环呼应的结构形式，这对于表达揭示主题起什么作用？开头的“轻轻的”与结尾的“悄悄的”能不能对换？","options":"","knowledge":{"19606":{"kid":"19606","name":"再别康桥"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":5},"sort":2,"sort2":2},{"question_id":"3356239","question_type":"5","question_channel_type":"9","question_status":"2","chid":"2","xd":"3","parent_id":"0","is_objective":"0","difficult_index":"3","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"11","question_source":"人教版（新课程标准）高中语文必修一第一单元 2 诗两首-再别康桥同步练习","mode":"3","kid_num":"1","paperid":"117089","save_num":"0","oldqid":"0","paper":null,"question_text":"阅读《再别康桥》，回答问题<br/>如何理解“彩虹似的梦”？","options":"","knowledge":{"19606":{"kid":"19606","name":"再别康桥"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":5},"sort":3,"sort2":3},{"question_id":"3356241","question_type":"5","question_channel_type":"9","question_status":"2","chid":"2","xd":"3","parent_id":"0","is_objective":"0","difficult_index":"3","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"11","question_source":"人教版（新课程标准）高中语文必修一第一单元 2 诗两首-再别康桥同步练习","mode":"3","kid_num":"1","paperid":"117089","save_num":"1","oldqid":"0","paper":null,"question_text":"《再别康桥》中描写的意象与诗人的情感是如何融在一起的？","options":"","knowledge":{"19606":{"kid":"19606","name":"再别康桥"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":5},"sort":4,"sort2":4},{"question_id":"3356237","question_type":"5","question_channel_type":"9","question_status":"2","chid":"2","xd":"3","parent_id":"0","is_objective":"0","difficult_index":"3","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"11","question_source":"人教版（新课程标准）高中语文必修一第一单元 2 诗两首-再别康桥同步练习","mode":"3","kid_num":"3","paperid":"117089","save_num":"3","oldqid":"0","paper":null,"question_text":"阅读课文《再别康桥》，回答问题<br/>&nbsp;“轻轻的我走了”如果换成“我轻轻的走了”，在语言和情感表达上有何差异？","options":"","knowledge":{"19606":{"kid":"19606","name":"再别康桥"},"3951":{"kid":"3951","name":"语言风格类题目"},"15823":{"kid":"15823","name":"思想内容、观点态度、感情类题目"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":5},"sort":5,"sort2":5},{"question_id":"3356233","question_type":"1","question_channel_type":"1","question_status":"2","chid":"2","xd":"3","parent_id":"0","is_objective":"1","difficult_index":"3","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"11","question_source":"人教版（新课程标准）高中语文必修一第一单元 2 诗两首-再别康桥同步练习","mode":"3","kid_num":"2","paperid":"117089","save_num":"3","oldqid":"0","paper":null,"question_text":"下列诗歌节奏划分错误的一项是（&nbsp;&nbsp;&nbsp; ）","options":{"A":"轻轻的/我走了，∥正如我/轻轻的来","B":"波光里的/艳影，∥在我的/心头荡漾","C":"黑夜/给了我黑色的/眼睛，我/却用它/来寻找/光明","D":"这是/一沟/绝望的死水"},"knowledge":{"19606":{"kid":"19606","name":"再别康桥"},"15820":{"kid":"15820","name":"断句"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":2},"sort":6,"sort2":6},{"question_id":"3356231","question_type":"1","question_channel_type":"1","question_status":"2","chid":"2","xd":"3","parent_id":"0","is_objective":"1","difficult_index":"1","master_level":"1","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"11","question_source":"人教版（新课程标准）高中语文必修一第一单元 2 诗两首-再别康桥同步练习","mode":"3","kid_num":"5","paperid":"117089","save_num":"4","oldqid":"0","paper":null,"question_text":"下列加下划线字的注音全都正确的一项是（&nbsp; ）","options":{"A":"青<u>荇</u>（xìnɡ）&nbsp;&nbsp; &nbsp;长<u>篙</u>（hāo）&nbsp;&nbsp; &nbsp;漫<u>溯</u>（sù）","B":"<u>笙</u>箫（shēnɡ）&nbsp;&nbsp;<u>撑</u>开（chēnɡ）<u>哀</u>怨（āi）&nbsp;&nbsp;<span> &nbsp;&nbsp; </span>","C":"<u>寂</u>寥（jì）&nbsp;&nbsp;&nbsp; <u>彷</u>徨（pánɡ） &nbsp;&nbsp;&nbsp;<u>彳亍</u>（cì）","D":"凄<u>婉</u>（wǎn）&nbsp; &nbsp;&nbsp;斑<u>斓</u>（lān）&nbsp; &nbsp;&nbsp;笙<u>箫</u>（xiāo）"},"knowledge":{"19606":{"kid":"19606","name":"再别康桥"},"15798":{"kid":"15798","name":"形声字的分辨"},"15799":{"kid":"15799","name":"形近字的分辨"},"15800":{"kid":"15800","name":"多音字的分辨"},"15801":{"kid":"15801","name":"习惯性误读字"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":2},"sort":7,"sort2":7},{"question_id":"3356234","question_type":"1","question_channel_type":"1","question_status":"2","chid":"2","xd":"3","parent_id":"0","is_objective":"1","difficult_index":"3","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"11","question_source":"人教版（新课程标准）高中语文必修一第一单元 2 诗两首-再别康桥同步练习","mode":"3","kid_num":"2","paperid":"117089","save_num":"1","oldqid":"0","paper":null,"question_text":"阅读课文《再别康桥》，回答问题<br/>下列对诗歌二、三两节的解说，不恰当的一项是（&nbsp;&nbsp; ）","options":{"A":"这两节营造了一种宁静、安谧的氛围，柳影、水草、柔波恰当地衬托了诗人喜爱、留恋的心境。","B":"诗人因为热爱康桥，所以对康河里的水草充满了柔情，宁愿化身其中，和康桥永远在一起。","C":"在这两节诗中，诗人写景的顺序是由近及远，由高到低，写出了母校康桥特有的优美景色。","D":"诗人把自己对母校的深情融进了悄悄别离时那富有特色的形象和想象中，形成了一种轻柔、明丽而又俊逸的格调。"},"knowledge":{"3945":{"kid":"3945","name":"文学常识"},"19606":{"kid":"19606","name":"再别康桥"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":2},"sort":8,"sort2":8},{"question_id":"3356232","question_type":"1","question_channel_type":"1","question_status":"2","chid":"2","xd":"3","parent_id":"0","is_objective":"1","difficult_index":"3","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"11","question_source":"人教版（新课程标准）高中语文必修一第一单元 2 诗两首-再别康桥同步练习","mode":"3","kid_num":"5","paperid":"117089","save_num":"1","oldqid":"0","paper":null,"question_text":"下列加下划线字的注音有误的一项是（&nbsp;&nbsp;&nbsp; ）","options":{"A":"河<u>畔</u>（pàn）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>漪</u>沦（qí）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 青<u>荇</u>（xìng）","B":"<u>绮</u>（qǐ）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>浮</u>藻（fú）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 长<u>篙</u>（gāo）","C":"荡<u>漾</u>（yàng）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>笙</u>箫（shēng）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 发<u>酵</u>（jiào）","D":"漫<u>溯</u>（sù）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 相形见<u>绌</u>（chù）&nbsp;&nbsp;&nbsp;&nbsp; <u>锲</u>而不舍（qiè）"},"knowledge":{"19606":{"kid":"19606","name":"再别康桥"},"15798":{"kid":"15798","name":"形声字的分辨"},"15799":{"kid":"15799","name":"形近字的分辨"},"15800":{"kid":"15800","name":"多音字的分辨"},"15801":{"kid":"15801","name":"习惯性误读字"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":2},"sort":9,"sort2":9},{"question_id":"3356236","question_type":"5","question_channel_type":"9","question_status":"2","chid":"2","xd":"3","parent_id":"0","is_objective":"0","difficult_index":"3","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"11","question_source":"人教版（新课程标准）高中语文必修一第一单元 2 诗两首-再别康桥同步练习","mode":"3","kid_num":"3","paperid":"117089","save_num":"2","oldqid":"0","paper":null,"question_text":"阅读课文《再别康桥》，回答问题<br/><h1>“那河畔的金柳，是夕阳中的新娘”一句用了什么修辞手法？有何表达效果？结合诗句作简要分析。</h1>","options":"","knowledge":{"19606":{"kid":"19606","name":"再别康桥"},"15823":{"kid":"15823","name":"思想内容、观点态度、感情类题目"},"3952":{"kid":"3952","name":"表达技巧类题目"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":5},"sort":10,"sort2":10}],"scores":[]}];
+    if (MockDataTestPaper[0]['questions'].length) {
+        $('.null-page').hide();
+    }
+    OT2.renderQList(MockDataTestPaper);
+    var showCheckbox = true; // 目录树树，是否显示复选框
+    var Tree = new OT2.Tree($('#J_Tree'));
+    var select_form = $('#select-form');
+    if (QList.list.length) {
+        $('.null-page').hide();
+    }
+    // 年级复选选框
+    var nj_g = [];
+    $('#J_Nj').find('.checkbox').each(function() {
+        new OT2.Element.checkbox(this, nj_g).bindEvent(function () {
+            var len = _.filter(nj_g, function (item) {
+                return item.checked == true;
+            }).length;
+            $('#J_NjError').css('display', len == 0 ? 'inline' : 'none');
+            //TowerEvent.publish('Node:result', nj_g);
+        });
+
+        // $(this).click(function () {
+        // });
+    });
+
+</script> 
+<script>
+        fetchTree(6136, [{"id":"6141","title":"\u7b2c\u4e00\u5355\u5143","hasChild":true},{"id":"6142","title":"\u7b2c\u4e8c\u5355\u5143","hasChild":true},{"id":"6143","title":"\u7b2c\u4e09\u5355\u5143","hasChild":true},{"id":"6144","title":"\u7b2c\u56db\u5355\u5143","hasChild":true}]);
+        function fetchTree(catid, data) {
+            //var CName = 'categories';
+            Tree.fetch('/question/tree', {id: catid, type: 'category'}, data);
+            Tree.subscribe('Node:select', function (node) {
+                $("input[name='categories']").val(node.model.id);
+                $('li').removeClass('active');
+                node.$el.addClass('active');
+                reloadQuestionList();
+            });
+        }
+    </script> 
+<script>
+    /**
+     * 答案与解析显示 切换
+     * 2017.2.17 lgh
+     */
+    $('.switch-detail').find('.checkbox').on('click', function() {
+        var $checkedbox = $(this).find('input[type=checkbox]').first();
+        var checked = $checkedbox.prop('checked');
+        $checkedbox.prop('checked', !checked);
+        $(this)[checked ? 'removeClass' : 'addClass']('checked');
+        QList.basket.publish('show-analyticbox', !checked);
+    });
+
+    
+    $(".tag-con > .con-items > a").click(function () {
+        var ob = $(this);
+        if (!ob.hasClass('type-active')) {
+            ob.parent().find("input").val(ob.data('value'));
+            ob.parent().find('.type-active').removeClass('type-active');
+            ob.addClass('type-active');
+        }
+        reloadQuestionList();
+        return false;
+    });
+    $("#J_Nj > span").click(function () {
+        reloadQuestionList();
+        return false;
+    });
+    $('#sort-time').click(function () {
+        $("input[name='sortField']").val('time');
+        $('.sort-active').removeClass('sort-active');
+        $(this).addClass('sort-active');
+        reloadQuestionList();
+        return false;
+    });
+    $('#sort-count').click(function () {
+        $("input[name='sortField']").val('count');
+        $('.sort-active').removeClass('sort-active');
+        $(this).addClass('sort-active');
+        reloadQuestionList();
+        return false;
+    });
+    function reloadQuestionList(onPager) {
+
+
+        if (!onPager) {
+            $("input[name='page']").val(1);
+        }
+        var inputs = select_form.serializeArray();
+        $.getJSON('/question/list', inputs).done(function (data) {
+            MockDataTestPaper = data.data;
+            OT2.renderQList(MockDataTestPaper);
+            if (data.total) {
+                $('.null-page').hide();
+            } else {
+                $('.null-page').show();
+            }
+            $('.page').html(data.pager);
+            $("div[class='total'] > b").html(data.total);
+            var checked = $('.switch-detail').find('.checkbox input[type=checkbox]').prop('checked');
+            QList.basket.publish('show-analyticbox', checked); // 初始化操作
+            $("div[class='pagenum'] > a[href*='page']").click(function () {
+                var ob = $(this);
+                $("input[name='page']").val(ob.data('page'));
+                reloadQuestionList(true);
+                if (typeof window.dispatchEvent === 'undefined') $('html, body').scrollTop(0);
+                else $('html, body').animate({scrollTop: 0}, 'fast');
+                return false;
+            });
+        });
+    }
+</script> 
+<!--footer开始--> 
+
+<script>
+$(function() {
+    var SystemUpgrade = {
+
+        show_notice: function() {
+            var h = $(window).height(); // 显示器屏幕高度
+            var h1 = this.$el.height();
+            if (h >= h1) {
+                this.$el.css({'top': ((h-h1+60)/2) + 'px', 'position': 'fixed'});
+            }
+            else {
+                this.$el.css({'position': 'absolute'});
+            }
+        },
+        isClosed: function() {
+            return OT2.LocalData.get('close_system_upgrade_notice');
+        },
+        clear_notice: function() {
+            this.$el.remove();
+            $('.system-upgrade-wall').remove();
+            OT2.LocalData.set('close_system_upgrade_notice', 1); // 彻底关闭升级提示
+        },
+        init: function() {
+            var self = this;
+            this.$el = $('#J_NoticeModal');
+            this.$doc = $(document.documentElement);
+            this.$doc.addClass('system-upgrade');
+            this.$el.on('click', '.icon-close', function() {
+                self.clear_notice();
+            });
+            this.show_notice();
+            $(window).resize(function() {
+                self.show_notice();
+            });
+        }
+    };
+    if (!SystemUpgrade.isClosed()) SystemUpgrade.init();
+});
+</script> 
+
+<!--footer结束--> 
+<script src="js/global.min.js"></script> 
+<a class="return" href="javascript:;" style="right: 4.5px; display: none;"><i class="icona-top"></i></a> 
+<script>
+    BizQQWPA.addCustom({aty: '0', a: '0', nameAccount: 4006379991, selector: 'jBizQQWPA'});
+</script>
+<div class="data">
+      <div class="inner-data"> 
+    <script type="text/javascript">
+   var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5d70f3704df08b4bfedf4a7c4fb415ef";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();		
+    //var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1668216'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1668216%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> 
+  </div>
+    </div>
+</body>
+</html>
