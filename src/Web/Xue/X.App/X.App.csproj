@@ -64,7 +64,6 @@
     <Compile Include="Apis\question\search.cs" />
     <Compile Include="Apis\xapi.cs" />
     <Compile Include="Com\Config.cs" />
-    <Compile Include="Com\Sms.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="Views\com\err.cs" />
     <Compile Include="Views\com\code.cs" />

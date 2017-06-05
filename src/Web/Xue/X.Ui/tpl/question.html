@@ -212,7 +212,7 @@
                             显示答案与解析
                         </span> （提示：点击题干可显示答案与解析）
                     </div>
-                    <a class="select-btn" href="javascript:;" onclick="QList.addAllToBasket()">选择本页全部试题</a>
+                    <a class="select-btn" href="javascript:;" onclick="$('.addbtn.J_AddQuestion').click()">选择本页全部试题</a>
                     <div class="total"> 共计：<b>$count</b> 题 </div>
                 </div>
                 <div class="search-list">
@@ -239,7 +239,7 @@
                     </ul>
                 </div>
 
-                #if($ques.count()>15)
+                #if($count>15)
                 <div class="page">
                     <div class="pagenum"></div>
                 </div>
@@ -408,12 +408,12 @@
                 pan.append('<p title="' + t + '">' + t + '：<span>' + cart[t].length + '</span> 道<i class="icona-del1 f-fr" onclick="removecart(this)"></i></p>')
             }
             $(".basket-head").html(" 共计：（<span>" + ct + "</span>）道题 ");
-            x.cookie.set("cart", JSON.stringify(cart));
+            x.cookie.set("xx.cart." + data.sub, JSON.stringify(cart));
         }
 
         function init() {
             createPage("$!count");
-            cart = JSON.parse(x.cookie.get("cart") || "{}");
+            cart = JSON.parse(x.cookie.get("xx.cart." + data.sub) || "{}");
             updatecart();
             for (var tp in cart) {
                 var ct = cart[tp];

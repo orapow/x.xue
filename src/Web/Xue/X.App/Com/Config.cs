@@ -19,7 +19,6 @@ namespace X.App.Com
         /// 系统名称
         /// </summary>
         public string name { get; set; }//网站名
-        public string svr_tel { get; set; }
         /// <summary>
         /// 缓存设置
         /// 1、memcached
@@ -30,26 +29,39 @@ namespace X.App.Com
         /// 货到付款
         /// </summary>
         public string pay_ways { get; set; }//
-        public int chg_audit { get; set; }
 
         public string wx_appid { get; set; }//
         public string wx_scr { get; set; }//
         public string wx_mch_id { get; set; }//
 
+        public string ap_appid { get; set; }//
+        public string ap_scr { get; set; }//
+        public string ap_mch_id { get; set; }//
+
         /// <summary>
-        /// 微信证书路径
+        /// 包月价格
         /// </summary>
-        public string wx_certpath { get; set; }//
-        public string wx_paykey { get; set; }//
-        public int max_deposit { get; set; }
-
-        public int min_deposit { get; set; }
-
-        public int credit { get; set; }
-
-        public int free_ship { get; set; }
-
-        public int shipfee { get; set; }
+        public decimal month_price { get; set; }
+        /// <summary>
+        /// 半年价格
+        /// </summary>
+        public decimal half_price { get; set; }
+        /// <summary>
+        /// 包年价格
+        /// </summary>
+        public decimal year_price { get; set; }
+        /// <summary>
+        /// 单次价格
+        /// </summary>
+        public decimal down_price { get; set; }
+        /// <summary>
+        /// vip组卷试题限额
+        /// </summary>
+        public int vip_ques_count { get; set; }
+        /// <summary>
+        /// 非vip组卷试题限额
+        /// </summary>
+        public int unvip_ques_count { get; set; }
 
         private static string file = HttpContext.Current.Server.MapPath("/dat/cfg.x");//来自服务器的文件
         private static Config cfg = null;

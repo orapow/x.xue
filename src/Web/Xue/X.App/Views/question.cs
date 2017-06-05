@@ -59,7 +59,7 @@ namespace X.App.Views
             dict["bk"] = bk;
 
             dict.Add("topics", ques.GroupBy(o => o.topic).Select(o => o.Key).ToList().ToDictionary(v => v.Value + "", n => GetDictName("question.topic", n.Value)));
-            dict.Add("ques", ques.OrderByDescending(o => o.mtime).Take(30).ToList().Select(o => new
+            dict.Add("ques", ques.OrderByDescending(o => o.mtime).Take(15).ToList().Select(o => new
             {
                 tp = GetDictName("question.topic", o.topic),
                 ty = GetDictName("question.type", o.type),
