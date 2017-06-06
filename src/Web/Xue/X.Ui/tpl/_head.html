@@ -1,0 +1,42 @@
+﻿<div class="head">
+    <div class="head01">
+        <p>新学网在线-组卷</p>
+        <a href="#">个人中心</a>
+    </div>
+</div>
+<div class="top-navbox">
+    <div class="top-nav g-container">
+        <div class="nav-items">
+            <a href="javascript:;" class="item">当前：<span>$!sbname</span><i class="icona-tri2"></i></a>
+            <div class="item-list">
+                <div class="list-xx">
+                    <h3>小学</h3>
+                    #foreach($s in $T.getSubject(1))<a href="javascript:;" data-id="$s.value">$s.name</a>#end
+                </div>
+                <div class="list-cz">
+                    <h3>初中</h3>
+                    #foreach($s in $T.getSubject(2))<a href="javascript:;" data-id="$s.value">$s.name</a>#end
+                </div>
+                <div class="list-gz">
+                    <h3>高中</h3>
+                    #foreach($s in $T.getSubject(3))<a href="javascript:;" data-id="$s.value">$s.name</a>#end
+                </div>
+            </div>
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li> <a class="" href="#">首页</a> </li>
+                <li class="complex-nav-item">
+                    <a href="javascript:;" class="active">手动组卷</a>
+                    <div class="dd-list"> <a href="/question-1.html"><i>章节同步选题</i></a> <a href="/question-2.html"><i>知识点选题</i></a> </div>
+                </li>
+                <li class="complex-nav-item">
+                    <a href="javascript:;" class="">智能组卷</a>
+                    <div class="dd-list"> <a href="#"><i>章节智能组卷</i></a> <a href="#"><i>知识点智能组卷</i></a> </div>
+                </li>
+                <li> <a class="" href="http://zujuan.21cnjy.com/paper">试卷库</a> </li>
+                <li> <a class="" href="http://zujuan.21cnjy.com/subject">专题特供</a> </li>
+            </ul>
+        </div>
+    </div>
+</div>

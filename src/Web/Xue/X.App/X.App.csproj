@@ -69,8 +69,6 @@
     <Compile Include="Views\com\code.cs" />
     <Compile Include="Views\com\dict.cs" />
     <Compile Include="Views\com\getpos.cs" />
-    <Compile Include="Views\paper.cs" />
-    <Compile Include="Views\down.cs" />
     <Compile Include="Views\mgr\admin\edit.cs" />
     <Compile Include="Views\mgr\admin\list.cs" />
     <Compile Include="Views\mgr\chapter\choose.cs" />
@@ -91,6 +89,7 @@
     <Compile Include="Views\mgr\subject\edit.cs" />
     <Compile Include="Views\mgr\subject\list.cs" />
     <Compile Include="Views\mgr\subject\select.cs" />
+    <Compile Include="Views\paper\edit.cs" />
     <Compile Include="Views\question.cs" />
     <Compile Include="Views\xview.cs" />
     <Compile Include="Views\com\view.cs" />

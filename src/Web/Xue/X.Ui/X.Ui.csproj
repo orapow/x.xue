@@ -62,6 +62,7 @@
     <Content Include="res\css\xx\main.min.css" />
     <Content Include="res\css\xx\manual.min.css" />
     <Content Include="res\css\xx\my.css" />
+    <Content Include="res\css\xx\paperediting.min.css" />
     <Content Include="res\css\xx\spriter-mix.min.css" />
     <Content Include="res\css\xx\ui-dialog.css" />
     <Content Include="res\img\files\avi.png" />
@@ -123,6 +124,8 @@
     <Content Include="res\js\xx\global.min.js" />
     <Content Include="res\js\xx\jquery-1.10.2.min.js" />
     <Content Include="res\js\xx\jquery.min.js" />
+    <Content Include="res\js\xx\paper-part.min.js" />
+    <Content Include="res\js\xx\paper.min.js" />
     <Content Include="res\js\xx\q-list.min.js" />
     <Content Include="res\js\xx\question-txt.min.js" />
     <Content Include="res\js\xx\question.min.js" />
@@ -199,14 +202,15 @@
     <Content Include="tpl\paper - 复制%282%29.html" />
     <Content Include="tpl\paper - 复制.html" />
     <Content Include="tpl\paper.html" />
+    <Content Include="tpl\paper\edit.html" />
     <Content Include="tpl\user\下载记录.html" />
     <Content Include="tpl\user\个人信息.html" />
-    <Content Include="tpl\user\修改头像.html" />
     <Content Include="tpl\user\安全管理.html" />
     <Content Include="tpl\user\我的收藏.html" />
     <Content Include="tpl\question.html" />
     <Content Include="tpl\user\组卷记录.html" />
     <Content Include="tpl\user\订单管理.html" />
+    <Content Include="tpl\_head.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
