@@ -53,6 +53,7 @@
     <Content Include="dat\urls.x" />
     <Content Include="App.ashx" />
     <Content Include="dat\codes.x" />
+    <Content Include="res\css\mgr\x.dialog.css" />
     <Content Include="res\css\x.dialog.css" />
     <Content Include="res\css\x.form.css" />
     <Content Include="res\css\mgr\x.grid.css" />
@@ -101,6 +102,7 @@
     <Content Include="res\img\xx\dj-error.png" />
     <Content Include="res\img\xx\dj-menu-active.png" />
     <Content Include="res\img\xx\dj-menu.png" />
+    <Content Include="res\img\xx\editing.png" />
     <Content Include="res\img\xx\ff_03.jpg" />
     <Content Include="res\img\xx\fgd_03.png" />
     <Content Include="res\img\xx\fgd_06.png" />
@@ -202,8 +204,9 @@
     <Content Include="tpl\mgr\subject\edit.html" />
     <Content Include="tpl\mgr\subject\list.html" />
     <Content Include="tpl\paper - 复制%282%29.html" />
-    <Content Include="tpl\paper - 复制.html" />
     <Content Include="tpl\paper.html" />
+    <Content Include="tpl\paper2.html" />
+    <Content Include="tpl\paper\view.html" />
     <Content Include="tpl\paper\edit.html" />
     <Content Include="tpl\user\下载记录.html" />
     <Content Include="tpl\user\个人信息.html" />
@@ -212,12 +215,13 @@
     <Content Include="tpl\question.html" />
     <Content Include="tpl\user\组卷记录.html" />
     <Content Include="tpl\user\订单管理.html" />
-    <Content Include="tpl\_head.html" />
+    <Content Include="tpl\_top.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
     <None Include="Properties\PublishProfiles\x.erp.pubxml" />
     <None Include="Properties\PublishProfiles\x.shop.pubxml" />
+    <None Include="Properties\PublishProfiles\x.xue.pubxml" />
     <None Include="Properties\PublishProfiles\x.yfj.pubxml" />
     <None Include="Properties\PublishProfiles\xc.site.pubxml" />
     <None Include="Properties\PublishProfiles\zfw.web.flash.pubxml" />
@@ -259,7 +263,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>15010</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:17811/</IISUrl>
+          <IISUrl>http://localhost:17809/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

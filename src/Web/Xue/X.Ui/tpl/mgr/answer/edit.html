@@ -8,33 +8,19 @@
     <script src="/plug/um/umeditor.min.js"></script>
 
     <style type="text/css">
-        #id_name {
-            width: 800px;
-        }
-
-        .edui-container {
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .question {
-            margin-left: 45px;
-        }
+        #id_name { width: 800px; }
+        .edui-container { display: inline-block; vertical-align: top; }
+        .question { border: 2px solid #3086c8; border-radius: 5px; padding: 5px 15px; margin-bottom: 20px; max-height: 80px; overflow-y: auto; }
     </style>
 </head>
 <body>
-    <div class="title">
-        <span class="main">答案编辑</span> - <span class="sub">答案管理</span>
-    </div>
     <x:form api="mgr.answer.save">
-
         <input type="hidden" name="qid" value="$!que.question_id" x-check="" />
         <input type="hidden" name="aid" value="$!items.answer_id" x-check="" />
-
-        <p class="question">试题:<div class="question">$!shiti</div></p>
+        <div class="question">$!shiti</div>
         <x:text title="序号" name="no" size="1" def="$!items.no" />
 
-        <x:text title="答案" name="result" size="4" def="$!items.result" tp="3" chk="no" />
+        <x:text title="答案" name="result" size="4" def="$!items.result" chk="no" />
         <x:text title="解析" name="remark" size="6" def="$!items.remark" tp="3" />
 
         <div class="btns">
@@ -45,7 +31,7 @@
     <br />
     <script type="text/javascript">
 
-        var ue_name = UM.getEditor('id_remark', { initialFrameHeight: 200, initialFrameWidth: 400 });
+        var ue_name = UM.getEditor('id_remark', { initialFrameHeight: 100, initialFrameWidth: 400 });
 
         $(function () {
             $("form:eq(0)").xform({

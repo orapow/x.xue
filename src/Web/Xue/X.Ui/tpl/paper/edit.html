@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>试卷编辑</title>
-
+    <link rel="stylesheet" href="/plug/bs/v2.3.2.css" />
     <link rel="stylesheet" href="/css/xx/my.css" />
     <link rel="stylesheet" href="/css/xx/base.min.css" />
     <link rel="stylesheet" href="/css/xx/spriter-mix.min.css" />
@@ -13,156 +13,106 @@
     <link rel="stylesheet" href="/css/xx/paperediting.min.css" />
     <link rel="stylesheet" href="/css/x.dialog.css" />
 
+    <script type="text/javascript">
+        window.OT2 = {}; // 全局命名空间
+    </script>
+
     <script type="text/javascript" src="/js/xx/jquery.min.js"></script>
     <script type="text/javascript" src="/js/xx/underscore-min.js"></script>
     <script type="text/javascript" src="/js/xx/util.min.js"></script>
+    <style type="text/css">
+        .breadcrumb { padding: initial; background-color: transparent; }
+        .editset-type .btn { padding: 0; }
+        .question-num p { display: inline; }
+    </style>
 
 </head>
 
 <body>
-    #parse("_head.html");
+    #parse("_top.html");
     <div class="breadcrumb g-container"> <i class="icona-dingwei"></i>当前位置： <a href="#">首页</a> <b>&gt;</b> <a href="#">$sbname</a> </div>
-    <!--头部导航部分结束-->
-
     <div class="g-bd1 g-container f-cb" id="J_PaperLayout">
         <div class="g-sd1">
             <div class="editset f-usn" onselectstart="return false">
-                <h3>试卷结构调整<span class="toggle-sd-box toggle-sd-set">收起</span></h3>
+                <h3>试卷结构调整</h3>
                 <div id="sd-set-wire">
-                    <div class="radio-group">
-                        <ul id="J_PaperSetRadio">
-                            <li>
-                                <span class="radiobox checked">
-                                    <i class="icona-radio"></i>
-                                    <input type="radio" name="" value="simple" checked="" style="display: none;" />
-                                    简易模板
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="radiobox">
-                                    <i class="icona-radio"></i>
-                                    <input type="radio" name="" value="common" style="display: none;" />
-                                    普通模板
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="radiobox">
-                                    <i class="icona-radio"></i>
-                                    <input type="radio" name="" value="normal" style="display: none;" />
-                                    正式模板
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
                     <div class="check-group">
                         <ul id="J_PaperSetCheck">
-                            <li>
+                            <!--<li>
                                 <span class="checkbox">
                                     <i class="icona-check"></i>
                                     <input type="checkbox" name="" value="1" style="display: none;" />
                                     密封线
                                 </span>
-                            </li>
-
+                            </li>-->
                             <li>
-                                <span class="checkbox">
+                                <span class="checkbox  checked" data-sw="3">
                                     <i class="icona-check"></i>
-                                    <input type="checkbox" name="" value="2" style="display: none;" />
-                                    大题评分区
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="checkbox  checked">
-                                    <i class="icona-check"></i>
-                                    <input type="checkbox" name="" value="3" checked="" style="display: none;" />
                                     主标题
                                 </span>
                             </li>
 
                             <li>
-                                <span class="checkbox">
+                                <span class="checkbox" data-sw="5">
                                     <i class="icona-check"></i>
-                                    <input type="checkbox" name="" value="4" style="display: none;" />
+                                    副标题
+                                </span>
+                            </li>
+                            <li>
+                                <span class="checkbox" data-sw="4">
+                                    <i class="icona-check"></i>
                                     注意事项
                                 </span>
                             </li>
 
                             <li>
-                                <span class="checkbox">
+                                <span class="checkbox" data-sw="7">
                                     <i class="icona-check"></i>
-                                    <input type="checkbox" name="" value="5" style="display: none;" />
-                                    副标题
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="checkbox">
-                                    <i class="icona-check"></i>
-                                    <input type="checkbox" name="" value="6" style="display: none;" />
-                                    分卷
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="checkbox">
-                                    <i class="icona-check"></i>
-                                    <input type="checkbox" name="" value="7" style="display: none;" />
                                     考试时间
                                 </span>
                             </li>
 
                             <li>
-                                <span class="checkbox">
+                                <span class="checkbox" data-sw="9">
                                     <i class="icona-check"></i>
-                                    <input type="checkbox" name="" value="8" style="display: none;" />
-                                    分卷注释
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="checkbox">
-                                    <i class="icona-check"></i>
-                                    <input type="checkbox" name="" value="9" style="display: none;" />
                                     考生填写
                                 </span>
                             </li>
-
                             <li>
-                                <span class="checkbox  checked">
+                                <span class="checkbox" data-sw="11">
                                     <i class="icona-check"></i>
-                                    <input type="checkbox" name="" value="10" checked="" style="display: none;" />
+                                    总评分
+                                </span>
+                            </li>
+                            <li>
+                                <span class="checkbox  checked" data-sw="10">
+                                    <i class="icona-check"></i>
                                     分大题
                                 </span>
                             </li>
 
                             <li>
-                                <span class="checkbox">
+                                <span class="checkbox checked" data-sw="2">
                                     <i class="icona-check"></i>
-                                    <input type="checkbox" name="" value="11" style="display: none;" />
-                                    总评分
+                                    大题评分区
                                 </span>
                             </li>
-
                             <li>
-                                <span class="checkbox  checked">
+                                <span class="checkbox  checked" data-sw="12">
                                     <i class="icona-check"></i>
-                                    <input type="checkbox" name="" value="12" checked="" style="display: none;" />
                                     大题注释
                                 </span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <h3>试题统计<span class="toggle-sd-box">收起</span></h3>
+                <h3>试题统计</h3>
                 <div class="editset-type">
                     <div id="J_PaperTypes" class="overflow">
                         <div class="paper-club">
                             <div class="club-summary f-cb">
-                                <div class="t1">分数：<strong>101分</strong></div>
-                                <div class="w"><span class="t2">题数：<strong>10</strong></span></div>
+                                <div class="t1">分数：<strong>0分</strong></div>
+                                <div class="w"><span class="t2">题数：<strong></strong></span></div>
                                 <div class="t3">难度：<strong>困难</strong></div>
                             </div>
                             <div class="club-type-wrap">
@@ -203,9 +153,7 @@
                                         </div>
                                         <div class="club-grids">
                                             <div class="f-cb">
-
                                                 <span class="drag-grid" _qid="2775176">5</span>
-
                                             </div>
                                         </div>
                                     </div>
@@ -282,796 +230,124 @@
         </div>
         <div class="g-mn1">
             <div class="g-mn1c">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td data-paperset="1" class="editcon-silder"></td>
-                            <td>
-
-                                <div class="editcon">
-                                    <div class="test-title">
-                                        <h1 data-paperset="3"><span class="contenteditable" data-edit="title" id="paper-title">2017年5月17日小学英语试卷</span></h1>
-                                        <h2 data-paperset="5" style="display: none;"><span data-edit="subtitle" class="contenteditable">英语考试</span></h2>
-                                    </div>
-                                    <div data-paperset="7" class="test-time" style="display: none;">
-                                        <p><span>考试时间：<i class="contenteditable" data-edit="examtime">* *</i> 分钟</span><span>满分：<i class="contenteditable" data-edit="score">* *</i> 分</span></p>
-                                    </div>
-                                    <ul data-paperset="9" class="stu-info" style="display: none;">
-                                        <li>姓名：<span>____________</span></li>
-                                        <li>班级：<span>____________</span></li>
-                                        <li>学号：<span>____________</span></li>
-                                    </ul>
-                                    <div data-paperset="11" class="mark-table" >
-                                        <table id="J_PaperScore">
-                                            <tbody>
-                                                <tr>
-                                                    <th>题号</th>
-
-                                                    <td>一</td>
-
-                                                    <td>二</td>
-
-                                                    <td>三</td>
-
-                                                    <td>四</td>
-
-                                                    <td>五</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <th>评分</th>
-
-                                                    <td>&nbsp;</td>
-
-                                                    <td>&nbsp;</td>
-
-                                                    <td>&nbsp;</td>
-
-                                                    <td>&nbsp;</td>
-
-                                                    <td>&nbsp;</td>
-
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div data-paperset="4" class="rule">
-                                        <p>* 注意事项：</p>
-                                        <div class="contenteditable" data-edit="notes">1、填写答题卡的内容用2B铅笔填写<br />2、提前 xx 分钟收取答题卡</div>
-                                    </div>
-                                    <div id="J_PaperBody">
-                                        <div class="paper-part">
-                                            <div data-paperset="6" class="paper-title" >
-                                                <h3><em class="contenteditable" data-edit="paperPart.name" data-part="1">第Ⅰ卷 客观题</em></h3>
-                                                <span data-paperset="8" class="contenteditable" data-edit="paperPart.tip" data-part="1" style="display: none;">第Ⅰ卷的注释</span>
-                                            </div>
-                                            <div class="paper-section" _cid="type_1">
-                                                <div data-paperset="10" class="paper-types">
-                                                    <table data-paperset="2">
-                                                        <tbody>
-                                                            <tr><th>阅卷人</th><td></td></tr>
-                                                            <tr><th>得&nbsp;&nbsp;分</th><td></td></tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <p><strong><b class="t-order">一</b>、<span class="contenteditable" data-edit="type">判断题</span><span data-paperset="12">（共<b class="t-num">4</b>题；共<b class="t-score">8</b>分）</span></strong></p>
-                                                    <div class="types-btngroup">
-                                                        <a class="score-btn J_MultiSetScore" href="javascript:;"><i class="icona-jiexi1"></i>批量设置得分</a>
-                                                        <a class="sort-btn J_SecSortGroup"><i class="icona-sort"></i>排序</a>
-                                                        <a class="del-btn J_DelQByType" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                    </div>
-                                                </div>
-                                                <div class="paper-question-list f-usn" onselectstart="return false">
-                                                    <!-- paper-question -->
-                                                    <div class="paper-question f-usn" onselectstart="return false" id="question-2775206">
-                                                        <div class="question-txt">
-                                                            <div class="question-num"><span class="q-sn">1</span>. <span class="q-scoreval">（2分）</span>Show me your pencil.&nbsp;<br /><img alt="" style="width: 98px; height: 67px;" data-cke-saved-src="http://tikupic.21cnjy.com/93/bd/93bd0d91dae5ec51aef83ec2db0cbc87.png" src="http://tikupic.21cnjy.com/93/bd/93bd0d91dae5ec51aef83ec2db0cbc87.png" draggable="false" /></div>
-                                                        </div>
-                                                        <!-- question-txt -->
-                                                        <div class="question-btngroup">
-                                                            <a target="_blank" href="/question/detail/2775206" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
-                                                            <a class="ht-btn" href="javascript:;"><i class="icona-exchange"></i>换题</a>
-                                                            <a class="zy-btn" href="javascript:;"><i class="icona-shift"></i>转移</a>
-                                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 2775206)"><i class="icona-shoucangs"></i>收藏</a>
-                                                            <a class="jc-btn" href="javascript:;" onclick="OT2.ErrorReport(2775206)"><i class="icona-jiucuo1"></i>纠错</a>
-                                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                        </div>
-                                                    </div><div class="paper-question f-usn" onselectstart="return false" id="question-2775207">
-                                                        <div class="question-txt">
-                                                            <div class="question-num"><span class="q-sn">2</span>. <span class="q-scoreval">（2分）</span>I have a ruler.<br /><img alt="" style="width: 99px; height: 68px;" data-cke-saved-src="http://tikupic.21cnjy.com/c8/df/c8dfb352a2e73eab95e24421b06bff2d.png" src="http://tikupic.21cnjy.com/c8/df/c8dfb352a2e73eab95e24421b06bff2d.png" draggable="false" /></div>
-                                                        </div>
-                                                        <!-- question-txt -->
-                                                        <div class="question-btngroup">
-                                                            <a target="_blank" href="/question/detail/2775207" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
-                                                            <a class="ht-btn" href="javascript:;"><i class="icona-exchange"></i>换题</a>
-                                                            <a class="zy-btn" href="javascript:;"><i class="icona-shift"></i>转移</a>
-                                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 2775207)"><i class="icona-shoucangs"></i>收藏</a>
-                                                            <a class="jc-btn" href="javascript:;" onclick="OT2.ErrorReport(2775207)"><i class="icona-jiucuo1"></i>纠错</a>
-                                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                        </div>
-                                                    </div><div class="paper-question f-usn" onselectstart="return false" id="question-2775208">
-                                                        <div class="question-txt">
-                                                            <div class="question-num"><span class="q-sn">3</span>. <span class="q-scoreval">（2分）</span>Carry your bag.<br /><img alt="" style="width: 86px; height: 97px;" data-cke-saved-src="http://tikupic.21cnjy.com/54/4e/544e9a37ffa4b3e75bc2305d1335321f.png" src="http://tikupic.21cnjy.com/54/4e/544e9a37ffa4b3e75bc2305d1335321f.png" draggable="false" /></div>
-                                                        </div>
-                                                        <!-- question-txt -->
-                                                        <div class="question-btngroup">
-                                                            <a target="_blank" href="/question/detail/2775208" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
-                                                            <a class="ht-btn" href="javascript:;"><i class="icona-exchange"></i>换题</a>
-                                                            <a class="zy-btn" href="javascript:;"><i class="icona-shift"></i>转移</a>
-                                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 2775208)"><i class="icona-shoucangs"></i>收藏</a>
-                                                            <a class="jc-btn" href="javascript:;" onclick="OT2.ErrorReport(2775208)"><i class="icona-jiucuo1"></i>纠错</a>
-                                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                        </div>
-                                                    </div><div class="paper-question f-usn" onselectstart="return false" id="question-2775215">
-                                                        <div class="question-txt">
-                                                            <div class="question-num"><span class="q-sn">4</span>. <span class="q-scoreval">（2分）</span>I have an eraser.<br /><img alt="" style="width: 91px; height: 62px;" data-cke-saved-src="http://tikupic.21cnjy.com/ef/a2/efa23114fc68c81c15f1573ea2723a69.png" src="http://tikupic.21cnjy.com/ef/a2/efa23114fc68c81c15f1573ea2723a69.png" draggable="false" /></div>
-                                                        </div>
-                                                        <!-- question-txt -->
-                                                        <div class="question-btngroup">
-                                                            <a target="_blank" href="/question/detail/2775215" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
-                                                            <a class="ht-btn" href="javascript:;"><i class="icona-exchange"></i>换题</a>
-                                                            <a class="zy-btn" href="javascript:;"><i class="icona-shift"></i>转移</a>
-                                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 2775215)"><i class="icona-shoucangs"></i>收藏</a>
-                                                            <a class="jc-btn" href="javascript:;" onclick="OT2.ErrorReport(2775215)"><i class="icona-jiucuo1"></i>纠错</a>
-                                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="paper-btngroup">
-                                                    <button class="confirm">确定</button>
-                                                    <button class="cancel">取消</button>
-                                                </div>
-                                            </div>
-                                        </div><div class="paper-part">
-                                            <div data-paperset="6" class="paper-title">
-                                                <h3><em class="contenteditable" data-edit="paperPart.name" data-part="2">第Ⅱ卷 主观题</em></h3>
-                                                <span data-paperset="8" class="contenteditable" data-edit="paperPart.tip" data-part="2" style="display: none;">第Ⅱ卷的注释</span>
-                                            </div>
-                                            <!-- paper-section -->
-                                            <div class="paper-section" _cid="type_2">
-                                                <div data-paperset="10" class="paper-types">
-                                                    <table data-paperset="2" >
-                                                        <tbody>
-                                                            <tr><th>阅卷人</th><td></td></tr>
-                                                            <tr><th>得&nbsp;&nbsp;分</th><td></td></tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <p><strong><b class="t-order">二</b>、<span class="contenteditable" data-edit="type">阅读理解</span><span data-paperset="12">（共<b class="t-num">1</b>题；共<b class="t-score">10</b>分）</span></strong></p>
-                                                    <div class="types-btngroup">
-                                                        <a class="score-btn J_MultiSetScore" href="javascript:;"><i class="icona-jiexi1"></i>批量设置得分</a>
-                                                        <a class="sort-btn J_SecSortGroup"><i class="icona-sort"></i>排序</a>
-                                                        <a class="del-btn J_DelQByType" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                    </div>
-                                                </div>
-                                                <div class="paper-question-list f-usn" onselectstart="return false">
-                                                    <!-- paper-question -->
-                                                    <div class="paper-question f-usn" onselectstart="return false" id="question-2775176">
-                                                        <div class="question-txt">
-                                                            <div class="question-num"><span class="q-sn">5</span>. <span class="q-scoreval">（10分）</span>阅读短文，判断正误。<br />&nbsp;&nbsp;&nbsp; Mike has (有) a yellow pen. John has a black pencil box. Chen Jie has a blue ruler. Wu Yifan has a white flower. Bai Ling has a red bag.</div>
-                                                            <div class="exam-qlist">
-                                                                <div class="question-txt">
-                                                                    <div class="question-num"><span>(1)</span>、<span style="line-height: 22px;">Mike has a yellow pen.</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(2)</span>、<span style="line-height: 22px;">&nbsp;John has a green pencil box.</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(3)</span>、<span style="line-height: 22px;">Chen Jie has a blue ruler.</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(4)</span>、<span style="line-height: 22px;">&nbsp;Wu Yifan has a brown flower.</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(5)</span>、<span style="line-height: 22px;">Bai Ling has a red bag.</span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- question-txt -->
-                                                        <div class="question-btngroup">
-                                                            <a target="_blank" href="/question/detail/2775176" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
-                                                            <a class="ht-btn" href="javascript:;"><i class="icona-exchange"></i>换题</a>
-                                                            <a class="zy-btn" href="javascript:;"><i class="icona-shift"></i>转移</a>
-                                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 2775176)"><i class="icona-shoucangs"></i>收藏</a>
-                                                            <a class="jc-btn" href="javascript:;" onclick="OT2.ErrorReport(2775176)"><i class="icona-jiucuo1"></i>纠错</a>
-                                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="paper-btngroup">
-                                                    <button class="confirm">确定</button>
-                                                    <button class="cancel">取消</button>
-                                                </div>
-                                            </div><div class="paper-section" _cid="type_3">
-                                                <div data-paperset="10" class="paper-types">
-                                                    <table data-paperset="2" >
-                                                        <tbody>
-                                                            <tr><th>阅卷人</th><td></td></tr>
-                                                            <tr><th>得&nbsp;&nbsp;分</th><td></td></tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <p><strong><b class="t-order">三</b>、<span class="contenteditable" data-edit="type">翻译</span><span data-paperset="12">（共<b class="t-num">3</b>题；共<b class="t-score">60</b>分）</span></strong></p>
-                                                    <div class="types-btngroup">
-                                                        <a class="score-btn J_MultiSetScore" href="javascript:;"><i class="icona-jiexi1"></i>批量设置得分</a>
-                                                        <a class="sort-btn J_SecSortGroup"><i class="icona-sort"></i>排序</a>
-                                                        <a class="del-btn J_DelQByType" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                    </div>
-                                                </div>
-                                                <div class="paper-question-list f-usn" onselectstart="return false">
-                                                    <!-- paper-question -->
-                                                    <div class="paper-question f-usn" onselectstart="return false" id="question-2775186">
-                                                        <div class="question-txt">
-                                                            <div class="question-num"><span class="q-sn">6</span>. <span class="q-scoreval">（20分）</span>我是小翻译家。​</div>
-                                                            <div class="exam-qlist">
-                                                                <div class="question-txt">
-                                                                    <div class="question-num"><span>(1)</span>、<span style="line-height: 22px;">很高兴见到你。</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(2)</span>、<span style="line-height: 22px;">&nbsp;I can sing a rainbow.</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(3)</span>、<span style="line-height: 22px;">把它涂成红色吧！</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(4)</span>、<span style="line-height: 22px;">Stand up.</span></div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <!-- question-txt -->
-                                                        <div class="question-btngroup">
-                                                            <a target="_blank" href="/question/detail/2775186" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
-                                                            <a class="ht-btn" href="javascript:;"><i class="icona-exchange"></i>换题</a>
-                                                            <a class="zy-btn" href="javascript:;"><i class="icona-shift"></i>转移</a>
-                                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 2775186)"><i class="icona-shoucangs"></i>收藏</a>
-                                                            <a class="jc-btn" href="javascript:;" onclick="OT2.ErrorReport(2775186)"><i class="icona-jiucuo1"></i>纠错</a>
-                                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                        </div>
-                                                    </div><div class="paper-question f-usn" onselectstart="return false" id="question-2775222">
-                                                        <div class="question-txt">
-                                                            <div class="question-num"><span class="q-sn">7</span>. <span class="q-scoreval">（15分）</span>我是翻译小能手。<br />​</div>
-                                                            <div class="exam-qlist">
-                                                                <div class="question-txt">
-                                                                    <div class="question-num"><span>(1)</span>、<span style="line-height: 22px;">I have a ruler.</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(2)</span>、<span style="line-height: 22px;">Show me your pen.</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(3)</span>、<span style="line-height: 22px;">Me too!</span></div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <!-- question-txt -->
-                                                        <div class="question-btngroup">
-                                                            <a target="_blank" href="/question/detail/2775222" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
-                                                            <a class="ht-btn" href="javascript:;"><i class="icona-exchange"></i>换题</a>
-                                                            <a class="zy-btn" href="javascript:;"><i class="icona-shift"></i>转移</a>
-                                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 2775222)"><i class="icona-shoucangs"></i>收藏</a>
-                                                            <a class="jc-btn" href="javascript:;" onclick="OT2.ErrorReport(2775222)"><i class="icona-jiucuo1"></i>纠错</a>
-                                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                        </div>
-                                                    </div><div class="paper-question f-usn" onselectstart="return false" id="question-2775243">
-                                                        <div class="question-txt">
-                                                            <div class="question-num"><span class="q-sn">8</span>. <span class="q-scoreval">（25分）</span>我是小小翻译家</div>
-                                                            <div class="exam-qlist">
-                                                                <div class="question-txt">
-                                                                    <div class="question-num"><span>(1)</span>、<span style="line-height: 22px;">&nbsp;It's a pencil.</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(2)</span>、<span style="line-height: 22px;">What's your name?&nbsp;</span>​</div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(3)</span>、<span style="line-height: 22px;">&nbsp;I'm John.</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(4)</span>、<span style="line-height: 22px;">Hello. I'm Liu Yun.</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(5)</span>、<span style="line-height: 22px;">I have an eraser.&nbsp;</span>​</div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <!-- question-txt -->
-                                                        <div class="question-btngroup">
-                                                            <a target="_blank" href="/question/detail/2775243" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
-                                                            <a class="ht-btn" href="javascript:;"><i class="icona-exchange"></i>换题</a>
-                                                            <a class="zy-btn" href="javascript:;"><i class="icona-shift"></i>转移</a>
-                                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 2775243)"><i class="icona-shoucangs"></i>收藏</a>
-                                                            <a class="jc-btn" href="javascript:;" onclick="OT2.ErrorReport(2775243)"><i class="icona-jiucuo1"></i>纠错</a>
-                                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="paper-btngroup">
-                                                    <button class="confirm">确定</button>
-                                                    <button class="cancel">取消</button>
-                                                </div>
-                                            </div><div class="paper-section" _cid="type_4">
-                                                <div data-paperset="10" class="paper-types">
-                                                    <table data-paperset="2">
-                                                        <tbody>
-                                                            <tr><th>阅卷人</th><td></td></tr>
-                                                            <tr><th>得&nbsp;&nbsp;分</th><td></td></tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <p><strong><b class="t-order">四</b>、<span class="contenteditable" data-edit="type">连词成句</span><span data-paperset="12">（共<b class="t-num">1</b>题；共<b class="t-score">20</b>分）</span></strong></p>
-                                                    <div class="types-btngroup">
-                                                        <a class="score-btn J_MultiSetScore" href="javascript:;"><i class="icona-jiexi1"></i>批量设置得分</a>
-                                                        <a class="sort-btn J_SecSortGroup"><i class="icona-sort"></i>排序</a>
-                                                        <a class="del-btn J_DelQByType" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                    </div>
-                                                </div>
-                                                <div class="paper-question-list f-usn" onselectstart="return false">
-                                                    <!-- paper-question -->
-                                                    <div class="paper-question f-usn" onselectstart="return false" id="question-2775238">
-                                                        <div class="question-txt">
-                                                            <div class="question-num"><span class="q-sn">9</span>. <span class="q-scoreval">（20分）</span>连词成句。（注意首字母大写和标点）</div>
-                                                            <div class="exam-qlist">
-                                                                <div class="question-txt">
-                                                                    <div class="question-num"><span>(1)</span>、<span style="line-height: 22px;">your, show, eraser, me(.)</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(2)</span>、<span style="line-height: 22px;">name，what's，your(?)&nbsp;</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(3)</span>、<span style="line-height: 22px;">a，have，I，pencil(.)</span></div>
-                                                                </div><div class="question-txt">
-                                                                    <div class="question-num"><span>(4)</span>、<span style="line-height: 22px;">bag，carry，your(.)</span></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- question-txt -->
-                                                        <div class="question-btngroup">
-                                                            <a target="_blank" href="/question/detail/2775238" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
-                                                            <a class="ht-btn" href="javascript:;"><i class="icona-exchange"></i>换题</a>
-                                                            <a class="zy-btn" href="javascript:;"><i class="icona-shift"></i>转移</a>
-                                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 2775238)"><i class="icona-shoucangs"></i>收藏</a>
-                                                            <a class="jc-btn" href="javascript:;" onclick="OT2.ErrorReport(2775238)"><i class="icona-jiucuo1"></i>纠错</a>
-                                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="paper-btngroup">
-                                                    <button class="confirm">确定</button>
-                                                    <button class="cancel">取消</button>
-                                                </div>
-                                            </div><div class="paper-section" _cid="type_5">
-                                                <div data-paperset="10" class="paper-types">
-                                                    <table data-paperset="2" style="display:none">
-                                                        <tbody>
-                                                            <tr><th>阅卷人</th><td></td></tr>
-                                                            <tr><th>得&nbsp;&nbsp;分</th><td></td></tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <p><strong><b class="t-order">五</b>、<span class="contenteditable" data-edit="type">填空题</span><span data-paperset="12">（共<b class="t-num">1</b>题；共<b class="t-score">3</b>分）</span></strong></p>
-                                                    <div class="types-btngroup">
-                                                        <a class="score-btn J_MultiSetScore" href="javascript:;"><i class="icona-jiexi1"></i>批量设置得分</a>
-                                                        <a class="sort-btn J_SecSortGroup"><i class="icona-sort"></i>排序</a>
-                                                        <a class="del-btn J_DelQByType" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                    </div>
-                                                </div>
-                                                <div class="paper-question-list f-usn" onselectstart="return false">
-                                                    <!-- paper-question -->
-                                                    <div class="paper-question f-usn" onselectstart="return false" id="question-3358881">
-                                                        <div class="question-txt">
-                                                            <div class="question-num"><span class="q-sn">10</span>. <span class="q-scoreval">（3分）</span>Look at the woman.<span class="q-blank">&nbsp;</span>&nbsp;（He's/She's）my mother. <span class="q-blank">&nbsp;</span>&nbsp;（He's/She's）a <span class="q-blank">&nbsp;</span>&nbsp;（teacher/ student）.</div>
-                                                        </div>
-                                                        <!-- question-txt -->
-                                                        <div class="question-btngroup">
-                                                            <a target="_blank" href="/question/detail/3358881" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
-                                                            <a class="ht-btn" href="javascript:;"><i class="icona-exchange"></i>换题</a>
-                                                            <a class="zy-btn" href="javascript:;"><i class="icona-shift"></i>转移</a>
-                                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 3358881)"><i class="icona-shoucangs"></i>收藏</a>
-                                                            <a class="jc-btn" href="javascript:;" onclick="OT2.ErrorReport(3358881)"><i class="icona-jiucuo1"></i>纠错</a>
-                                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="paper-btngroup">
-                                                    <button class="confirm">确定</button>
-                                                    <button class="cancel">取消</button>
-                                                </div>
-                                            </div>
-                                        </div>
+                <div class="editcon">
+                    <div class="test-title">
+                        <h1 data-paperset="3"><span class="contenteditable" data-edit="主标题" id="paper-title">2017年5月17日小学英语试卷</span></h1>
+                        <h2 data-paperset="5" style="display:none;"><span data-edit="副标题" class="contenteditable">英语考试</span></h2>
+                    </div>
+                    <div data-paperset="7" class="test-time" style="display:none;">
+                        <p><span>考试时间：<i class="contenteditable" data-edit="考试时间">60</i> 分钟</span><span>满分：<i class="contenteditable" data-edit="满分值">100</i> 分</span></p>
+                    </div>
+                    <ul data-paperset="9" class="stu-info" style="display:none;">
+                        <li>姓名：<span>____________</span></li>
+                        <li>班级：<span>____________</span></li>
+                        <li>学号：<span>____________</span></li>
+                    </ul>
+                    <div data-paperset="11" class="mark-table" style="display:none;">
+                        <table id="J_PaperScore">
+                            <tbody>
+                                <tr>
+                                    <th width="160">题号</th>
+                                    #foreach($id in $ids)
+                                    <td>$T.GetNum($velocityCount)</td>
+                                    #end
+                                </tr>
+                                <tr>
+                                    <th>评分</th>
+                                    #foreach($id in $ids)
+                                    <td>&nbsp;</td>
+                                    #end
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-paperset="4" class="rule" style="display:none;">
+                        <p>* 注意事项：</p>
+                        <div class="contenteditable" data-edit="注意事项">1、填写答题卡的内容用2B铅笔填写<br />2、提前 xx 分钟收取答题卡</div>
+                    </div>
+                    <div id="J_PaperBody">
+                        #set($no=0)
+                        #foreach($id in $ids)
+                        <div class="paper-part">
+                            <div class="paper-section" _cid="type_1">
+                                #set($ques=$T.GetQues($id))
+                                <div data-paperset="10" class="paper-types">
+                                    <table data-paperset="2">
+                                        <tbody>
+                                            <tr><th>阅卷人</th><td></td></tr>
+                                            <tr><th>得&nbsp;&nbsp;分</th><td></td></tr>
+                                        </tbody>
+                                    </table>
+                                    <p><strong><b class="t-order">$T.GetNum($velocityCount)</b>、<span class="contenteditable" data-edit="type">$id</span><span data-paperset="12">（共<b class="t-num">$ques.Count()</b>题；共<b class="t-score">0</b>分）</span></strong></p>
+                                    <div class="types-btngroup">
+                                        <a class="score-btn J_MultiSetScore" href="javascript:;"><i class="icona-jiexi1"></i>批量设置得分</a>
+                                        <a class="del-btn J_DelQByType" href="javascript:;"><i class="icona-del3"></i>删除</a>
                                     </div>
                                 </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <div class="paper-question-list f-usn" onselectstart="return false">
+                                    #foreach($q in $ques)
+                                    #set($no=$no+1)
+                                    <div class="paper-question f-usn" onselectstart="return false" data-qid="${q.id}" data-easy="$q.easy">
+                                        <div class="question-txt">
+                                            <div class="question-num"><span class="q-sn">$no</span>. <span class="q-scoreval" data-score="0">（0分）</span>$q.topic</div>
+                                        </div>
+                                        <div class="question-btngroup">
+                                            <a target="_blank" href="/question/detail/2775206" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
+                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
+                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 2775206)"><i class="icona-shoucangs"></i>收藏</a>
+                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    #end
+                                </div>
+                            </div>
+                        </div>
+                        #end
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="editfooter">
-        <a href="javascript:;" onclick="paper.setAnswerSheet()"><i class="icona-dtk2"></i>下载答题卡</a>
         <a href="javascript:;" onclick="paper.showPie()"><i class="icona-fenxi2"></i>试卷分析</a>
         <a href="javascript:;" onclick="paper.save()"><i class="icona-save2"></i>保存组卷</a>
         <a href="javascript:;" class="download-btn" onclick="paper.download()"><i class="icona-download1"></i>下载试卷</a>
     </div>
-    <script type="text/template" data-template="paper-score">
-        <% var size = _.size(self.attributes.types)%>
-        <tr>
-            <th>题号</th>
-            <% for (var i = 0; i< size; i++) { %>
-            <td><%= OT2.Util.chinesesn(i) %></td>
-            <% } %>
-        </tr>
-        <tr>
-            <th>评分</th>
-            <% for (var i = 0; i< size; i++) { %>
-            <td>&nbsp;</td>
-            <% } %>
-        </tr>
-    </script>
-    <script type="text/template" data-template="paper-template">
-        <% for (var key in paperset) { %>
-        <li>
-            <span class="radiobox <% if ( key == attr.template) { %>checked<% } %> ">
-                <i class="icona-radio"></i>
-                <input type="radio" name="" value="<%= key %>" <% if ( key == attr.template) { %>checked<% } %>  style="display: none;">
-                <%= paperset[key]['name'] %>
-            </span>
-        </li>
-        <% } %>
-    </script>
-    <script type="text/template" data-template="paper-setoptions">
-        <% for (var key in setting) { %>
-        <li>
-            <span class="checkbox <% if (_.contains(attr.setting, key)) { %> checked <% } %> ">
-                <i class="icona-check"></i>
-                <input type="checkbox" name="" value="<%= key %>" <% if (_.contains(attr.setting, key)) { %> checked <% } %>  style="display: none;">
-                <%= setting[key] %>
-            </span>
-        </li>
-        <% } %>
-    </script>
-    <script type="text/template" data-template="paper-types">
-        <% for (var i = 0, item2; item2 = data[i++];) { %>
-        <div class="editset-typeitem" data-typename="<%= item2.type %>">
-            <p class="editset-typetit"><%= item2.type %></p>
-            <div class="numbarbg"><div class="numbar" style="width: <%= (100 * item2.size / size) %>%;"></div></div>
-            <p class="numtxt"><span><%= item2.size  %></span> 道</p>
-            <p class="editset-del"><i class="icona-del1" onclick="paper.deleteQuestions('<%= item2.type %>')"></i></p>
-        </div>
-
-        <% } %>
-    </script>
-    <script type="text/template" data-template="paper-club">
-        <div class="paper-club">
-            <div class="club-summary f-cb">
-                <div class="t1">分数：<strong><%- score %>分</strong></div>
-                <div class="w"><span class="t2">题数：<strong><%- num %></strong></span></div>
-                <div class="t3">难度：<strong><%- dd %></strong></div>
-            </div>
-            <div class="club-type-wrap">
-                <% var _index = 1;
-                _.each(data, function(v, i) {
-                %>
-                <div class="club-type-wire drag-wire" _cid="<%- v._cid %>" data-typename="<%= v.type %>">
-                    <div class="club-type">
-                        <div class="club-hd f-cb">
-                            <span class="f-fl" title="<%- v.type %>"><%= OT2.Util.chinesesn(i) %>、<%- v.short_type %></span>
-                            <div class="f-fr">
-                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('<%= v._cid %>')">排序</a>
-                                <a href="javascript:;" class="t-del" onclick="paper.deleteQuestions('<%= v.type %>')">删除</a>
-                            </div>
-                        </div>
-                        <div class="club-grids">
-                            <div class="f-cb">
-                                <% _.each(v.list, function(q, j) { %>
-                                <span class="drag-grid" _qid="<%- q.model.question_id %>"><%- (_index++) %></span>
-                                <% }) %>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <% }) %>
-            </div>
-        </div>
-    </script>
-    <script type="text/template" data-template="club-sort">
-        <div class="new-side-types">
-            <form>
-                <div class="label">需要排序的大题</div>
-                <div class="custom-checbox-g f-cb">
-                    <% _.each(data, function(v, k) { %>
-                    <span class="custom-checkbox <%- v._cid == _cid ? 'checked' : '' %>" title="<%- v.type %>"><i class="icona-check"></i><input type="checkbox" name="type[]" value="<%- v._cid %>" style="display:none" <%- v._cid == _cid ? 'checked' : '' %> ><%- v.short_type %></span>
-                    <% }) %>
-                </div>
-                <div class="label">排序方式</div>
-                <div class="custom-radio-g">
-                    <span class="checked custom-radio"><i class="icona-radio"></i><input type="radio" name="orderby" value="1" style="display:none" checked=checked />难度从低到高排序</span>
-                    <span class="custom-radio"><i class="icona-radio"></i><input type="radio" name="orderby" value="-1" style="display:none" />难度从高到低排序</span>
-                </div>
-            </form>
-        </div>
-    </script>
-    <script type="text/template" data-template="paper-part">
-        <div class="paper-part">
-            <div data-paperset="6" class="paper-title">
-                <h3><em class="contenteditable" data-edit="paperPart.name" data-part="<%= self.id %>"><%= self.name %></em></h3>
-                <span data-paperset="8" class="contenteditable" data-edit="paperPart.tip" data-part="<%= self.id %>"><%= self.tip %></span>
-            </div>
-            <!-- paper-question -->
-        </div>
-    </script>
-    <script type="text/template" data-template="paper-section">
-        <div class="paper-section">
-            <div data-paperset="10" class="paper-types">
-                <table data-paperset="2" <%= _.contains(self.paper.attributes.setting, '2') ? '' : 'style="display:none"' %> >
-    <tr><th>阅卷人</th><td></td></tr>
-    <tr><th>得&nbsp;&nbsp;分</th><td></td></tr>
-    </table>
-                <p><strong><b class="t-order"><%= self.getCnOrder() %></b>、<span class="contenteditable" data-edit="type"><%= self.type %></span><span data-paperset="12" <%= _.contains(self.paper.attributes.setting, '12') ? '' : 'style="display:none"' %> >（共<b class="t-num"><%= self.getSize() %></b>题；共<b class="t-score"><%= self.getScore() %></b>分）</span></strong></p>
-                <div class="types-btngroup">
-                    <a class="score-btn J_MultiSetScore" href="javascript:;"><i class="icona-jiexi1"></i>批量设置得分</a>
-                    <a class="sort-btn J_SecSortGroup"><i class="icona-sort"></i>排序</a>
-                    <a class="del-btn J_DelQByType" href="javascript:;"><i class="icona-del3"></i>删除</a>
-                </div>
-            </div>
-            <div class="paper-question-list f-usn" onselectstart="return false">
-                <!-- paper-question -->
-            </div>
-            <div class="paper-btngroup">
-                <button class="confirm">确定</button>
-                <button class="cancel">取消</button>
-            </div>
-        </div>
-    </script>
-    <script type="text/template" data-template="paper-question">
-        <div class="paper-question f-usn" onselectstart="return false" id="question-<%= self.model.id %>">
-            <!-- question-txt -->
-            <div class="question-btngroup">
-                <a target="_blank" href="/question/detail/<%= self.model.id %>" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
-                <a class="ht-btn" href="javascript:;"><i class="icona-exchange"></i>换题</a>
-                <a class="zy-btn" href="javascript:;"><i class="icona-shift"></i>转移</a>
-                <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, <%= self.model.id %>)"><i class="<%= self.model.is_collect ? 'icona-quxiaosc' : 'icona-shoucangs' %>"></i><%= self.model.is_collect ? '取消收藏' : '收藏' %></a>
-                <a class="jc-btn" href="javascript:;" onclick="OT2.ErrorReport(<%= self.model.id %>)"><i class="icona-jiucuo1"></i>纠错</a>
-                <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
-            </div>
-        </div>
-    </script>
-    <script type="text/template" data-template="question-txt">
-        <div class="question-txt">
-            <div class="question-num"><% if (parent_id == '0') { %><span class="q-sn"><%= index %></span>. <% } else {  %><span>(<%= index+1 %>)</span>、<% } %><% if (parent_id == '0') { %><span class="q-scoreval">（<%= q.attributes.score %>分）</span><% } %><%= question_text %></div>
-            <% if ('12'.indexOf(question_type) > -1) { %>
-            <div class="question-answer-area">
-                <div class="question-s op-items">
-                    <% _.each(options, function(v, k) { %>
-                    <span class="op-item"><span class="op-item-nut"><%= k %>、</span><span class="op-item-meat"><%= v %></span></span>
-                    <% }) %>
-                </div>
-            </div>
-            <% } %>
-            <% if (question_type == '6') { %>
-            <div class="question-answer-area">
-                <ul class="wan-xing-list">
-                    <% _.each(options, function(v, k) { %>
-                    <li>
-                        <em>(<%= k+1 %>)</em>
-                        <div>
-                            <p class="op-items">
-                                <% _.each(v, function(val, j) { %>
-                                <span class="op-item"><span class="op-item-nut"><%= j %>. </span><span class="op-item-meat"><%= val %></span></span>
-                                <% }) %>
-                            </p>
-                        </div>
-                    </li>
-                    <% }) %>
-                </ul>
-            </div>
-            <% } %>
-            <% if (question_type == '7') { %>
-            <div class="exam-qlist"></div>
-            <% } %>
-        </div>
-    </script>
-    <script type="text/template" data-template="dialog-analysis">
-        <div class="paper-analysis-fixed">
-            <div class="paper-analysis">
-                <div class="analysis-block">
-                    <h3 class="analysis-tit"><span>试卷总体分布分析</span></h3>
-                    <table class="analysis-table">
-                        <thead>
-                            <tr>
-                                <th colspan="3">总分：<%= grid1.score %></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th rowspan="2">分值分布</th>
-                                <th>客观题（占比）</th>
-                                <td><%= grid1.row1[0] %>（<%= grid1.row1[1] %>）</td>
-                            </tr>
-                            <tr>
-                                <th>主观题（占比）</th>
-                                <td><%= grid1.row1[2] %>（<%= grid1.row1[3] %>）</td>
-                            </tr>
-                            <tr>
-                                <th rowspan="2">题量分布</th>
-                                <th>客观题（占比）</th>
-                                <td><%= grid1.row2[0] %>（<%= grid1.row2[1] %>）</td>
-                            </tr>
-                            <tr>
-                                <th>主观题（占比）</th>
-                                <td><%= grid1.row2[2] %>（<%= grid1.row2[3] %>）</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="f-cb">
-                    <div class="analysis-cell f-fl">
-                        <div class="analysis-block">
-                            <div class="analysis-tit"><span>试卷题量分布分析</span></div>
-                            <table class="analysis-table">
-                                <thead>
-                                    <tr>
-                                        <th>大题题型</th>
-                                        <th>题目量（占比）</th>
-                                        <th>分值（占比）</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <% _.each(grid2, function(row) { %>
-                                    <tr>
-                                        <th><%= row.title %></th>
-                                        <td><%= row.q_num %>（<%= row.q_percent %>）</td>
-                                        <td><%= row.s_num %>（<%= row.s_percent %>）</td>
-                                    </tr>
-                                    <% }) %>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="analysis-cell f-fr">
-                        <div class="analysis-block">
-                            <h3 class="analysis-tit"><span>试卷难度结构分析</span></h3>
-                            <div class="analysis-chart" id="J_chart_container" style="min-height:160px; width: 360px"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="analysis-block">
-                    <h3 class="analysis-tit"><span>试卷知识点分析</span></h3>
-                    <table class="analysis-table">
-                        <thead>
-                            <tr>
-                                <th>序号</th>
-                                <th>知识点（认知水平）</th>
-                                <th>分值（占比）</th>
-                                <th>对应题号</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <% _.each(grid4, function(row) { %>
-                            <tr>
-                                <td><%= row.sn %></td>
-                                <td><%= row.knowledge %></td>
-                                <td><%= row.s_num %>（<%= row.s_percent %>）</td>
-                                <td><%= row.id %></td>
-                            </tr>
-                            <% }) %>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </script>
-    <script type="text/template" data-template="errorReport">
-        <div class="error-con">
-            <form action="">
-                <input type="hidden" name="qid" value="<%= qid %>" />
-                <p>*请输入您遇到的错误，错误一经确认，我们会给予您一定的奖励</p>
-                <textarea name="message"></textarea>
-                <div class="warn"></div>
-            </form>
-        </div>
-    </script>
-    <script type="text/template" data-template="add-type">
-        <div class="add-type-con">
-            <p>请输入新题型名称：<span class="error-msg"></span></p>
-            <input type="text" name="" value="" />
-        </div>
-    </script>
-    <script type="text/template" data-template="dialog-transfer">
-        <div class="transfer-con f-usn" onselectstart="return false">
-            <div class="transfer-title">
-                将试题(<%= self.attributes.type %>-<%= self.attributes.order %>)转移至：
-            </div>
-            <div class="transfer-num">
-                <ul>
-                    <% var types = _.sortBy(self.paper.attributes.types, 'order') %>
-                    <% for (var i = 0, item; item = types[i++];) { %>
-                    <li>
-                        <span class="radiobox">
-                            <i class="icona-radio"></i>
-                            <input type="radio" value="<%= item.name %>" name="type" style="display: none;" />
-                            <%= OT2.Util.chinesesn(i-1) %>、<%= item.name %>
-                        </span>
-                    </li>
-                    <% } %>
-                </ul>
-            </div>
-        </div>
-    </script>
-    <script type="text/template" data-template="dialog-mulscore">
-        <div class="q-scorelist-con">
-            <ul>
-                <% _.each(data, function(items, key) { %>
-                <% if (key == '4') { %>
-                <% _.each(items, function(items2, k) { %>
-                <% _NN = _.reduce(items2, function(s, item) { return s + _.size(item.model.myanswer)}, 0) %>
-                <li><em><%= qctypes[k] %>：</em><input type="text" name="score" data-n="<%= _NN %>" value="0" data-ct="<%= [key, k].join(',') %>" /> 分 x <%= _NN %>空</li>
-                <% }) %>
-                <% } else if (_.indexOf(['6', '7'], key) > -1) { %>
-                <% _.each(items, function(items2, k) { %>
-                <li><em><%= qctypes[k] %>：</em><span class="words">该题型暂时不支持批量设置分数，请按题设置分数</span></li>
-                <% }) %>
-                <% } else { %>
-                <% _.each(items, function(items2, k) { %>
-                <li><em><%= qctypes[k] %>：</em><input type="text" name="score" data-n="<%= items2.length %>" value="0" data-ct="<%= [key, k].join(',') %>" /> 分 x <%= items2.length %>题</li>
-                <% }) %>
-                <% } %>
-                <% }) %>
-                <li class="sum"><em>共计：</em><strong class="t-score">0</strong> 分</li>
-            </ul>
-        </div>
-    </script>
-    <script type="text/template" data-template="dialog-score">
-        <div class="q-score-con">
-            <form action="javascript:;" id="dialog-score-form">
-                <% if (Number(self.model.question_type) < 6 ) { %>
-                <% if (self.model.question_type == '4') { %>
-                <% _NN = _.size(self.model.myanswer) %>
-                <p><label for=""><%= qctypes[self.model.question_channel_type] %>：</label><input type="text" name="score" value="<%= self.attributes.subScore[0] || 1 %>" data-n="<%= _NN %>" /> 分 x <%= _NN %>空</p>
-                <% } else { %>
-                <p><label for=""><%= qctypes[self.model.question_channel_type] %>：</label><input type="text" value="<%= self.attributes.score %>" name="score" /> 分</p>
-                <% } %>
-                <% } else { %>
-                <ul>
-                    <% if (self.model.question_type == '7') { %>
-                    <% _.each(self.model.list, function(q, k) { %>
-                    <li>
-                        <label>（<%= Number(k)+1 %>）、</label>
-                        <% if (Number(q.question_type) < 6 ) { %>
-                        <% if (q.question_type == '4') { %>
-                        <% _NN = _.size(q.myanswer) %>
-                        <div><input type="text" name="score" value="<%= self.attributes.subScore[k] || 1 %>" data-n="<%= _NN %>" /> 分 x <%= _NN %>空</div>
-                        <% } else { %>
-                        <div><input type="text" value="<%= self.attributes.subScore[k] || 0 %>" name="score" /> 分</div>
-                        <% } %>
-                        <% } %>
-                        <% if (q.question_type == '6') { %>
-                        <% _NN = _.size(q.myanswer) %>
-                        <div><input type="text" name="score" value="<%= self.attributes.subScore[k] || 1 %>" data-n="<%= _NN %>" /> 分 x <%= _NN %>空</div>
-                        <% } %>
-                    </li>
-                    <% }) %>
-                    <% } %>
-                    <% if (self.model.question_type == '6') { %>
-                    <% _NN = _.size(self.model.myanswer) %>
-                    <li>
-                        <div>
-                            <%= qctypes[self.model.question_channel_type] %>：
-                            <input type="text" name="score" value="<%= self.attributes.subScore[0] || 1 %>" data-n="<%= _NN %>" /> 分 x <%= _NN %>空
-                        </div>
-                    </li>
-                    <% } %>
-                </ul>
-                <p>共计：<span class="s-total">0</span> 分</p>
-                <% } %>
-            </form>
-        </div>
-    </script>
-    <script src="/js/xx/element.min.js"></script>
-    <script src="/js/xx/question-txt.min.js"></script>
-    <script src="/js/xx/paper.min.js"></script>
-    <script src="/js/xx/paper-part.min.js"></script>
-
-    <div style="position: absolute; display: none;"></div>
-    <script>
-        var MockDataTestPaper = [{"head_title":"题目","questions":[{"question_id":"3579314","question_type":"5","question_channel_type":"34","question_status":"2","chid":"2","xd":"1","parent_id":"0","is_objective":"0","difficult_index":"1","master_level":"4","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"3","kid_num":"2","paperid":"151629","save_num":"17","oldqid":"0","paper":{"pid":"151629","title":"苏教版小学语文一年级下册 第六单元 24 乌鸦喝水 同步练习"},"extra_file":"","question_text":"照样子，写汉字<br/>渴&nbsp;&nbsp;&nbsp; 渐&nbsp;&nbsp;&nbsp; 终<br/><img data-cke-saved-src=\"http://tikupic.21cnjy.com/f3/73/f373841db720a33fca7861702a141474.png\" src=\"http://tikupic.21cnjy.com/f3/73/f373841db720a33fca7861702a141474.png\" v:shapes=\"图片_x0020_1\" height=\"38\" width=\"115\">","options":"","knowledge":{"18965":{"kid":"18965","name":"乌鸦喝水"},"4604":{"kid":"4604","name":"字形"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":5},"sort":1,"sort2":1},{"question_id":"3579315","question_type":"4","question_channel_type":"4","question_status":"2","chid":"2","xd":"1","parent_id":"0","is_objective":"1","difficult_index":"1","master_level":"4","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"3","kid_num":"3","paperid":"151629","save_num":"21","oldqid":"0","paper":{"pid":"151629","title":"苏教版小学语文一年级下册 第六单元 24 乌鸦喝水 同步练习"},"extra_file":"","question_text":"看拼音,写词语<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\"><tbody><tr><td valign=\"top\" width=\"123\">kǒu&nbsp; kě</td><td valign=\"top\" width=\"123\">kàn&nbsp; jiàn</td><td valign=\"top\" width=\"123\">bàn&nbsp; fǎ</td></tr><tr><td valign=\"top\" width=\"123\"><input type=\"text\" placeholder=\"1\" ms-duplex-string =\"question.myanswer[1]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"123\"><input type=\"text\" placeholder=\"2\" ms-duplex-string =\"question.myanswer[2]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"123\"><input type=\"text\" placeholder=\"3\" ms-duplex-string =\"question.myanswer[3]\" class=\"cke_questions_blankInput\" /></td></tr><tr><td valign=\"top\" width=\"123\">zhōng&nbsp; yú</td><td valign=\"top\" width=\"123\">qǐ&nbsp; lǎi</td><td valign=\"top\" width=\"123\">jiàn&nbsp; jiàn</td></tr><tr><td valign=\"top\" width=\"123\"><input type=\"text\" placeholder=\"4\" ms-duplex-string =\"question.myanswer[4]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"123\"><input type=\"text\" placeholder=\"5\" ms-duplex-string =\"question.myanswer[5]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"123\"><input type=\"text\" placeholder=\"6\" ms-duplex-string =\"question.myanswer[6]\" class=\"cke_questions_blankInput\" /></td></tr></tbody></table>","options":"","knowledge":{"18965":{"kid":"18965","name":"乌鸦喝水"},"4603":{"kid":"4603","name":"拼音"},"4607":{"kid":"4607","name":"词义"}},"category":null,"is_collect":false,"done":false,"myanswer":{"1":"","2":"","3":"","4":"","5":"","6":""},"score":{"score":6},"sort":2,"sort2":2},{"question_id":"3579316","question_type":"4","question_channel_type":"4","question_status":"2","chid":"2","xd":"1","parent_id":"0","is_objective":"0","difficult_index":"1","master_level":"4","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"1","question_source":"苏教版小学语文一年级下册课文3 8 乌鸦喝水 同步练习","mode":"3","kid_num":"3","paperid":"151629","save_num":"20","oldqid":"0","paper":{"pid":"151629","title":"苏教版小学语文一年级下册 第六单元 24 乌鸦喝水 同步练习"},"extra_file":"","question_text":"比一比，再组词<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\"><tbody><tr><td valign=\"top\" width=\"91\">可<input type=\"text\" placeholder=\"1\" ms-duplex-string =\"question.myanswer[1]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"91\">渐<input type=\"text\" placeholder=\"2\" ms-duplex-string =\"question.myanswer[2]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"91\">于<input type=\"text\" placeholder=\"3\" ms-duplex-string =\"question.myanswer[3]\" class=\"cke_questions_blankInput\" /></td></tr><tr><td valign=\"top\" width=\"91\">渴<input type=\"text\" placeholder=\"4\" ms-duplex-string =\"question.myanswer[4]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"91\">见<input type=\"text\" placeholder=\"5\" ms-duplex-string =\"question.myanswer[5]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"91\">干<input type=\"text\" placeholder=\"6\" ms-duplex-string =\"question.myanswer[6]\" class=\"cke_questions_blankInput\" /></td></tr></tbody></table>","options":"","knowledge":{"18965":{"kid":"18965","name":"乌鸦喝水"},"4605":{"kid":"4605","name":"字义"},"4607":{"kid":"4607","name":"词义"}},"category":null,"is_collect":false,"done":false,"myanswer":{"1":"","2":"","3":"","4":"","5":"","6":""},"score":{"score":6},"sort":3,"sort2":3},{"question_id":"3579317","question_type":"4","question_channel_type":"4","question_status":"2","chid":"2","xd":"1","parent_id":"0","is_objective":"0","difficult_index":"3","master_level":"4","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"3","kid_num":"3","paperid":"151629","save_num":"39","oldqid":"0","paper":{"pid":"151629","title":"苏教版小学语文一年级下册 第六单元 24 乌鸦喝水 同步练习"},"extra_file":"","question_text":"加偏旁，组新字，再组词。<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\"><tbody><tr><td valign=\"top\" width=\"33\">去</td><td valign=\"top\" width=\"51\"><input type=\"text\" placeholder=\"1\" ms-duplex-string =\"question.myanswer[1]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"118\"><input type=\"text\" placeholder=\"2\" ms-duplex-string =\"question.myanswer[2]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"33\">目</td><td valign=\"top\" width=\"56\"><input type=\"text\" placeholder=\"3\" ms-duplex-string =\"question.myanswer[3]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"56\"><input type=\"text\" placeholder=\"4\" ms-duplex-string =\"question.myanswer[4]\" class=\"cke_questions_blankInput\" /></td></tr><tr><td valign=\"top\" width=\"33\">己</td><td valign=\"top\" width=\"51\"><input type=\"text\" placeholder=\"5\" ms-duplex-string =\"question.myanswer[5]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"118\"><input type=\"text\" placeholder=\"6\" ms-duplex-string =\"question.myanswer[6]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"33\">冬</td><td valign=\"top\" width=\"56\"><input type=\"text\" placeholder=\"7\" ms-duplex-string =\"question.myanswer[7]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"56\"><input type=\"text\" placeholder=\"8\" ms-duplex-string =\"question.myanswer[8]\" class=\"cke_questions_blankInput\" /></td></tr><tr><td valign=\"top\" width=\"33\">巴</td><td valign=\"top\" width=\"51\"><input type=\"text\" placeholder=\"9\" ms-duplex-string =\"question.myanswer[9]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"118\"><input type=\"text\" placeholder=\"0\" ms-duplex-string =\"question.myanswer[0]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"33\">元</td><td valign=\"top\" width=\"56\"><input type=\"text\" placeholder=\"1\" ms-duplex-string =\"question.myanswer[1]\" class=\"cke_questions_blankInput\" /></td><td valign=\"top\" width=\"56\"><input type=\"text\" placeholder=\"2\" ms-duplex-string =\"question.myanswer[2]\" class=\"cke_questions_blankInput\" /></td></tr></tbody></table>","options":"","knowledge":{"18965":{"kid":"18965","name":"乌鸦喝水"},"4606":{"kid":"4606","name":"词形"},"4607":{"kid":"4607","name":"词义"}},"category":null,"is_collect":false,"done":false,"myanswer":{"1":"","2":"","3":"","4":"","5":"","6":"","7":"","8":"","9":"","10":"","11":"","12":""},"score":{"score":12},"sort":4,"sort2":4},{"question_id":"3579318","question_type":"4","question_channel_type":"4","question_status":"2","chid":"2","xd":"1","parent_id":"0","is_objective":"0","difficult_index":"1","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"3","kid_num":"2","paperid":"151629","save_num":"29","oldqid":"0","paper":{"pid":"151629","title":"苏教版小学语文一年级下册 第六单元 24 乌鸦喝水 同步练习"},"extra_file":"","question_text":"我会选，我会填。<br/>条&nbsp; 颗&nbsp; 种&nbsp; 座&nbsp; 只&nbsp; 棵&nbsp; 块&nbsp; 间&nbsp; 位<br/>一<input type=\"text\" placeholder=\"1\" ms-duplex-string =\"question.myanswer[1]\" class=\"cke_questions_blankInput\" />黑板&nbsp;&nbsp;&nbsp; 一<input type=\"text\" placeholder=\"2\" ms-duplex-string =\"question.myanswer[2]\" class=\"cke_questions_blankInput\" />乌鸦&nbsp;&nbsp;&nbsp; 一<input type=\"text\" placeholder=\"3\" ms-duplex-string =\"question.myanswer[3]\" class=\"cke_questions_blankInput\" />大树<br/>一<input type=\"text\" placeholder=\"4\" ms-duplex-string =\"question.myanswer[4]\" class=\"cke_questions_blankInput\" />办法&nbsp;&nbsp;&nbsp; 一<input type=\"text\" placeholder=\"5\" ms-duplex-string =\"question.myanswer[5]\" class=\"cke_questions_blankInput\" />星星&nbsp;&nbsp;&nbsp; 一<input type=\"text\" placeholder=\"6\" ms-duplex-string =\"question.myanswer[6]\" class=\"cke_questions_blankInput\" />金鱼<br/>一<input type=\"text\" placeholder=\"7\" ms-duplex-string =\"question.myanswer[7]\" class=\"cke_questions_blankInput\" />屋子&nbsp;&nbsp;&nbsp; 一<input type=\"text\" placeholder=\"8\" ms-duplex-string =\"question.myanswer[8]\" class=\"cke_questions_blankInput\" />老师&nbsp;&nbsp;&nbsp; 一<input type=\"text\" placeholder=\"9\" ms-duplex-string =\"question.myanswer[9]\" class=\"cke_questions_blankInput\" />小桥","options":"","knowledge":{"18965":{"kid":"18965","name":"乌鸦喝水"},"4605":{"kid":"4605","name":"字义"}},"category":null,"is_collect":false,"done":false,"myanswer":{"1":"","2":"","3":"","4":"","5":"","6":"","7":"","8":"","9":""},"score":{"score":9},"sort":5,"sort2":5},{"question_id":"3579319","question_type":"4","question_channel_type":"4","question_status":"2","chid":"2","xd":"1","parent_id":"0","is_objective":"1","difficult_index":"1","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"3","kid_num":"2","paperid":"151629","save_num":"21","oldqid":"0","paper":{"pid":"151629","title":"苏教版小学语文一年级下册 第六单元 24 乌鸦喝水 同步练习"},"extra_file":"","question_text":"把能搭配的词连起来<br/>弯弯的<input type=\"text\" placeholder=\"1\" ms-duplex-string =\"question.myanswer[1]\" class=\"cke_questions_blankInput\" />&nbsp;&nbsp;&nbsp; 节日<br/>快乐的<input type=\"text\" placeholder=\"2\" ms-duplex-string =\"question.myanswer[2]\" class=\"cke_questions_blankInput\" />&nbsp;&nbsp;&nbsp; 步子<br/>轻快的<input type=\"text\" placeholder=\"3\" ms-duplex-string =\"question.myanswer[3]\" class=\"cke_questions_blankInput\" />&nbsp;&nbsp;&nbsp; 小路<br/>鲜艳的<input type=\"text\" placeholder=\"4\" ms-duplex-string =\"question.myanswer[4]\" class=\"cke_questions_blankInput\" />&nbsp;&nbsp;&nbsp; 花朵","options":"","knowledge":{"18965":{"kid":"18965","name":"乌鸦喝水"},"4607":{"kid":"4607","name":"词义"}},"category":null,"is_collect":false,"done":false,"myanswer":{"1":"","2":"","3":"","4":""},"score":{"score":4},"sort":6,"sort2":6},{"question_id":"3579320","question_type":"4","question_channel_type":"4","question_status":"2","chid":"2","xd":"1","parent_id":"0","is_objective":"0","difficult_index":"1","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"3","kid_num":"2","paperid":"151629","save_num":"29","oldqid":"0","paper":{"pid":"151629","title":"苏教版小学语文一年级下册 第六单元 24 乌鸦喝水 同步练习"},"extra_file":"","question_text":"选择合适的搭配。<br/>照顾<input type=\"text\" placeholder=\"1\" ms-duplex-string =\"question.myanswer[1]\" class=\"cke_questions_blankInput\" />&nbsp;&nbsp;&nbsp; 老师<br/>尊敬<input type=\"text\" placeholder=\"2\" ms-duplex-string =\"question.myanswer[2]\" class=\"cke_questions_blankInput\" />&nbsp;&nbsp;&nbsp; 病人<br/>摇着<input type=\"text\" placeholder=\"3\" ms-duplex-string =\"question.myanswer[3]\" class=\"cke_questions_blankInput\" />&nbsp;&nbsp;&nbsp; 敌人<br/>打倒<input type=\"text\" placeholder=\"4\" ms-duplex-string =\"question.myanswer[4]\" class=\"cke_questions_blankInput\" />&nbsp;&nbsp;&nbsp; 尾巴","options":"","knowledge":{"18965":{"kid":"18965","name":"乌鸦喝水"},"4607":{"kid":"4607","name":"词义"}},"category":null,"is_collect":false,"done":false,"myanswer":{"1":"","2":"","3":"","4":""},"score":{"score":4},"sort":7,"sort2":7},{"question_id":"3579321","question_type":"4","question_channel_type":"4","question_status":"2","chid":"2","xd":"1","parent_id":"0","is_objective":"0","difficult_index":"3","master_level":"2","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"3","kid_num":"2","paperid":"151629","save_num":"34","oldqid":"0","paper":{"pid":"151629","title":"苏教版小学语文一年级下册 第六单元 24 乌鸦喝水 同步练习"},"extra_file":"","question_text":"选出括号里一个和加下划线词意思相近的词。<br/>①我<u>特别</u>爱看骑牛比赛。<input type=\"text\" placeholder=\"1\" ms-duplex-string =\"question.myanswer[1]\" class=\"cke_questions_blankInput\" />（非常、特殊、常常）<br/>②我们迎来了<u>快乐</u>的节日。<input type=\"text\" placeholder=\"2\" ms-duplex-string =\"question.myanswer[2]\" class=\"cke_questions_blankInput\" />（欢乐、明媚、美丽）<br/>③母亲知道小平学习很用功，心里很<u>高兴</u>。<input type=\"text\" placeholder=\"3\" ms-duplex-string =\"question.myanswer[3]\" class=\"cke_questions_blankInput\" />（愉快、喜欢、细心）","options":"","knowledge":{"18965":{"kid":"18965","name":"乌鸦喝水"},"4607":{"kid":"4607","name":"词义"}},"category":null,"is_collect":false,"done":false,"myanswer":{"1":"","2":"","3":""},"score":{"score":3},"sort":8,"sort2":8},{"question_id":"3579322","question_type":"7","question_channel_type":"28","question_status":"2","chid":"2","xd":"1","parent_id":"0","is_objective":"1","difficult_index":"3","master_level":"4","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"3","kid_num":"2","paperid":"151629","save_num":"35","oldqid":"0","paper":{"pid":"151629","title":"苏教版小学语文一年级下册 第六单元 24 乌鸦喝水 同步练习"},"list":[{"question_id":"3609746","question_type":"4","question_channel_type":"28","question_status":"1","chid":"2","xd":"1","parent_id":"3579322","is_objective":"0","difficult_index":"3","master_level":"4","exam_type":"2","evaluated":"0","region_ids":"","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"1","kid_num":"2","paperid":null,"save_num":"0","oldqid":"0","paper":null,"extra_file":"","question_text":"乌鸦看见旁边有许多小石子，<u>终于</u>想出办法来了。<br/>终于——<input type=\"text\" placeholder=\"1\" ms-duplex-string =\"child.myanswer[1]\" class=\"cke_questions_blankInput\" />","options":"","knowledge":null,"category":null,"done":false,"myanswer":{"1":""},"sort2":1},{"question_id":"3609747","question_type":"4","question_channel_type":"28","question_status":"1","chid":"2","xd":"1","parent_id":"3579322","is_objective":"0","difficult_index":"3","master_level":"4","exam_type":"2","evaluated":"0","region_ids":"","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"1","kid_num":"2","paperid":null,"save_num":"0","oldqid":"0","paper":null,"extra_file":"","question_text":"瓶子里的水<u>渐渐</u>升高了，乌鸦就喝着水了。<br/>渐渐——<input type=\"text\" placeholder=\"1\" ms-duplex-string =\"child.myanswer[1]\" class=\"cke_questions_blankInput\" />","options":"","knowledge":null,"category":null,"done":false,"myanswer":{"1":""},"sort2":2}],"extra_file":"","question_text":"照样子，写句子。","options":"{\"A\":\"\"}","knowledge":{"18965":{"kid":"18965","name":"乌鸦喝水"},"4612":{"kid":"4612","name":"句子排序、仿写"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":2,"subScore":[1,1]},"sort":9,"sort2":9},{"question_id":"3579325","question_type":"7","question_channel_type":"28","question_status":"2","chid":"2","xd":"1","parent_id":"0","is_objective":"1","difficult_index":"1","master_level":"1","exam_type":"2","evaluated":"0","region_ids":"0","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"3","kid_num":"2","paperid":"151629","save_num":"23","oldqid":"0","paper":{"pid":"151629","title":"苏教版小学语文一年级下册 第六单元 24 乌鸦喝水 同步练习"},"list":[{"question_id":"3609750","question_type":"4","question_channel_type":"28","question_status":"0","chid":"2","xd":"1","parent_id":"3579325","is_objective":"0","difficult_index":"1","master_level":"1","exam_type":"2","evaluated":"0","region_ids":"","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"1","kid_num":"2","paperid":null,"save_num":"0","oldqid":"0","paper":null,"extra_file":"","question_text":"一只乌鸦<input type=\"text\" placeholder=\"1\" ms-duplex-string =\"child.myanswer[1]\" class=\"cke_questions_blankInput\" />了 ，<input type=\"text\" placeholder=\"2\" ms-duplex-string =\"child.myanswer[2]\" class=\"cke_questions_blankInput\" />找水喝。","options":"","knowledge":null,"category":null,"done":false,"myanswer":{"1":"","2":""},"sort2":1},{"question_id":"3609751","question_type":"4","question_channel_type":"28","question_status":"0","chid":"2","xd":"1","parent_id":"3579325","is_objective":"0","difficult_index":"1","master_level":"1","exam_type":"2","evaluated":"0","region_ids":"","grade_id":"1","question_source":"苏教版小学语文一年级下册课文38 乌鸦喝水 同步练习","mode":"1","kid_num":"2","paperid":null,"save_num":"0","oldqid":"0","paper":null,"extra_file":"","question_text":"乌鸦看见旁边有许多<input type=\"text\" placeholder=\"1\" ms-duplex-string =\"child.myanswer[1]\" class=\"cke_questions_blankInput\" /> ，<input type=\"text\" placeholder=\"2\" ms-duplex-string =\"child.myanswer[2]\" class=\"cke_questions_blankInput\" />想出<input type=\"text\" placeholder=\"3\" ms-duplex-string =\"child.myanswer[3]\" class=\"cke_questions_blankInput\" />来了。","options":"","knowledge":null,"category":null,"done":false,"myanswer":{"1":"","2":"","3":""},"sort2":2}],"extra_file":"","question_text":"根据课文内容填空。","options":"{\"A\":\"\"}","knowledge":{"18965":{"kid":"18965","name":"乌鸦喝水"},"4617":{"kid":"4617","name":"课文内容理解"}},"category":null,"is_collect":false,"done":false,"myanswer":"","score":{"score":5,"subScore":[2,3]},"sort":11,"sort2":10}],"scores":[]}];
-        var is_clean = 0;
-        $("a[href!='/logout']").click(function(){
-            window.location.replace(this.href);
-            return false;
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script src="/js/x.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("[data-edit]").click(function () {
+                var ob = $(this);
+                var name = ob.attr("data-edit");
+                var text = ob.html().replace(/<br>/g, "\n");
+                x.input(name, function (t) {
+                    ob.html(t.trim().replace(/\n/g, "<br/>"));
+                }, 2, true, text);
+            });
+            $("#J_PaperSetCheck li .checkbox").click(function () {
+                var sw = $(this);
+                sw.toggleClass("checked");
+                $("[data-paperset='" + sw.attr("data-sw") + "']")[sw.hasClass("checked") ? "show" : "hide"]();
+            });
+            update();
         });
+        function update() {
+            var ques = $(".paper-question")
+            var ct = ques.size();
+
+            var score = 0;
+            var easy = 0;
+            ques.each(function () { score += parseInt($(this).find("[data-score]").attr("data-score")); if ($(this).attr("data-easy") == "3") easy++; });
+
+            $(".club-summary .t2 strong").text(ct);
+            $(".club-summary .t1 strong").text(score);
+        }
     </script>
 
     <a class="return" href="javascript:;" style="right: 4.5px; display: none;"><i class="icona-top"></i></a>

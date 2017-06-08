@@ -135,7 +135,6 @@
                 if (d.page == i) pb.append('<li><a title="第' + i + '页" class="btn btn-primary"  i="' + i + '">' + i + '</a></li>');
                 else pb.append('<li><a title="第' + i + '页" class="btn"  i="' + i + '">' + i + '</a></li>');
             }
-
             if (d.page < pc) pb.append('<li><a title="下一页" class="btn"  i="' + (d.page + 1) + '">下一页<i class="icon-angle-right"></i></a></li>');
         }
     }

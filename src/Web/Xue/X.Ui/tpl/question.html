@@ -3,27 +3,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>手动组卷 - $cfg.name</title>
+    <link rel="stylesheet" href="/plug/bs/v2.3.2.css" />
     <link rel="stylesheet" href="/css/xx/my.css" />
     <link rel="stylesheet" href="/css/xx/base.min.css" />
     <link rel="stylesheet" href="/css/xx/spriter-mix.min.css" />
     <link rel="stylesheet" href="/css/xx/main.min.css" />
     <link rel="stylesheet" href="/css/xx/manual.min.css" />
     <link rel="stylesheet" href="/css/x.dialog.css" />
-
     <script type="text/javascript">
         window.OT2 = {}; // 全局命名空间
-        OT2.AboveIE9 = true; // 默认非iE或IE9及以上
-        OT2.ns = function (name) {
-            var container = OT2;
-            var parts = name.split('.');
-            var current = '';
-            if (parts[0] == 'OT2') parts.shift();
-            while (current = parts.shift()) {
-                if (!container[current]) container[current] = {};
-                container = container[current];
-            }
-            return container;
-        };
     </script>
     <script type="text/javascript" src="/js/xx/jquery.min.js"></script>
     <script type="text/javascript" src="/js/xx/underscore-min.js"></script>
@@ -33,10 +21,11 @@
         #div_copy { position: absolute; overflow: hidden; top: 500px; }
         .move { -webkit-transition: left 5s ease; transition: left 5s ease; left: 1000px; }
         .baskrt-list { max-height: 220px; overflow-y: auto; padding-bottom: 20px; }
+        .breadcrumb { padding: initial; background-color: transparent; }
     </style>
 </head>
 <body>
-    #parse("_head.html");
+    #parse("_top.html");
     <div class="breadcrumb g-container"> <i class="icona-dingwei"></i>当前位置： <a href="#">首页</a> <b>&gt;</b> <a href="#">$sbname</a> </div>
     #if($lt==1)
     <div class="search-type d-search-type g-container">
@@ -223,29 +212,9 @@
                 <div class="basket-head"> 共计：（<span>0</span>）道题 </div>
                 <div class="baskrt-list"></div>
             </div>
-            <div class="basket-foot"> <a id="to-paper-admin-edit" data-method="post" class="basket-btn" href="http://zujuan.21cnjy.com/paper/admin-edit" style="display: none">编辑</a> <a id="to-paper-edit" data-method="post" class="basket-btn" href="http://zujuan.21cnjy.com/paper/edit" style="">生成试卷</a> <a id="to-paper-admin-cancel" class="basket-btn" href="http://zujuan.21cnjy.com/question" style="display: none">取消</a> </div>
+            <div class="basket-foot"> <a id="to-paper-edit" data-method="post" class="basket-btn" href="/paper/edit.html" style="">生成试卷</a> <a id="to-paper-admin-cancel" class="basket-btn" href="http://zujuan.21cnjy.com/question" style="display: none">取消</a> </div>
         </div>
     </div>
-
-    <!--<div id="div_copy" class="">
-        <li data-qid="3356238">
-            <div class="search-exam">
-                <div class="exam-head">
-                    <p class="exam-head-left"> <span>题型：单选题</span><i class="line"></i> <span>题类：模拟题</span><i class="line"></i> <span>难易度：普通</span> </p>
-                    <p class="exam-head-right"> <span></span> </p>
-                </div>
-                <div class="exam-con">
-                    <div class="exam-q">
-                        <p>qwerqwerq</p>
-                    </div>
-                </div>
-                <div class="exam-foot">
-                    <p class="exam-foot-left"> <a target="_blank" href="http://zujuan.21cnjy.com/question/detail/3356238"><i class="icona-jiexi"></i>查看解析</a> <a href="javascript:;" onclick="OT2.QCollect(this, 3356238 )"><i class="icona-shoucang"></i>收藏</a> <a href="javascript:;" onclick="new OT2.ErrorReport( 3356238 )"><i class="icona-jiucuo"></i>纠错</a> </p>
-                    <p class="exam-foot-right"> <span>组卷次数：0次</span> <a class="addbtn J_AddQuestion" href="javascript:;"><b>+</b>选题</a> </p>
-                </div>
-            </div>
-        </li>
-    </div>-->
 
     <script src="/js/xx/global.min.js"></script>
     <script src="/js/x.js"></script>
@@ -325,7 +294,6 @@
                 for (var i in d.items) {
                     var r = d.items[i];
                     var ct = cart[r.tp] || [];
-                    console.log(ct);
                     cot.append('<li data-qid="' + r.id + '" data-tp="' + r.tp + '"><div class="search-exam"><div class="exam-head"><p class="exam-head-left"> <span>题型：' + r.tp + '</span><i class="line"></i> <span>题类：' + r.ty + '</span><i class="line"></i> <span>难易度：' + r.ey + '</span> </p><p class="exam-head-right"> <span></span> </p></div><div class="exam-con"><div class="exam-q">' + r.content + '</div></div><div class="exam-foot"><p class="exam-foot-left"> <a target="_blank" href="http://zujuan.21cnjy.com/question/detail/3356238"><i class="icona-jiexi"></i>查看解析</a> <a href="javascript:;" onclick="OT2.QCollect(this, 3356238 )"><i class="icona-shoucang"></i>收藏</a> </p><p class="exam-foot-right"> <span>组卷次数：' + r.hits + '次</span> <a class="' + (ct.indexOf(r.id + "") < 0 ? "addbtn" : "removebtn") + ' J_AddQuestion" href="javascript:;">' + (ct.indexOf(r.id + "") < 0 ? '<b>+</b> 选题' : "<b>-</b> 移除") + '</a> </p></div></div></li>');
                 }
                 createPage(d.count);
