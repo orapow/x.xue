@@ -120,3 +120,105 @@ NVelocity.Exception.ParseErrorException: Lexical error: NVelocity.Runtime.Parser
    --- 内部异常堆栈跟踪的结尾 ---
    在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
    在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-06 14:48:00,677 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"未知错误代码(T用户Key为空)","code":"T用户Key为空"} 
+时间：325 
+
+时间：2017-06-06 14:48:13,172 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:35) - 
+错误：无效的 URI: 未能确定 URI 的格式。 
+时间：12820 
+System.UriFormatException: 无效的 URI: 未能确定 URI 的格式。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.Net.WebRequest.Create(String requestUriString)
+   在 X.Core.Utility.Tools.PostHttpData(String url, String data, String mothod, String cert, String pwd) 位置 D:\Pro\x.xue\src\Xc\Core\Utility\Tools.cs:行号 202
+
+时间：2017-06-06 14:48:13,190 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：12838 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Views.login.InitView() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\login.cs:行号 29
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 94
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-06 14:48:38,075 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:35) - 
+错误：无效的 URI: 未能确定 URI 的格式。 
+时间：139 
+System.UriFormatException: 无效的 URI: 未能确定 URI 的格式。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.Net.WebRequest.Create(String requestUriString)
+   在 X.Core.Utility.Tools.PostHttpData(String url, String data, String mothod, String cert, String pwd) 位置 D:\Pro\x.xue\src\Xc\Core\Utility\Tools.cs:行号 202
+
+时间：2017-06-06 14:48:38,250 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
+时间：314 
+
+时间：2017-06-06 14:50:37,509 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:35) - 
+错误：无效的 URI: 未能确定 URI 的格式。 
+时间：119572 
+System.UriFormatException: 无效的 URI: 未能确定 URI 的格式。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.Net.WebRequest.Create(String requestUriString)
+   在 X.Core.Utility.Tools.PostHttpData(String url, String data, String mothod, String cert, String pwd) 位置 D:\Pro\x.xue\src\Xc\Core\Utility\Tools.cs:行号 202
+
+时间：2017-06-06 14:50:37,512 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
+时间：119575 
+
+时间：2017-06-06 14:51:10,902 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：152965 
+System.ArgumentNullException: 值不能为 null。
+参数名: key
+   在 System.Web.Caching.CacheKey..ctor(String key, Boolean isPublic)
+   在 System.Web.Caching.AspNetCache.Get(String key)
+   在 System.Web.Caching.Cache.Get(String key)
+   在 X.Core.Cache.WebCache.Get[T](String key) 位置 D:\Pro\x.xue\src\Xc\Core\Cache\WebCache.cs:行号 33
+   在 X.Core.Cache.CacheHelper.Get[T](String key) 位置 D:\Pro\x.xue\src\Xc\Core\Cache\CacheHelper.cs:行号 47
+   在 X.App.Views._web.InitView() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:行号 24
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 94
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-06 14:51:14,605 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：156669 
+System.ArgumentNullException: 值不能为 null。
+参数名: key
+   在 System.Web.Caching.CacheKey..ctor(String key, Boolean isPublic)
+   在 System.Web.Caching.AspNetCache.Get(String key)
+   在 System.Web.Caching.Cache.Get(String key)
+   在 X.Core.Cache.WebCache.Get[T](String key) 位置 D:\Pro\x.xue\src\Xc\Core\Cache\WebCache.cs:行号 33
+   在 X.Core.Cache.CacheHelper.Get[T](String key) 位置 D:\Pro\x.xue\src\Xc\Core\Cache\CacheHelper.cs:行号 47
+   在 X.App.Views._web.InitView() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:行号 24
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 94
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31

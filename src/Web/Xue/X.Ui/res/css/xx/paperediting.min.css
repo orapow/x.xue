@@ -81,7 +81,7 @@ a.download-btn { background: #009e9d; height: 35px; line-height: 35px; padding: 
 .download-btn i { margin-right: 5px }
 .download-btn:hover { background: #009e9d; color: #fff!important }
 .editcon { padding: 10px; font-size: 14px; color: #333 }
-.editcon-silder { width: 50px; background: url(../images/editing.png) 20px 180px no-repeat; border-right: 1px dashed #dcdcdc }
+.editcon-silder { width: 50px; background: url(/img/xx/editing.png) 20px 180px no-repeat; border-right: 1px dashed #dcdcdc }
 .editcon h1 { height: 50px; line-height: 50px }
 .editcon h1>span { line-height: 50px; font-size: 18px; color: #333 }
 .editcon h2 { margin-top: 8px; font-size: 16px; color: #333 }

@@ -97,17 +97,17 @@ var x = (function ($) {
                 if (days >= 0) {
                     var exp = new Date();
                     exp.setTime(exp.getTime() + days * 24 * 60 * 60 * 1000);
-                    document.cookie = name + "=" + encodeURIComponent(value) + ";expires=" + exp.toGMTString() + ";path=/";
+                    document.cookie = name + "=" + encodeURI(value) + ";expires=" + exp.toGMTString() + ";path=/";
                 }
                 else {
-                    document.cookie = name + "=" + encodeURIComponent(value) + ";path=/";
+                    document.cookie = name + "=" + encodeURI(value) + ";path=/";
                 }
             },
             get: function (name) {
                 var arrStr = document.cookie.split("; ");
                 for (var i = 0; i < arrStr.length; i++) {
                     var temp = arrStr[i].split("=");
-                    if (temp[0] == name) return unescape(temp[1]);
+                    if (temp[0] == name) return decodeURI(temp[1]);
                 }
             },
             del: function (names) {
