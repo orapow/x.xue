@@ -22,6 +22,7 @@ namespace X.App.Views.mgr.question
             if (id > 0)
             {
                 var q = DB.x_question.FirstOrDefault(o => o.question_id == id);
+                
                 dict.Add("item", q);
                 dict.Add("sub", q.subject + "|" + GetDictName("xx.subject", q.subject));
                 dict.Add("bk", q.book + "|" + GetDictName("xx.book", q.book));

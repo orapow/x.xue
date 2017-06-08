@@ -14,7 +14,7 @@
             <x:pick tip="题型" src="dict:question.topic" name="tp" count="1" />
             <x:pick tip="题类" src="dict:question.type" name="ty" count="1" />
             <x:pick tip="难易度" src="dict:question.easy" name="ey" count="1" />
-            <x:text title="搜索：来源、内容" name="key" size="4"/>
+            <x:text title="搜索：来源、内容" name="key" size="4" />
             <button type="submit" class="btn btn-primary"><i class="icon-search"></i>搜索</button>
             <button type="reset" class="btn"><i class="icon-remove"></i>清除</button>
             <div class="btns">
@@ -48,8 +48,10 @@
                 { t: "入库时间", f: "{ctime}", w: 100, align: "center" },
             ],
             btns: [
-                { txt: "编辑", ico: "edit", link: "edit-{id}.html", confirm: false },
-                { txt: "删除", ico: "remove", act: "del" }
+                { txt: "编辑", ico: "edit", link: "edit-{qid}.html", confirm: false },
+                { txt: "删除", ico: "remove", act: "del" },
+                //{ txt: "答案与解析", ico: "edit", link: "/mgr/answer/list-{qid}.html", confirm: false }
+                { txt: "答案与解析", ico: "edit", act: "answer", confirm: false }
             ]
         };
 
@@ -58,8 +60,8 @@
                 case "del":
                     dodel(d.value);
                     break;
-                case "edit":
-                    show_edit(d.value);
+                case "answer":
+                    show_answer(d.qid);
                     break;
             }
         };
@@ -70,6 +72,13 @@
             x.doapi("mgr.question.del", { id: id, }, function () {
                 g.getlist();
             });
+        }
+
+        function show_answer(id) {
+            x.openwin("/mgr/answer/list-"+(id)+".html","答案与解析", function () {
+                g.getlist()
+            }, { w: 600, h: 400 });
+
         }
 
     </script>

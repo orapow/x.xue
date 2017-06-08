@@ -28,6 +28,7 @@
             <x:pick title="难易度" src="dict:question.easy" name="easy" count="1" def="$!item.easy" />
         </x:row>
         <x:pick title="知识点" src="url:/mgr/knowledge/select-{p}.html" name="kg" count="5" def="$!kg" no="1" />
+        <x:text title="分数" name="score" size="4" def="$!item.score" />
         <x:text title="题目" name="name" size="6" def="$!item.title" tp="3" chk="no" />
         <x:text title="来源" name="src" size="4" def="$!item.src" />
         <div class="btns">
@@ -51,6 +52,7 @@
                             $("[name='kg']").attr("x-val", "").find("span").text("请选择");
                             $("#id_kgs").val("");
                             $("#id_src").val("");
+                            $("#id_score").val("")
                             ue_name.setContent("");
                         } catch (e) { }
                     }, function () {
