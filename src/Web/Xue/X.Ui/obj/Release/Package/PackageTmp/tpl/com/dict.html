@@ -14,7 +14,11 @@
 #end
 #else
 #foreach($c in $dict)
+#if($c.value=="0000")
+<span class="btn pick-item" x-val="$!c.value" data-data='$!c.data' disable="disabel">$c.name</span>
+#else
 <span class="btn pick-item" x-val="$!c.value" data-data='$!c.data'>$c.name</span>
+#end
 #end
 #end
 #if(!$dict||$dict.Count==0)

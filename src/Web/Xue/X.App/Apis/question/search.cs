@@ -70,7 +70,7 @@ namespace X.App.Apis.question
                 id = o.question_id
             }).ToList();
 
-            r.count = 0;
+            r.count = q.Count();
             return r;
         }
 

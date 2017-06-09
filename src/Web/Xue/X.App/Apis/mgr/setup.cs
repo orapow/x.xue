@@ -25,60 +25,67 @@ namespace X.App.Apis.mgr
         /// 系统名称
         /// </summary>
         public string name { get; set; }//网站名
-        public string tel { get; set; }
-        /// <summary>
-        /// 缓存设置
-        /// 1、memcached
-        /// 2、WebCached
-        /// </summary>
-        public int cache { get; set; }
 
         /// <summary>
         /// 支付方式
         /// </summary>
         public string pay_ways { get; set; }//
-        public int chg_audit { get; set; }
-
-        public int credit { get; set; }//会员设置积分价值
-        public int max_deposit { get; set; }//最大充值金额
-
-        public int min_deposit { get; set; }//最少充值金额
-        public int shipfee { get; set; }//每单邮费
-        public int free_ship { get; set; }//包邮
 
         public string wx_appid { get; set; }//
         public string wx_scr { get; set; }//
         public string wx_mch_id { get; set; }//
-        /// <summary>
-        /// 微信证书路径
-        /// </summary>
-        public string wx_certpath { get; set; }//
-        public string wx_paykey { get; set; }//
 
+        public string ap_appid { get; set; }//
+        public string ap_scr { get; set; }//
+        public string ap_mch_id { get; set; }//
+
+        /// <summary>
+        /// 包月价格
+        /// </summary>
+        public decimal month_price { get; set; }
+        /// <summary>
+        /// 半年价格
+        /// </summary>
+        public decimal half_price { get; set; }
+        /// <summary>
+        /// 包年价格
+        /// </summary>
+        public decimal year_price { get; set; }
+        /// <summary>
+        /// 单次价格
+        /// </summary>
+        public decimal down_price { get; set; }
+        /// <summary>
+        /// vip组卷试题限额
+        /// </summary>
+        public int vip_ques_count { get; set; }
+        /// <summary>
+        /// 非vip组卷试题限额
+        /// </summary>
+        public int unvip_ques_count { get; set; }
 
         protected override Web.Com.XResp Execute()
         {
-            if (max_deposit < min_deposit) throw new XExcep("0x0036");
             cfg = Config.LoadConfig();
             cfg.domain = domain;
             cfg.name = name;
 
-            cfg.chg_audit = chg_audit;
-            cfg.svr_tel = tel;
+            cfg.ap_appid = ap_appid;
+            cfg.ap_mch_id = ap_mch_id;
+            cfg.ap_scr = ap_scr;
+            cfg.domain = domain;
+            cfg.down_price = down_price;
+            cfg.half_price = half_price;
+            cfg.month_price = month_price;
+            cfg.name = name;
             cfg.pay_ways = pay_ways;
-            cfg.credit = credit;
-            cfg.min_deposit = min_deposit;
-            cfg.max_deposit = max_deposit;
-
-
+            cfg.unvip_ques_count = unvip_ques_count;
+            cfg.vip_ques_count = vip_ques_count;
             cfg.wx_appid = wx_appid;
-            cfg.wx_certpath = wx_certpath;
             cfg.wx_mch_id = wx_mch_id;
-            cfg.wx_paykey = wx_paykey;
             cfg.wx_scr = wx_scr;
+            cfg.year_price = year_price;
 
-            cfg.shipfee = shipfee;
-            cfg.free_ship = free_ship;
             Config.SaveConfig(cfg);
             return new XResp();
         }

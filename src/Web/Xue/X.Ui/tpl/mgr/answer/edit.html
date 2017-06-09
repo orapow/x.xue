@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    #parse("mgr/com/_head.html")
+    <title>答案与解析 - $cfg.name</title>
+    <link href="/plug/um/themes/default/css/umeditor.min.css" rel="stylesheet" />
+    <script src="/plug/um/umeditor.question.config.js"></script>
+    <script src="/plug/um/umeditor.min.js"></script>
+
+    <style type="text/css">
+        #id_name { width: 800px; }
+        .edui-container { display: inline-block; vertical-align: top; }
+        .question { border: 2px solid #3086c8; border-radius: 5px; padding: 5px 15px; margin-bottom: 20px; max-height: 80px; overflow-y: auto; }
+    </style>
+</head>
+<body>
+    <x:form api="mgr.answer.save">
+        <input type="hidden" name="qid" value="$!que.question_id" x-check="" />
+        <input type="hidden" name="aid" value="$!items.answer_id" x-check="" />
+        <div class="question">$!shiti</div>
+        <x:text title="序号" name="no" size="1" def="$!items.no" />
+
+        <x:text title="答案" name="result" size="4" def="$!items.result" chk="no" />
+        <x:text title="解析" name="remark" size="6" def="$!items.remark" tp="3" />
+
+        <div class="btns">
+            <button type="submit" class="btn btn-primary"><i class="icon-ok"></i>提交保存</button>
+        </div>
+    </x:form>
+    <br />
+    <br />
+    <script type="text/javascript">
+
+        var ue_name = UM.getEditor('id_remark', { initialFrameHeight: 100, initialFrameWidth: 400 });
+
+        $(function () {
+            $("form:eq(0)").xform({
+                callback: function (d) {
+                    if (!d.issucc) return;
+                    if ("$!aid") { document.location.href = "list-$!{que.question_id}.html"; return; }
+
+                    x.confirm("是否继续添加", function () {
+                        try {
+                            $("#id_no").val("");
+                            $("#id_result").val("");
+                            ue_name.setContent("");
+                        } catch (e) { }
+                    }, function () {
+                        document.location.href = "list-$!{que.question_id}.html";
+                    });
+                }
+            })
+
+
+
+        })
+
+
+    </script>
+
+</body>
+</html>

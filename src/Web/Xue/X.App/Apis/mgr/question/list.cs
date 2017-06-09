@@ -34,7 +34,7 @@ namespace X.App.Apis.mgr.question
             r.count = q.Count();
             r.items = list.ToList().Select(o => new
             {
-                id = o.question_id,
+                qid = o.question_id,
                 sub = getSub(o.subject.Value),
                 bk = GetDictName("xx.book", o.book),
                 cp = GetDictName("xx.chapter", o.chapter),
@@ -42,6 +42,7 @@ namespace X.App.Apis.mgr.question
                 ty = GetDictName("question.type", o.type),
                 ey = GetDictName("question.easy", o.easy),
                 title = Context.Server.HtmlDecode(o.title),
+                score=o.score,
                 kg = GetDictName("xx.knowledge", o.knowledge),
                 ctime = o.ctime.Value.ToString("yy-MM-dd HH:mm")
             });

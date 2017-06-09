@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aliyun.MNS">
-      <HintPath>..\..\..\..\libs\Aliyun.MNS.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
@@ -42,6 +39,9 @@
   <ItemGroup>
     <Compile Include="Apis\com\sendcode.cs" />
     <Compile Include="Apis\com\uploadbd.cs" />
+    <Compile Include="Apis\mgr\answer\del.cs" />
+    <Compile Include="Apis\mgr\answer\list.cs" />
+    <Compile Include="Apis\mgr\answer\save.cs" />
     <Compile Include="Apis\mgr\knowlege\del.cs" />
     <Compile Include="Apis\mgr\knowlege\list.cs" />
     <Compile Include="Apis\mgr\knowlege\save.cs" />
@@ -64,19 +64,24 @@
     <Compile Include="Apis\com\upload.cs" />
     <Compile Include="Apis\mgr\login.cs" />
     <Compile Include="Apis\mgr\logout.cs" />
+    <Compile Include="Apis\paper\save.cs" />
     <Compile Include="Apis\question\search.cs" />
     <Compile Include="Apis\xapi.cs" />
     <Compile Include="Com\Config.cs" />
-    <Compile Include="Com\Sms.cs" />
+    <Compile Include="Com\Sdk.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="Views\com\err.cs" />
     <Compile Include="Views\com\code.cs" />
     <Compile Include="Views\com\dict.cs" />
     <Compile Include="Views\com\getpos.cs" />
     <Compile Include="Views\down.cs" />
+    <Compile Include="Views\login.cs" />
     <Compile Include="Views\mgr\admin\edit.cs" />
     <Compile Include="Views\mgr\admin\list.cs" />
+    <Compile Include="Views\mgr\answer\edit.cs" />
+    <Compile Include="Views\mgr\answer\list.cs" />
     <Compile Include="Views\mgr\chapter\choose.cs" />
+    <Compile Include="Views\mgr\err.cs" />
     <Compile Include="Views\mgr\knowlege\edit.cs" />
     <Compile Include="Views\mgr\knowlege\list.cs" />
     <Compile Include="Views\mgr\knowlege\select.cs" />
@@ -94,6 +99,8 @@
     <Compile Include="Views\mgr\subject\edit.cs" />
     <Compile Include="Views\mgr\subject\list.cs" />
     <Compile Include="Views\mgr\subject\select.cs" />
+    <Compile Include="Views\paper\create.cs" />
+    <Compile Include="Views\paper\edit.cs" />
     <Compile Include="Views\question.cs" />
     <Compile Include="Views\xview.cs" />
     <Compile Include="Views\com\view.cs" />

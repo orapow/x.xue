@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>试卷编辑</title>
+    <link rel="stylesheet" href="/plug/bs/v2.3.2.css" />
+    <link rel="stylesheet" href="/css/xx/my.css" />
+    <link rel="stylesheet" href="/css/xx/base.min.css" />
+    <link rel="stylesheet" href="/css/xx/spriter-mix.min.css" />
+    <link rel="stylesheet" href="/css/xx/main.min.css" />
+    <link rel="stylesheet" href="/css/xx/manual.min.css" />
+    <link rel="stylesheet" href="/css/xx/inner-user.min.css" />
+    <link rel="stylesheet" href="/css/xx/paperediting.min.css" />
+    <link rel="stylesheet" href="/css/x.dialog.css" />
+
+    <script type="text/javascript">
+        window.OT2 = {}; // 全局命名空间
+    </script>
+
+    <script type="text/javascript" src="/js/xx/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/xx/underscore-min.js"></script>
+    <script type="text/javascript" src="/js/xx/util.min.js"></script>
+    <style type="text/css">
+        .breadcrumb { padding: initial; background-color: transparent; }
+        .editset-type .btn { padding: 0; }
+        .question-num p { display: inline; }
+    </style>
+
+</head>
+
+<body>
+    #parse("_top.html");
+    <div class="breadcrumb g-container"> <i class="icona-dingwei"></i>当前位置： <a href="#">首页</a> <b>&gt;</b> <a href="#">$sbname</a> </div>
+    <div class="g-bd1 g-container f-cb" id="J_PaperLayout">
+        <div class="g-sd1">
+            <div class="editset f-usn" onselectstart="return false">
+                <h3>试卷结构调整</h3>
+                <div id="sd-set-wire">
+                    <div class="check-group">
+                        <ul id="J_PaperSetCheck">
+                            <!--<li>
+                                <span class="checkbox">
+                                    <i class="icona-check"></i>
+                                    <input type="checkbox" name="" value="1" style="display: none;" />
+                                    密封线
+                                </span>
+                            </li>-->
+                            <li>
+                                <span class="checkbox  checked" data-sw="3">
+                                    <i class="icona-check"></i>
+                                    主标题
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="checkbox" data-sw="5">
+                                    <i class="icona-check"></i>
+                                    副标题
+                                </span>
+                            </li>
+                            <li>
+                                <span class="checkbox" data-sw="4">
+                                    <i class="icona-check"></i>
+                                    注意事项
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="checkbox" data-sw="7">
+                                    <i class="icona-check"></i>
+                                    考试时间
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="checkbox" data-sw="9">
+                                    <i class="icona-check"></i>
+                                    考生填写
+                                </span>
+                            </li>
+                            <li>
+                                <span class="checkbox" data-sw="11">
+                                    <i class="icona-check"></i>
+                                    总评分
+                                </span>
+                            </li>
+                            <li>
+                                <span class="checkbox  checked" data-sw="10">
+                                    <i class="icona-check"></i>
+                                    分大题
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="checkbox checked" data-sw="2">
+                                    <i class="icona-check"></i>
+                                    大题评分区
+                                </span>
+                            </li>
+                            <li>
+                                <span class="checkbox  checked" data-sw="12">
+                                    <i class="icona-check"></i>
+                                    大题注释
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>试题统计</h3>
+                <div class="editset-type">
+                    <div id="J_PaperTypes" class="overflow">
+                        <div class="paper-club">
+                            <div class="club-summary f-cb">
+                                <div class="t1">分数：<strong>0分</strong></div>
+                                <div class="w"><span class="t2">题数：<strong></strong></span></div>
+                                <div class="t3">难度：<strong>困难</strong></div>
+                            </div>
+                            <div class="club-type-wrap">
+
+                                <div class="club-type-wire drag-wire" _cid="type_1" data-typename="判断题">
+                                    <div class="club-type">
+                                        <div class="club-hd f-cb">
+                                            <span class="f-fl" title="判断题">一、判断题</span>
+                                            <div class="f-fr">
+                                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('type_1')">排序</a>
+                                                <a href="javascript:;" class="t-del" onclick="paper.deleteQuestions('判断题')">删除</a>
+                                            </div>
+                                        </div>
+                                        <div class="club-grids">
+                                            <div class="f-cb">
+
+                                                <span class="drag-grid" _qid="2775206">1</span>
+
+                                                <span class="drag-grid" _qid="2775207">2</span>
+
+                                                <span class="drag-grid" _qid="2775208">3</span>
+
+                                                <span class="drag-grid" _qid="2775215">4</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="club-type-wire drag-wire" _cid="type_2" data-typename="阅读理解">
+                                    <div class="club-type">
+                                        <div class="club-hd f-cb">
+                                            <span class="f-fl" title="阅读理解">二、阅读理解</span>
+                                            <div class="f-fr">
+                                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('type_2')">排序</a>
+                                                <a href="javascript:;" class="t-del" onclick="paper.deleteQuestions('阅读理解')">删除</a>
+                                            </div>
+                                        </div>
+                                        <div class="club-grids">
+                                            <div class="f-cb">
+                                                <span class="drag-grid" _qid="2775176">5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="club-type-wire drag-wire" _cid="type_3" data-typename="翻译">
+                                    <div class="club-type">
+                                        <div class="club-hd f-cb">
+                                            <span class="f-fl" title="翻译">三、翻译</span>
+                                            <div class="f-fr">
+                                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('type_3')">排序</a>
+                                                <a href="javascript:;" class="t-del" onclick="paper.deleteQuestions('翻译')">删除</a>
+                                            </div>
+                                        </div>
+                                        <div class="club-grids">
+                                            <div class="f-cb">
+
+                                                <span class="drag-grid" _qid="2775186">6</span>
+
+                                                <span class="drag-grid" _qid="2775222">7</span>
+
+                                                <span class="drag-grid" _qid="2775243">8</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="club-type-wire drag-wire" _cid="type_4" data-typename="连词成句">
+                                    <div class="club-type">
+                                        <div class="club-hd f-cb">
+                                            <span class="f-fl" title="连词成句">四、连词成句</span>
+                                            <div class="f-fr">
+                                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('type_4')">排序</a>
+                                                <a href="javascript:;" class="t-del" onclick="paper.deleteQuestions('连词成句')">删除</a>
+                                            </div>
+                                        </div>
+                                        <div class="club-grids">
+                                            <div class="f-cb">
+
+                                                <span class="drag-grid" _qid="2775238">9</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="club-type-wire drag-wire" _cid="type_5" data-typename="填空题">
+                                    <div class="club-type">
+                                        <div class="club-hd f-cb">
+                                            <span class="f-fl" title="填空题">五、填空题</span>
+                                            <div class="f-fr">
+                                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('type_5')">排序</a>
+                                                <a href="javascript:;" class="t-del" onclick="paper.deleteQuestions('填空题')">删除</a>
+                                            </div>
+                                        </div>
+                                        <div class="club-grids">
+                                            <div class="f-cb">
+
+                                                <span class="drag-grid" _qid="3358881">10</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/question/index" class="btn">继续选题</a>
+                    <a href="javascript:;" onclick="paper.addNewType()" class="btn">+自定义题型</a>
+                </div>
+            </div>
+        </div>
+        <div class="g-mn1">
+            <div class="g-mn1c">
+                <div class="editcon">
+                    <div class="test-title">
+                        <h1 data-paperset="3"><span class="contenteditable" data-edit="主标题" id="paper-title">2017年5月17日小学英语试卷</span></h1>
+                        <h2 data-paperset="5" style="display:none;"><span data-edit="副标题" class="contenteditable">英语考试</span></h2>
+                    </div>
+                    <div data-paperset="7" class="test-time" style="display:none;">
+                        <p><span>考试时间：<i class="contenteditable" data-edit="考试时间">60</i> 分钟</span><span>满分：<i class="contenteditable" data-edit="满分值">100</i> 分</span></p>
+                    </div>
+                    <ul data-paperset="9" class="stu-info" style="display:none;">
+                        <li>姓名：<span>____________</span></li>
+                        <li>班级：<span>____________</span></li>
+                        <li>学号：<span>____________</span></li>
+                    </ul>
+                    <div data-paperset="11" class="mark-table" style="display:none;">
+                        <table id="J_PaperScore">
+                            <tbody>
+                                <tr>
+                                    <th width="160">题号</th>
+                                    #foreach($id in $ids)
+                                    <td>$T.GetNum($velocityCount)</td>
+                                    #end
+                                </tr>
+                                <tr>
+                                    <th>评分</th>
+                                    #foreach($id in $ids)
+                                    <td>&nbsp;</td>
+                                    #end
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-paperset="4" class="rule" style="display:none;">
+                        <p>* 注意事项：</p>
+                        <div class="contenteditable" data-edit="注意事项">1、填写答题卡的内容用2B铅笔填写<br />2、提前 xx 分钟收取答题卡</div>
+                    </div>
+                    <div id="J_PaperBody">
+                        #set($no=0)
+                        #foreach($id in $ids)
+                        <div class="paper-part">
+                            <div class="paper-section" _cid="type_1">
+                                #set($ques=$T.GetQues($id))
+                                <div data-paperset="10" class="paper-types">
+                                    <table data-paperset="2">
+                                        <tbody>
+                                            <tr><th>阅卷人</th><td></td></tr>
+                                            <tr><th>得&nbsp;&nbsp;分</th><td></td></tr>
+                                        </tbody>
+                                    </table>
+                                    <p><strong><b class="t-order">$T.GetNum($velocityCount)</b>、<span class="contenteditable" data-edit="type">$id</span><span data-paperset="12">（共<b class="t-num">$ques.Count()</b>题；共<b class="t-score">0</b>分）</span></strong></p>
+                                    <div class="types-btngroup">
+                                        <a class="score-btn J_MultiSetScore" href="javascript:;"><i class="icona-jiexi1"></i>批量设置得分</a>
+                                        <a class="del-btn J_DelQByType" href="javascript:;"><i class="icona-del3"></i>删除</a>
+                                    </div>
+                                </div>
+                                <div class="paper-question-list f-usn" onselectstart="return false">
+                                    #foreach($q in $ques)
+                                    #set($no=$no+1)
+                                    <div class="paper-question f-usn" onselectstart="return false" data-qid="${q.id}" data-easy="$q.easy">
+                                        <div class="question-txt">
+                                            <div class="question-num"><span class="q-sn">$no</span>. <span class="q-scoreval" data-score="0">（0分）</span>$q.topic</div>
+                                        </div>
+                                        <div class="question-btngroup">
+                                            <a target="_blank" href="/question/detail/2775206" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
+                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
+                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 2775206)"><i class="icona-shoucangs"></i>收藏</a>
+                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    #end
+                                </div>
+                            </div>
+                        </div>
+                        #end
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="editfooter">
+        <a href="javascript:;" onclick="paper.showPie()"><i class="icona-fenxi2"></i>试卷分析</a>
+        <a href="javascript:;" onclick="paper.save()"><i class="icona-save2"></i>保存组卷</a>
+        <a href="javascript:;" class="download-btn" onclick="paper.download()"><i class="icona-download1"></i>下载试卷</a>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script src="/js/x.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("[data-edit]").click(function () {
+                var ob = $(this);
+                var name = ob.attr("data-edit");
+                var text = ob.html().replace(/<br>/g, "\n");
+                x.input(name, function (t) {
+                    ob.html(t.trim().replace(/\n/g, "<br/>"));
+                }, 2, true, text);
+            });
+            $("#J_PaperSetCheck li .checkbox").click(function () {
+                var sw = $(this);
+                sw.toggleClass("checked");
+                $("[data-paperset='" + sw.attr("data-sw") + "']")[sw.hasClass("checked") ? "show" : "hide"]();
+            });
+            update();
+        });
+        function update() {
+            var ques = $(".paper-question")
+            var ct = ques.size();
+
+            var score = 0;
+            var easy = 0;
+            ques.each(function () { score += parseInt($(this).find("[data-score]").attr("data-score")); if ($(this).attr("data-easy") == "3") easy++; });
+
+            $(".club-summary .t2 strong").text(ct);
+            $(".club-summary .t1 strong").text(score);
+        }
+    </script>
+
+    <a class="return" href="javascript:;" style="right: 4.5px; display: none;"><i class="icona-top"></i></a>
+</body>
+</html>

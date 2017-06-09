@@ -212,7 +212,6 @@ img { border: 0; vertical-align: top; }
 .exam-foot-right .removebtn { background: #adadad; font-size: 14px; }
 .analyticbox .analyticbox-body, .analyticbox > span, .exam-mynum { line-height: 24px; font-size: 14px; }
 .exam-foot-right .addbtn:hover { background: #018685; }
-.exam-foot-right .removebtn:hover { background: #009e9d; }
 .q-blank { display: inline-block; border-bottom: 1px solid #dedede; color: #ff1c1c; vertical-align: baseline; }
 .analyticbox > span { font-weight: 700; color: #000; position: relative; float: left; }
 .analyticbox .analyticbox-body { color: #333; margin-left: 60px; padding-bottom: 20px; }

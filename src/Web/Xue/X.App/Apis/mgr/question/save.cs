@@ -24,6 +24,7 @@ namespace X.App.Apis.mgr.question
         public string kg { get; set; }
         public string name { get; set; }
         public string src { get; set; }
+        public int score { get;set;  }
 
         protected override XResp Execute()
         {
@@ -47,6 +48,8 @@ namespace X.App.Apis.mgr.question
             que.title = name;
             que.topic = topic;
             que.type = type;
+            que.score = score;
+            
 
             if (id == 0) DB.x_question.InsertOnSubmit(que);
             SubmitDBChanges();
