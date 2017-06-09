@@ -1,0 +1,268 @@
+
+时间：2017-06-09 09:21:00,831 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35833 
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 X.App.Views.mgr.dict.edit.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:行号 30
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-09 09:21:10,834 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：45836 
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 X.App.Views.mgr.dict.edit.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:行号 30
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-09 09:21:14,574 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：49576 
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 X.App.Views.mgr.dict.edit.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:行号 30
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-09 09:21:53,391 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：88393 
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 X.App.Views.mgr.dict.edit.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:行号 30
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-09 09:21:55,819 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：90821 
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 X.App.Views.mgr.dict.edit.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:行号 30
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-09 09:21:58,249 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：93251 
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 X.App.Views.mgr.dict.edit.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:行号 30
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-09 09:26:11,651 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：25993 
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 X.App.Views.mgr.dict.edit.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:行号 31
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-09 10:01:21,221 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":" ","code":"0x0012"} 
+时间：2071046 
+
+时间：2017-06-09 10:01:25,049 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":" ","code":"0x0012"} 
+时间：2074873 
+
+时间：2017-06-09 10:12:42,990 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":" ","code":"0x0012"} 
+时间：92942 
+
+时间：2017-06-09 10:14:45,519 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":" ","code":"0x0005"} 
+时间：215471 
+
+时间：2017-06-09 10:14:57,245 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":" ","code":"0x0005"} 
+时间：227197 
+
+时间：2017-06-09 10:34:24,586 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 名称","code":"0x0003"} 
+时间：956482 
+
+时间：2017-06-09 10:41:19,723 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 名称","code":"0x0003"} 
+时间：1371619 
+
+时间：2017-06-09 10:43:50,904 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 名称","code":"0x0003"} 
+时间：65810 
+
+时间：2017-06-09 10:45:32,457 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 名称","code":"0x0003"} 
+时间：167363 
+
+时间：2017-06-09 10:55:23,760 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 名称","code":"0x0003"} 
+时间：408433 
+
+时间：2017-06-09 11:26:32,999 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 名称","code":"0x0003"} 
+时间：1661922 
+
+时间：2017-06-09 12:08:06,308 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 名称","code":"0x0003"} 
+时间：4155230 
+
+时间：2017-06-09 12:08:08,514 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 名称","code":"0x0003"} 
+时间：4157436 
+
+时间：2017-06-09 13:26:52,714 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：5309 
+System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 System.String.IndexOf(String value, Int32 startIndex, Int32 count, StringComparison comparisonType)
+   在 System.String.Contains(String value)
+   在 X.App.Apis.mgr.dict.list.<Execute>b__20_1(x_dict o) 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\dict\list.cs:行号 28
+   在 System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   在 System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   在 X.App.Apis.mgr.dict.list.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\dict\list.cs:行号 31
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-09 13:26:59,209 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：11805 
+System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 System.String.IndexOf(String value, Int32 startIndex, Int32 count, StringComparison comparisonType)
+   在 System.String.Contains(String value)
+   在 X.App.Apis.mgr.dict.list.<Execute>b__20_1(x_dict o) 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\dict\list.cs:行号 28
+   在 System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   在 System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   在 X.App.Apis.mgr.dict.list.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\dict\list.cs:行号 31
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-09 13:29:14,799 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：2802 
+System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 System.String.IndexOf(String value, Int32 startIndex, Int32 count, StringComparison comparisonType)
+   在 System.String.Contains(String value)
+   在 X.App.Apis.mgr.dict.list.<Execute>b__20_1(x_dict o) 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\dict\list.cs:行号 29
+   在 System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   在 System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   在 X.App.Apis.mgr.dict.list.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\dict\list.cs:行号 32
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-09 13:52:17,520 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":" ","code":"0x0005"} 
+时间：23994 
+
+时间：2017-06-09 14:15:21,959 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":" ","code":"0x0005"} 
+时间：1408433 
+
+时间：2017-06-09 14:15:28,931 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":" ","code":"0x0005"} 
+时间：1415404 
+
+时间：2017-06-09 15:24:03,674 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 名称","code":"0x0003"} 
+时间：5530148 

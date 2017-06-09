@@ -13,9 +13,9 @@
         <x:form>
             <x:text title="搜索：答案、解析" name="key" size="4" />
             <button type="submit" class="btn btn-primary"><i class="icon-search"></i>搜索</button>
-            <button type="reset"  class="btn"><i class="icon-remove"></i>清除</button>
-           <div class="btns">
-               <a class="btn btn-primary" id="btn_add" href="edit-$!{id}.html"><i class="icon-plus"></i>录入答案</a>
+            <button type="reset" class="btn"><i class="icon-remove"></i>清除</button>
+            <div class="btns">
+                <a class="btn btn-primary" id="btn_add" href="edit-$!{id}.html"><i class="icon-plus"></i>录入答案</a>
             </div>
         </x:form>
     </div>
@@ -31,19 +31,17 @@
 
         var cfg = {
             el: ".gridpanel",
-            searchcon: { page: 1, limit: 30,id:"$!id" },
+            searchcon: { page: 1, limit: 30, id: "$!id" },
             api: "mgr.answer.list",
             fs: [
                 { t: "序号", f: "{no}", w: 60 },
                 { t: "答案", f: "{result}", w: 120, align: "left" },
                 { t: "解析", f: "{remark}", w: 200, align: "left" },
-                
-               
+
             ],
             btns: [
                 { txt: "编辑", ico: "edit", link: "edit-{qid}-{aid}.html", confirm: false },
                 { txt: "删除", ico: "remove", act: "del" },
-                
             ]
         };
 

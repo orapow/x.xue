@@ -4,17 +4,18 @@
     #parse("mgr/com/_head.html")
     <title>分类编辑 - $cfg.name</title>
     <style type="text/css">
-        body { margin: 0; }
+        body {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <x:form api="mgr.dict.save">
+        <!--<x:text title="字典" name="code" size="3" def="$!coe.code" />-->
         <input type="hidden" name="id" value="$!item.dict_id" x-check="" />
-        <input type="hidden" name="code" value="$!code" x-check="" />
-        <x:pick title="上级字典" src="url:/mgr/dict/select-$!{code}.html" name="upv" count="1" def="$!up" />
-        <x:upload title="字典图片" name="img" count="1" tp="img" def="$!item.img" />
-        <x:text title="字典名称" name="name" size="3" def="$!item.name" />
-        <x:text title="排序" name="sort" size="3" def="#if($cid>0)$!item.sort#else 99#end" />
+        <input type="text" name="code" value="$!coe.code" x-check="" />
+        <x:text title="字典内容" name="name" size="3" def="$!item.name" />
+        <x:text title="值" name="val" size="3" def="$!item.value" />
         <div class="btns">
             <button type="submit" class="btn btn-primary"><i class="icon-ok"></i>提交保存</button>
         </div>
@@ -22,18 +23,34 @@
     <br />
     <br />
     <script type="text/javascript">
-        $("form:eq(0)").xform({
-            callback: function (d, r) {
-                x.confirm("保存成功，是否继续添加？", function () {
-                    document.location.href = "edit--" + r.upv + ".html";
-                }, function () {
-                    parent.x.closewin();
-                });
-            }
-        });
         $(function () {
-            $("#id_name").focus();
+            $("form:eq(0)").xform({
+
+                callback: function (d) {
+                    if (!d.issucc) return;
+                    var id = $id;
+                    if (id == "" || id == undefined) {
+                        x.confirm("是否继续添加", function () {
+                            $("#id_name").val("");
+                            $("#id_val").val("");
+                        }, function () {
+                            x.closewin();
+                            document.location.href = "list-$!{coe.code}.html";
+                            x.closewin();
+                        });
+                    } else {
+                        //g.getlist();
+                        //var g = x.grid.init();
+                        x.closewin();
+                        document.location.href = "list-$!{coe.code}.html"; return;
+                    }
+                }
+
+            })
+
         })
+
+
     </script>
 </body>
 </html>

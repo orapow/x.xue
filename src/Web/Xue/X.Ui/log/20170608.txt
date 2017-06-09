@@ -41,3 +41,279 @@ System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓ
    ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
 ClientConnectionId:00000000-0000-0000-0000-000000000000
 Error Number:53,State:0,Class:20
+
+Ê±¼ä£º2017-06-08 14:21:27,745 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º216 
+
+Ê±¼ä£º2017-06-08 14:21:29,808 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º2279 
+
+Ê±¼ä£º2017-06-08 14:22:32,055 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º2350 
+
+Ê±¼ä£º2017-06-08 14:23:29,783 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º60077 
+
+Ê±¼ä£º2017-06-08 14:27:48,800 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º319094 
+
+Ê±¼ä£º2017-06-08 14:52:16,296 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º1786591 
+
+Ê±¼ä£º2017-06-08 15:07:07,971 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º2678265 
+
+Ê±¼ä£º2017-06-08 15:07:11,173 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º2681468 
+
+Ê±¼ä£º2017-06-08 15:08:23,106 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı Ãû³Æ","code":"0x0003"} 
+Ê±¼ä£º2753401 
+
+Ê±¼ä£º2017-06-08 15:14:05,139 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º3095433 
+
+Ê±¼ä£º2017-06-08 15:14:20,951 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º3111246 
+
+Ê±¼ä£º2017-06-08 15:15:56,041 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º3206336 
+
+Ê±¼ä£º2017-06-08 15:20:51,701 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º3501996 
+
+Ê±¼ä£º2017-06-08 15:32:54,114 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º2897 
+
+Ê±¼ä£º2017-06-08 15:32:56,525 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º5308 
+
+Ê±¼ä£º2017-06-08 15:33:47,780 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º56563 
+
+Ê±¼ä£º2017-06-08 15:33:50,347 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º59131 
+
+Ê±¼ä£º2017-06-08 15:34:29,502 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º98286 
+
+Ê±¼ä£º2017-06-08 15:34:32,587 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º101371 
+
+Ê±¼ä£º2017-06-08 15:34:45,063 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º113847 
+
+Ê±¼ä£º2017-06-08 15:34:47,011 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º115795 
+
+Ê±¼ä£º2017-06-08 15:34:51,498 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º120282 
+
+Ê±¼ä£º2017-06-08 15:34:54,883 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º123666 
+
+Ê±¼ä£º2017-06-08 16:59:08,075 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":" ","code":"0x0012"} 
+Ê±¼ä£º770684 
+
+Ê±¼ä£º2017-06-08 17:01:58,164 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":" ","code":"0x0012"} 
+Ê±¼ä£º940773 
+
+Ê±¼ä£º2017-06-08 17:13:19,269 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º15258 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.mgr.dict.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:ĞĞºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:15:41,977 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º77385 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.mgr.dict.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:ĞĞºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:15:46,144 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º81552 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.mgr.dict.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:ĞĞºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:17:09,068 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º164476 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.mgr.dict.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:ĞĞºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:21:20,888 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"Î´Öª´íÎó´úÂë(TÓÃ»§KeyÎª¿Õ)","code":"TÓÃ»§KeyÎª¿Õ"} 
+Ê±¼ä£º416296 
+
+Ê±¼ä£º2017-06-08 17:25:39,012 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º674420 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.mgr.dict.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:ĞĞºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:28:42,836 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º858245 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.mgr.dict.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:ĞĞºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:41:37,908 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º382 
+System.ArgumentNullException: Öµ²»ÄÜÎª null¡£
+²ÎÊıÃû: source
+   ÔÚ System.Linq.OrderedEnumerable`2..ctor(IEnumerable`1 source, Func`2 keySelector, IComparer`1 comparer, Boolean descending)
+   ÔÚ System.Linq.Enumerable.OrderBy[TSource,TKey](IEnumerable`1 source, Func`2 keySelector)
+   ÔÚ X.App.Apis.mgr.dict.list.Execute() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\dict\list.cs:ĞĞºÅ 27
+   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Apis\Api.cs:ĞĞºÅ 31
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:41:50,884 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º13358 
+System.ArgumentNullException: Öµ²»ÄÜÎª null¡£
+²ÎÊıÃû: source
+   ÔÚ System.Linq.OrderedEnumerable`2..ctor(IEnumerable`1 source, Func`2 keySelector, IComparer`1 comparer, Boolean descending)
+   ÔÚ System.Linq.Enumerable.OrderBy[TSource,TKey](IEnumerable`1 source, Func`2 keySelector)
+   ÔÚ X.App.Apis.mgr.dict.list.Execute() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\dict\list.cs:ĞĞºÅ 27
+   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Apis\Api.cs:ĞĞºÅ 31
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
