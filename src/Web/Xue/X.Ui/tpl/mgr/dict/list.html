@@ -78,7 +78,6 @@
 
             ],
             btns: [
-               // { txt: "编辑", ico: "edit", link: "edit-{id}.html", confirm: false },
                 { txt: "编辑", ico: "edit", act: "edit", confirm: false },
                 { txt: "删除", ico: "remove", act: "del" },
             ]
@@ -105,9 +104,8 @@
 
         function show_edit(id) {
             var code = $("span.t.on").attr("data-code");
-            //  document.location.href = "edit-" + id + "-" + code + ".html";
             x.openwin("edit-" + id + "-" + code + ".html", "字典新增", function () {
-
+                g.getlist();
             }, { w: 600, h: 400 });
         }
     </script>
@@ -121,7 +119,5 @@
             });
         });
     </script>
-
-
 </body>
 </html>

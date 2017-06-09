@@ -7,22 +7,11 @@ using X.Web.Com;
 
 namespace X.App.Apis.mgr.dict {
     public class list : xmg {
-        public int id {
-            get; set;
-        }
-        public int page {
-            get; set;
-        }
-        public int limit {
-            get; set;
-        }
-        public string key {
-            get; set;
-        }
-        public string code {
-            get;
-            set;
-        }
+        public int id {get; set; }
+        public int page {get; set;}
+        public int limit {get; set;}
+        public string key {get; set;}
+        public string code {get;set;}
         protected override XResp Execute() {
             var q = GetDictList(code, "0").OrderBy(o => o.value).Skip((page - 1) * limit).Take(limit);
             if (!string.IsNullOrEmpty(key))
