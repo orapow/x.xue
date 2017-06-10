@@ -4,76 +4,92 @@
     #parse("mgr/com/_head.html")
     <title>字典管理 - $cfg.name</title>
     <style type="text/css">
-        .cover { width: 80px; }
+        .tab {
+            border-bottom: 1px solid #3086c8;
+            width: 450px;
+        }
+
+            .tab span.t {
+                width: 90px;
+                display: inline-block;
+                line-height: 32px;
+                text-align: center;
+                margin-right: -1px;
+                cursor: pointer;
+            }
+
+        span.t.on {
+            background-color: #3086c8;
+            color: white;
+            border-color: #3086c8;
+        }
+
+        .tb {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .li {
+            margin-bottom: 10px;
+        }
+
+        .row .li {
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
     <div class="title">
-        <span class="main">$!dname</span> - <span class="sub">字典管理</span>
+        <span class="main">字典</span> - <span class="sub">其他字典</span>
+    </div>
+    <div class="tab">
+        <span class="t on" data-code="question.topic">试题题型</span><span class="t" data-code="question.type">试题题类</span><span class="t" data-code="xx.area">地区(省)</span><span class="t" data-code="xx.area">试卷类型</span>
     </div>
     <div class="search">
         <x:form>
-            #if($code=="sys.city")<x:pick src="dict:sys.city:1" name="up" count="1" def="1" />#end<x:text name="key" tip="搜索名称" size="4" />
+            <input type="hidden" name="code" value="" />
+            <x:text title="搜索：字典内容" name="key" size="4" />
             <button type="submit" class="btn btn-primary"><i class="icon-search"></i>搜索</button>
             <button type="reset" class="btn"><i class="icon-remove"></i>清除</button>
             <div class="btns">
-                <a class="btn btn-primary" id="btn_add" onclick="show_edit()"><i class="icon-plus"></i>新增</a>
+                <a class="btn btn-primary" id="btn_add" onclick="show_edit()"><i class="icon-plus"></i>新增字典</a>
             </div>
         </x:form>
     </div>
     <div class="gridpanel">
     </div>
-    <script type="text/javascript">
 
+    <script type="text/javascript">
         $("form:eq(0)").xform({
             callback: function (d) {
                 d.page = 1;
                 g.getlist(d);
             }
-        });
+        })
 
         var cfg = {
             el: ".gridpanel",
-            searchcon: { page: 1, code: "$code", hasc: "$!hasc" },
+            searchcon: { page: 1, limit: 30, code: "question.topic" },
             api: "mgr.dict.list",
             fs: [
-                { t: "名称", f: "{name}", w: 160 },
-                { t: "值", f: "{cid}", w: 60, align: "center" },
-                { t: "图片", f: "<img src='{img}' class='cover'/>", w: 100, align: "center" },
+                { t: "字典内容", f: "{name}", w: 60 },
+                { t: "值", f: "{value}", w: 120, align: "center" },
+
+
             ],
             btns: [
-                { txt: "", ico: "edit", act: "edit", confirm: false },
-                { txt: "", ico: "remove", act: "del", confirm: false }
+                { txt: "编辑", ico: "edit", act: "edit", confirm: false },
+                { txt: "删除", ico: "remove", act: "del" },
             ]
         };
-
-        if ("$!hasc" == "1") {
-            cfg.btns.push({ txt: "", ico: "plus", act: "sub", confirm: false });
-        } else {
-            cfg.searchcon.limit = 30
-        }
-        if ("$!code" == "goods.cate") {
-            cfg.btns.push({ txt: "品牌", ico: "beer", act: "brand", confirm: false });
-            cfg.btns.push({ txt: "规格", ico: "beaker", act: "stand", confirm: false });
-        }
-        if ("$!code" == "sys.city") cfg.searchcon.up = "1";
 
         cfg.cellclick = function (act, d) {
             switch (act) {
                 case "del":
-                    dodel(d.cid);
+                    dodel(d.id);
                     break;
                 case "edit":
-                    show_edit(d.cid);
-                    break;
-                case "sub":
-                    show_edit("", d.cid);
-                    break;
-                case "brand":
-                    document.location.href = "/mgr/brand/list-" + d.cid + ".html";
-                    break;
-                case "stand":
-                    document.location.href = "/mgr/stand/list-" + d.cid + ".html";
+                    show_edit(d.id);
                     break;
             }
         };
@@ -81,25 +97,27 @@
         var g = x.grid.init(cfg);
 
         function dodel(id) {
-            x.confirm("是否删除此项？", function () {
-                x.doapi("mgr.dict.del", { id: id, }, function () {
-                    g.getlist();
-                });
+            x.doapi("mgr.dict.del", { id: id, }, function () {
+                g.getlist();
             });
         }
 
-        function show_attr(id) {
-            x.openwin("/mgr/field/list-" + id + ".html", "属性管理", function () {
+        function show_edit(id) {
+            var code = $("span.t.on").attr("data-code");
+            x.openwin("edit-" + id + "-" + code + ".html", "字典新增", function () {
                 g.getlist();
-            }, { w: 600, h: 300 });
+            }, { w: 600, h: 400 });
         }
+    </script>
 
-        function show_edit(id, upid) {
-            x.openwin("edit-$!{code}-" + (id || "") + "-" + (upid || "") + ".html", "编辑$dname", function () {
-                g.getlist();
-            }, { w: 400, h: 300 });
-        }
-
+    <script type="text/javascript">
+        $(function () {
+            $("span.t").click(function () {
+                $("span.t").removeClass("on");
+                $(this).addClass("on");
+                g.getlist({ code: $(this).attr("data-code") });
+            });
+        });
     </script>
 </body>
 </html>

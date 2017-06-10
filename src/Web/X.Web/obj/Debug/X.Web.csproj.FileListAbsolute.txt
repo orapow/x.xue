@@ -50,3 +50,16 @@ F:\HT\考试\src\Web\X.Web\bin\Debug\X.Data.pdb
 F:\HT\考试\src\Web\X.Web\obj\Debug\X.Web.csprojResolveAssemblyReference.cache
 F:\HT\考试\src\Web\X.Web\obj\Debug\X.Web.dll
 F:\HT\考试\src\Web\X.Web\obj\Debug\X.Web.pdb
+F:\HT\xue\src\Web\X.Web\bin\Debug\X.Web.dll
+F:\HT\xue\src\Web\X.Web\bin\Debug\X.Web.pdb
+F:\HT\xue\src\Web\X.Web\bin\Debug\X.Core.dll
+F:\HT\xue\src\Web\X.Web\bin\Debug\X.Data.dll
+F:\HT\xue\src\Web\X.Web\bin\Debug\log4net.dll
+F:\HT\xue\src\Web\X.Web\bin\Debug\X.Json.dll
+F:\HT\xue\src\Web\X.Web\bin\Debug\NVelocity.dll
+F:\HT\xue\src\Web\X.Web\bin\Debug\Enyim.Caching.dll
+F:\HT\xue\src\Web\X.Web\bin\Debug\X.Core.pdb
+F:\HT\xue\src\Web\X.Web\bin\Debug\X.Data.pdb
+F:\HT\xue\src\Web\X.Web\obj\Debug\X.Web.csprojResolveAssemblyReference.cache
+F:\HT\xue\src\Web\X.Web\obj\Debug\X.Web.dll
+F:\HT\xue\src\Web\X.Web\obj\Debug\X.Web.pdb
