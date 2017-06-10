@@ -11,6 +11,36 @@
       </Relationships>
     </pkg:xmlData>
   </pkg:part>
+  <pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml">
+    <pkg:xmlData>
+      <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+        <Relationship Id="rId9" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image3.jpeg"/>
+        <Relationship Id="rId8" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image2.jpeg"/>
+        <Relationship Id="rId7" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme" Target="theme/theme1.xml"/>
+        <Relationship Id="rId6" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer" Target="footer2.xml"/>
+        <Relationship Id="rId5" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer" Target="footer1.xml"/>
+        <Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/header" Target="header2.xml"/>
+        <Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/header" Target="header1.xml"/>
+        <Relationship Id="rId24" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable" Target="fontTable.xml"/>
+        <Relationship Id="rId23" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXml" Target="../customXml/item1.xml"/>
+        <Relationship Id="rId22" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image16.png"/>
+        <Relationship Id="rId21" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image15.png"/>
+        <Relationship Id="rId20" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image14.png"/>
+        <Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings" Target="settings.xml"/>
+        <Relationship Id="rId19" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image13.png"/>
+        <Relationship Id="rId18" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image12.jpeg"/>
+        <Relationship Id="rId17" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image11.jpeg"/>
+        <Relationship Id="rId16" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image10.jpeg"/>
+        <Relationship Id="rId15" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image9.jpeg"/>
+        <Relationship Id="rId14" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image8.jpeg"/>
+        <Relationship Id="rId13" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image7.jpeg"/>
+        <Relationship Id="rId12" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image6.jpeg"/>
+        <Relationship Id="rId11" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image5.jpeg"/>
+        <Relationship Id="rId10" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image4.jpeg"/>
+        <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>
+      </Relationships>
+    </pkg:xmlData>
+  </pkg:part>
   <pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml">
     <pkg:xmlData>
       <w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:wpsCustomData="http://www.wps.cn/officeDocument/2013/wpsCustomData" mc:Ignorable="w14 w15 wp14">
@@ -22,7 +52,6 @@
               </w:rPr>
             </w:pPr>
           </w:p>
-          #if($T.getcfg(3))
           <w:p>
             <w:pPr>
               <w:jc w:val="center"/>
@@ -34,11 +63,9 @@
                 <w:sz w:val="28"/>
                 <w:szCs w:val="28"/>
               </w:rPr>
-              <w:t>$paper.topic</w:t>
+              <w:t>2017年5月17日小学英语试卷</w:t>
             </w:r>
           </w:p>
-          #end
-          #if($T.getcfg(5))
           <w:p>
             <w:pPr>
               <w:widowControl/>
@@ -52,11 +79,9 @@
                 <w:sz w:val="24"/>
                 <w:szCs w:val="24"/>
               </w:rPr>
-              <w:t>$set.stopic</w:t>
+              <w:t>英语考试</w:t>
             </w:r>
           </w:p>
-          #end
-          #if($T.getcfg(7))
           <w:p>
             <w:pPr>
               <w:widowControl/>
@@ -70,7 +95,7 @@
                 <w:sz w:val="24"/>
                 <w:szCs w:val="24"/>
               </w:rPr>
-              <w:t>考试时间：$set.time分钟 满分：$set.score分</w:t>
+              <w:t>考试时间：60分钟 满分：100分</w:t>
             </w:r>
             <w:r>
               <w:rPr>
@@ -91,11 +116,10 @@
               <w:t>姓名：__________ 班级：__________考号：__________</w:t>
             </w:r>
           </w:p>
-          #end
           <w:tbl>
             <w:tblPr>
               <w:tblStyle w:val="20"/>
-              <w:tblW w:w="9880" w:type="dxa"/>
+              <w:tblW w:w="7410" w:type="dxa"/>
               <w:tblInd w:w="0" w:type="dxa"/>
               <w:tblBorders>
                 <w:top w:val="outset" w:color="808080" w:sz="4" w:space="0"/>
@@ -114,7 +138,6 @@
               </w:tblCellMar>
             </w:tblPr>
             <w:tblGrid>
-              <w:gridCol w:w="2470"/>
               <w:gridCol w:w="2470"/>
               <w:gridCol w:w="2470"/>
               <w:gridCol w:w="2470"/>
@@ -175,7 +198,6 @@
                   </w:r>
                 </w:p>
               </w:tc>
-              #foreach($n in $pts)
               <w:tc>
                 <w:tcPr>
                   <w:tcW w:w="2470" w:type="dxa"/>
@@ -205,11 +227,43 @@
                       <w:sz w:val="24"/>
                       <w:szCs w:val="24"/>
                     </w:rPr>
-                    <w:t>$T.GetNum($velocityCount)</w:t>
+                    <w:t>一</w:t>
                   </w:r>
                 </w:p>
               </w:tc>
-              #end
+              <w:tc>
+                <w:tcPr>
+                  <w:tcW w:w="2470" w:type="dxa"/>
+                  <w:tcBorders>
+                    <w:top w:val="inset" w:color="000000" w:sz="6" w:space="0"/>
+                    <w:left w:val="inset" w:color="000000" w:sz="6" w:space="0"/>
+                    <w:bottom w:val="inset" w:color="000000" w:sz="6" w:space="0"/>
+                    <w:right w:val="inset" w:color="000000" w:sz="6" w:space="0"/>
+                  </w:tcBorders>
+                  <w:tcMar>
+                    <w:top w:w="15" w:type="dxa"/>
+                    <w:bottom w:w="15" w:type="dxa"/>
+                  </w:tcMar>
+                  <w:vAlign w:val="center"/>
+                </w:tcPr>
+                <w:p>
+                  <w:pPr>
+                    <w:widowControl/>
+                    <w:spacing w:before="0" w:after="0" w:line="240" w:lineRule="auto"/>
+                    <w:ind w:left="0" w:right="0"/>
+                    <w:jc w:val="center"/>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:color w:val="000000"/>
+                      <w:position w:val="-3"/>
+                      <w:sz w:val="24"/>
+                      <w:szCs w:val="24"/>
+                    </w:rPr>
+                    <w:t>二</w:t>
+                  </w:r>
+                </w:p>
+              </w:tc>
             </w:tr>
             <w:tr>
               <w:tblPrEx>
@@ -267,7 +321,6 @@
                   </w:r>
                 </w:p>
               </w:tc>
-              #foreach($n in $pts)
               <w:tc>
                 <w:tcPr>
                   <w:tcW w:w="2470" w:type="dxa"/>
@@ -301,10 +354,41 @@
                   </w:r>
                 </w:p>
               </w:tc>
-              #end
+              <w:tc>
+                <w:tcPr>
+                  <w:tcW w:w="2470" w:type="dxa"/>
+                  <w:tcBorders>
+                    <w:top w:val="inset" w:color="000000" w:sz="6" w:space="0"/>
+                    <w:left w:val="inset" w:color="000000" w:sz="6" w:space="0"/>
+                    <w:bottom w:val="inset" w:color="000000" w:sz="6" w:space="0"/>
+                    <w:right w:val="inset" w:color="000000" w:sz="6" w:space="0"/>
+                  </w:tcBorders>
+                  <w:tcMar>
+                    <w:top w:w="15" w:type="dxa"/>
+                    <w:bottom w:w="15" w:type="dxa"/>
+                  </w:tcMar>
+                  <w:vAlign w:val="center"/>
+                </w:tcPr>
+                <w:p>
+                  <w:pPr>
+                    <w:widowControl/>
+                    <w:spacing w:before="0" w:after="0" w:line="240" w:lineRule="auto"/>
+                    <w:ind w:left="0" w:right="0"/>
+                    <w:jc w:val="center"/>
+                  </w:pPr>
+                  <w:r>
+                    <w:rPr>
+                      <w:color w:val="000000"/>
+                      <w:position w:val="-3"/>
+                      <w:sz w:val="24"/>
+                      <w:szCs w:val="24"/>
+                    </w:rPr>
+                    <w:t> </w:t>
+                  </w:r>
+                </w:p>
+              </w:tc>
             </w:tr>
           </w:tbl>
-          #if($T.getcfg(4))
           <w:p>
             <w:pPr>
               <w:widowControl/>
@@ -353,9 +437,6 @@
               <w:t>2.提前xx分钟收取答题卡</w:t>
             </w:r>
           </w:p>
-          #end
-          #set($no=0)
-          #foreach($pg in $pts)
           <w:p>
             <w:r>
               <w:rPr>
@@ -364,40 +445,15 @@
                 <w:sz w:val="24"/>
                 <w:szCs w:val="24"/>
               </w:rPr>
-              <w:t>$T.GetNum($velocityCount)、$pg.name（共$pg.count题；共$pg.score分）</w:t>
+              <w:t>一、（共21题；共42分）</w:t>
             </w:r>
           </w:p>
-          #foreach($p in $T.getQues($pg.id))
-          #foreach($b in $T.GetQue($p.topic))
           <w:p>
-            #if($velocityCount==1)
-            #set($no=$no+1)
             <w:pPr>
               <w:spacing w:after="0"/>
               <w:ind w:left="0"/>
               <w:jc w:val="left"/>
             </w:pPr>
-            <w:r>
-                <w:rPr>
-                    <w:b w:val="0" />
-                    <w:i w:val="0" />
-                    <w:color w:val="000000" />
-                    <w:sz w:val="21" />
-                </w:rPr>
-                <w:t xml:space="preserve">$no.</w:t>
-            </w:r>
-            <w:r>
-                <w:rPr>
-                    <w:b w:val="0" />
-                    <w:i w:val="0" />
-                    <w:color w:val="000000" />
-                    <w:sz w:val="21" />
-                </w:rPr>
-                <w:t xml:space="preserve">（$p.score分）</w:t>
-            </w:r>
-            #end
-            #foreach($g in $b.gs)
-            #if($g.t==1)
             <w:r>
               <w:rPr>
                 <w:b w:val="0"/>
@@ -405,28 +461,1052 @@
                 <w:color w:val="000000"/>
                 <w:sz w:val="21"/>
               </w:rPr>
-              <w:t xml:space="preserve">$g.v</w:t>
+              <w:t>1（2分）设</w:t>
             </w:r>
-            #else
             <w:r>
               <w:pict>
-                <v:shape id="_x0000_i1025" o:spt="75" type="#_x0000_t75" style="height:${g.h}pt;width:${g.w}pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
-                    <v:path />
-                        <v:fill on="f" focussize="0,0" />
-                        <v:stroke on="f" />
-                        <v:imagedata r:id="rId${g.v}" o:title="" />
-                        <o:lock v:ext="edit" aspectratio="t" />
-                        <w10:wrap type="none" />
-                        <w10:anchorlock />
-                    </v:shape>
-                </w:pict>
+                <v:shape id="_x0000_i1025" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:21.3pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId8" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
             </w:r>
-            #end
-            #end
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>满足约束条件</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1026" o:spt="75" alt="" type="#_x0000_t75" style="height:46.5pt;width:69pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId9" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>,则</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1027" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:93.3pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId10" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">的最小值是                 </w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1028" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:44pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId11" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
           </w:p>
-          #end
-          #end
-          #end
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>2（2分）</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>3（2分）A.</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1029" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:32pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId12" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">           B.</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1030" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:28pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId13" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">                 C.</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1031" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:28pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId14" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">                D.</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1032" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:32pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId15" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> </w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>4（2分）设</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1033" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:21.3pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId8" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>满足约束条件</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1034" o:spt="75" alt="" type="#_x0000_t75" style="height:82.65pt;width:122.65pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId9" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>,则</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1035" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:93.3pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId10" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">的最小值是                 </w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1036" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:44pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId11" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>5（2分）</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>6（2分）A.</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1037" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:32pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId12" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">           B.</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1038" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:28pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId13" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">                 C.</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1039" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:28pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId14" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">                D.</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1040" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:32pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId15" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> </w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>7（2分）fqwerqerq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>8（2分）qwerqwerq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>9（2分）qwerqrq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>10（2分）qwerqwerq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>11（2分）qwerqwerq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>12（2分）fqwerqeq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>13（2分）qwerrq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>14（2分）wqerqwerqeq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>15（2分）wqerqwerqq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>16（2分）qwerasdfqwerqw</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>17（2分）sadfaxcvcxvsdfasfda</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>18（2分）fqwerq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>19（2分）fqerqwerq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>20（2分）qwerqwerq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>21（2分）fadsfawqerq</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>22（2分）求下列简单函数的导数：</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>23（2分）</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>24（2分）1、</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1041" o:spt="75" type="#_x0000_t75" style="height:54.65pt;width:77.3pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId16" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">                              2、</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1042" o:spt="75" type="#_x0000_t75" style="height:54.65pt;width:61.3pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId17" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">                                  3、</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1043" o:spt="75" type="#_x0000_t75" style="height:54.65pt;width:86.65pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId18" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>25（2分）</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>26（2分）</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>27（2分）</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>28（2分）A.60               B. 60</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>29（2分）</w:t>
+            </w:r>
+            <w:bookmarkStart w:id="0" w:name="_GoBack"/>
+            <w:bookmarkEnd w:id="0"/>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>30（2分）C.60     D. 60</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>31（2分）</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>32（2分）7．已知</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1044" o:spt="75" alt="" type="#_x0000_t75" style="height:31.5pt;width:100.5pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId19" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1045" o:spt="75" type="#_x0000_t75" style="height:36pt;width:168pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId20" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">,则 </w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>33（2分）</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>34（2分）A．p&gt;q             B．p&lt;q           C．</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1046" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:53.3pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId21" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">         D．</w:t>
+            </w:r>
+            <w:r>
+              <w:pict>
+                <v:shape id="_x0000_i1047" o:spt="75" type="#_x0000_t75" style="height:26.65pt;width:53.3pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                  <v:path/>
+                  <v:fill on="f" focussize="0,0"/>
+                  <v:stroke on="f"/>
+                  <v:imagedata r:id="rId22" o:title=""/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                  <w10:wrap type="none"/>
+                  <w10:anchorlock/>
+                </v:shape>
+              </w:pict>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> </w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>35（2分）eee</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="24"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>二、多选题（共1题；共2分）</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0"/>
+              <w:ind w:left="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="21"/>
+              </w:rPr>
+              <w:t>36（2分）wqrqwerqewr1</w:t>
+            </w:r>
+          </w:p>
           <w:sectPr>
             <w:headerReference r:id="rId3" w:type="default"/>
             <w:footerReference r:id="rId5" w:type="default"/>
@@ -504,7 +1584,7 @@
         <dcterms:created xsi:type="dcterms:W3CDTF">2013-12-09T06:44:00Z</dcterms:created>
         <dc:creator>lam</dc:creator>
         <cp:lastModifiedBy>Administrator</cp:lastModifiedBy>
-        <dcterms:modified xsi:type="dcterms:W3CDTF">2017-06-10T03:34:43Z</dcterms:modified>
+        <dcterms:modified xsi:type="dcterms:W3CDTF">2017-06-10T07:19:22Z</dcterms:modified>
         <cp:revision>25</cp:revision>
       </cp:coreProperties>
     </pkg:xmlData>
@@ -1109,7 +2189,7 @@
   <pkg:part pkg:name="/word/_rels/header1.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml">
     <pkg:xmlData>
       <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
-        <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image1.png"/>
+        <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image1.jpeg"/>
       </Relationships>
     </pkg:xmlData>
   </pkg:part>
@@ -1126,7 +2206,7 @@
               <w:rFonts w:hint="eastAsia"/>
             </w:rPr>
             <w:pict>
-              <v:shape id="_x0000_i1142" o:spt="75" alt="test_logo" type="#_x0000_t75" style="height:28.25pt;width:124.7pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+              <v:shape id="_x0000_i1048" o:spt="75" alt="test_logo" type="#_x0000_t75" style="height:28.25pt;width:124.7pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
                 <v:path/>
                 <v:fill on="f" focussize="0,0"/>
                 <v:stroke on="f"/>
@@ -1401,31 +2481,457 @@
       </w:hdr>
     </pkg:xmlData>
   </pkg:part>
-  <pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml">
-    <pkg:xmlData>
-        <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
-            <Relationship Id="rId9" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXml" Target="../customXml/item1.xml" />
-            #foreach($p in $imgs)
-            <Relationship Id="rId${p.key}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image${p.key}.png" />
-            #end
-            <Relationship Id="rId7" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme" Target="theme/theme1.xml" />
-            <Relationship Id="rId6" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer" Target="footer2.xml" />
-            <Relationship Id="rId5" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer" Target="footer1.xml" />
-            <Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/header" Target="header2.xml" />
-            <Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/header" Target="header1.xml" />
-            <Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings" Target="settings.xml" />
-            <Relationship Id="rId10" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable" Target="fontTable.xml" />
-            <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml" />
-        </Relationships>
-    </pkg:xmlData>
-  </pkg:part>
-  #foreach($p in $imgs)
-  <pkg:part pkg:name="/word/media/image${p.key}.png" pkg:contentType="image/png">
+  <pkg:part pkg:name="/word/media/image10.jpeg" pkg:contentType="image/jpeg">
     <pkg:binaryData>
-      $p.value
+      /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAApADoDASIA
+      AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+      AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+      ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+      p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+      AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+      BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+      U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+      uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iii
+      igAooooAKKK+Sf2yP2odT/ZL+F1t8T7f4QeIvilpJ8W/D/wtq9zpninwl4V0TwufiB8TfAvwz0y8
+      1681i+uvE1w0t/44ivrC18K+DPE6Tpo9/BrF34eSaxu7kA+tqK+AP25f2tfjr+yT4H8b/F/wV+y5
+      ovxf+DHwa+HE3xW+MnjbxH8f9G+E+r/8I3p9/fJrvhj4KeDLP4efFDU/iR8TPD+g6ZceIr3Q/iJd
+      /ArwPqUWq+GdH8L/ABK8Qa9fa/p3hb72srpb2ztL1I5oUu7aC6SK4QRzxLcRJKsc8YZwkyBwsiB2
+      CuGUMwGSAfz/AEX/AAUL/bf8CeB/+Ctmg/GfxJ+ybb/tD/sP+L/AGg/s3+DPBn7PPxYjsfitoPxh
+      0bSdX/Z68Q+JvDOpftg6nrHizUP2jvEWvW3wd8K+GvCPijwY/gT4iaLqs17rHjtp18Lad+wPg/xN
+      +0N4I/Zs8N+K/jT4G0z42ftIaZ4K0zVPiB8O/wBmDSvDngHSfEfjW9khk1Pwv8LrT9oH45Wnhu0t
+      NAS7Ngmr+PfjXpVr4gTR7zXYpdFk1Wy8L2f4m/BKT9nP/gq9/wAFGfgl+3h+zjqvxGHwh+BXwOGk
+      /tJ2l94fTw34U8b/ALQPg34if8JH+zJ8IfHtzDcXem+LPiJ+zpf6v8S/iv4gs/DGs+JtL8F6lffC
+      X+0NXU63p9rL/QR8Q/hx8PPi74L8QfDf4r+A/BnxP+Hfi2yXTfFXgL4h+F9D8a+C/E2nLcQ3a2Hi
+      Dwt4ksdT0PWbJbq2t7lbXUbG5gFxbwzCMSRIygHxn/w2R+0V/wBInf2//wDw43/BLL/6ZZX2H8Mv
+      F/iHx54I0PxX4q+Ffjz4Ka9q0d29/wDDP4m6j8MNV8b+GGtr+6s4Ytcv/g18R/i18N7iTULe3h1W
+      0Phv4g+IYksL61jv5LLVEvdNs/jz/h07/wAEsv8ApGn+wB/4hv8As6//ADua+w/hl8K/hh8FPBGh
+      /DP4NfDjwH8Jfhv4Yju4vDfw++GXhDw94D8EeHotQv7rVb+PQ/CnhXTtK0HSY73VL691K7SwsLdb
+      m/vLq8mD3FxNI4B+Y37dv7Z37Rv7DX7QfwJ+InxAufhLF/wTX+IMusfDz4p+NdF+Afxh+JX7QPwm
+      +Nuo+HdWf4SWWrXngv4xwaPL8N/ir4wi0/wxpviTTvg7rd/ovi59H8CavaQr470vx14e5f4zfCL/
+      AIKgftOfsD6R8O/iL4d/Yx1H9oz4g/Ez4afEHxNpDeJPjF+zX4G+FngL4c/FTwD8WfC/hC+j0vSf
+      25r7x18Ub8eCjoXji60nxF4d8EeHNR164i8M6j41sfCsOseM/oD9pD9h3x3+1V8Ytc1H40/FP4Of
+      EL9lAfBP4i/DzwV+yb42/Zz8R65puj/E/wCIvhV/Cl78b/GXxEsP2h9BHjrXdL0fUfE3hrRtFtPA
+      Xg+XQPBfinWtP8I+I/DHjG+v/H976V+wD+zp8e/2T/2afBXwB/aC/aftv2ufEHw3RvD3g/4vTfCj
+      UPhR4qn+HtlBbxeGPDXje21D4tfF2Txjr/hiFZ9ItvG7avpGoav4ettEg8Q6fqniWy1jxZ4iAPC/
+      2lfAn/BQ34n+MvhLqXhP4L/sbeLvh74J8J6f421T4XfEX9sT43+CfDP/AA0/p+s/2j4U8S+JF8K/
+      sJeOb34y/DX4QTadpXiL4f6LqN78K49X8dXT+MfEHhi18ReC/hxrHhv9N9I/tX+ytM/t7+z/AO3P
+      7Psv7Z/sj7T/AGV/av2aL+0f7M+2f6Z/Z/2zzvsX2r/Sfs3lef8Avd1aFFABRRRQAUUUUAFFFFAB
+      RRRQB//Z
     </pkg:binaryData>
   </pkg:part>
-  #end
+  <pkg:part pkg:name="/word/media/image11.jpeg" pkg:contentType="image/jpeg">
+    <pkg:binaryData>
+      /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAApAC4DASIA
+      AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+      AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+      ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+      p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+      AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+      BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+      U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+      uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iii
+      igAooooAx/EPiLw/4R0LV/FHivXdH8MeGtA0+61bXfEXiHU7LRdC0TSrGJp73U9X1fUp7bT9N0+z
+      gR5rq9vLiG2t4kaSWREUsLmnajp+safYavpF/ZappWqWVrqOmanp11BfafqOn30CXNlf2F7bSS21
+      5ZXltLFcWt1byyQXEEiSxSPG6sfzz/4Kz6t8EPD/APwTx/ay1z466n8KtE0ax+A/xhg8D6v8Wb3w
+      jpumWfxT1n4WeM9B8Dw+FNQ8YSw2tv4/1XUNUl0bwpHpEyeIr681F9O0gSz3bQye/wD7GvxK+HXx
+      Y/ZZ+AvjD4WeP/BXxL8IzfCnwHpcPinwB4q0Lxl4cl1PRvCuk6drGnRa34dv9S0yS+0rUIJ7DUrR
+      bo3FjeQy2t1HFPG6KAfhzqP7TH7ZnwZH/BXX9m/4iftkfGL4h/tU/DjxX8CR/wAE+3h+GP7Jmiar
+      deCf2pp7Hwx+zOdE0/Sf2XLHwx4x1vVvjlc+IfhL8dNb8beHPFug6N4c8KLrXhzTvAl2L7xTe/tH
+      qfib4j/spfscR+J/i/8AGz4YfFn4p/Cz4faVdfEH43/tRfETwR+yh8JPFni6W8s4tc13x38QPhz8
+      GtT8HfCLwf8Ab9RmsPDkulfCHWJraxg0DSdXj1fWrrUfEd1+av7Pnge5/wCCiv7cXwJ/4KB/Fj9j
+      z47fsr3f7JHwS8bfDNfD3x/0PxF4F1Tx78dPGviW2udOHhvwn4m0HwxrPxA+G/wI8LjxjqfhP4q6
+      34W8PaNrnjH4vRzeCbS6vvB2uXOnfvNQB+AP/D6j/qsn/BAH/wAX6f8A5uSv2G/Zl+Mn/DQHwR8E
+      fFz+2PgNr3/CXQavN/a37Mvx2/4aX+CN3/Zmv6po2fBHxs/4V58Kf+E2gi/s7ydXn/4QLQP7J1+P
+      VNB8u9/sv+0bv3iigD5A+KX7cPwX+D/jvXfh14s8Fftf6v4g8O/2Z/aGofC3/gnt+318cfAlx/a+
+      j6frtr/YXxS+Cn7NPxA+GXijyrLU7aDU/wDhGfF2r/2JrEWoeHdZ+weINI1XTLLz/wD4eWfs6/8A
+      ROf2/wD/AMVO/wDBU3/6DevbvHX7ZX7IPwv8R+PfB3xM/ar/AGbfh34u+FXh3RvF/wAUPC3jr45f
+      DDwj4j+G/hPxHqOhaP4e8T+PdD1/xRp+p+D/AA7r2reKfDOl6NrXiG107TdU1HxHoVjY3M9zq+nx
+      XH5MfDb9uj4+Q/8ABSf4seBfiH8Bf2i76XVv2b7nxl8PPgToHx6/YIuPClj8JNA+OF94V8B/G7w3
+      4RuP25LW61CT4kaTfw6r4i8d+ItA8OeJoL7W7L4fHSR4c8JeH9Y1wA/fiiiigAooooA/H39tL9kz
+      9sH41ftEeGvjt8FfDv7L1hcfAi3+GUHwp0z4ifFr4i6Jpn7Ruj3PxB0fxR8ZPAP7W3h3Q/2bfHNt
+      B4H8GWGk23iT9mGDwzrXju58DfG+yg+LWpQ2txLBoWl/r1aNdvaWr38NvbXz28LXtvaXUl7aW920
+      am4htb2a00+a7t4pi8cN1LYWUlxGqyyWlszmFLFFAH//2Q==
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image12.jpeg" pkg:contentType="image/jpeg">
+    <pkg:binaryData>
+      /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAApAEEDASIA
+      AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+      AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+      ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+      p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+      AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+      BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+      U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+      uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iii
+      igAooooAKK/Nf/goF+038ZP2cdQ+FN54H8YeHPhN8L9W0D4p+IPiz8Z/GH7B/wC1j+3L4S8E/wDC
+      FyfD+Tw/ZeJ7D9lv4o/Co/Bfw/qOja7448Rax8T/AIpa43gmw0/wZcRzyWGy5ul9T/bl+MXjv4af
+      svalqfwV8Uafpnxl+Lniv4N/Aj4H+L7LS9H8RWel/EX9of4l+DvhT4d+IOnaHrUetaBruneAbbxh
+      e/FG5sdYh1jRJtA8J38uqw6jpcd1HMAfatFfmIf2NP27cnb/AMFgf2jQuTgH9lr9gQkDPAJH7Nig
+      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
+      ItVmSNTdapql5cv88pruqKACiiigAooooA//2Q==
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image13.png" pkg:contentType="image/png">
+    <pkg:binaryData>
+      iVBORw0KGgoAAAANSUhEUgAAAIYAAAAqCAYAAAB2pyMEAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+      jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+      AAAOwwAADsMBx2+oZAAAAhZJREFUeF7tmeFuwzAIhPv+L72pPzK5XmwOgy+huUmT1skG7uNCLPf1
+      0o8IiIAIiIAIiIAIiACDwA8jiXLUIfA2xPFbp2pVSiOgiUFDXSuRjFGrX7RqZQwa6lqJZIxa/aJV
+      K2PQUNdKJGPU6hetWhmDhrpWIhmjVr8o1e685GIbbqSFXQelcVWTsJvR57M+V+X6UTcbchTaFfWe
+      5fx6c1wBOmKOjHp3xHDH7N9Nu79YauMjxSJrIo3M3GvV6tEe7QMyRSDtfSEjka2Rzv6eJWtjosIt
+      2JA40qJZrSva32WjnFqJs965UJwlz24I+s6zjJddlwuUsRhtyIoG1CCoOSHdaWNnkC0S34KIGGnn
+      GutJjWjvYyMs0Im9ZAzLdTPQZwnPpoUl8oiDroOEbl6EmAB98lv9CIOsNX+I0BEfYTp6v6aLiRSZ
+      sNcyRmsKS7vHQFbepYesf/oT+PwL0ebwHqgsgDvqjcQcTcfj/0jDvZpHE9x6zU11eouIQHvC3rvy
+      dNXlWvyEriZpvBtXVz39eE9i8pVhVli5mrGR2l3q2CjxmtCMw/k1ypQ1RAA98YeSaPN3ENB4LthH
+      z13BqjwZY5XcRftGF2mZ5cgUmTQJsdBD4ugyaMfFE0G2UswIMA6ImhQFPTi6hs6SIlNkkSTHGZ0t
+      MhrKmEZkXM9J199MIucFlA7yBRUaS+tEQAREQAREQARE4FEEfgGBrQcIFhXkyAAAAABJRU5ErkJg
+      gg==
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image14.png" pkg:contentType="image/png">
+    <pkg:binaryData>
+      iVBORw0KGgoAAAANSUhEUgAAAH4AAAAbCAYAAAC6GjthAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+      jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+      AAAOwwAADsMBx2+oZAAAAdRJREFUaEPtl1FvwyAMhPvUNGT//+9mohISZQbfGdKA5kl7yWxz/s4Y
+      7fHwHyfgBJyAE3ACTsAJTETgCOHct9cZXvs5kSyXcjWBn3C8Dd+emxt/NewZ65M3vmdIYm5P/oz4
+      1tR07IExose4/BzmzDXBTqY6GfcGH296fOPjr6Cz9q38/lET7NeNB0FJYT3AEfCSwVEH+r3VWut8
+      RFsHNjG1xvIOLc3eavCTMXkjKRZdtWVunl8CkmrW8lNDM5qew26xHT1wdD10NUsNoVNci6uZjTQh
+      DSEyEEhtawzCEmVm1dCVp4nTbmJ5OGq8tF20pwmBbYGhMUBrdt36BER6F1EBTNyoppkzR8Vq2hmW
+      eaxVn3kwy3XYuj3STWTFa+CsAL6Vh777DBcmtvXGw09R15owkF7d9NZGHMGSGQB0AP/YZF4RBsO/
+      9YQYpVFpKDfLkKPGa7Wbf5cmVJsi66rXhFLkbw5GjEcNzFczygiJg41nhTLsEVBMvbtjtX5ylppJ
+      LHftbOiNz2/vlau4tiXuNrDn/Nq2TN8RQ7WhQP7NlM6h69IJPeQWz52ZFaWNCl7ctFHyZ2RGaSpX
+      /igw/6EOBfpiIDNpubhVL+8EnIATcAJOwAkkAr9RIOYmtETlOwAAAABJRU5ErkJggg==
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image15.png" pkg:contentType="image/png">
+    <pkg:binaryData>
+      iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+      jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+      AAAOwwAADsMBx2+oZAAAAJRJREFUSEvtk1EKwDAIQ3v/S29ssCEimqiFflgY9MPGtxjXmjMOhA5c
+      YcUBBQ/k9x2A4yNsB9VuZBui72QdFRfdgHoMjlxqoj/0zs8qRgHRRloP1f8BddI8AXZJLK0SYATH
+      bq7lHgxYsh4kTWdP5o/JkhyxdbfiUtpe0Ii2svR42wgcIQoOHWsXOLv9XX1HZxyAHbgBt/xLtT9W
+      +z4AAAAASUVORK5CYII=
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image16.png" pkg:contentType="image/png">
+    <pkg:binaryData>
+      iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+      jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+      AAAOwwAADsMBx2+oZAAAAJpJREFUSEvtlFEOgDAIQ3f/S2tmMoPItlYg8QP/FqE8ylhr9ZUDbgcO
+      t0KSQAf7HdyASgXTRRAnkJjZoGQu1Zguukr+Cig1KQ0rGOmOKaL1EP17ClYwI7C7i1791/YxcPqu
+      ITCM86Fwq8UY/yi4niTHgzin462z5apre5Pe7qksYsSVDAcGdgDX3G1eINPjtaDvYAZIaZYDMwdO
+      185LtbaiWkkAAAAASUVORK5CYII=
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image2.jpeg" pkg:contentType="image/jpeg">
+    <pkg:binaryData>
+      /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAUABADASIA
+      AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+      AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+      ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+      p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+      AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+      BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+      U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+      uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiv
+      5evgf8PP2f8A4Q/tyeHPih/wxb8WfC37HPj345/tE/Fr4G2uv/sN/FjwRD+yF+1f4d8PeA/BPxJ/
+      aZ+LNxrX7Ovhmf4UfBb4/wDh3R7vUPgx4v8AHHxAm8OeACt14t1K30XR54rD9mf0P9qz4H+Hfjz8
+      ZvhH8dvAP7Lxsov+Cw/7KJ/Yt+ONj8V/hz4Q034vfCfSJ/7C+MGg/Ev4gaXNda7BpOr+Cf2e9K+N
+      aa3pS67qCXvxH8Afs9+G9Qjv5dI0g6UAf0hV4N4c/Zm+CvhT46+O/wBpTRPCl/D8ZPiRplppHinx
+      LfeNfHmtaUbW20bwh4enl8N+Bda8T6h8PvA2p63onw+8B6X4s1vwP4W8O6z4zs/BXhOHxbf60vh3
+      SPshRQB//9k=
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image3.jpeg" pkg:contentType="image/jpeg">
+    <pkg:binaryData>
+      /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAA+AFwDASIA
+      AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+      AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+      ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+      p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+      AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+      BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+      U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+      uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+734i
+      /E74f/CTw8vir4keLdG8H6FNqul6BZXer3Ply6v4i126Wx0Hw1oOnxLLqPiDxPr186WOheG9EtNQ
+      1zWr10s9MsLq5dYj3dfl4+owfGj/AIK6X3hTWo/t/hf9hn9jXwX8SfDGnXJEmm2Xxs/bL+IfxT8E
+      z+NhbbvKj8TeEPg7+zzr/hHw5q0ytdWWgfGP4h6faeRBrF611+aH7O3x4+BNl+354H+HVx+3V8Sv
+      Hv7L3xT/AGhfj34r/Yn8X3/7b3xh8Xy/Fv8AaT8G6R8PvA3xe/ZQ8eXWq/tGeI5fGnwO+GOvT32u
+      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
+      KKKACiiigD//2Q==
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image4.jpeg" pkg:contentType="image/jpeg">
+    <pkg:binaryData>
+      /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAUAEYDASIA
+      AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+      AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+      ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+      p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+      AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+      BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+      U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+      uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiv
+      5s/2PPhX+ybZ/wDBTrxR8XPDH7AHxk+DnjHTPG3xs+EfwM8SL/wTs+OXwx0y1GtweKPiD8d/2yP2
+      h/2v/iZ8JPCWgeN9Q+PHiqxuvhh8CtEh+KPj7VPB3gPUNKTR9E0hvjB4203wV9pftTfsq/tI/Ev4
+      4eMPGXgD4P8A/CVeFNWj8Prpuu/8P5f+Cr37Ff2xrHw5pWn3g/4Zv/Zm+BvjL4L+Avs97a3Ft53h
+      PxFfSeKfK/4S3XRa+INb1S0hAP15JwCTnABJwCTxzwACSfQAEnoATXwl8O/29vC3jX4/+Cv2fPFH
+      7P8A+018ENY+LfhT4i+M/gX42+NngnwL4S8J/GjR/hTN4eXxzB4f8P6V8TPEfxh+H2vaRY+JtM1q
+      Lwv8e/hX8H/Eep6L9r1DS9LvI7OdV9J/ZC+G/j74TfBqHwr8S/CreD/EsPiLXtSk0Vf2z/2mf2+W
+      WwuzbNa3K/Hv9q7wb4H+L161wIpMeD5dAGgeHCvl6HdXQvbjZ8GfsxftA6L+0p+17a/F34jfA39s
+      vw18QILX4pfCz9nzwh8T/wBif9qj4M/Df9m/4M2qrqnjL4hfEL4r/F74WeBPhTr3xU/aP1bwH4WM
+      UPg7xZ401bwz4Xl+H3w78NaTaH/hcXirxAAfsxRX8xv7O3wk+CfgL9vzwP4x0T9h74y6X+yn8Wf2
+      hfj38Qv2dtCv/wBhH4weFrr9lT9sKw0j4ffDzx1+0V8TIb79nHw/qXwz+EX7RWkabLcfA/xL4v8A
+      HN3ongidp/FF3ZaRpd1b6b+zT+2vxT/Zq+M3xB8cax4s8Jf8FBv2vfgZoOprp62Xwx+Fngv9gjV/
+      A/h42WnWljcvo+ofGz9iH4w/EmdtWubebWNQGv8AxC1xI9Rv7uLSk0zSEsdLswD6h8Ta/a+FPDfi
+      DxRfWeuajZeHNF1TXbzT/DOgaz4r8SX1rpNjPfz2fh/wv4csdT8QeI9auYrdodL0LQ9Ov9X1e+eC
+      w02zuby4hhf5I+AP7a2i/G/4yeOPgD4h+Af7RP7O/wAVfBvw38J/GS08N/Hbw98NYIvGnwo8a+If
+      EHhbQvG3hrXPhD8Vfi9oOmFte8Najp+o+B/H+p+CPiho0oRtV8C2aRXjWnrXhXQvG3wD+DniibxN
+      8Rvjz+2B4n8K6b4q8X2194q0L9nzTfjJ41Fjp0mo2PgDwvpPwj+HP7Nfwgn1K5ezOleFV1XRvD73
+      Wo6hHH4h8Vm3K3lp+YX7FHwq8MeK/wBpb9rbWPh38NP2pV/Yy/aI+BfgW3+L+h/t1+Dv2i9P8T+L
+      v2iLrWPG/h/xT4Z8JWH7Z+nx/tA6v8PLf4PajY6N4x024uNV+BVnd3ehaZ8I5I2/4Ta2QA/baiv5
+      n/2Pv+CX/wAAPjVqV7+zn+0/+yh8KvE/wg/4Jjv8Xv2Ufgtqus+C/Dc1l8Ux8V/iZpnx20Xxd50N
+      rFfT3vgj4FS/BK11/VJkVtc+LvxM+N0+pT6lqtnPqM5QB/TBRRRQAUUUUAFFFFABXIfEHwH4U+Kf
+      gPxr8MvHeltrngj4ieE/EXgfxhoq6hqmktq/hfxXpF3oWv6Yuq6Je6brOmtfaVf3VqL/AEnUbDUr
+      Myi4sby2uo4pkKKAMX4RfCLwB8C/AGifDL4ZaRfaN4R0B9TuLWLV/Evinxr4g1DUtc1W917Xte8T
+      +NfHOteJPGvjLxR4h1zUtQ1rxD4q8XeIdc8Sa9q19d6lq+qXt5cSzMUUUAf/2Q==
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image5.jpeg" pkg:contentType="image/jpeg">
+    <pkg:binaryData>
+      /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAUACEDASIA
+      AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+      AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+      ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+      p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+      AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+      BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+      U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+      uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+5LSf
+      jl4T8R/GbxX8EfCun+IfFHiH4daVo998UvEej2mmnwT8MtU8T6XFr3hHwZ4q1u/1axuZ/Hfibw5P
+      beKLfwn4X03xHqugeFdS8N+JfGsXhfRfGvga98S+zV+bP/BPBLnSPE//AAUM8J+JSYviLpX/AAUO
+      +NXiPxXb3Xy6ldeGPiD4M+FvjD4K6y4ctLdaRcfBHUPh/oOi6gjzWgTw1d6HDJBc6Be6bp36TUAF
+      eM/E345eE/hB4l+HOj+PdO8Q6N4c+JvinSvAGi/Es2umTfD3R/iL4n1C30jwJ4G8XajHq51zw1q3
+      xF1q5h8OeCNWv/D6+D9X8X3ei+B5fE1n408WeDfD/iL2avzZ/wCCuyXN/wD8E9/j54X0Ql/H/j//
+      AIVn8Ovg7awkHUrz45+Ofi74D8OfBWPRI1ZJn1m1+JuoeF9TsJLd4prGSwOpm5s4rGW9twD9JqKK
+      KAOCk+F/gN/iPF8XU8O21p8SV8Mx+C7vxbptxf6XqOt+E7a8vtR0zw94oTTbu1s/Fuk6DqOq6xqX
+      hez8T22rw+FdR1zXb/w4ul3euatNed7RRQAVwXiD4X+A/FfjLwV4/wDE3h2217xT8OJdUu/Ad7qt
+      zf31l4T1XWdPuNH1HxFoeg3F2/h+w8WS6HfanoEPi+HS18T2fh7Wde0Cy1a30fXtYsr4ooA72iii
+      gD//2Q==
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image6.jpeg" pkg:contentType="image/jpeg">
+    <pkg:binaryData>
+      /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAUABgDASIA
+      AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+      AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+      ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+      p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+      AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+      BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+      U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+      uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/ivD
+      fjz8ZPEPwY8P+GdT8Kfs+/HP9pHxB4r8XQ+EtP8AAnwGs/hcfEGn7vD3iLxJdeJvE2v/ABo+KfwZ
+      +GXhLwjYWnhufT5ta8TfEDSvtfiHVfDvhvSLbUtb17TrGbxTxd+yj8ePEvirxH4h0b/gpn+278P9
+      I1vW9T1XTPAvhHwF/wAE3r3wr4Psb+8lubXw14cvPHv/AAT78b+NrrRNFhkTT9Mn8W+MfFPiOWzt
+      4n1jX9Wv2nvprv7R3iL42/s5fsU/Ei9+GF38XP2ov2h/DvgGfwt8Mta1DwX4N1v4keOfit4z1KHw
+      j4E8TeL/AAz8Gfh18P8AwBZ6D4a8R+I9J17x1qnh74d+GvDXh3wJoGteINVsY7XT9Ru5QDpf2Qv2
+      rdK/a/8Ah74v+IWj/B/4w/BeHwV8XPiP8FtU8N/GeP4VPrV94s+FGtnwr42vvD2rfBn4q/GTwF4i
+      8MaZ4vtdb8Ipruj+NLuG48QeGfEFpHEYbKO5uCum/ZP/AGevDv7KP7N3wZ/Z28L3kuq6d8KfAuke
+      Gr3xBcrKt94t8TbH1Hxp431MTT3Mv9r+OPGF/rvi7Vy9xMzanrV23mNnNFAH0LRRRQAUUUUAf//Z
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image7.jpeg" pkg:contentType="image/jpeg">
+    <pkg:binaryData>
+      /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAUABUDASIA
+      AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+      AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+      ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+      p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+      AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+      BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+      U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+      uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/ivL
+      vjL8Zfh38Afh3rvxR+KOtz6J4T0J9Ms2/s7Rta8T+Itd13X9Vs9A8LeEPBvg/wAMafq/irxt448Y
+      +I9S0vwz4M8FeE9H1jxR4s8SappuhaBpWoapfW1tJ85+Lv2Ufjx4l8VeI/EOjf8ABTP9t34f6Rre
+      t6nqumeBfCPgL/gm9e+FfB9jf3ktza+GvDl549/4J9+N/G11omiwyJp+mT+LfGPinxHLZ28T6xr+
+      rX7T303zB/wUJ+BHji6+E/7Fs3ijxJ+09+0X4A/Z5/ao8L/EX9o3xD8NbJrL9pvxd4BPwv8AjH4H
+      074haP4f/ZI8D/DHxJqWueAfH/jvwR4hv9I/Zy+HuheP7fQNKvPEfgbSV8U6Fb31AH6Y/CL4ga58
+      T/AekeNfEPwj+JfwQ1DV3vGX4e/F1vh2PHmn2MN1LDp2o6vbfC/4hfE7wxp6a3ZpDqtnpc3in/hI
+      tNtbqKy8UaL4f16C/wBHsyvir/gmppnxQ07wB8dn8UXf7Rlx8FtR/aM8Vah+yTD+1tqHxR1D9oWz
+      +AE3gj4fIYfHB+O8k3x+stKb4txfFKXwFp3x3lHxVtfAr6APENvbWr6XHRQB+kFFFFABRRRQB//Z
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image8.jpeg" pkg:contentType="image/jpeg">
+    <pkg:binaryData>
+      /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAUABUDASIA
+      AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+      AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+      ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+      p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+      AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+      BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+      U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+      uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/ivm
+      f9qn9pzRf2VfAXhXxrqnw1+J3xe1Px18WPhv8FfBXw8+EQ+GyeM/Enj34q6/H4b8J2Ntd/Fz4kfC
+      XwBptjJqcsa3+peIPHWj2tlC3nM8gDAedeLv2Ufjx4l8VeI/EOjf8FM/23fh/pGt63qeq6Z4F8I+
+      Av8Agm9e+FfB9jf3ktza+GvDl549/wCCffjfxtdaJosMiafpk/i3xj4p8Ry2dvE+sa/q1+099NwH
+      7YPgj4T6J+zl8JfAH7VWiftpftaeGdN+LHge6vPip8C/C/xMn/aD8JeN/CcfiPxr4N+N/iax/wCC
+      eWhfBr4laDY+Hdb0Wx0Aar8A/hukthrms+GJL/woulya1r+ngH198FPiD8QPiZ4Pn8UfEb4D+O/2
+      dNXk17U7DTfh18TPFXwl8WeOBoNkttHZa/r118EPiD8Vvhzpkus3DXslno+jfEPxPPbabDZ3Op3V
+      lqF5caRpxXx9/wAEvLH43WPwA8eD4vXXx2uPCdz+0b8bbz9mNP2oLrxhd/tD2n7LE3iSEfCe2+LM
+      vxL3fFxdc3J4gudDg+Mk0/xatvA9x4Ut/H5g8QR3dnbFAH6P0UUUAFFFFAH/2Q==
+    </pkg:binaryData>
+  </pkg:part>
+  <pkg:part pkg:name="/word/media/image9.jpeg" pkg:contentType="image/jpeg">
+    <pkg:binaryData>
+      /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+      AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAUABgDASIA
+      AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+      AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+      ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+      p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+      AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+      BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+      U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+      uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/ivI
+      vjT8WLv4P+E7XxBpfwn+Lvxs1/VtcsvDfh34d/Bbw3o2t+LNa1e/t727iF1q3jHxL4G+GvgbQ4bf
+      T7lr3xn8UfiB4E8D2FwbLTr3xLBqmraRZX3z/wCLv2Ufjx4l8VeI/EOjf8FM/wBt34f6Rret6nqu
+      meBfCPgL/gm9e+FfB9jf3ktza+GvDl549/4J9+N/G11omiwyJp+mT+LfGPinxHLZ28T6xr+rX7T3
+      00/x+utH+EP7NekeB/jZcftn/tJeFvEN5YfDz4j/ABT+BfhvxdN+0XZ6bqceq6rH8RNf0n9gzw/8
+      H/inpumLqGm6Z4T1S9/Zj+GS69Y/25plxqfhaDwifGXiTTQD0T9lj9p3wh+1h8NtV+IfhXwd8SPh
+      1eeFviN8Q/hF48+HXxZ0LR9D8d+A/iV8LfEt34V8aeFtZbwt4i8Z+CNcOm6rZt9m8ReAvG3jHwhq
+      tvLHJpfiG8dLmK3K+df+CWXgPxz8Mv2Vj4G8R6F8Q/DXw90D4xfGmH9mzRfjFpN3ofxks/2Z7vx/
+      q2o/CVvirpWr2Om+LLPxdd6deX16qfESxtvipJ4duNAm+KsQ+IsniYkoA/RyiiigAooooA//2Q==
+    </pkg:binaryData>
+  </pkg:part>
   <pkg:part pkg:name="/word/settings.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml">
     <pkg:xmlData>
       <w:settings xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:sl="http://schemas.openxmlformats.org/schemaLibrary/2006/main" mc:Ignorable="w14">
@@ -1526,12 +3032,14 @@
           <w:rsid w:val="00F926C7"/>
           <w:rsid w:val="00FC2F6C"/>
           <w:rsid w:val="0C687ECC"/>
+          <w:rsid w:val="11584D70"/>
           <w:rsid w:val="11975BFF"/>
           <w:rsid w:val="120F7572"/>
           <w:rsid w:val="14400F69"/>
           <w:rsid w:val="163E2FEA"/>
           <w:rsid w:val="175116B5"/>
           <w:rsid w:val="26C432C7"/>
+          <w:rsid w:val="2A9F3D73"/>
           <w:rsid w:val="2E876F07"/>
           <w:rsid w:val="36044A36"/>
           <w:rsid w:val="42F150B5"/>
@@ -1541,6 +3049,7 @@
           <w:rsid w:val="62C6643F"/>
           <w:rsid w:val="66B10F8D"/>
           <w:rsid w:val="6A600536"/>
+          <w:rsid w:val="6AA11EA2"/>
           <w:rsid w:val="6B3056CB"/>
           <w:rsid w:val="72B61DC4"/>
           <w:rsid w:val="7D2B15BF"/>

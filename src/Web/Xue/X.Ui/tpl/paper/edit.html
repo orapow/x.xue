@@ -38,13 +38,12 @@
                 <div id="sd-set-wire">
                     <div class="check-group">
                         <ul id="J_PaperSetCheck">
-                            <!--<li>
-                                <span class="checkbox">
+                            <li>
+                                <span class="checkbox" data-sw="1">
                                     <i class="icona-check"></i>
-                                    <input type="checkbox" name="" value="1" style="display: none;" />
                                     密封线
                                 </span>
-                            </li>-->
+                            </li>
                             <li>
                                 <span class="checkbox  checked" data-sw="3">
                                     <i class="icona-check"></i>
@@ -121,10 +120,6 @@
                                     <div class="club-type">
                                         <div class="club-hd f-cb">
                                             <span class="f-fl" title="$id">$T.GetNum($velocityCount)、$id</span>
-                                            <!--<div class="f-fr">
-                                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('type_1')">上</a>
-                                                <a href="javascript:;" class="t-del" onclick="paper.deleteQuestions('判断题')">删除</a>
-                                            </div>-->
                                         </div>
                                         <div class="club-grids">
                                             <div class="f-cb">
@@ -147,81 +142,90 @@
         </div>
         <div class="g-mn1">
             <div class="g-mn1c">
-                <div class="editcon">
-                    <div class="test-title">
-                        <h1 data-paperset="3"><span class="contenteditable" data-edit="主标题" id="paper-title">2017年5月17日小学英语试卷</span></h1>
-                        <h2 data-paperset="5" style="display:none;"><span data-edit="副标题" class="contenteditable">英语考试</span></h2>
-                    </div>
-                    <div data-paperset="7" class="test-time" style="display:none;">
-                        <p><span>考试时间：<i class="contenteditable" data-edit="考试时间">60</i> 分钟</span><span>满分：<i class="contenteditable" data-edit="满分值">100</i> 分</span></p>
-                    </div>
-                    <ul data-paperset="9" class="stu-info" style="display:none;">
-                        <li>姓名：<span>____________</span></li>
-                        <li>班级：<span>____________</span></li>
-                        <li>学号：<span>____________</span></li>
-                    </ul>
-                    <div data-paperset="11" class="mark-table" style="display:none;">
-                        <table id="J_PaperScore">
-                            <tbody>
-                                <tr>
-                                    <th width="160">题号</th>
-                                    #foreach($id in $ids)
-                                    <td>$T.GetNum($velocityCount)</td>
-                                    #end
-                                </tr>
-                                <tr>
-                                    <th>评分</th>
-                                    #foreach($id in $ids)
-                                    <td>&nbsp;</td>
-                                    #end
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div data-paperset="4" class="rule" style="display:none;">
-                        <p>* 注意事项：</p>
-                        <div class="contenteditable" data-edit="注意事项">1、填写答题卡的内容用2B铅笔填写<br />2、提前 xx 分钟收取答题卡</div>
-                    </div>
-                    <div id="J_PaperBody">
-                        #set($no=0)
-                        #foreach($id in $ids)
-                        <div class="paper-part">
-                            <div class="paper-section" _cid="type_1">
-                                #set($ques=$T.GetQues($id))
-                                <div data-paperset="10" class="paper-types">
-                                    <table data-paperset="2">
-                                        <tbody>
-                                            <tr><th>阅卷人</th><td></td></tr>
-                                            <tr><th>得&nbsp;&nbsp;分</th><td></td></tr>
-                                        </tbody>
-                                    </table>
-                                    <p><strong><b class="t-order">$T.GetNum($velocityCount)</b>、<span class="contenteditable" data-edit="type">$id</span><span data-paperset="12">（共<b class="t-num">$ques.Count()</b>题；共<b class="t-score">0</b>分）</span></strong></p>
-                                    <div class="types-btngroup">
-                                        <a class="score-btn J_MultiSetScore" href="javascript:;" onclick="setBagScore(this)"><i class="icona-jiexi1"></i>批量设置得分</a>
-                                        <a class="del-btn J_DelQByType" href="javascript:;"><i class="icona-del3"></i>删除</a>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td data-paperset="1" class="editcon-silder" style="display: none;"></td>
+                            <td>
+                                <div class="editcon">
+                                    <div class="test-title">
+                                        <h1 data-paperset="3"><span class="contenteditable" data-edit="主标题" id="paper-title">2017年5月17日小学英语试卷   $ids.get_item("1")</span></h1>
+                                        <h2 data-paperset="5" style="display:none;"><span data-edit="副标题" class="contenteditable">英语考试</span></h2>
+                                    </div>
+                                    <div data-paperset="7" class="test-time" style="display:none;">
+                                        <p><span>考试时间：<i class="contenteditable" data-edit="考试时间">60</i> 分钟</span><span>满分：<i class="contenteditable" data-edit="满分值">100</i> 分</span></p>
+                                    </div>
+                                    <ul data-paperset="9" class="stu-info" style="display:none;">
+                                        <li>姓名：<span>____________</span></li>
+                                        <li>班级：<span>____________</span></li>
+                                        <li>学号：<span>____________</span></li>
+                                    </ul>
+                                    <div data-paperset="11" class="mark-table" style="display:none;">
+                                        <table id="J_PaperScore">
+                                            <tbody>
+                                                <tr>
+                                                    <th width="160">题号</th>
+                                                    #foreach($id in $ids)
+                                                    <td>$T.GetNum($velocityCount)</td>
+                                                    #end
+                                                </tr>
+                                                <tr>
+                                                    <th>评分</th>
+                                                    #foreach($id in $ids)
+                                                    <td>&nbsp;</td>
+                                                    #end
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div data-paperset="4" class="rule" style="display:none;">
+                                        <p>* 注意事项：</p>
+                                        <div class="contenteditable" data-edit="注意事项">1、填写答题卡的内容用2B铅笔填写<br />2、提前 xx 分钟收取答题卡</div>
+                                    </div>
+                                    <div id="J_PaperBody">
+                                        #set($no=0)
+                                        #foreach($id in $ids)
+                                        <div class="paper-part">
+                                            <div class="paper-section" _cid="type_1">
+                                                #set($ques=$T.GetQues($id))
+                                                <div data-paperset="10" class="paper-types">
+                                                    <table data-paperset="2">
+                                                        <tbody>
+                                                            <tr><th>阅卷人</th><td></td></tr>
+                                                            <tr><th>得&nbsp;&nbsp;分</th><td></td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p><strong><b class="t-order">$T.GetNum($velocityCount)</b>、<span class="contenteditable" data-edit="type">$id</span><span data-paperset="12">（共<b class="t-num">$ques.Count()</b>题；共<b class="t-score">0</b>分）</span></strong></p>
+                                                    <div class="types-btngroup">
+                                                        <a class="score-btn J_MultiSetScore" href="javascript:;" onclick="setBagScore(this)"><i class="icona-jiexi1"></i>批量设置得分</a>
+                                                        <a class="del-btn J_DelQByType" href="javascript:;"><i class="icona-del3"></i>删除</a>
+                                                    </div>
+                                                </div>
+                                                <div class="paper-question-list f-usn" onselectstart="return false">
+                                                    #foreach($q in $ques)
+                                                    #set($no=$no+1)
+                                                    <div class="paper-question f-usn" onselectstart="return false" data-qid="${q.id}" data-easy="$q.easy">
+                                                        <div class="question-txt">
+                                                            <div class="question-num"><span class="q-sn">$no</span>. <span class="q-scoreval" data-score="0">（0分）</span>$q.topic</div>
+                                                        </div>
+                                                        <div class="question-btngroup">
+                                                            <a target="_blank" href="/question/detail/2775206" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
+                                                            <a class="score-btn" href="javascript:;" onclick="setScore(this)"><i class="icona-jiexi1"></i>设定得分</a>
+                                                            <a class="sc-btn" href="javascript:;" onclick="do_Fav($q.id)"><i class="icona-shoucangs"></i>收藏</a>
+                                                            <a class="del-btn" href="javascript:;" onclick="do_Del($q.id)"><i class="icona-del3"></i>删除</a>
+                                                        </div>
+                                                    </div>
+                                                    #end
+                                                </div>
+                                            </div>
+                                        </div>
+                                        #end
                                     </div>
                                 </div>
-                                <div class="paper-question-list f-usn" onselectstart="return false">
-                                    #foreach($q in $ques)
-                                    #set($no=$no+1)
-                                    <div class="paper-question f-usn" onselectstart="return false" data-qid="${q.id}" data-easy="$q.easy">
-                                        <div class="question-txt">
-                                            <div class="question-num"><span class="q-sn">$no</span>. <span class="q-scoreval" data-score="0">（0分）</span>$q.topic</div>
-                                        </div>
-                                        <div class="question-btngroup">
-                                            <a target="_blank" href="/question/detail/2775206" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                                            <a class="score-btn" href="javascript:;" onclick="setScore(this)"><i class="icona-jiexi1"></i>设定得分</a>
-                                            <a class="sc-btn" href="javascript:;" onclick="do_Fav($q.id)"><i class="icona-shoucangs"></i>收藏</a>
-                                            <a class="del-btn" href="javascript:;" onclick="do_Del($q.id)"><i class="icona-del3"></i>删除</a>
-                                        </div>
-                                    </div>
-                                    #end
-                                </div>
-                            </div>
-                        </div>
-                        #end
-                    </div>
-                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
