@@ -266,3 +266,10 @@ System.ArgumentNullException: 值不能为 null。
 出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"缺少参数 名称","code":"0x0003"} 
 时间：5530148 
+
+时间：2017-06-09 17:23:02,002 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 名称","code":"0x0003"} 
+时间：276615 
