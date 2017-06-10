@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="NPOI.OOXML">
-      <HintPath>..\..\..\..\..\x.file\lib\NPOI.OOXML.dll</HintPath>
+      <HintPath>..\..\..\..\libs\NPOI.OOXML.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data.Linq" />
