@@ -32,4 +32,3 @@ F:\HT\考试\src\Xc\Core\bin\Debug\X.Json.dll
 F:\HT\考试\src\Xc\Core\obj\Debug\X.Core.dll
 F:\HT\考试\src\Xc\Core\obj\Debug\X.Core.pdb
 F:\HT\考试\src\Xc\Core\obj\Debug\X.Core.csprojResolveAssemblyReference.cache
-D:\Pro\x.xue\src\Xc\Core\obj\Debug\X.Core.csprojResolveAssemblyReference.cache
