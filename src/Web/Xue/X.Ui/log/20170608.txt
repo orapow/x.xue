@@ -42,192 +42,278 @@ System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓ
 ClientConnectionId:00000000-0000-0000-0000-000000000000
 Error Number:53,State:0,Class:20
 
-Ê±¼ä£º2017-06-08 15:17:14,893 
-¼¶±ğ£ºFATAL 
-³ö´íÀà£ºX.Web.XApp property: [(null)] 
-³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-´íÎó£ºÖÂÃü´íÎó 
-Ê±¼ä£º4347795 
-NVelocity.Exception.ParseErrorException: Encountered "#end\r\n" at line 138, column 33.
-Was expecting one of:
-    <EOF> 
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "#end\r\n" at line 138, column 33.
-Was expecting one of:
-    <EOF> 
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   ÔÚ NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   ÔÚ NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   ÔÚ NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   ÔÚ NVelocity.Template.Process()
-   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
-   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 108
-   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
-
-Ê±¼ä£º2017-06-08 17:26:13,446 
+Ê±¼ä£º2017-06-08 14:21:27,745 
 ¼¶±ğ£ºERROR 
 ³ö´íÀà£ºError property: [(null)] 
-³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-´íÎó£º{"issucc":false,"msg":"Î´Öª´íÎó´úÂë(TÓÃ»§µÇÂ½³¬Ê±)","code":"TÓÃ»§µÇÂ½³¬Ê±"} 
-Ê±¼ä£º6551 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º216 
 
-Ê±¼ä£º2017-06-08 17:27:32,271 
-¼¶±ğ£ºFATAL 
-³ö´íÀà£ºX.Web.XApp property: [(null)] 
-³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-´íÎó£ºÖÂÃü´íÎó 
-Ê±¼ä£º3376 
-X.Json.JsonReaderException: Error reading string. Unexpected token: StartObject. Path 'cfg', line 1, position 8.
-   ÔÚ X.Json.JsonReader.ReadAsStringInternal()
-   ÔÚ X.Json.JsonTextReader.ReadAsString()
-   ÔÚ X.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
-   ÔÚ X.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
-   ÔÚ X.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   ÔÚ X.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   ÔÚ X.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
-   ÔÚ X.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
-   ÔÚ X.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
-   ÔÚ X.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
-   ÔÚ X.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
-   ÔÚ X.Core.Utility.Serialize.FromJson[T](String json) Î»ÖÃ D:\Pro\x.xue\src\Xc\Core\Utility\Serialize.cs:ĞĞºÅ 36
-   ÔÚ X.App.Apis.paper.save.Execute() Î»ÖÃ D:\Pro\x.xue\src\Web\Xue\X.App\Apis\paper\save.cs:ĞĞºÅ 22
-   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:ĞĞºÅ 31
-   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
-
-Ê±¼ä£º2017-06-08 17:28:20,066 
-¼¶±ğ£ºFATAL 
-³ö´íÀà£ºX.Web.XApp property: [(null)] 
-³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-´íÎó£ºÖÂÃü´íÎó 
-Ê±¼ä£º51171 
-X.Json.JsonReaderException: Error reading string. Unexpected token: StartObject. Path 'cfg', line 1, position 8.
-   ÔÚ X.Json.JsonReader.ReadAsStringInternal()
-   ÔÚ X.Json.JsonTextReader.ReadAsString()
-   ÔÚ X.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
-   ÔÚ X.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
-   ÔÚ X.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   ÔÚ X.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   ÔÚ X.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
-   ÔÚ X.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
-   ÔÚ X.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
-   ÔÚ X.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
-   ÔÚ X.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
-   ÔÚ X.Core.Utility.Serialize.FromJson[T](String json) Î»ÖÃ D:\Pro\x.xue\src\Xc\Core\Utility\Serialize.cs:ĞĞºÅ 36
-   ÔÚ X.App.Apis.paper.save.Execute() Î»ÖÃ D:\Pro\x.xue\src\Web\Xue\X.App\Apis\paper\save.cs:ĞĞºÅ 22
-   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:ĞĞºÅ 31
-   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
-
-Ê±¼ä£º2017-06-08 17:33:01,327 
-¼¶±ğ£ºFATAL 
-³ö´íÀà£ºX.Web.XApp property: [(null)] 
-³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-´íÎó£ºÖÂÃü´íÎó 
-Ê±¼ä£º47555 
-System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓëÍøÂçÏà¹ØµÄ»òÌØ¶¨ÓÚÊµÀıµÄ´íÎó¡£Î´ÕÒµ½»òÎŞ·¨·ÃÎÊ·şÎñÆ÷¡£ÇëÑéÖ¤ÊµÀıÃû³ÆÊÇ·ñÕıÈ·²¢ÇÒ SQL Server ÒÑÅäÖÃÎªÔÊĞíÔ¶³ÌÁ¬½Ó¡£ (provider: Named Pipes Provider, error: 40 - ÎŞ·¨´ò¿ªµ½ SQL Server µÄÁ¬½Ó) ---> System.ComponentModel.Win32Exception (0x80004005): ÕÒ²»µ½ÍøÂçÂ·¾¶¡£
-   ÔÚ System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
-   ÔÚ System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   ÔÚ System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   ÔÚ System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   ÔÚ System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   ÔÚ System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   ÔÚ System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   ÔÚ System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   ÔÚ System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   ÔÚ System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   ÔÚ System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   ÔÚ System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   ÔÚ System.Data.SqlClient.SqlConnection.Open()
-   ÔÚ System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
-   ÔÚ System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
-   ÔÚ System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
-   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
-   ÔÚ System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
-   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
-   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   ÔÚ X.Data.x_dict.GetDictList(String code, String upval, DataClassesDataContext db) Î»ÖÃ D:\Pro\x.xue\src\Xc\Data\DataClasses.cs:ĞĞºÅ 71
-   ÔÚ X.Web.XFace.GetDictList(String code, String upval) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XFace.cs:ĞĞºÅ 175
-   ÔÚ X.Web.XFace.GetDict(String code, String val) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XFace.cs:ĞĞºÅ 180
-   ÔÚ X.App.Views._web.InitView() Î»ÖÃ D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:ĞĞºÅ 24
-   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 94
-   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
-ClientConnectionId:00000000-0000-0000-0000-000000000000
-Error Number:53,State:0,Class:20
-
-Ê±¼ä£º2017-06-08 17:46:00,096 
+Ê±¼ä£º2017-06-08 14:21:29,808 
 ¼¶±ğ£ºERROR 
 ³ö´íÀà£ºError property: [(null)] 
-³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-´íÎó£º{"issucc":false,"msg":"Î´Öª´íÎó´úÂë(TÓĞÊÔÌâÎ´ÉèÖÃ·ÖÊı)","code":"TÓĞÊÔÌâÎ´ÉèÖÃ·ÖÊı"} 
-Ê±¼ä£º826324 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º2279 
 
-Ê±¼ä£º2017-06-08 17:46:23,183 
+Ê±¼ä£º2017-06-08 14:22:32,055 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º2350 
+
+Ê±¼ä£º2017-06-08 14:23:29,783 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º60077 
+
+Ê±¼ä£º2017-06-08 14:27:48,800 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º319094 
+
+Ê±¼ä£º2017-06-08 14:52:16,296 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º1786591 
+
+Ê±¼ä£º2017-06-08 15:07:07,971 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º2678265 
+
+Ê±¼ä£º2017-06-08 15:07:11,173 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º2681468 
+
+Ê±¼ä£º2017-06-08 15:08:23,106 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı Ãû³Æ","code":"0x0003"} 
+Ê±¼ä£º2753401 
+
+Ê±¼ä£º2017-06-08 15:14:05,139 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º3095433 
+
+Ê±¼ä£º2017-06-08 15:14:20,951 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º3111246 
+
+Ê±¼ä£º2017-06-08 15:15:56,041 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º3206336 
+
+Ê±¼ä£º2017-06-08 15:20:51,701 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º3501996 
+
+Ê±¼ä£º2017-06-08 15:32:54,114 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º2897 
+
+Ê±¼ä£º2017-06-08 15:32:56,525 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º5308 
+
+Ê±¼ä£º2017-06-08 15:33:47,780 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º56563 
+
+Ê±¼ä£º2017-06-08 15:33:50,347 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º59131 
+
+Ê±¼ä£º2017-06-08 15:34:29,502 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º98286 
+
+Ê±¼ä£º2017-06-08 15:34:32,587 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º101371 
+
+Ê±¼ä£º2017-06-08 15:34:45,063 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º113847 
+
+Ê±¼ä£º2017-06-08 15:34:47,011 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º115795 
+
+Ê±¼ä£º2017-06-08 15:34:51,498 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.dict.list","code":"0x0002"} 
+Ê±¼ä£º120282 
+
+Ê±¼ä£º2017-06-08 15:34:54,883 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı ´úºÅ","code":"0x0003"} 
+Ê±¼ä£º123666 
+
+Ê±¼ä£º2017-06-08 16:59:08,075 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":" ","code":"0x0012"} 
+Ê±¼ä£º770684 
+
+Ê±¼ä£º2017-06-08 17:01:58,164 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":" ","code":"0x0012"} 
+Ê±¼ä£º940773 
+
+Ê±¼ä£º2017-06-08 17:13:19,269 
 ¼¶±ğ£ºFATAL 
 ³ö´íÀà£ºX.Web.XApp property: [(null)] 
-³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
 ´íÎó£ºÖÂÃü´íÎó 
-Ê±¼ä£º849411 
-System.Data.SqlClient.SqlException (0x80131904): ÁĞÃû 'easy' ÎŞĞ§¡£
-ÁĞÃû 'info' ÎŞĞ§¡£
-   ÔÚ System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   ÔÚ System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   ÔÚ System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   ÔÚ System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   ÔÚ System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
-   ÔÚ System.Data.SqlClient.SqlDataReader.get_MetaData()
-   ÔÚ System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
-   ÔÚ System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
-   ÔÚ System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
-   ÔÚ System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
-   ÔÚ System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
-   ÔÚ System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
-   ÔÚ System.Data.Common.DbCommand.ExecuteReader()
-   ÔÚ System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
-   ÔÚ System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
-   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
-   ÔÚ System.Data.Linq.ChangeDirector.StandardChangeDirector.DynamicInsert(TrackedObject item)
-   ÔÚ System.Data.Linq.ChangeDirector.StandardChangeDirector.Insert(TrackedObject item)
-   ÔÚ System.Data.Linq.ChangeProcessor.SubmitChanges(ConflictMode failureMode)
-   ÔÚ System.Data.Linq.DataContext.SubmitChanges(ConflictMode failureMode)
-   ÔÚ X.Web.XFace.SubmitDBChanges() Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XFace.cs:ĞĞºÅ 156
-   ÔÚ X.App.Apis.paper.save.Execute() Î»ÖÃ D:\Pro\x.xue\src\Web\Xue\X.App\Apis\paper\save.cs:ĞĞºÅ 44
-   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:ĞĞºÅ 31
-   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
-ClientConnectionId:eddedac9-dbcd-422a-8ee7-476e3cfe319d
-Error Number:207,State:1,Class:16
+Ê±¼ä£º15258 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.mgr.dict.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:ĞĞºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:15:41,977 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º77385 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.mgr.dict.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:ĞĞºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:15:46,144 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º81552 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.mgr.dict.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:ĞĞºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:17:09,068 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º164476 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.mgr.dict.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:ĞĞºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:21:20,888 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"Î´Öª´íÎó´úÂë(TÓÃ»§KeyÎª¿Õ)","code":"TÓÃ»§KeyÎª¿Õ"} 
+Ê±¼ä£º416296 
+
+Ê±¼ä£º2017-06-08 17:25:39,012 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º674420 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.mgr.dict.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:ĞĞºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:28:42,836 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º858245 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.mgr.dict.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\dict\edit.cs:ĞĞºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:41:37,908 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º382 
+System.ArgumentNullException: Öµ²»ÄÜÎª null¡£
+²ÎÊıÃû: source
+   ÔÚ System.Linq.OrderedEnumerable`2..ctor(IEnumerable`1 source, Func`2 keySelector, IComparer`1 comparer, Boolean descending)
+   ÔÚ System.Linq.Enumerable.OrderBy[TSource,TKey](IEnumerable`1 source, Func`2 keySelector)
+   ÔÚ X.App.Apis.mgr.dict.list.Execute() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\dict\list.cs:ĞĞºÅ 27
+   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Apis\Api.cs:ĞĞºÅ 31
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-08 17:41:50,884 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º13358 
+System.ArgumentNullException: Öµ²»ÄÜÎª null¡£
+²ÎÊıÃû: source
+   ÔÚ System.Linq.OrderedEnumerable`2..ctor(IEnumerable`1 source, Func`2 keySelector, IComparer`1 comparer, Boolean descending)
+   ÔÚ System.Linq.Enumerable.OrderBy[TSource,TKey](IEnumerable`1 source, Func`2 keySelector)
+   ÔÚ X.App.Apis.mgr.dict.list.Execute() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\dict\list.cs:ĞĞºÅ 27
+   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Apis\Api.cs:ĞĞºÅ 31
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31

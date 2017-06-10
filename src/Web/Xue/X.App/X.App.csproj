@@ -81,8 +81,6 @@
     <Compile Include="Views\com\code.cs" />
     <Compile Include="Views\com\dict.cs" />
     <Compile Include="Views\com\getpos.cs" />
-    <Compile Include="Views\mgr\dict\edit.cs" />
-    <Compile Include="Views\mgr\dict\list.cs" />
     <Compile Include="Views\mgr\dict\select.cs" />
     <Compile Include="Views\paper\down.cs" />
     <Compile Include="Views\login.cs" />
@@ -91,6 +89,8 @@
     <Compile Include="Views\mgr\answer\edit.cs" />
     <Compile Include="Views\mgr\answer\list.cs" />
     <Compile Include="Views\mgr\chapter\choose.cs" />
+    <Compile Include="Views\mgr\dict\edit.cs" />
+    <Compile Include="Views\mgr\dict\list.cs" />
     <Compile Include="Views\mgr\err.cs" />
     <Compile Include="Views\mgr\knowlege\edit.cs" />
     <Compile Include="Views\mgr\knowlege\list.cs" />

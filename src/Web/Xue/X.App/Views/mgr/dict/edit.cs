@@ -1,48 +1,40 @@
 ﻿using System.Linq;
 using X.Web;
 
-namespace X.App.Views.mgr.dict
-{
-    public class edit : xmg
-    {
-        public int cid { get; set; }
-        public int pid { get; set; }
-        [ParmsAttr(name = "代号", req = true)]
-        public string code { get; set; }
-        protected override int powercode {
+namespace X.App.Views.mgr.dict {
+    public class edit : xmg {
+        public int id {
+            get; set;
+        }
+        public string pid {
+            get; set;
+        }
+        public string code {
+            get; set;
+        }
+        protected override string GetParmNames {
             get {
-                return 1;
+                return "id-code";
             }
         }
-
-        protected override string GetParmNames
-        {
-            get
-            {
-                return "code-cid-pid";
-            }
-        }
-        protected override void InitDict()
-        {
+        protected override void InitDict() {
             base.InitDict();
-            if (cid > 0)
-            {
-                var ent = DB.x_dict.FirstOrDefault(o => o.dict_id == cid);
-                if (ent == null) throw new XExcep("0x0005");
+
+            if (id > 0) {
+                var ent = DB.x_dict.FirstOrDefault(o => o.dict_id == id);
+                if (ent == null)
+                    throw new XExcep("0x0005");
                 dict.Add("item", ent);
-                var up = DB.x_dict.FirstOrDefault(o => o.code == code && o.value == ent.upval.Split('-').Last());
-                if (up == null) dict.Add("up", "0|无");
-                else dict.Add("up", up.value + "|" + up.name);
+                pid = ent.upval.Split('-').Last();
             }
-            else if (pid > 0)
-            {
-                var ent = DB.x_dict.FirstOrDefault(o => o.dict_id == pid);
-                if (ent != null) dict.Add("up", ent.value + "|" + ent.name);
-            }
-            else
-            {
-                dict.Add("up", "0|无");
-            }
+            var q = DB.x_dict.FirstOrDefault(o => o.code == code);
+            dict.Add("coe", q);
+            //var up = GetDict("question.topic", pid);
+            //if (up != null)
+            //    dict.Add("up", pid + "|" + up.name);
+
+          
+
         }
     }
 }
