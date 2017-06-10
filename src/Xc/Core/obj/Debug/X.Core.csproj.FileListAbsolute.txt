@@ -7,14 +7,6 @@ D:\Pro\x.yfj\src\Xc\Core\bin\Debug\X.Json.dll
 D:\Pro\x.yfj\src\Xc\Core\obj\Debug\X.Core.dll
 D:\Pro\x.yfj\src\Xc\Core\obj\Debug\X.Core.pdb
 D:\Pro\x.yfj\src\Xc\Core\obj\Debug\X.Core.csprojResolveAssemblyReference.cache
-D:\Pro\x.xue\src\Xc\Core\bin\Debug\X.Core.dll
-D:\Pro\x.xue\src\Xc\Core\bin\Debug\X.Core.pdb
-D:\Pro\x.xue\src\Xc\Core\bin\Debug\Enyim.Caching.dll
-D:\Pro\x.xue\src\Xc\Core\bin\Debug\log4net.dll
-D:\Pro\x.xue\src\Xc\Core\bin\Debug\NVelocity.dll
-D:\Pro\x.xue\src\Xc\Core\bin\Debug\X.Json.dll
-D:\Pro\x.xue\src\Xc\Core\obj\Debug\X.Core.dll
-D:\Pro\x.xue\src\Xc\Core\obj\Debug\X.Core.pdb
 F:\HT\新建文件夹\src\Xc\Core\bin\Debug\X.Core.dll
 F:\HT\新建文件夹\src\Xc\Core\bin\Debug\X.Core.pdb
 F:\HT\新建文件夹\src\Xc\Core\bin\Debug\Enyim.Caching.dll
@@ -41,3 +33,11 @@ F:\HT\xue\src\Xc\Core\bin\Debug\X.Json.dll
 F:\HT\xue\src\Xc\Core\obj\Debug\X.Core.dll
 F:\HT\xue\src\Xc\Core\obj\Debug\X.Core.pdb
 F:\HT\xue\src\Xc\Core\obj\Debug\X.Core.csprojResolveAssemblyReference.cache
+D:\Pro\x.xue\src\Xc\Core\bin\Debug\X.Core.dll
+D:\Pro\x.xue\src\Xc\Core\bin\Debug\X.Core.pdb
+D:\Pro\x.xue\src\Xc\Core\bin\Debug\Enyim.Caching.dll
+D:\Pro\x.xue\src\Xc\Core\bin\Debug\log4net.dll
+D:\Pro\x.xue\src\Xc\Core\bin\Debug\NVelocity.dll
+D:\Pro\x.xue\src\Xc\Core\bin\Debug\X.Json.dll
+D:\Pro\x.xue\src\Xc\Core\obj\Debug\X.Core.dll
+D:\Pro\x.xue\src\Xc\Core\obj\Debug\X.Core.pdb

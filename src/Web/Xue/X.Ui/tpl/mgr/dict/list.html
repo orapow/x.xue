@@ -4,46 +4,17 @@
     #parse("mgr/com/_head.html")
     <title>字典管理 - $cfg.name</title>
     <style type="text/css">
-        .tab {
-            border-bottom: 1px solid #3086c8;
-            width: 450px;
-        }
-
-            .tab span.t {
-                width: 90px;
-                display: inline-block;
-                line-height: 32px;
-                text-align: center;
-                margin-right: -1px;
-                cursor: pointer;
-            }
-
-        span.t.on {
-            background-color: #3086c8;
-            color: white;
-            border-color: #3086c8;
-        }
-
-        .tb {
-            display: none;
-            margin-top: 10px;
-        }
-
-        .li {
-            margin-bottom: 10px;
-        }
-
-        .row .li {
-            margin-bottom: 0;
-        }
+        .tab { border-bottom: 1px solid #3086c8; width: 450px; }
+        .tab span.t { width: 90px; display: inline-block; line-height: 32px; text-align: center; margin-right: -1px; cursor: pointer; }
+        span.t.on { background-color: #3086c8; color: white; border-color: #3086c8; }
+        .tb { display: none; margin-top: 10px; }
+        .li { margin-bottom: 10px; }
+        .row .li { margin-bottom: 0; }
     </style>
 </head>
 <body>
-    <div class="title">
-        <span class="main">字典</span> - <span class="sub">其他字典</span>
-    </div>
     <div class="tab">
-        <span class="t on" data-code="question.topic">试题题型</span><span class="t" data-code="question.type">试题题类</span><span class="t" data-code="xx.area">地区(省)</span><span class="t" data-code="xx.area">试卷类型</span>
+        <span class="t on" data-code="question.topic">试题题型</span><span class="t" data-code="question.type">试题题类</span><span class="t" data-code="xx.area">地区(省)</span><span class="t" data-code="paper.type">试卷类型</span>
     </div>
     <div class="search">
         <x:form>
@@ -69,13 +40,12 @@
 
         var cfg = {
             el: ".gridpanel",
+            exheight: 30,
             searchcon: { page: 1, limit: 30, code: "question.topic" },
             api: "mgr.dict.list",
             fs: [
-                { t: "字典内容", f: "{name}", w: 60 },
+                { t: "名称", f: "{name}", w: 60 },
                 { t: "值", f: "{value}", w: 120, align: "center" },
-
-
             ],
             btns: [
                 { txt: "编辑", ico: "edit", act: "edit", confirm: false },
@@ -104,9 +74,9 @@
 
         function show_edit(id) {
             var code = $("span.t.on").attr("data-code");
-            x.openwin("edit-" + id + "-" + code + ".html", "字典新增", function () {
+            x.openwin("edit-" + (id || "") + "-" + code + ".html", "字典新增", function () {
                 g.getlist();
-            }, { w: 600, h: 400 });
+            }, { w: 300, h: 160 });
         }
     </script>
 
