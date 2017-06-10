@@ -116,110 +116,27 @@
                                 <div class="t3">难度：<strong>困难</strong></div>
                             </div>
                             <div class="club-type-wrap">
-
-                                <div class="club-type-wire drag-wire" _cid="type_1" data-typename="判断题">
+                                #foreach($id in $ids)
+                                <div class="club-type-wire drag-wire" _cid="type_1" data-typename="$id">
                                     <div class="club-type">
                                         <div class="club-hd f-cb">
-                                            <span class="f-fl" title="判断题">一、判断题</span>
-                                            <div class="f-fr">
-                                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('type_1')">排序</a>
+                                            <span class="f-fl" title="$id">$T.GetNum($velocityCount)、$id</span>
+                                            <!--<div class="f-fr">
+                                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('type_1')">上</a>
                                                 <a href="javascript:;" class="t-del" onclick="paper.deleteQuestions('判断题')">删除</a>
-                                            </div>
+                                            </div>-->
                                         </div>
                                         <div class="club-grids">
                                             <div class="f-cb">
-
-                                                <span class="drag-grid" _qid="2775206">1</span>
-
-                                                <span class="drag-grid" _qid="2775207">2</span>
-
-                                                <span class="drag-grid" _qid="2775208">3</span>
-
-                                                <span class="drag-grid" _qid="2775215">4</span>
-
+                                                #set($ques=$T.GetQues($id))
+                                                #foreach($q in $ques)
+                                                <span class="drag-grid" data-qid="$q.id">$velocityCount</span>
+                                                #end
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="club-type-wire drag-wire" _cid="type_2" data-typename="阅读理解">
-                                    <div class="club-type">
-                                        <div class="club-hd f-cb">
-                                            <span class="f-fl" title="阅读理解">二、阅读理解</span>
-                                            <div class="f-fr">
-                                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('type_2')">排序</a>
-                                                <a href="javascript:;" class="t-del" onclick="paper.deleteQuestions('阅读理解')">删除</a>
-                                            </div>
-                                        </div>
-                                        <div class="club-grids">
-                                            <div class="f-cb">
-                                                <span class="drag-grid" _qid="2775176">5</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="club-type-wire drag-wire" _cid="type_3" data-typename="翻译">
-                                    <div class="club-type">
-                                        <div class="club-hd f-cb">
-                                            <span class="f-fl" title="翻译">三、翻译</span>
-                                            <div class="f-fr">
-                                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('type_3')">排序</a>
-                                                <a href="javascript:;" class="t-del" onclick="paper.deleteQuestions('翻译')">删除</a>
-                                            </div>
-                                        </div>
-                                        <div class="club-grids">
-                                            <div class="f-cb">
-
-                                                <span class="drag-grid" _qid="2775186">6</span>
-
-                                                <span class="drag-grid" _qid="2775222">7</span>
-
-                                                <span class="drag-grid" _qid="2775243">8</span>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="club-type-wire drag-wire" _cid="type_4" data-typename="连词成句">
-                                    <div class="club-type">
-                                        <div class="club-hd f-cb">
-                                            <span class="f-fl" title="连词成句">四、连词成句</span>
-                                            <div class="f-fr">
-                                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('type_4')">排序</a>
-                                                <a href="javascript:;" class="t-del" onclick="paper.deleteQuestions('连词成句')">删除</a>
-                                            </div>
-                                        </div>
-                                        <div class="club-grids">
-                                            <div class="f-cb">
-
-                                                <span class="drag-grid" _qid="2775238">9</span>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="club-type-wire drag-wire" _cid="type_5" data-typename="填空题">
-                                    <div class="club-type">
-                                        <div class="club-hd f-cb">
-                                            <span class="f-fl" title="填空题">五、填空题</span>
-                                            <div class="f-fr">
-                                                <a href="javascript:;" class="t-order" onclick="paper.askOrder('type_5')">排序</a>
-                                                <a href="javascript:;" class="t-del" onclick="paper.deleteQuestions('填空题')">删除</a>
-                                            </div>
-                                        </div>
-                                        <div class="club-grids">
-                                            <div class="f-cb">
-
-                                                <span class="drag-grid" _qid="3358881">10</span>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                #end
                             </div>
                         </div>
                     </div>
@@ -280,7 +197,7 @@
                                     </table>
                                     <p><strong><b class="t-order">$T.GetNum($velocityCount)</b>、<span class="contenteditable" data-edit="type">$id</span><span data-paperset="12">（共<b class="t-num">$ques.Count()</b>题；共<b class="t-score">0</b>分）</span></strong></p>
                                     <div class="types-btngroup">
-                                        <a class="score-btn J_MultiSetScore" href="javascript:;"><i class="icona-jiexi1"></i>批量设置得分</a>
+                                        <a class="score-btn J_MultiSetScore" href="javascript:;" onclick="setBagScore(this)"><i class="icona-jiexi1"></i>批量设置得分</a>
                                         <a class="del-btn J_DelQByType" href="javascript:;"><i class="icona-del3"></i>删除</a>
                                     </div>
                                 </div>
@@ -293,9 +210,9 @@
                                         </div>
                                         <div class="question-btngroup">
                                             <a target="_blank" href="/question/detail/2775206" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
-                                            <a class="score-btn" href="javascript:;"><i class="icona-jiexi1"></i>设定得分</a>
-                                            <a class="sc-btn" href="javascript:;" onclick="OT2.QCollect(this, 2775206)"><i class="icona-shoucangs"></i>收藏</a>
-                                            <a class="del-btn" href="javascript:;"><i class="icona-del3"></i>删除</a>
+                                            <a class="score-btn" href="javascript:;" onclick="setScore(this)"><i class="icona-jiexi1"></i>设定得分</a>
+                                            <a class="sc-btn" href="javascript:;" onclick="do_Fav($q.id)"><i class="icona-shoucangs"></i>收藏</a>
+                                            <a class="del-btn" href="javascript:;" onclick="do_Del($q.id)"><i class="icona-del3"></i>删除</a>
                                         </div>
                                     </div>
                                     #end
@@ -335,19 +252,77 @@
                 sw.toggleClass("checked");
                 $("[data-paperset='" + sw.attr("data-sw") + "']")[sw.hasClass("checked") ? "show" : "hide"]();
             });
-            update();
+            $(".club-grids [data-qid]").click(function () {
+                var qid = $(this).attr("data-qid");
+                var of = $("#J_PaperBody [data-qid='" + qid + "']").offset();
+                //滚动定位到试题
+            });
+            updateTj();
         });
-        function update() {
+
+        function setBagScore(o) {
+            var ques = $(o).parent().parent().next().find("[data-qid]");
+            var sum = $(o).parent().prev().find(".t-score");
+            x.input("单个题目的分值", function (t) {
+                sum.text(ques.size() * t);
+                ques.find(".q-scoreval").attr("data-score", t).text("（" + t + "分）");
+                updateTj();
+            }, 1, true, 2);
+        }
+
+        function setScore(o) {
+            var q = $(o).parent().prev().find(".q-scoreval");
+            x.input("这个题目的分值", function (t) {
+                q.attr("data-score", t).text("（" + t + "分）");
+                updateTj();
+            }, 1, true, q.attr("data-score"));
+        }
+
+        function updateTj() {
             var ques = $(".paper-question")
             var ct = ques.size();
 
             var score = 0;
-            var easy = 0;
-            ques.each(function () { score += parseInt($(this).find("[data-score]").attr("data-score")); if ($(this).attr("data-easy") == "3") easy++; });
+            var easy = { 1: 0, 2: 0, 3: 0 };
+            ques.each(function () { score += parseInt($(this).find("[data-score]").attr("data-score")); easy[$(this).attr("data-easy")]++; });
 
+            var esy = Math.max(easy[1], easy[2], easy[3]);
+            $(".club-summary .t3 strong").text(esy == easy[1] ? "容易" : esy == easy[2] ? "普通" : "困难");
             $(".club-summary .t2 strong").text(ct);
             $(".club-summary .t1 strong").text(score);
         }
+
+        function do_save() {
+            var setting = {
+                cfg: {},
+                topic: $("[data-edit='主标题']").text(),
+                stopic: $("[data-edit='副标题']").text(),
+                time: $("[data-edit='考试时间']").text(),
+                score: $("[data-edit='满分值']").text(),
+                notice: $("[data-edit='注意事项']").html()
+            };
+
+            if (setting.cfg[3] && !setting.topic) { x.alert("主标题不能为空"); return; }
+            if (setting.cfg[5] && !setting.stopic) { x.alert("副标题不能为空"); return; }
+            if (setting.cfg[7] && (!setting.time || !setting.score)) { x.alert("考试时间和满分值不能为空"); return; }
+            if (setting.cfg[4] && !setting.notice) { x.alert("注意事项不能为空"); return; }
+
+            $("[data-sw]").each(function () {
+                setting.cfg[$(this).attr("data-sw")] = $(this).hasClass("checked");
+            });
+
+            var qids = {};
+            $("#J_PaperBody [data-qid]").each(function () {
+                var q = $(this);
+                qids[q.attr("data-qid")] = parseInt(q.find("[data-score]").attr("data-score"));
+            });
+
+            x.doapi("paper.save", { sub: "$!sb", qids: JSON.stringify(qids), setting: JSON.stringify(setting) }, function (d) {
+
+            });
+
+        }
+
     </script>
 
     <a class="return" href="javascript:;" style="right: 4.5px; display: none;"><i class="icona-top"></i></a>

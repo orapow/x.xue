@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\..\..\..\..\x.file\lib\NPOI.OOXML.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
@@ -70,6 +73,7 @@
     <Compile Include="Apis\paper\save.cs" />
     <Compile Include="Apis\question\search.cs" />
     <Compile Include="Apis\xapi.cs" />
+    <Compile Include="Apis\_web.cs" />
     <Compile Include="Com\Config.cs" />
     <Compile Include="Com\Sdk.cs" />
     <Compile Include="Global.cs" />
@@ -77,7 +81,10 @@
     <Compile Include="Views\com\code.cs" />
     <Compile Include="Views\com\dict.cs" />
     <Compile Include="Views\com\getpos.cs" />
-    <Compile Include="Views\down.cs" />
+    <Compile Include="Views\mgr\dict\edit.cs" />
+    <Compile Include="Views\mgr\dict\list.cs" />
+    <Compile Include="Views\mgr\dict\select.cs" />
+    <Compile Include="Views\paper\down.cs" />
     <Compile Include="Views\login.cs" />
     <Compile Include="Views\mgr\admin\edit.cs" />
     <Compile Include="Views\mgr\admin\list.cs" />
@@ -104,7 +111,6 @@
     <Compile Include="Views\mgr\subject\edit.cs" />
     <Compile Include="Views\mgr\subject\list.cs" />
     <Compile Include="Views\mgr\subject\select.cs" />
-    <Compile Include="Views\paper\create.cs" />
     <Compile Include="Views\paper\edit.cs" />
     <Compile Include="Views\question.cs" />
     <Compile Include="Views\xview.cs" />

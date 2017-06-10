@@ -6,14 +6,14 @@ var x = (function ($) {
         },
         input: function (title, okfun, type, notnull, value) {
             var inp = "";
-            if (type == 1) inp = "<input type='text' id='dia_input' style='width:300px;'/>";
+            if (type == 1) inp = "<input type='text' id='dia_input' style='width:300px;' value='" + (value || "") + "'/>";
             else if (type == 2) inp = "<textarea id='dia_input' rows='2' style='width:300px;'>" + (value || "") + "</textarea>"
             new x.dialog({
                 title: "请输入" + title,
                 content: inp,
                 ok: function () {
                     var t = $("#dia_input").val();
-                    if (!t && notnull) x.dialog.alert(title + "不能为空");
+                    if (!t && notnull) x.alert(title + "不能为空");
                     else { okfun(t); }
                 }, okValue: "确定", cancelValue: "取消", cancel: function () { }
             }).showModal();

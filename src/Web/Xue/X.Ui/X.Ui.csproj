@@ -206,7 +206,7 @@
     <Content Include="tpl\mgr\subject\edit.html" />
     <Content Include="tpl\mgr\subject\list.html" />
     <Content Include="tpl\paper - 复制%282%29.html" />
-    <Content Include="tpl\paper.html" />
+    <Content Include="tpl\paper\down.html" />
     <Content Include="tpl\paper2.html" />
     <Content Include="tpl\paper\view.html" />
     <Content Include="tpl\paper\edit.html" />
