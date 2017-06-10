@@ -1,0 +1,14 @@
+
+时间：2017-06-10 10:46:36,713 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 代号","code":"0x0003"} 
+时间：1331958 
+
+时间：2017-06-10 10:46:41,932 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 代号","code":"0x0003"} 
+时间：1337176 
