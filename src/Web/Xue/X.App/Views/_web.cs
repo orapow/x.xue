@@ -29,6 +29,7 @@ namespace X.App.Views
 
             var uk = GetReqParms("ukey");
             if (!string.IsNullOrEmpty(uk)) cu = CacheHelper.Get<x_user>(uk);
+            cu = DB.x_user.FirstOrDefault(o => o.user_id == 1);
 
             if (nduser && cu == null) Context.Response.Redirect("/login-" + uk + "-" + Secret.ToBase64(Context.Request.RawUrl) + ".html");
 

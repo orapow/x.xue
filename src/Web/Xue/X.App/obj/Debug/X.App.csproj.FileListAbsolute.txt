@@ -59,3 +59,9 @@ F:\HT\考试\src\Web\Xue\X.App\bin\Debug\X.Web.pdb
 F:\HT\考试\src\Web\Xue\X.App\obj\Debug\X.App.csprojResolveAssemblyReference.cache
 F:\HT\考试\src\Web\Xue\X.App\obj\Debug\X.App.dll
 F:\HT\考试\src\Web\Xue\X.App\obj\Debug\X.App.pdb
+D:\Pro\x.xue\src\Web\Xue\X.App\bin\Debug\NPOI.OOXML.dll
+D:\Pro\x.xue\src\Web\Xue\X.App\bin\Debug\NPOI.dll
+D:\Pro\x.xue\src\Web\Xue\X.App\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\Pro\x.xue\src\Web\Xue\X.App\bin\Debug\NPOI.OpenXml4Net.dll
+D:\Pro\x.xue\src\Web\Xue\X.App\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Pro\x.xue\src\Web\Xue\X.App\bin\Debug\NPOI.xml
