@@ -5,7 +5,7 @@ using System.Text;
 
 namespace X.App.Views
 {
-    public class index : xview
+    public class index : _web
     {
     }
 }

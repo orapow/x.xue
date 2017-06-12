@@ -89,13 +89,6 @@
                                     分大题
                                 </span>
                             </li>
-
-                            <li>
-                                <span class="checkbox checked" data-sw="2">
-                                    <i class="icona-check"></i>
-                                    大题评分区
-                                </span>
-                            </li>
                             <li>
                                 <span class="checkbox  checked" data-sw="12">
                                     <i class="icona-check"></i>
@@ -149,7 +142,7 @@
                             <td>
                                 <div class="editcon">
                                     <div class="test-title">
-                                        <h1 data-paperset="3"><span class="contenteditable" data-edit="主标题" id="paper-title">2017年5月17日小学英语试卷   $ids.get_item("1")</span></h1>
+                                        <h1 data-paperset="3"><span class="contenteditable" data-edit="主标题" id="paper-title">2017年5月17日小学英语试卷</span></h1>
                                         <h2 data-paperset="5" style="display:none;"><span data-edit="副标题" class="contenteditable">英语考试</span></h2>
                                     </div>
                                     <div data-paperset="7" class="test-time" style="display:none;">
@@ -189,12 +182,12 @@
                                             <div class="paper-section" _cid="type_1">
                                                 #set($ques=$T.GetQues($id))
                                                 <div data-paperset="10" class="paper-types">
-                                                    <table data-paperset="2">
+                                                    <!--<table data-paperset="2">
                                                         <tbody>
                                                             <tr><th>阅卷人</th><td></td></tr>
                                                             <tr><th>得&nbsp;&nbsp;分</th><td></td></tr>
                                                         </tbody>
-                                                    </table>
+                                                    </table>-->
                                                     <p><strong><b class="t-order">$T.GetNum($velocityCount)</b>、<span class="contenteditable" data-edit="type">$id</span><span data-paperset="12">（共<b class="t-num">$ques.Count()</b>题；共<b class="t-score">0</b>分）</span></strong></p>
                                                     <div class="types-btngroup">
                                                         <a class="score-btn J_MultiSetScore" href="javascript:;" onclick="setBagScore(this)"><i class="icona-jiexi1"></i>批量设置得分</a>

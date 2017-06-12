@@ -40,6 +40,7 @@ namespace X.App.Views
         {
             base.InitDict();
             dict.Add("sb", sub);
+            if (cu != null) dict.Add("cu", cu);
         }
 
         public List<x_dict> getSubject(int age)

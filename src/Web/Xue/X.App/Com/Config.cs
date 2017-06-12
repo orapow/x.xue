@@ -63,6 +63,8 @@ namespace X.App.Com
         /// </summary>
         public int unvip_ques_count { get; set; }
 
+        public string gateway { get; set; }
+
         private static string file = HttpContext.Current.Server.MapPath("/dat/cfg.x");//来自服务器的文件
         private static Config cfg = null;
         /// <summary>

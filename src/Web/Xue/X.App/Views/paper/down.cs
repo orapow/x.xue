@@ -73,8 +73,9 @@ namespace X.App.Views.paper
         {
             base.InitDict();
             dict.Add("paper", pg);
-            var set = Serialize.FromJson<config>(pg.setting);
+            set = Serialize.FromJson<config>(pg.setting);
             dict.Add("set", set);
+            dict.Add("notice", set.notice.Replace("<br>", "\n").Split('\n').ToList());
             var qids = Serialize.FromJson<Dictionary<long, int>>(pg.qids);
             dict.Add("qids", qids);
             ques = DB.x_question.Where(o => qids.Keys.Contains(o.question_id)).Select(o => new que

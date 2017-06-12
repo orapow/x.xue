@@ -25,6 +25,7 @@ namespace X.App.Apis.mgr
         /// 系统名称
         /// </summary>
         public string name { get; set; }//网站名
+        public string gateway { get; set; }
 
         /// <summary>
         /// 支付方式
@@ -85,6 +86,7 @@ namespace X.App.Apis.mgr
             cfg.wx_mch_id = wx_mch_id;
             cfg.wx_scr = wx_scr;
             cfg.year_price = year_price;
+            cfg.gateway = gateway;
 
             Config.SaveConfig(cfg);
             return new XResp();

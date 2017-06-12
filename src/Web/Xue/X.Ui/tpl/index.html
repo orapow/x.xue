@@ -1,43 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="css/my.css"/>
-<title>首页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="/css/xx/my.css" />
+    <title>首页</title>
+    <style type="text/css">
+        .us { float: right; display: inline-block; padding-left: 35px; background: url(/img/xx/asd.png) 10px no-repeat; font-size: 14px; color: #444; line-height: 75px; }
+    </style>
 </head>
 
 <body>
-<div class="top">
-	<div  class="top01">
-    	<img src="images/sy_02.jpg" />
+    <div class="top">
+        <div class="top01">
+            <img src="/img/xx/sy_02.jpg" /><a class="us" href="/user/index.html">个人中心#if($cu)，$cu.name#end</a>
+        </div>
+        <div class="toyin"></div>
     </div>
-    <div class="toyin"></div>
-</div>
-
-<div class="min">
-	<div  class="min01">
-    	<div class="right">
-        	<h2>新学网在线 - 组卷系统</h2>
-            <ul>
-            	<li>
-                	<img src="images/fgv_03.png" />
-                    <input type="button" class="but" />
-                </li>
-                <li>
-                	<img src="images/fgv_05.png" />
-                    <input type="button" class="but01" />
-                </li>
-            </ul>
+    <div class="min">
+        <div class="min01">
+            <div class="right">
+                <h2>新学网在线 - 组卷系统</h2>
+                <ul>
+                    <li>
+                        <img src="/img/xx/fgv_03.png" />
+                        <input type="button" class="but" />
+                    </li>
+                    <li>
+                        <img src="/img/xx/fgv_05.png" />
+                        <input type="button" class="but01" onclick="document.location.href='/login.html'" />
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="fooer">
-	<p>全国客服电话：400-000-101 Copyright © 1995-2015 xinxuewang.com, All Rights Reserved</p>
-    <p>新学网有限公司 湘ICP备1101177774号-7</p>
-</div>
-
-
-
+    <div class="fooer">
+        <p>全国客服电话：400-000-101 Copyright © 1995-2015 xinxuewang.com, All Rights Reserved</p>
+        <p>新学网有限公司 湘ICP备1101177774号-7</p>
+    </div>
 </body>
 </html>

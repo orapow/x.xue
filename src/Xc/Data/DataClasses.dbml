@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="x.xue" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.0.119;Initial Catalog=x.xue;Persist Security Info=True;User ID=sa" SettingsObjectName="X.Data.Properties.Settings" SettingsPropertyName="x_xueConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.0.120;Initial Catalog=x.xue;Persist Security Info=True;User ID=sa" SettingsObjectName="X.Data.Properties.Settings" SettingsPropertyName="x_xueConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.x_answer" Member="x_answer">
     <Type Name="x_answer">
       <Column Name="answer_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

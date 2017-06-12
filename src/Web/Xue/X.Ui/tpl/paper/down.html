@@ -92,6 +92,8 @@
             </w:r>
           </w:p>
           #end
+          #if($T.getcfg(11))
+          #set($w=9880/($pts.count+1))
           <w:tbl>
             <w:tblPr>
               <w:tblStyle w:val="20"/>
@@ -114,10 +116,9 @@
               </w:tblCellMar>
             </w:tblPr>
             <w:tblGrid>
-              <w:gridCol w:w="2470"/>
-              <w:gridCol w:w="2470"/>
-              <w:gridCol w:w="2470"/>
-              <w:gridCol w:w="2470"/>
+              #foreach($n in $pts)
+              <w:gridCol w:w="$w"/>
+              #end
             </w:tblGrid>
             <w:tr>
               <w:tblPrEx>
@@ -142,7 +143,7 @@
               </w:trPr>
               <w:tc>
                 <w:tcPr>
-                  <w:tcW w:w="2470" w:type="dxa"/>
+                  <w:tcW w:w="$w" w:type="dxa"/>
                   <w:tcBorders>
                     <w:top w:val="inset" w:color="000000" w:sz="6" w:space="0"/>
                     <w:left w:val="inset" w:color="000000" w:sz="6" w:space="0"/>
@@ -178,7 +179,7 @@
               #foreach($n in $pts)
               <w:tc>
                 <w:tcPr>
-                  <w:tcW w:w="2470" w:type="dxa"/>
+                  <w:tcW w:w="$w" w:type="dxa"/>
                   <w:tcBorders>
                     <w:top w:val="inset" w:color="000000" w:sz="6" w:space="0"/>
                     <w:left w:val="inset" w:color="000000" w:sz="6" w:space="0"/>
@@ -304,6 +305,7 @@
               #end
             </w:tr>
           </w:tbl>
+          #end
           #if($T.getcfg(4))
           <w:p>
             <w:pPr>
@@ -320,6 +322,7 @@
               </w:rPr>
               <w:t>*注意事项：</w:t>
             </w:r>
+            #foreach($c in $notice)
             <w:r>
               <w:rPr>
                 <w:color w:val="000000"/>
@@ -334,28 +337,14 @@
                 <w:sz w:val="21"/>
                 <w:szCs w:val="21"/>
               </w:rPr>
-              <w:t>1.填写答题卡的内容用2B铅笔填写</w:t>
+              <w:t>$c</w:t>
             </w:r>
-            <w:r>
-              <w:rPr>
-                <w:color w:val="000000"/>
-                <w:sz w:val="21"/>
-                <w:szCs w:val="21"/>
-              </w:rPr>
-              <w:br w:type="textWrapping"/>
-            </w:r>
-            <w:r>
-              <w:rPr>
-                <w:color w:val="000000"/>
-                <w:sz w:val="21"/>
-                <w:szCs w:val="21"/>
-              </w:rPr>
-              <w:t>2.提前xx分钟收取答题卡</w:t>
-            </w:r>
+            #end
           </w:p>
           #end
           #set($no=0)
           #foreach($pg in $pts)
+          #if($T.getcfg(10))
           <w:p>
             <w:r>
               <w:rPr>
@@ -364,9 +353,10 @@
                 <w:sz w:val="24"/>
                 <w:szCs w:val="24"/>
               </w:rPr>
-              <w:t>$T.GetNum($velocityCount)、$pg.name（共$pg.count题；共$pg.score分）</w:t>
+              <w:t>$T.GetNum($velocityCount)、$pg.name#if($T.getcfg(12))（共$pg.count题；共$pg.score分）#end</w:t>
             </w:r>
           </w:p>
+          #end
           #foreach($p in $T.getQues($pg.id))
           #foreach($b in $T.GetQue($p.topic))
           <w:p>
@@ -433,7 +423,7 @@
             <w:headerReference r:id="rId4" w:type="even"/>
             <w:footerReference r:id="rId6" w:type="even"/>
             <w:pgSz w:w="23814" w:h="16839" w:orient="landscape"/>
-            <w:pgMar w:top="850" w:right="998" w:bottom="1134" w:left="2835" w:header="851" w:footer="692" w:gutter="0"/>
+            #if($T.getcfg(1))<w:pgMar w:top="850" w:right="998" w:bottom="1134" w:left="2835" w:header="851" w:footer="692" w:gutter="0" />#else<w:pgMar w:top="850" w:right="998" w:bottom="1134" w:left="998" w:header="851" w:footer="692" w:gutter="0" />#end
             <w:cols w:equalWidth="0" w:num="2">
               <w:col w:w="9778" w:space="425"/>
               <w:col w:w="9778"/>
@@ -458,15 +448,15 @@
           <customSectPr/>
         </customSectProps>
         <customShpExts>
-          <customShpInfo spid="_x0000_s4097"/>
           <customShpInfo spid="_x0000_s4098"/>
-          <customShpInfo spid="_x0000_s4099"/>
           <customShpInfo spid="_x0000_s4100"/>
-          <customShpInfo spid="_x0000_s4101"/>
-          <customShpInfo spid="_x0000_s4102"/>
-          <customShpInfo spid="_x0000_s4103"/>
-          <customShpInfo spid="_x0000_s4104"/>
+          <customShpInfo spid="_x0000_s4097"/>
+          <customShpInfo spid="_x0000_s4099"/>
           <customShpInfo spid="_x0000_s4105"/>
+          <customShpInfo spid="_x0000_s4102"/>
+          <customShpInfo spid="_x0000_s4104"/>
+          <customShpInfo spid="_x0000_s4103"/>
+          <customShpInfo spid="_x0000_s4101"/>
           <customShpInfo spid="_x0000_s4106"/>
         </customShpExts>
       </s:customData>
@@ -640,6 +630,19 @@
               <w:szCs w:val="18"/>
             </w:rPr>
           </w:pPr>
+          #if($T.getcfg(1))
+          <w:r>
+            <w:pict>
+              <v:rect id="_x0000_s4101" o:spid="_x0000_s4101" o:spt="1" style="position:absolute;left:0pt;margin-left:-108pt;margin-top:4pt;height:57pt;width:50.75pt;z-index:251669504;mso-width-relative:page;mso-height-relative:page;" fillcolor="#808080" filled="t" stroked="t" coordsize="21600,21600">
+                <v:path/>
+                <v:fill on="t" color2="#FFFFFF" focussize="0,0"/>
+                <v:stroke color="#000000" joinstyle="miter"/>
+                <v:imagedata o:title=""/>
+                <o:lock v:ext="edit" aspectratio="f"/>
+              </v:rect>
+            </w:pict>
+          </w:r>
+          #end
           <w:r>
             <w:rPr>
               <w:rFonts w:hint="eastAsia" w:ascii="微软雅黑" w:hAnsi="微软雅黑" w:eastAsia="微软雅黑" w:cs="微软雅黑"/>
@@ -656,7 +659,7 @@
               <w:szCs w:val="18"/>
               <w:lang w:eastAsia="zh-CN"/>
             </w:rPr>
-            <w:t>二一教育在</w:t>
+            <w:t>新学在线</w:t>
           </w:r>
           <w:r>
             <w:rPr>
@@ -664,7 +667,7 @@
               <w:sz w:val="18"/>
               <w:szCs w:val="18"/>
             </w:rPr>
-            <w:t>线组卷</w:t>
+            <w:t>组卷</w:t>
           </w:r>
           <w:r>
             <w:rPr>
@@ -869,17 +872,19 @@
             <w:pStyle w:val="3"/>
             <w:jc w:val="center"/>
           </w:pPr>
+          #if($T.getcfg(1))
           <w:r>
             <w:pict>
-              <v:rect id="_x0000_s4106" o:spid="_x0000_s4106" o:spt="1" style="position:absolute;left:0pt;margin-left:1056.4pt;margin-top:-10.15pt;height:57pt;width:42.15pt;z-index:251667456;mso-width-relative:page;mso-height-relative:page;" fillcolor="#808080 [1629]" filled="t" coordsize="21600,21600">
+              <v:rect id="_x0000_s4106" o:spid="_x0000_s4106" o:spt="1" style="position:absolute;left:0pt;margin-left:1055.65pt;margin-top:-10.15pt;height:57pt;width:51.15pt;z-index:251667456;mso-width-relative:page;mso-height-relative:page;" fillcolor="#808080" filled="t" stroked="t" coordsize="21600,21600">
                 <v:path/>
-                <v:fill on="t" focussize="0,0"/>
-                <v:stroke/>
+                <v:fill on="t" color2="#FFFFFF" focussize="0,0"/>
+                <v:stroke color="#000000" joinstyle="miter"/>
                 <v:imagedata o:title=""/>
-                <o:lock v:ext="edit"/>
+                <o:lock v:ext="edit" aspectratio="f"/>
               </v:rect>
             </w:pict>
           </w:r>
+          #end
           <w:r>
             <w:rPr>
               <w:rFonts w:hint="eastAsia"/>
@@ -1119,86 +1124,12 @@
         <w:p>
           <w:pPr>
             <w:pStyle w:val="4"/>
-            <w:jc w:val="left"/>
+            <w:jc w:val="right"/>
           </w:pPr>
-          <w:r>
-            <w:rPr>
-              <w:rFonts w:hint="eastAsia"/>
-            </w:rPr>
-            <w:pict>
-              <v:shape id="_x0000_i1142" o:spt="75" alt="test_logo" type="#_x0000_t75" style="height:28.25pt;width:124.7pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
-                <v:path/>
-                <v:fill on="f" focussize="0,0"/>
-                <v:stroke on="f"/>
-                <v:imagedata r:id="rId1" o:title=""/>
-                <o:lock v:ext="edit" aspectratio="t"/>
-                <w10:wrap type="none"/>
-                <w10:anchorlock/>
-              </v:shape>
-            </w:pict>
-          </w:r>
-          <w:r>
-            <w:rPr>
-              <w:rFonts w:hint="eastAsia"/>
-            </w:rPr>
-            <w:t xml:space="preserve"> </w:t>
-          </w:r>
-          <w:r>
-            <w:rPr>
-              <w:rFonts w:hint="eastAsia"/>
-              <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-            </w:rPr>
-            <w:t xml:space="preserve">                                                                                                                                                      </w:t>
-          </w:r>
-          <w:r>
-            <w:rPr>
-              <w:rFonts w:hint="eastAsia" w:ascii="微软雅黑" w:hAnsi="微软雅黑" w:eastAsia="微软雅黑"/>
-            </w:rPr>
-            <w:t>登陆二一教育在线组卷平台   助您教考全无忧</w:t>
-          </w:r>
-        </w:p>
-        <w:p>
-          <w:pPr>
-            <w:pStyle w:val="4"/>
-            <w:pBdr>
-              <w:bottom w:val="none" w:color="auto" w:sz="0" w:space="0"/>
-            </w:pBdr>
-            <w:jc w:val="left"/>
-          </w:pPr>
+          #if($T.getcfg(1))
           <w:r>
             <w:pict>
-              <v:shape id="_x0000_s4097" o:spid="_x0000_s4097" o:spt="202" type="#_x0000_t202" style="position:absolute;left:0pt;margin-left:-125pt;margin-top:-43pt;height:843pt;width:26pt;z-index:251661312;v-text-anchor:middle;mso-width-relative:page;mso-height-relative:page;" coordsize="21600,21600">
-                <v:path/>
-                <v:fill focussize="0,0"/>
-                <v:stroke joinstyle="miter"/>
-                <v:imagedata o:title=""/>
-                <o:lock v:ext="edit"/>
-                <v:textbox style="layout-flow:vertical;mso-layout-flow-alt:bottom-to-top;">
-                  <w:txbxContent>
-                    <w:p>
-                      <w:pPr>
-                        <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
-                        <w:jc w:val="distribute"/>
-                        <w:rPr>
-                          <w:lang w:eastAsia="zh-CN"/>
-                        </w:rPr>
-                      </w:pPr>
-                      <w:r>
-                        <w:rPr>
-                          <w:rFonts w:hint="eastAsia"/>
-                          <w:lang w:eastAsia="zh-CN"/>
-                        </w:rPr>
-                        <w:t>…………○…………外…………○…………装…………○…………订…………○…………线…………○…………</w:t>
-                      </w:r>
-                    </w:p>
-                  </w:txbxContent>
-                </v:textbox>
-              </v:shape>
-            </w:pict>
-          </w:r>
-          <w:r>
-            <w:pict>
-              <v:shape id="_x0000_s4098" o:spid="_x0000_s4098" o:spt="202" type="#_x0000_t202" style="position:absolute;left:0pt;margin-left:-46pt;margin-top:-43pt;height:843pt;width:25.8pt;z-index:251665408;v-text-anchor:middle;mso-width-relative:page;mso-height-relative:page;" coordsize="21600,21600">
+              <v:shape id="_x0000_s4098" o:spid="_x0000_s4098" o:spt="202" type="#_x0000_t202" style="position:absolute;left:0pt;margin-left:-57.25pt;margin-top:-43pt;height:843pt;width:25.8pt;z-index:251665408;v-text-anchor:middle;mso-width-relative:page;mso-height-relative:page;" coordsize="21600,21600">
                 <v:path/>
                 <v:fill focussize="0,0"/>
                 <v:stroke joinstyle="miter"/>
@@ -1229,84 +1160,18 @@
           </w:r>
           <w:r>
             <w:pict>
-              <v:shape id="_x0000_s4099" o:spid="_x0000_s4099" o:spt="202" type="#_x0000_t202" style="position:absolute;left:0pt;margin-left:-99pt;margin-top:-43pt;height:843pt;width:53pt;z-index:251663360;v-text-anchor:middle;mso-width-relative:page;mso-height-relative:page;" fillcolor="#D8D8D8 [2732]" filled="t" coordsize="21600,21600">
+              <v:rect id="_x0000_s4100" o:spid="_x0000_s4100" o:spt="1" style="position:absolute;left:0pt;margin-left:-108pt;margin-top:-43pt;height:57pt;width:50.75pt;z-index:251668480;mso-width-relative:page;mso-height-relative:page;" fillcolor="#808080" filled="t" stroked="t" coordsize="21600,21600">
                 <v:path/>
-                <v:fill on="t" focussize="0,0"/>
-                <v:stroke joinstyle="miter"/>
+                <v:fill on="t" color2="#FFFFFF" focussize="0,0"/>
+                <v:stroke color="#000000" joinstyle="miter"/>
                 <v:imagedata o:title=""/>
-                <o:lock v:ext="edit"/>
-                <v:textbox style="layout-flow:vertical;mso-layout-flow-alt:bottom-to-top;">
-                  <w:txbxContent>
-                    <w:p>
-                      <w:pPr>
-                        <w:jc w:val="center"/>
-                        <w:rPr>
-                          <w:lang w:eastAsia="zh-CN"/>
-                        </w:rPr>
-                      </w:pPr>
-                      <w:r>
-                        <w:rPr>
-                          <w:rFonts w:hint="eastAsia"/>
-                          <w:lang w:eastAsia="zh-CN"/>
-                        </w:rPr>
-                        <w:t>学校:___________姓名：___________班级：___________考号：___________</w:t>
-                      </w:r>
-                    </w:p>
-                  </w:txbxContent>
-                </v:textbox>
-              </v:shape>
-            </w:pict>
-          </w:r>
-          <w:r>
-            <w:pict>
-              <v:rect id="_x0000_s4100" o:spid="_x0000_s4100" o:spt="1" style="position:absolute;left:0pt;margin-left:-99pt;margin-top:-43pt;height:57pt;width:53pt;z-index:251668480;mso-width-relative:page;mso-height-relative:page;" fillcolor="#808080 [1629]" filled="t" coordsize="21600,21600">
-                <v:path/>
-                <v:fill on="t" focussize="0,0"/>
-                <v:stroke/>
-                <v:imagedata o:title=""/>
-                <o:lock v:ext="edit"/>
+                <o:lock v:ext="edit" aspectratio="f"/>
               </v:rect>
             </w:pict>
           </w:r>
           <w:r>
             <w:pict>
-              <v:rect id="_x0000_s4101" o:spid="_x0000_s4101" o:spt="1" style="position:absolute;left:0pt;margin-left:-99pt;margin-top:743pt;height:57pt;width:53pt;z-index:251669504;mso-width-relative:page;mso-height-relative:page;" fillcolor="#808080 [1629]" filled="t" coordsize="21600,21600">
-                <v:path/>
-                <v:fill on="t" focussize="0,0"/>
-                <v:stroke/>
-                <v:imagedata o:title=""/>
-                <o:lock v:ext="edit"/>
-              </v:rect>
-            </w:pict>
-          </w:r>
-        </w:p>
-      </w:hdr>
-    </pkg:xmlData>
-  </pkg:part>
-  <pkg:part pkg:name="/word/header2.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.header+xml">
-    <pkg:xmlData>
-      <w:hdr xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:wpsCustomData="http://www.wps.cn/officeDocument/2013/wpsCustomData" mc:Ignorable="w14 w15 wp14">
-        <w:p>
-          <w:pPr>
-            <w:pStyle w:val="4"/>
-            <w:pBdr>
-              <w:bottom w:val="none" w:color="auto" w:sz="0" w:space="0"/>
-            </w:pBdr>
-          </w:pPr>
-          <w:r>
-            <w:pict>
-              <v:rect id="_x0000_s4102" o:spid="_x0000_s4102" o:spt="1" style="position:absolute;left:0pt;margin-left:1056.4pt;margin-top:-43pt;height:57pt;width:42.15pt;z-index:251666432;mso-width-relative:page;mso-height-relative:page;" fillcolor="#808080 [1629]" filled="t" coordsize="21600,21600">
-                <v:path/>
-                <v:fill on="t" focussize="0,0"/>
-                <v:stroke/>
-                <v:imagedata o:title=""/>
-                <o:lock v:ext="edit"/>
-              </v:rect>
-            </w:pict>
-          </w:r>
-          <w:r>
-            <w:pict>
-              <v:shape id="_x0000_s4103" o:spid="_x0000_s4103" o:spt="202" type="#_x0000_t202" style="position:absolute;left:0pt;margin-left:1098.55pt;margin-top:-43pt;height:843pt;width:31.6pt;z-index:251660288;v-text-anchor:middle;mso-width-relative:page;mso-height-relative:page;" coordsize="21600,21600">
+              <v:shape id="_x0000_s4097" o:spid="_x0000_s4097" o:spt="202" type="#_x0000_t202" style="position:absolute;left:0pt;margin-left:-134pt;margin-top:-43pt;height:843pt;width:26pt;z-index:251661312;v-text-anchor:middle;mso-width-relative:page;mso-height-relative:page;" coordsize="21600,21600">
                 <v:path/>
                 <v:fill focussize="0,0"/>
                 <v:stroke joinstyle="miter"/>
@@ -1335,14 +1200,157 @@
               </v:shape>
             </w:pict>
           </w:r>
+          <w:bookmarkStart w:id="0" w:name="_GoBack"/>
+          <w:bookmarkEnd w:id="0"/>
           <w:r>
             <w:pict>
-              <v:shape id="_x0000_s4104" o:spid="_x0000_s4104" o:spt="202" type="#_x0000_t202" style="position:absolute;left:0pt;margin-left:1056.4pt;margin-top:-43pt;height:843pt;width:42.15pt;z-index:251662336;v-text-anchor:middle;mso-width-relative:page;mso-height-relative:page;" fillcolor="#D8D8D8 [2732]" filled="t" coordsize="21600,21600">
+              <v:shape id="_x0000_s4099" o:spid="_x0000_s4099" o:spt="202" type="#_x0000_t202" style="position:absolute;left:0pt;margin-left:-108pt;margin-top:-43pt;height:843pt;width:51.1pt;z-index:251663360;v-text-anchor:middle;mso-width-relative:page;mso-height-relative:page;" fillcolor="#D9D9D9" filled="t" stroked="t" coordsize="21600,21600">
                 <v:path/>
-                <v:fill on="t" focussize="0,0"/>
-                <v:stroke joinstyle="miter"/>
+                <v:fill on="t" color2="#FFFFFF" focussize="0,0"/>
+                <v:stroke color="#000000" joinstyle="miter"/>
                 <v:imagedata o:title=""/>
-                <o:lock v:ext="edit"/>
+                <o:lock v:ext="edit" aspectratio="f"/>
+                <v:textbox style="layout-flow:vertical;mso-layout-flow-alt:bottom-to-top;">
+                  <w:txbxContent>
+                    <w:p>
+                      <w:pPr>
+                        <w:jc w:val="center"/>
+                        <w:rPr>
+                          <w:rFonts w:hint="eastAsia"/>
+                          <w:lang w:eastAsia="zh-CN"/>
+                        </w:rPr>
+                      </w:pPr>
+                    </w:p>
+                    <w:p>
+                      <w:pPr>
+                        <w:jc w:val="center"/>
+                        <w:rPr>
+                          <w:lang w:eastAsia="zh-CN"/>
+                        </w:rPr>
+                      </w:pPr>
+                      <w:r>
+                        <w:rPr>
+                          <w:rFonts w:hint="eastAsia"/>
+                          <w:lang w:eastAsia="zh-CN"/>
+                        </w:rPr>
+                        <w:t>学校:___________姓名：___________班级：___________考号：___________</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:txbxContent>
+                </v:textbox>
+              </v:shape>
+            </w:pict>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:hint="eastAsia"/>
+            </w:rPr>
+            <w:pict>
+              <v:shape id="_x0000_i1048" o:spt="75" alt="test_logo" type="#_x0000_t75" style="height:28.25pt;width:124.7pt;" filled="f" o:preferrelative="t" stroked="f" coordsize="21600,21600">
+                <v:path/>
+                <v:fill on="f" focussize="0,0"/>
+                <v:stroke on="f"/>
+                <v:imagedata r:id="rId1" o:title=""/>
+                <o:lock v:ext="edit" aspectratio="t"/>
+                <w10:wrap type="none"/>
+                <w10:anchorlock/>
+              </v:shape>
+            </w:pict>
+          </w:r>
+          #end
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:hint="eastAsia"/>
+            </w:rPr>
+            <w:t xml:space="preserve"> </w:t>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:hint="eastAsia"/>
+              <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+            </w:rPr>
+            <w:t xml:space="preserve">                                                                                                                                                      </w:t>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:hint="eastAsia" w:ascii="微软雅黑" w:hAnsi="微软雅黑" w:eastAsia="微软雅黑"/>
+            </w:rPr>
+            <w:t>新学在线  自助组卷</w:t>
+          </w:r>
+        </w:p>
+        <w:p>
+          <w:pPr>
+            <w:pStyle w:val="4"/>
+            <w:pBdr>
+              <w:bottom w:val="none" w:color="auto" w:sz="0" w:space="0"/>
+            </w:pBdr>
+            <w:jc w:val="left"/>
+          </w:pPr>
+        </w:p>
+      </w:hdr>
+    </pkg:xmlData>
+  </pkg:part>
+  #if($T.getcfg(1))
+  <pkg:part pkg:name="/word/header2.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.header+xml">
+    <pkg:xmlData>
+      <w:hdr xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:wpsCustomData="http://www.wps.cn/officeDocument/2013/wpsCustomData" mc:Ignorable="w14 w15 wp14">
+        <w:p>
+          <w:pPr>
+            <w:pStyle w:val="4"/>
+            <w:pBdr>
+              <w:bottom w:val="none" w:color="auto" w:sz="0" w:space="0"/>
+            </w:pBdr>
+          </w:pPr>
+          <w:r>
+            <w:pict>
+              <v:shape id="_x0000_s4105" o:spid="_x0000_s4105" o:spt="202" type="#_x0000_t202" style="position:absolute;left:0pt;margin-left:1029.95pt;margin-top:-43pt;height:843pt;width:25.8pt;z-index:251664384;v-text-anchor:middle;mso-width-relative:page;mso-height-relative:page;" fillcolor="#FFFFFF" filled="t" stroked="t" coordsize="21600,21600">
+                <v:path/>
+                <v:fill on="t" color2="#FFFFFF" focussize="0,0"/>
+                <v:stroke color="#000000" joinstyle="miter"/>
+                <v:imagedata o:title=""/>
+                <o:lock v:ext="edit" aspectratio="f"/>
+                <v:textbox style="layout-flow:vertical;mso-layout-flow-alt:bottom-to-top;">
+                  <w:txbxContent>
+                    <w:p>
+                      <w:pPr>
+                        <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                        <w:jc w:val="distribute"/>
+                        <w:rPr>
+                          <w:lang w:eastAsia="zh-CN"/>
+                        </w:rPr>
+                      </w:pPr>
+                      <w:r>
+                        <w:rPr>
+                          <w:rFonts w:hint="eastAsia"/>
+                          <w:lang w:eastAsia="zh-CN"/>
+                        </w:rPr>
+                        <w:t>…………○…………内…………○…………装…………○…………订…………○…………线…………○…………</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:txbxContent>
+                </v:textbox>
+              </v:shape>
+            </w:pict>
+          </w:r>
+          <w:r>
+            <w:pict>
+              <v:rect id="_x0000_s4102" o:spid="_x0000_s4102" o:spt="1" style="position:absolute;left:0pt;margin-left:1056.1pt;margin-top:-43pt;height:53.6pt;width:51pt;z-index:251666432;mso-width-relative:page;mso-height-relative:page;" fillcolor="#808080" filled="t" stroked="t" coordsize="21600,21600">
+                <v:path/>
+                <v:fill on="t" color2="#FFFFFF" focussize="0,0"/>
+                <v:stroke color="#000000" joinstyle="miter"/>
+                <v:imagedata o:title=""/>
+                <o:lock v:ext="edit" aspectratio="f"/>
+              </v:rect>
+            </w:pict>
+          </w:r>
+          <w:r>
+            <w:pict>
+              <v:shape id="_x0000_s4104" o:spid="_x0000_s4104" o:spt="202" type="#_x0000_t202" style="position:absolute;left:0pt;margin-left:1055.65pt;margin-top:-43pt;height:843pt;width:51.1pt;z-index:251662336;v-text-anchor:middle;mso-width-relative:page;mso-height-relative:page;" fillcolor="#D9D9D9" filled="t" stroked="t" coordsize="21600,21600">
+                <v:path/>
+                <v:fill on="t" color2="#FFFFFF" focussize="0,0"/>
+                <v:stroke color="#000000" joinstyle="miter"/>
+                <v:imagedata o:title=""/>
+                <o:lock v:ext="edit" aspectratio="f"/>
                 <v:textbox style="layout-flow:vertical;mso-layout-flow-alt:bottom-to-top;">
                   <w:txbxContent>
                     <w:p>
@@ -1368,12 +1376,12 @@
           </w:r>
           <w:r>
             <w:pict>
-              <v:shape id="_x0000_s4105" o:spid="_x0000_s4105" o:spt="202" type="#_x0000_t202" style="position:absolute;left:0pt;margin-left:1025.45pt;margin-top:-43pt;height:843pt;width:30.95pt;z-index:251664384;v-text-anchor:middle;mso-width-relative:page;mso-height-relative:page;" coordsize="21600,21600">
+              <v:shape id="_x0000_s4103" o:spid="_x0000_s4103" o:spt="202" type="#_x0000_t202" style="position:absolute;left:0pt;margin-left:1106.75pt;margin-top:-43pt;height:843pt;width:25.8pt;z-index:251660288;v-text-anchor:middle;mso-width-relative:page;mso-height-relative:page;" fillcolor="#FFFFFF" filled="t" stroked="t" coordsize="21600,21600">
                 <v:path/>
-                <v:fill focussize="0,0"/>
-                <v:stroke joinstyle="miter"/>
+                <v:fill on="t" color2="#FFFFFF" focussize="0,0"/>
+                <v:stroke color="#000000" joinstyle="miter"/>
                 <v:imagedata o:title=""/>
-                <o:lock v:ext="edit"/>
+                <o:lock v:ext="edit" aspectratio="f"/>
                 <v:textbox style="layout-flow:vertical;mso-layout-flow-alt:bottom-to-top;">
                   <w:txbxContent>
                     <w:p>
@@ -1389,7 +1397,7 @@
                           <w:rFonts w:hint="eastAsia"/>
                           <w:lang w:eastAsia="zh-CN"/>
                         </w:rPr>
-                        <w:t>…………○…………内…………○…………装…………○…………订…………○…………线…………○…………</w:t>
+                        <w:t>…………○…………外…………○…………装…………○…………订…………○…………线…………○…………</w:t>
                       </w:r>
                     </w:p>
                   </w:txbxContent>
@@ -1401,6 +1409,7 @@
       </w:hdr>
     </pkg:xmlData>
   </pkg:part>
+  #end
   <pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml">
     <pkg:xmlData>
         <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
@@ -1526,11 +1535,15 @@
           <w:rsid w:val="00F926C7"/>
           <w:rsid w:val="00FC2F6C"/>
           <w:rsid w:val="0C687ECC"/>
+          <w:rsid w:val="0E310803"/>
+          <w:rsid w:val="0F883E49"/>
           <w:rsid w:val="11975BFF"/>
           <w:rsid w:val="120F7572"/>
           <w:rsid w:val="14400F69"/>
           <w:rsid w:val="163E2FEA"/>
           <w:rsid w:val="175116B5"/>
+          <w:rsid w:val="182652DF"/>
+          <w:rsid w:val="1E1976DF"/>
           <w:rsid w:val="26C432C7"/>
           <w:rsid w:val="2E876F07"/>
           <w:rsid w:val="36044A36"/>
@@ -1543,6 +1556,7 @@
           <w:rsid w:val="6A600536"/>
           <w:rsid w:val="6B3056CB"/>
           <w:rsid w:val="72B61DC4"/>
+          <w:rsid w:val="755505F1"/>
           <w:rsid w:val="7D2B15BF"/>
         </w:rsids>
         <m:mathPr>
