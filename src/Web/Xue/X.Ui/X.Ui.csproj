@@ -196,6 +196,8 @@
     <Content Include="tpl\mgr\book\edit.html" />
     <Content Include="tpl\mgr\book\list.html" />
     <Content Include="tpl\mgr\main.html" />
+    <Content Include="tpl\mgr\paper\edit.html" />
+    <Content Include="tpl\mgr\paper\list.html" />
     <Content Include="tpl\mgr\question\edit.html" />
     <Content Include="tpl\mgr\question\list.html" />
     <Content Include="tpl\mgr\setup.html" />
@@ -206,6 +208,7 @@
     <Content Include="tpl\mgr\login.html" />
     <Content Include="tpl\mgr\subject\edit.html" />
     <Content Include="tpl\mgr\subject\list.html" />
+    <Content Include="tpl\mgr\user\list.html" />
     <Content Include="tpl\paper - 复制%282%29.html" />
     <Content Include="tpl\paper\down.html" />
     <Content Include="tpl\paper2.html" />
@@ -248,7 +251,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="tpl\mgr\paper\" />
     <Folder Include="upload\" />
   </ItemGroup>
   <PropertyGroup>

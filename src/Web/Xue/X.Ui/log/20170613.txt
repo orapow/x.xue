@@ -158,3 +158,811 @@ System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓ
    ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
 ClientConnectionId:00000000-0000-0000-0000-000000000000
 Error Number:53,State:0,Class:20
+
+Ê±¼ä£º2017-06-13 09:45:52,899 
+¼¶±ð£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.user.list","code":"0x0002"} 
+Ê±¼ä£º9914 
+
+Ê±¼ä£º2017-06-13 09:47:37,091 
+¼¶±ð£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.user.list","code":"0x0002"} 
+Ê±¼ä£º114106 
+
+Ê±¼ä£º2017-06-13 09:48:20,462 
+¼¶±ð£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.user.list","code":"0x0002"} 
+Ê±¼ä£º157477 
+
+Ê±¼ä£º2017-06-13 09:53:33,775 
+¼¶±ð£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.user.list","code":"0x0002"} 
+Ê±¼ä£º470790 
+
+Ê±¼ä£º2017-06-13 09:53:37,156 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º474171 
+System.NullReferenceException: Î´½«¶ÔÏóÒýÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀý¡£
+   ÔÚ X.App.Views.com.dict.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\com\dict.cs:ÐÐºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 09:53:39,631 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º476646 
+System.NullReferenceException: Î´½«¶ÔÏóÒýÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀý¡£
+   ÔÚ X.App.Views.com.dict.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\com\dict.cs:ÐÐºÅ 26
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 10:02:32,900 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º4469 
+System.InvalidOperationException: ¿ÉÎª¿ÕµÄ¶ÔÏó±ØÐë¾ßÓÐÒ»¸öÖµ¡£
+   ÔÚ System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   ÔÚ System.Nullable`1.get_Value()
+   ÔÚ X.App.Apis.mgr.user.list.<>c.<Execute>b__18_0(x_user u) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.App.Apis.mgr.user.list.Execute() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Apis\Api.cs:ÐÐºÅ 31
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 10:03:11,387 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º10628 
+System.InvalidOperationException: ¿ÉÎª¿ÕµÄ¶ÔÏó±ØÐë¾ßÓÐÒ»¸öÖµ¡£
+   ÔÚ System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   ÔÚ System.Nullable`1.get_Value()
+   ÔÚ X.App.Apis.mgr.user.list.<>c.<Execute>b__18_0(x_user u) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.App.Apis.mgr.user.list.Execute() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Apis\Api.cs:ÐÐºÅ 31
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 10:04:56,323 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º115564 
+System.InvalidOperationException: ¿ÉÎª¿ÕµÄ¶ÔÏó±ØÐë¾ßÓÐÒ»¸öÖµ¡£
+   ÔÚ System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   ÔÚ System.Nullable`1.get_Value()
+   ÔÚ X.App.Apis.mgr.user.list.<>c.<Execute>b__18_0(x_user u) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.App.Apis.mgr.user.list.Execute() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Apis\Api.cs:ÐÐºÅ 31
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 10:05:06,261 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º125502 
+System.InvalidOperationException: ¿ÉÎª¿ÕµÄ¶ÔÏó±ØÐë¾ßÓÐÒ»¸öÖµ¡£
+   ÔÚ System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   ÔÚ System.Nullable`1.get_Value()
+   ÔÚ X.App.Apis.mgr.user.list.<>c.<Execute>b__18_0(x_user u) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.App.Apis.mgr.user.list.Execute() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Apis\Api.cs:ÐÐºÅ 31
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 10:06:50,746 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º5073 
+System.InvalidOperationException: ¿ÉÎª¿ÕµÄ¶ÔÏó±ØÐë¾ßÓÐÒ»¸öÖµ¡£
+   ÔÚ System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   ÔÚ System.Nullable`1.get_Value()
+   ÔÚ X.App.Apis.mgr.user.list.<>c.<Execute>b__18_0(x_user u) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.App.Apis.mgr.user.list.Execute() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Apis\Api.cs:ÐÐºÅ 31
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 10:07:37,462 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º9067 
+System.InvalidOperationException: ¿ÉÎª¿ÕµÄ¶ÔÏó±ØÐë¾ßÓÐÒ»¸öÖµ¡£
+   ÔÚ System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   ÔÚ System.Nullable`1.get_Value()
+   ÔÚ X.App.Apis.mgr.user.list.<>c.<Execute>b__18_0(x_user u) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.App.Apis.mgr.user.list.Execute() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Apis\Api.cs:ÐÐºÅ 31
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 10:08:15,316 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º46922 
+System.InvalidOperationException: ¿ÉÎª¿ÕµÄ¶ÔÏó±ØÐë¾ßÓÐÒ»¸öÖµ¡£
+   ÔÚ System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   ÔÚ System.Nullable`1.get_Value()
+   ÔÚ X.App.Apis.mgr.user.list.<>c.<Execute>b__18_0(x_user u) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.App.Apis.mgr.user.list.Execute() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 39
+   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Apis\Api.cs:ÐÐºÅ 31
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 10:10:22,894 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º31967 
+System.InvalidOperationException: ¿ÉÎª¿ÕµÄ¶ÔÏó±ØÐë¾ßÓÐÒ»¸öÖµ¡£
+   ÔÚ System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   ÔÚ System.Nullable`1.get_Value()
+   ÔÚ X.App.Apis.mgr.user.list.<>c.<Execute>b__14_0(x_user u) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 38
+   ÔÚ System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.App.Apis.mgr.user.list.Execute() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\user\list.cs:ÐÐºÅ 38
+   ÔÚ X.Web.Apis.Api.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Apis\Api.cs:ÐÐºÅ 31
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 10:30:51,213 
+¼¶±ð£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.user.del","code":"0x0002"} 
+Ê±¼ä£º936105 
+
+Ê±¼ä£º2017-06-13 10:32:55,078 
+¼¶±ð£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.user.del","code":"0x0002"} 
+Ê±¼ä£º1059970 
+
+Ê±¼ä£º2017-06-13 12:11:07,688 
+¼¶±ð£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":" ","code":"0x0012"} 
+Ê±¼ä£º207802 
+
+Ê±¼ä£º2017-06-13 12:11:11,426 
+¼¶±ð£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":" ","code":"0x0012"} 
+Ê±¼ä£º211541 
+
+Ê±¼ä£º2017-06-13 12:11:20,981 
+¼¶±ð£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":" ","code":"0x0012"} 
+Ê±¼ä£º221095 
+
+Ê±¼ä£º2017-06-13 12:12:20,361 
+¼¶±ð£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":" ","code":"0x0012"} 
+Ê±¼ä£º280476 
+
+Ê±¼ä£º2017-06-13 14:34:14,712 
+¼¶±ð£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"½Ó¿Ú²»´æÔÚ mgr.question.del","code":"0x0002"} 
+Ê±¼ä£º929345 
+
+Ê±¼ä£º2017-06-13 15:40:00,653 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º5823 
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[System.String]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '1', line 1, position 5.
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 15:40:19,497 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º24667 
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[System.String]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '1', line 1, position 5.
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 15:40:49,834 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º55004 
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[System.String]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '1', line 1, position 5.
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 15:41:30,896 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º96066 
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[System.String]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '1', line 1, position 5.
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 15:42:30,840 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º8202 
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[System.String]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '1', line 1, position 5.
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   ÔÚ X.App.Views.mgr.paper.JsonHelper.Deserializer[T](String str) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 53
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 15:42:59,116 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º36479 
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[System.String]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '1', line 1, position 5.
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   ÔÚ X.App.Views.mgr.paper.JsonHelper.Deserializer[T](String str) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 53
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 15:47:20,539 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º8576 
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[System.String]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '1', line 1, position 5.
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   ÔÚ X.App.Views.mgr.paper.JsonHelper.Deserializer[T](String str) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 53
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 15:50:04,349 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º495 
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[X.App.Views.mgr.paper.Per]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '1', line 1, position 5.
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   ÔÚ X.App.Views.mgr.paper.JsonHelper.Deserializer[T](String str) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 54
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 15:50:15,632 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º11778 
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[X.App.Views.mgr.paper.Per]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '1', line 1, position 5.
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   ÔÚ X.App.Views.mgr.paper.JsonHelper.Deserializer[T](String str) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 54
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 15:53:19,564 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º195710 
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[X.App.Views.mgr.paper.Per]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '1', line 1, position 5.
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   ÔÚ X.App.Views.mgr.paper.JsonHelper.Deserializer[T](String str) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 54
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 15:56:13,485 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º7951 
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[X.App.Views.mgr.paper.Per]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '1', line 1, position 5.
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   ÔÚ X.App.Views.mgr.paper.JsonHelper.Deserializer[T](String str) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 55
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 16:47:20,752 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º25974 
+System.Reflection.TargetInvocationException: µ÷ÓÃµÄÄ¿±ê·¢ÉúÁËÒì³£¡£ ---> System.FormatException: ÊäÈë×Ö·û´®µÄ¸ñÊ½²»ÕýÈ·¡£
+   ÔÚ System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ÔÚ System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ÔÚ lambda_method(Closure )
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   ÔÚ System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   ÔÚ System.Delegate.DynamicInvokeImpl(Object[] args)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   ÔÚ System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   ÔÚ System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 27
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 16:57:56,155 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º4219 
+System.Reflection.TargetInvocationException: µ÷ÓÃµÄÄ¿±ê·¢ÉúÁËÒì³£¡£ ---> System.FormatException: ÊäÈë×Ö·û´®µÄ¸ñÊ½²»ÕýÈ·¡£
+   ÔÚ System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ÔÚ System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ÔÚ lambda_method(Closure )
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   ÔÚ System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   ÔÚ System.Delegate.DynamicInvokeImpl(Object[] args)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   ÔÚ System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   ÔÚ System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 29
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:11:14,464 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º34598 
+System.Reflection.TargetInvocationException: µ÷ÓÃµÄÄ¿±ê·¢ÉúÁËÒì³£¡£ ---> System.ArgumentOutOfRangeException: Ë÷ÒýºÍ³¤¶È±ØÐëÒýÓÃ¸Ã×Ö·û´®ÄÚµÄÎ»ÖÃ¡£
+²ÎÊýÃû: length
+   ÔÚ System.String.Substring(Int32 startIndex, Int32 length)
+   ÔÚ lambda_method(Closure )
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   ÔÚ System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   ÔÚ System.Delegate.DynamicInvokeImpl(Object[] args)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   ÔÚ System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   ÔÚ System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 29
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:11:14,464 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º34598 
+System.Reflection.TargetInvocationException: µ÷ÓÃµÄÄ¿±ê·¢ÉúÁËÒì³£¡£ ---> System.ArgumentOutOfRangeException: Ë÷ÒýºÍ³¤¶È±ØÐëÒýÓÃ¸Ã×Ö·û´®ÄÚµÄÎ»ÖÃ¡£
+²ÎÊýÃû: length
+   ÔÚ System.String.Substring(Int32 startIndex, Int32 length)
+   ÔÚ lambda_method(Closure )
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   ÔÚ System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   ÔÚ System.Delegate.DynamicInvokeImpl(Object[] args)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   ÔÚ System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   ÔÚ System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 29
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:12:28,117 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º3550 
+System.ArgumentOutOfRangeException: Ë÷ÒýºÍ³¤¶È±ØÐëÒýÓÃ¸Ã×Ö·û´®ÄÚµÄÎ»ÖÃ¡£
+²ÎÊýÃû: length
+   ÔÚ System.String.Substring(Int32 startIndex, Int32 length)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 28
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:12:37,993 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º13425 
+System.ArgumentOutOfRangeException: Ë÷ÒýºÍ³¤¶È±ØÐëÒýÓÃ¸Ã×Ö·û´®ÄÚµÄÎ»ÖÃ¡£
+²ÎÊýÃû: length
+   ÔÚ System.String.Substring(Int32 startIndex, Int32 length)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 28
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:13:27,568 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º63000 
+System.ArgumentOutOfRangeException: Ë÷ÒýºÍ³¤¶È±ØÐëÒýÓÃ¸Ã×Ö·û´®ÄÚµÄÎ»ÖÃ¡£
+²ÎÊýÃû: length
+   ÔÚ System.String.Substring(Int32 startIndex, Int32 length)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 28
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:14:34,019 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º10180 
+System.Reflection.TargetInvocationException: µ÷ÓÃµÄÄ¿±ê·¢ÉúÁËÒì³£¡£ ---> System.ArgumentOutOfRangeException: Ë÷ÒýºÍ³¤¶È±ØÐëÒýÓÃ¸Ã×Ö·û´®ÄÚµÄÎ»ÖÃ¡£
+²ÎÊýÃû: length
+   ÔÚ System.String.Substring(Int32 startIndex, Int32 length)
+   ÔÚ lambda_method(Closure )
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   ÔÚ System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   ÔÚ System.Delegate.DynamicInvokeImpl(Object[] args)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   ÔÚ System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   ÔÚ System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 29
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:16:02,741 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º9179 
+System.ArgumentOutOfRangeException: Ë÷ÒýºÍ³¤¶È±ØÐëÒýÓÃ¸Ã×Ö·û´®ÄÚµÄÎ»ÖÃ¡£
+²ÎÊýÃû: length
+   ÔÚ System.String.Substring(Int32 startIndex, Int32 length)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 28
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:22:55,951 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º445 
+System.Reflection.TargetInvocationException: µ÷ÓÃµÄÄ¿±ê·¢ÉúÁËÒì³£¡£ ---> System.FormatException: ÊäÈë×Ö·û´®µÄ¸ñÊ½²»ÕýÈ·¡£
+   ÔÚ System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ÔÚ System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ÔÚ lambda_method(Closure )
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   ÔÚ System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   ÔÚ System.Delegate.DynamicInvokeImpl(Object[] args)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   ÔÚ System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   ÔÚ System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 29
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:23:36,641 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º24810 
+System.Reflection.TargetInvocationException: µ÷ÓÃµÄÄ¿±ê·¢ÉúÁËÒì³£¡£ ---> System.FormatException: ÊäÈë×Ö·û´®µÄ¸ñÊ½²»ÕýÈ·¡£
+   ÔÚ System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ÔÚ System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ÔÚ lambda_method(Closure )
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   ÔÚ System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   ÔÚ System.Delegate.DynamicInvokeImpl(Object[] args)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   ÔÚ System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   ÔÚ System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 29
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:25:21,600 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º129769 
+System.Reflection.TargetInvocationException: µ÷ÓÃµÄÄ¿±ê·¢ÉúÁËÒì³£¡£ ---> System.FormatException: ÊäÈë×Ö·û´®µÄ¸ñÊ½²»ÕýÈ·¡£
+   ÔÚ System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ÔÚ System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ÔÚ lambda_method(Closure )
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   ÔÚ System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   ÔÚ System.Delegate.DynamicInvokeImpl(Object[] args)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   ÔÚ System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   ÔÚ System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 29
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:27:05,261 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º25619 
+System.Reflection.TargetInvocationException: µ÷ÓÃµÄÄ¿±ê·¢ÉúÁËÒì³£¡£ ---> System.FormatException: ÊäÈë×Ö·û´®µÄ¸ñÊ½²»ÕýÈ·¡£
+   ÔÚ System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ÔÚ System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ÔÚ lambda_method(Closure )
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   ÔÚ System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   ÔÚ System.Delegate.DynamicInvokeImpl(Object[] args)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   ÔÚ System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   ÔÚ System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   ÔÚ System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 31
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:31:41,747 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º15724 
+System.InvalidOperationException: ³¬Ê±Ê±¼äÒÑµ½¡£³¬Ê±Ê±¼äÒÑµ½£¬µ«ÊÇÉÐÎ´´Ó³ØÖÐ»ñÈ¡Á¬½Ó¡£³öÏÖÕâÖÖÇé¿ö¿ÉÄÜÊÇÒòÎªËùÓÐ³ØÁ¬½Ó¾ùÔÚÊ¹ÓÃ£¬²¢ÇÒ´ïµ½ÁË×î´ó³Ø´óÐ¡¡£
+   ÔÚ System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   ÔÚ System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ÔÚ System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ÔÚ System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   ÔÚ System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   ÔÚ System.Data.SqlClient.SqlConnection.Open()
+   ÔÚ System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   ÔÚ System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   ÔÚ X.App.Views.mgr.xmg.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\xmg.cs:ÐÐºÅ 58
+   ÔÚ X.App.Views.mgr.paper.edit.InitDict() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\mgr\paper\edit.cs:ÐÐºÅ 18
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+
+Ê±¼ä£º2017-06-13 17:31:57,787 
+¼¶±ð£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º31764 
+System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓëÍøÂçÏà¹ØµÄ»òÌØ¶¨ÓÚÊµÀýµÄ´íÎó¡£Î´ÕÒµ½»òÎÞ·¨·ÃÎÊ·þÎñÆ÷¡£ÇëÑéÖ¤ÊµÀýÃû³ÆÊÇ·ñÕýÈ·²¢ÇÒ SQL Server ÒÑÅäÖÃÎªÔÊÐíÔ¶³ÌÁ¬½Ó¡£ (provider: Named Pipes Provider, error: 40 - ÎÞ·¨´ò¿ªµ½ SQL Server µÄÁ¬½Ó) ---> System.ComponentModel.Win32Exception (0x80004005): ÕÒ²»µ½ÍøÂçÂ·¾¶¡£
+   ÔÚ System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   ÔÚ System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   ÔÚ System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   ÔÚ System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   ÔÚ System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   ÔÚ System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ÔÚ System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ÔÚ System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   ÔÚ System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ÔÚ System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ÔÚ System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   ÔÚ System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   ÔÚ System.Data.SqlClient.SqlConnection.Open()
+   ÔÚ System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.Data.x_dict.GetDictList(String code, String upval, DataClassesDataContext db) Î»ÖÃ F:\HT\xue\src\Xc\Data\DataClasses.cs:ÐÐºÅ 71
+   ÔÚ X.Web.XFace.GetDictList(String code, String upval) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XFace.cs:ÐÐºÅ 175
+   ÔÚ X.Web.XFace.GetDict(String code, String val) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XFace.cs:ÐÐºÅ 180
+   ÔÚ X.App.Views._web.InitView() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\_web.cs:ÐÐºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ÐÐºÅ 94
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ÐÐºÅ 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20

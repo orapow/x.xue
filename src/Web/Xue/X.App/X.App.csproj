@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.10.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
@@ -54,6 +58,8 @@
     <Compile Include="Apis\mgr\book\del.cs" />
     <Compile Include="Apis\mgr\book\list.cs" />
     <Compile Include="Apis\mgr\book\save.cs" />
+    <Compile Include="Apis\mgr\paper\del.cs" />
+    <Compile Include="Apis\mgr\paper\list.cs" />
     <Compile Include="Apis\mgr\question\list.cs" />
     <Compile Include="Apis\mgr\question\save.cs" />
     <Compile Include="Apis\mgr\setup.cs" />
@@ -63,6 +69,8 @@
     <Compile Include="Apis\mgr\subject\del.cs" />
     <Compile Include="Apis\mgr\subject\list.cs" />
     <Compile Include="Apis\mgr\subject\save.cs" />
+    <Compile Include="Apis\mgr\user\del.cs" />
+    <Compile Include="Apis\mgr\user\list.cs" />
     <Compile Include="Apis\mgr\xmg.cs" />
     <Compile Include="Apis\com\upload.cs" />
     <Compile Include="Apis\mgr\login.cs" />
@@ -82,6 +90,9 @@
     <Compile Include="Views\mgr\dict\edit.cs" />
     <Compile Include="Views\mgr\dict\list.cs" />
     <Compile Include="Views\mgr\dict\select.cs" />
+    <Compile Include="Views\mgr\paper\edit.cs" />
+    <Compile Include="Views\mgr\paper\list.cs" />
+    <Compile Include="Views\mgr\user\list.cs" />
     <Compile Include="Views\paper\down.cs" />
     <Compile Include="Views\login.cs" />
     <Compile Include="Views\mgr\admin\edit.cs" />
@@ -131,7 +142,9 @@
       <Name>X.Web</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

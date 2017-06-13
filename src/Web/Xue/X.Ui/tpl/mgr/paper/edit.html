@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    #parse("mgr/com/_head.html")
+    <title>试卷编辑 - $cfg.name</title>
+</head>
+<body>
+    <div class="title">
+        <span class="main">试卷编辑</span>-<span class="sub">试卷管理</span>
+    </div>
+    <x:form api="">
+
+        <x:pick title="科目" src="url:/mgr/subject/select.html" name="sub" count="1" def="$!sub" no="1" to="bk" callback="sub_selected" />
+        <x:text title="标题" name="topic" size="4" def="$!item.topic" />
+        <div>$!item.qids</div>
+        <div>
+            #foreach($Item in $!st)
+            <p>试题：$!Item</p>
+            #end
+        </div>
+        <div class="btns">
+            <button type="submit" class="btn btn-primary"><i class="icon-ok"></i>提交保存</button>
+        </div>
+    </x:form>
+    <br />
+    <br />
+    <script type="text/javascript">
+        $(function () {
+            $("form:eq(0)").xform({
+
+            });
+
+
+        });
+
+    </script>
+</body>
+</html>

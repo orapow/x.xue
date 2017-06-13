@@ -4,7 +4,10 @@
     #parse("mgr/com/_head.html")
     <title>会员列表 - $cfg.name</title>
     <style type="text/css">
-        .table td { height: 30px; vertical-align: middle; }
+        .table td {
+            height: 30px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
@@ -13,7 +16,7 @@
     </div>
     <div class="search">
         <x:form>
-            #if($isbase)<x:pick title="城市" src="dict:sys.city" name="city" count="1" def="" />#end<x:text name="key" tip="电话、姓名" size="4" />
+            <x:text name="key" tip="电话、姓名" size="4" />
             <button type="submit" class="btn btn-primary"><i class="icon-search"></i>搜索</button>
             <button type="reset" class="btn"><i class="icon-remove"></i>清除</button>
         </x:form>
@@ -33,20 +36,15 @@
             searchcon: { page: 1, limit: 30 },
             api: "mgr.user.list",
             fs: [
-                { t: "姓名", f: "{name} {tel}", w: 150, align: "left" },
-                { t: "城市", f: "{city}", w: 60, align: "center" },
-                { t: "昵称", f: "<img src='{headimg}' width='30' height='30' /> <span style='vertical-align: middle;'>{nickname}</span>", w: 120, align: "left" },
-                { t: "积分", f: "{exp}", w: 120, align: "center" },
-                { t: "等级", f: "{level}", w: 80, align: "center" },
+                { t: "姓名", f: "{name}", w: 150, align: "left" },
+                { t: "学校", f: "{school}", w: 60, align: "center" },
+                { t: "电话", f: "{tel}", w: 60, align: "center" },
                 { t: "帐户余额", f: "{balance}", w: 80, align: "center" },
-                { t: "业务员", f: "{salesman}", w: 80, align: "center" },
                 { t: "注册时间", f: "{ctime}", w: 100, align: "center" },
                 { t: "最后登陆", f: "{etime}", w: 100, align: "center" },
             ],
             btns: [
                 { txt: "删除", ico: "remove", act: "del" },
-                { txt: "重置", ico: "key", act: "setpwd" },
-                { txt: "修改", ico: "edit", act: "setattr", confirm: false },
             ]
         };
 
