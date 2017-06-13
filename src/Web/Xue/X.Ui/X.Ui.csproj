@@ -207,12 +207,10 @@
     <Content Include="tpl\mgr\subject\edit.html" />
     <Content Include="tpl\mgr\subject\list.html" />
     <Content Include="tpl\paper - 复制%282%29.html" />
-    <Content Include="tpl\paper\down - 复制.html" />
     <Content Include="tpl\paper\down.html" />
     <Content Include="tpl\paper2.html" />
     <Content Include="tpl\paper\view.html" />
     <Content Include="tpl\paper\edit.html" />
-    <Content Include="tpl\paper\XMLFile1.xml" />
     <Content Include="tpl\user\下载记录.html" />
     <Content Include="tpl\user\个人信息.html" />
     <Content Include="tpl\user\安全管理.html" />

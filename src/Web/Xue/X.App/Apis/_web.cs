@@ -18,11 +18,11 @@ namespace X.App.Apis
         {
             base.InitApi();
 
-            //var uk = GetReqParms("ukey");
-            //if (!string.IsNullOrEmpty(uk)) cu = CacheHelper.Get<x_user>(uk);
-            cu = DB.x_user.FirstOrDefault(o => o.user_id == 1);
+            var uk = GetReqParms("ukey");
+            if (!string.IsNullOrEmpty(uk)) cu = CacheHelper.Get<x_user>(uk);
+            //cu = DB.x_user.FirstOrDefault(o => o.user_id == 1);
 
-            if (nduser && cu == null) throw new XExcep("T用户登陆超时");
+            if (nduser && cu == null) throw new XExcep("0x0005");
 
         }
     }
