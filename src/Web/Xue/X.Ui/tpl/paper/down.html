@@ -72,6 +72,7 @@
               </w:rPr>
               <w:t>考试时间：$set.time分钟 满分：$set.score分</w:t>
             </w:r>
+            #if($T.getcfg(9))
             <w:r>
               <w:rPr>
                 <w:rFonts w:hint="eastAsia"/>
@@ -90,6 +91,7 @@
               </w:rPr>
               <w:t>姓名：__________ 班级：__________考号：__________</w:t>
             </w:r>
+            #end
           </w:p>
           #end
           #if($T.getcfg(11))

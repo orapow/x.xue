@@ -142,8 +142,8 @@
                             <td>
                                 <div class="editcon">
                                     <div class="test-title">
-                                        <h1 data-paperset="3"><span class="contenteditable" data-edit="主标题" id="paper-title">2017年5月17日小学英语试卷</span></h1>
-                                        <h2 data-paperset="5" style="display:none;"><span data-edit="副标题" class="contenteditable">英语考试</span></h2>
+                                        <h1 data-paperset="3"><span class="contenteditable" data-edit="主标题" id="paper-title">${date}${sbname.Replace(" ","")}试卷</span></h1>
+                                        <h2 data-paperset="5" style="display:none;"><span data-edit="副标题" class="contenteditable">${sbname.Replace(" ","")}考试</span></h2>
                                     </div>
                                     <div data-paperset="7" class="test-time" style="display:none;">
                                         <p><span>考试时间：<i class="contenteditable" data-edit="考试时间">60</i> 分钟</span><span>满分：<i class="contenteditable" data-edit="满分值">100</i> 分</span></p>
@@ -223,9 +223,9 @@
         </div>
     </div>
     <div class="editfooter">
-        <a href="javascript:;" onclick="paper.showPie()"><i class="icona-fenxi2"></i>试卷分析</a>
-        <a href="javascript:;" onclick="paper.save()"><i class="icona-save2"></i>保存组卷</a>
-        <a href="javascript:;" class="download-btn" onclick="paper.download()"><i class="icona-download1"></i>下载试卷</a>
+        <!--<a href="javascript:;" onclick="paper.showPie()"><i class="icona-fenxi2"></i>试卷分析</a>-->
+        <a href="javascript:;" onclick="do_save()"><i class="icona-save2"></i>保存组卷</a>
+        <a href="javascript:;" class="download-btn" onclick="do_save(1)"><i class="icona-download1"></i>下载试卷</a>
     </div>
     <br />
     <br />
@@ -233,8 +233,10 @@
     <br />
     <br />
     <br />
+    <script src="/js/xx/global.min.js"></script>
     <script src="/js/x.js"></script>
     <script type="text/javascript">
+        var id = 0;
         $(function () {
             $("[data-edit]").click(function () {
                 var ob = $(this);
@@ -289,7 +291,7 @@
             $(".club-summary .t1 strong").text(score);
         }
 
-        function do_save() {
+        function do_save(down) {
             var setting = {
                 cfg: {},
                 topic: $("[data-edit='主标题']").text(),
@@ -314,14 +316,25 @@
                 qids[q.attr("data-qid")] = parseInt(q.find("[data-score]").attr("data-score"));
             });
 
-            x.doapi("paper.save", { sub: "$!sb", qids: JSON.stringify(qids), setting: JSON.stringify(setting) }, function (d) {
-
+            x.doapi("paper.save", {
+                pid: id,
+                sub: "$!sb",
+                qids: JSON.stringify(qids),
+                setting: JSON.stringify(setting)
+            }, function (d) {
+                if (d.issucc) {
+                    id = d.msg;
+                    x.cookie.del("xx.cart.$!sb");
+                    if (down) $("#fr_down").attr("src", "/paper/down-" + id + ".html");
+                    else x.alert("当前试卷已经保存，可以组卷记录里查看！")
+                } else if (d.code == "0x0005") {
+                    window.location.href = "/login--" + x.base64.encode(document.location.href) + ".html";
+                }
             });
-
         }
 
     </script>
-
+    <iframe id="fr_down" style="display:none;"></iframe>
     <a class="return" href="javascript:;" style="right: 4.5px; display: none;"><i class="icona-top"></i></a>
 </body>
 </html>

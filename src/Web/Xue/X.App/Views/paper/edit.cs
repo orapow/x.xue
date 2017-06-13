@@ -11,14 +11,6 @@ namespace X.App.Views.paper
         Dictionary<string, long[]> qids = null;
         string[] nums = "|一|二|三|四|五|六|七|八|九|十|十一|十二|十三|十四|十五|十六|十七|十八|十九|二十".Split('|');
 
-        protected override bool nduser
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         protected override void InitDict()
         {
             base.InitDict();
@@ -30,6 +22,7 @@ namespace X.App.Views.paper
             if (qids == null || qids.Keys.Count == 0) dict.Add("empty", 1);
 
             dict.Add("ids", qids.Keys);
+            dict.Add("date", DateTime.Now.ToString("yyyy年MM月dd日"));
         }
 
         public object GetQues(string k)
