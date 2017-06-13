@@ -46,7 +46,7 @@ namespace X.Data.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.0.120;Initial Catalog=x.xue;Persist Security Info=True;User I" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.0.119;Initial Catalog=x.xue;Persist Security Info=True;User I" +
             "D=sa;Password=sa123")]
         public string x_xueConnectionString {
             get {
