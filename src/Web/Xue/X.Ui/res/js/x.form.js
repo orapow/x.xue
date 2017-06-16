@@ -232,7 +232,7 @@
                 var texts = "";
                 li.parent().find(".btn-primary").each(function () {
                     if (ct == 1) { vals = li.attr("x-val"); texts = li.text(); }
-                    else { vals += "[" + li.attr("x-val") + "]"; texts += li.text() + "、" }
+                    else { vals += "[" + $(this).attr("x-val") + "]"; texts += $(this).text() + "、" }
                 });
 
                 li.parent().attr("x-val", vals);
@@ -244,7 +244,6 @@
 
             dom.delegate(".pick-item", "click", function () {
                 var item = $(this);
-                if (item.attr("disable")) return;
                 if (pick.count == 1) {
                     dom.find(".pick-item.btn-primary").removeClass("btn-primary");
                     item.addClass("btn-primary");
@@ -277,7 +276,7 @@
                 "top": i.offset().top + i.outerHeight() - 1,
                 "left": i.offset().left
             });
-            dom.find("div.c").css("max-height", ($(document).height() - i.offset().top) * 0.8);
+
             dom.show();
         },
         ok: function () {

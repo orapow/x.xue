@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="/css/xx/my.css" />
+    <script type="text/javascript" src="/js/xx/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="/css/xx/base.min.css" />
+    <link rel="stylesheet" href="/css/xx/spriter-mix.min.css" />
+    <link rel="stylesheet" href="/css/xx/main.min.css" />
+    <link rel="stylesheet" href="/css/xx/inner-user.min.css" />
+    <link href="/css/x.dialog.css" rel="stylesheet" />
+    <script src="/js/x.js"></script>
+    <title>个人信息</title>
+    <style type="text/css">
+        .btn { padding: 5px 15px; border: 1px solid #ccc; background: #EDEDED; color: #424242; cursor: pointer; }
+        .btn:hover { color: white; }
+    </style>
+</head>
+
+<body>
+    #parse("user/_top.html")
+    <div class="min">
+        <div class="min03">
+            <div class="g-bd1 f-cb g-container">
+                #parse("user/_left.html")
+                <div class="g-mn1">
+                    <div class="g-mn1c">
+                        <div class="user-con">
+                            <h1>个人信息</h1>
+                            <form id="w0" class="form-info" action="/ucenter/index" method="post">
+                                <input type="hidden" name="_csrf" value="eHRFSVQ2cDg2IzB7BXElDho8A3ptTENsMww8HWRVJXtKOgN9N3IZVg==" />
+                                <fieldset>
+                                    <legend class="form-title">基本信息</legend>
+                                    <div class="form-line">
+                                        <label>用户名：</label>
+                                        <span>$cu.tel</span>
+                                    </div>
+                                    <div class="form-line">
+                                        <label>真实姓名：</label>
+                                        <span>$cu.name</span>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="form-title">VIP管理</legend>
+                                    <div class="form-line">#if(!$cu.etime)<label>您未开通组卷VIP</label>#else<label style="width:auto;">您是Vip用户，到期时间：${cu.etime}#if($exp)<span style="color:red;">(已经过期)</span>#end</label>#end</div>
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-line">
+                                        <label>Vip续费：</label>
+                                        <span class="btn" onclick="showpay(1)">包月</span>
+                                        <span class="btn" onclick="showpay(6)">半年</span>
+                                        <span class="btn" onclick="showpay(12)">一年</span>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    #parse("user/_foot.html")
+    <script type="text/javascript">
+        function showpay(m) {
+            x.openwin("/user/pay-2-" + m + ".html", "在线支付", function (d) { document.location.reload(); }, { w: 300, h: 400 });
+        }
+    </script>
+</body>
+</html>

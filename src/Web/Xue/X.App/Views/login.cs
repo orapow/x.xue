@@ -25,7 +25,6 @@ namespace X.App.Views
             base.InitView();
 
             if (cu != null) Context.Response.Redirect(back);
-
             if (string.IsNullOrEmpty(ukey)) Context.Response.Redirect("http://www.xinxuezaixian.com/index.php?m=Jshizhuc&a=userLogin&back_url=http://" + cfg.domain + "/login-{uk}-" + back + ".html");
 
             var usp = Com.Sdk.GetUser(ukey);
@@ -46,10 +45,9 @@ namespace X.App.Views
             }
             cu.headimg = u.img;
             cu.name = u.realname;
+            cu.ukey = ukey;
 
             SubmitDBChanges();
-
-            CacheHelper.Save(ukey, cu);
 
             Context.Response.SetCookie(new System.Web.HttpCookie("ukey", ukey));
 

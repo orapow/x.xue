@@ -30,18 +30,6 @@
       <Column Name="f8" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.x_fav" Member="x_fav">
-    <Type Name="x_fav">
-      <Column Name="user_fav_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="user_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="type" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="[group]" Member="group" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="subject" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="content" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="ctime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="x_user_x_fav" Member="x_user" ThisKey="user_id" OtherKey="user_id" Type="x_user" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.x_mgr" Member="x_mgr">
     <Type Name="x_mgr">
       <Column Name="mgr_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -54,38 +42,6 @@
       <Column Name="remark" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
       <Column Name="ctime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="ukey" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.x_order" Member="x_order">
-    <Type Name="x_order">
-      <Column Name="order_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="user_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="etime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="downid" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="[desc]" Member="desc" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
-      <Column Name="amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="no" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
-      <Column Name="wx_no" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
-      <Column Name="ctime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="err_msg" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
-      <Association Name="x_user_x_order" Member="x_user" ThisKey="user_id" OtherKey="user_id" Type="x_user" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.x_user" Member="x_user">
-    <Type Name="x_user">
-      <Column Name="user_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="headimg" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="uid" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
-      <Column Name="name" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="school" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
-      <Column Name="tel" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
-      <Column Name="balance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="ctime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="etime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="x_user_x_fav" Member="x_fav" ThisKey="user_id" OtherKey="user_id" Type="x_fav" />
-      <Association Name="x_user_x_order" Member="x_order" ThisKey="user_id" OtherKey="user_id" Type="x_order" />
-      <Association Name="x_user_x_down" Member="x_down" ThisKey="user_id" OtherKey="user_id" Type="x_down" />
     </Type>
   </Table>
   <Table Name="dbo.x_question" Member="x_question">
@@ -137,6 +93,53 @@
       <Column Name="ctime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Association Name="x_paper_x_down" Member="x_paper" ThisKey="paper_id" OtherKey="paper_id" Type="x_paper" IsForeignKey="true" />
       <Association Name="x_user_x_down" Member="x_user" ThisKey="user_id" OtherKey="user_id" Type="x_user" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.x_user" Member="x_user">
+    <Type Name="x_user">
+      <Column Name="user_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="headimg" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="uid" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="school" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="tel" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="balance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ctime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="etime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ukey" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Association Name="x_user_x_down" Member="x_down" ThisKey="user_id" OtherKey="user_id" Type="x_down" />
+      <Association Name="x_user_x_fav" Member="x_fav" ThisKey="user_id" OtherKey="user_id" Type="x_fav" />
+      <Association Name="x_user_x_order" Member="x_order" ThisKey="user_id" OtherKey="user_id" Type="x_order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.x_fav" Member="x_fav">
+    <Type Name="x_fav">
+      <Column Name="fav_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[group]" Member="group" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="subject" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="content" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ctime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="x_user_x_fav" Member="x_user" ThisKey="user_id" OtherKey="user_id" Type="x_user" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.x_order" Member="x_order">
+    <Type Name="x_order">
+      <Column Name="order_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="etime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pid" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="[desc]" Member="desc" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="no" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="app_no" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="platform" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ctime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="err_msg" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="user_del" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="x_user_x_order" Member="x_user" ThisKey="user_id" OtherKey="user_id" Type="x_user" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

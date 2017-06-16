@@ -61,9 +61,20 @@ namespace X.App.Views.paper
         protected override void InitView()
         {
             base.InitView();
-            //var down = cu.x_down.FirstOrDefault(o => o.paper_id == id);
-            pg = DB.x_paper.FirstOrDefault(o => o.paper_id == id);
+            pg = DB.x_paper.FirstOrDefault(o => o.user_id == cu.user_id && o.paper_id == id);
             if (pg == null) throw new XExcep("T试卷不存在");
+            x_down down = null;
+            if (pg.x_down.Count() == 0)
+            {
+                if (cu.etime == null || cu.etime < DateTime.Now) throw new XExcep("T下载记录不存在");
+                down = new x_down() { ctime = DateTime.Now, paper_id = pg.paper_id, user_id = cu.user_id };
+                pg.x_down.Add(down);
+            }
+            else
+            {
+                down = pg.x_down.OrderByDescending(o => o.ctime).FirstOrDefault();// cu.x_down.FirstOrDefault(o => o.down_id == id);
+                if ((cu.etime == null || cu.etime < DateTime.Now) && cfg.down_repeat > 0 && down.ctime.Value < DateTime.Now.AddDays(-(int)cfg.down_repeat)) throw new XExcep("T上次下载已经超过" + cfg.down_repeat + "天，请重新付费下载，购买Vip无限次下载");
+            }
 
             Context.Response.ContentType = "applicationnd/msword";
             Context.Response.AddHeader("Content-Disposition", "inline; filename=" + pg.topic + " - " + cfg.name + ".doc");

@@ -23,6 +23,7 @@ namespace X.App.Views.paper
 
             dict.Add("ids", qids.Keys);
             dict.Add("date", DateTime.Now.ToString("yyyy年MM月dd日"));
+            dict.Add("vip", cu.etime > DateTime.Now);
         }
 
         public object GetQues(string k)

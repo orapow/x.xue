@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="/css/xx/my.css" />
+    <link rel="stylesheet" href="/css/xx/base.min.css" />
+    <link rel="stylesheet" href="/css/xx/spriter-mix.min.css" />
+    <link rel="stylesheet" href="/css/xx/main.min.css" />
+    <link rel="stylesheet" href="/css/xx/inner-user.min.css" />
+    <link href="/css/x.dialog.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/xx/jquery-1.10.2.min.js"></script>
+    <script src="/js/x.js"></script>
+    <title>订单管理</title>
+</head>
+
+<body>
+    #parse("user/_top.html")
+    <div class="min">
+        <div class="min03">
+            <div class="g-bd1 f-cb g-container">
+                #parse("user/_left.html")
+                <div class="g-mn1">
+                    <div class="g-mn1c">
+                        <div class="user-con">
+                            <h1>订单管理</h1>
+                            <table class="table-record">
+                                <thead>
+                                    <tr>
+                                        <td class="fixed-width1">订单号</td>
+                                        <td class="no-width1">订单内容</td>
+                                        <td class="fixed-width1">平台</td>
+                                        <td class="fixed-width1">订单金额</td>
+                                        <td class="fixed-width1">订单状态</td>
+                                        <td class="fixed-width1">下单时间</td>
+                                        <td class="fixed-width1">操作</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    #if($pc>0)
+                                    #foreach($o in $ps)
+                                    <tr>
+                                        <td>$o.no</td>
+                                        <td>$o.desc</td>
+                                        <td>$o.pf</td>
+                                        <td>￥$o.amount</td>
+                                        <td><strong>$o.st</strong></td>
+                                        <td>$o.date</td>
+                                        <td class="tab-link">
+                                            <a href="javascript:;" onclick="do_delete('$o.id')" class="tab-cancel">删除</a>
+                                        </td>
+                                    </tr>
+                                    #end
+                                    #else
+                                    <tr>
+                                        <td colspan="6">暂无订单</td>
+                                    </tr>
+                                    #end
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="page">
+                            <div class="pagenum"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    #parse("user/_foot.html")
+    <script type="text/javascript">
+        var page = parseInt("$!page") || 1;
+
+        function do_delete(id, title) {
+            x.confirm("确定要删除这个订单", function () {
+                x.doapi("user.order.del", { id: id }, function (d) {
+                    if (!d.issucc) return;
+                    document.location.reload();
+                })
+            });
+        }
+
+        function createPage(c) {
+            if (c <= 15) return;
+            var html = "";
+            if (page > 3) html += "<a href='orders-" + (page - 1) + ".html" + "'>上页</a>";
+            var i = Math.max(page - 2, 1);
+            var max = Math.ceil(c / 20);
+            for (; i <= max && i <= page + 2; i++) {
+                html += "<a class='" + (i == page ? "current" : "") + "' href='orders-" + i + ".html" + "'>" + i + "</a>";
+            }
+            if (page < max - 2) html += "<a href='orders-" + (page + 1) + ".html" + "'>下页</a>";
+            $(".page").show().find(".pagenum").html(html);
+        }
+
+        createPage(parseInt("$!pc"))
+
+    </script>
+</body>
+</html>

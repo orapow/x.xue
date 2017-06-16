@@ -109,7 +109,6 @@
                                 <div class="con-items">
                                     <a class="type-active" href="javascript:;" data-val="0" data-name="tp">全部</a>#foreach($t in $topics)<a href="javascript:;" data-val="$t.key" data-name="tp">$t.value</a>#end
                                 </div>
-                                <span class="show-more">更多<i></i></span>
                             </div>
                         </div>
                     </div>
@@ -302,12 +301,12 @@
             var html = "";
             if (data.page > 2) html += "<a onclick='loadsearch({page:" + (data.page - 1) + "})'>上页</a>";
             var i = Math.max(data.page - 2, 1);
-            var max = Math.min(data.page + 2, Math.ceil(c / data.limit));;
-            for (; i <= max; i++) {
+            var max = Math.ceil(c / data.limit);;
+            for (; i <= max && i <= data.page + 2; i++) {
                 html += "<a class='" + (i == data.page ? "current" : "") + "' onclick='loadsearch({page:" + i + "})'>" + i + "</a>";
             }
-            if (data.page < max - 2) html += "<a data-page='+' onclick='loadsearch({page:" + (data.page + 1) + "})'>" + 下页 + "</a>";
-            html += "<input type='text' value='" + data.page + "' style='border: 1px solid #dcdcdc;width: 40px;text-align: center;color: #666;line-height: 32px;'/><a onclick='loadsearch({page:$(this).prev().val()})'>跳转</a>";
+            if (data.page < max - 2) html += "<a data-page='+' onclick='loadsearch({page:" + (data.page + 1) + "})'>下页</a>";
+            html += "<input type='text' value='" + data.page + "' style='border: 1px solid #dcdcdc;width: 40px;text-align: center;color: #666;line-height: 32px;padding: 0;border-radius: 0;margin-bottom: 0;height: 32px;display: inline;vertical-align: top;'/><a onclick='loadsearch({page:$(this).prev().val()})'>跳转</a>";
             $(".page").show().find(".pagenum").html(html);
         }
 

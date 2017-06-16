@@ -13,15 +13,20 @@ using X.Core.Cache;
 using X.Core.Plugin;
 using X.Core.Utility;
 
-namespace X.App.Com {
-    public class Wx {
-        public static string GetJsTicket(string tk) {
+namespace X.App.Com
+{
+    public class Wx
+    {
+        public static string GetJsTicket(string tk)
+        {
             return GetJsTicket(tk, false);
         }
 
-        public static string GetJsTicket(string tk, bool isnew) {
+        public static string GetJsTicket(string tk, bool isnew)
+        {
             var tick = CacheHelper.Get<string>("wx.js_ticket");
-            if (string.IsNullOrEmpty(tick) || isnew) {
+            if (string.IsNullOrEmpty(tick) || isnew)
+            {
                 var json = Tools.GetHttpData("https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=" + tk + "&type=jsapi");
                 var tkn = Serialize.FromJson<tick>(json);
                 tick = tkn.ticket;
@@ -30,9 +35,11 @@ namespace X.App.Com {
             return tick;
         }
 
-        public static string GetToken(string appid, string sec, bool isnew) {
+        public static string GetToken(string appid, string sec, bool isnew)
+        {
             var tk = CacheHelper.Get<string>("wx.access_token");
-            if (string.IsNullOrEmpty(tk) || isnew) {
+            if (string.IsNullOrEmpty(tk) || isnew)
+            {
                 var json = Tools.GetHttpData("https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=" + appid + "&secret=" + sec);
                 Debug.WriteLine("getToken->" + json);
                 var tke = Serialize.FromJson<token>(json);
@@ -41,11 +48,13 @@ namespace X.App.Com {
             }
             return tk;
         }
-        public static string GetToken(string appid, string sec) {
+        public static string GetToken(string appid, string sec)
+        {
             return GetToken(appid, sec, false);
         }
 
-        static string RefreshToken(string appid) {
+        static string RefreshToken(string appid)
+        {
             var re_tk = CacheHelper.Get<string>("wx.refresh_token");
             if (string.IsNullOrEmpty(re_tk)) return "";
             var json = Tools.GetHttpData("https://api.weixin.qq.com/sns/oauth2/refresh_token?appid=" + appid + "&grant_type=refresh_token&refresh_token=" + re_tk);
@@ -56,11 +65,13 @@ namespace X.App.Com {
             return rtk.access_token;
         }
 
-        public static string ToSign(Dictionary<string, string> ps, bool backxml, string mch_key) {
+        public static string ToSign(Dictionary<string, string> ps, bool backxml, string mch_key)
+        {
             var sign_str = new StringBuilder();
             var xml_data = new StringBuilder();
             xml_data.Append("<xml>");
-            foreach (var d in ps.OrderBy(o => o.Key)) {
+            foreach (var d in ps.OrderBy(o => o.Key))
+            {
                 sign_str.Append(d.Key + "=" + d.Value + "&");
                 xml_data.Append("<" + d.Key + ">" + d.Value + "</" + d.Key + ">");
             }
@@ -71,20 +82,24 @@ namespace X.App.Com {
             return backxml ? xml_data.ToString() : sign;
         }
 
-        public static web_token GetWebToken(string appid, string sec, string code) {
+        public static web_token GetWebToken(string appid, string sec, string code)
+        {
             var json = Tools.GetHttpData("https://api.weixin.qq.com/sns/oauth2/access_token?appid=" + appid + "&secret=" + sec + "&code=" + code + "&grant_type=authorization_code");
             var token = Serialize.FromJson<web_token>(json);
             if (!string.IsNullOrEmpty(token.errcode)) { Loger.Error(json); }
             return token;
         }
 
-        public class Open {
+        public class Open
+        {
             private static string ticket_file = HttpContext.Current.Server.MapPath("/dat/wxmp.x");
             /// <summary>
             /// 微信推送Key
             /// </summary>
-            private static string verify_ticket {
-                get {
+            private static string verify_ticket
+            {
+                get
+                {
                     var ticket = CacheHelper.Get<string>("wx.verify_ticket");
                     if (string.IsNullOrEmpty(ticket)) ticket = File.ReadAllText(ticket_file);
                     CacheHelper.Save("wx.verify_ticket", ticket, 5 * 60 * 1000);//有效期 10 分钟 此处存5分钟
@@ -100,7 +115,8 @@ namespace X.App.Com {
             /// 需要做缓存
             /// </summary>
             /// <returns></returns>
-            static string component_access_token() {
+            static string component_access_token()
+            {
                 var acc_token = CacheHelper.Get<string>("wx.component_access_token");
                 if (!string.IsNullOrEmpty(acc_token)) return acc_token;
 
@@ -124,7 +140,8 @@ namespace X.App.Com {
             /// 获取预授权码
             /// </summary>
             /// <returns></returns>
-            static string api_create_preauthcode() {
+            static string api_create_preauthcode()
+            {
                 var tk = component_access_token();
                 if (string.IsNullOrEmpty(tk)) return "";
 
@@ -146,7 +163,8 @@ namespace X.App.Com {
             /// 设置验证Key
             /// </summary>
             /// <param name="ticket"></param>
-            public static void SetVerify_Ticket(string verify_ticket) {
+            public static void SetVerify_Ticket(string verify_ticket)
+            {
                 File.WriteAllText(ticket_file, verify_ticket);
                 CacheHelper.Save("wx.verify_ticket", verify_ticket, 5 * 60 * 1000);//有效期 10 分钟 此处存5分钟
             }
@@ -156,7 +174,8 @@ namespace X.App.Com {
             /// </summary>
             /// <param name="tourl"></param>
             /// <returns></returns>
-            public static string Get_AuthUrl(string tourl) {
+            public static string Get_AuthUrl(string tourl)
+            {
                 return "https://mp.weixin.qq.com/cgi-bin/componentloginpage?component_appid=" + appid + "&pre_auth_code=" + api_create_preauthcode() + "&redirect_uri=" + tourl;
             }
 
@@ -167,11 +186,15 @@ namespace X.App.Com {
             /// 消息 xml
             /// </param>
             /// <returns></returns>
-            public static Push Revice(string tk_xml, string sign, string nonce, string timestamp) {
-                try {
+            public static Push Revice(string tk_xml, string sign, string nonce, string timestamp)
+            {
+                try
+                {
                     var xml = Crypt.DecryptMsg(appid, sign, timestamp, nonce, tk_xml);
                     return new Push(xml);
-                } catch (WxExcep wex) {
+                }
+                catch (WxExcep wex)
+                {
                     Loger.Error(wex);
                 }
                 return null;
@@ -185,7 +208,8 @@ namespace X.App.Com {
             /// 查询授权码
             /// </param>
             /// <returns></returns>
-            public static MpAuth_Info Get_AuthInfo(string auth_code) {
+            public static MpAuth_Info Get_AuthInfo(string auth_code)
+            {
                 var dict = new Dictionary<string, string>();
                 dict.Add("component_appid", appid);
                 dict.Add("authorization_code", auth_code);
@@ -200,7 +224,8 @@ namespace X.App.Com {
             /// 获取公众号信息
             /// </summary>
             /// <param name="auth_code"></param>
-            public static MpInfo Get_MpInfo(string auth_appid) {
+            public static MpInfo Get_MpInfo(string auth_appid)
+            {
                 var dict = new Dictionary<string, string>();
                 dict.Add("component_appid", appid);
                 dict.Add("authorizer_appid", auth_appid);
@@ -217,7 +242,8 @@ namespace X.App.Com {
             /// <param name="auth_appid"></param>
             /// <param name="re_token"></param>
             /// <returns></returns>
-            public static MpAuth_Token Get_MpAuth_Token(string auth_appid, string re_token) {
+            public static MpAuth_Token Get_MpAuth_Token(string auth_appid, string re_token)
+            {
                 var dict = new Dictionary<string, string>();
                 dict.Add("component_appid", appid);
                 dict.Add("authorizer_appid", auth_appid);
@@ -232,17 +258,20 @@ namespace X.App.Com {
             #endregion
             #region
 
-            class component_token : mbase {
+            class component_token : mbase
+            {
                 public string component_access_token { get; set; }
                 public int expires_in { get; set; }
             }
-            class create_preauthcode : mbase {
+            class create_preauthcode : mbase
+            {
                 public string pre_auth_code { get; set; }
                 public int expires_in { get; set; }
             }
             #endregion
 
-            public class Push {
+            public class Push
+            {
                 public string AppId { get { return GetValue("AppId"); } }
                 public string CreateTime { get { return GetValue("CreateTime"); } }
                 public string InfoType { get { return GetValue("InfoType"); } }
@@ -252,11 +281,13 @@ namespace X.App.Com {
                 /// <summary>
                 /// Initializes a new instance of the Push class.
                 /// </summary>
-                public Push(string xml) {
+                public Push(string xml)
+                {
                     var doc = new XmlDocument();
                     doc.LoadXml(xml);
                     var root = doc.FirstChild;
-                    foreach (XmlNode n in root.ChildNodes) {
+                    foreach (XmlNode n in root.ChildNodes)
+                    {
                         var v = "";
                         if (n.NodeType == XmlNodeType.CDATA) v = n.FirstChild.InnerText;
                         else v = n.InnerText;
@@ -264,14 +295,16 @@ namespace X.App.Com {
                     }
                 }
 
-                public string GetValue(string name) {
+                public string GetValue(string name)
+                {
                     if (ps.ContainsKey(name)) return ps[name];
                     return "";
                 }
             }
 
             [XmlType("xml")]
-            public class Un_Auth {
+            public class Un_Auth
+            {
                 public string AppId { get; set; }
                 public string CreateTime { get; set; }
                 public string InfoType { get; set; }
@@ -281,7 +314,8 @@ namespace X.App.Com {
             /// <summary>
             /// 权限对象
             /// </summary>
-            public class Func_Category {
+            public class Func_Category
+            {
                 /// <summary>
                 /// 1、消息与菜单权限集
                 /// 2、用户管理权限集
@@ -303,7 +337,8 @@ namespace X.App.Com {
             /// <summary>
             /// 公众号授权令牌
             /// </summary>
-            public class MpAuth_Token : mbase {
+            public class MpAuth_Token : mbase
+            {
                 public string authorizer_access_token { get; set; }
                 public string authorizer_refresh_token { get; set; }
                 public int expires_in { get; set; }
@@ -312,10 +347,12 @@ namespace X.App.Com {
             /// <summary>
             /// 公众号信息
             /// </summary>
-            public class MpInfo : mbase {
+            public class MpInfo : mbase
+            {
                 public Authorizer authorizer_info { get; set; }
                 public Authorization authorization_info { get; set; }
-                public class Authorizer {
+                public class Authorizer
+                {
                     public string nick_name { get; set; }
                     public string head_img { get; set; }
                     public string user_name { get; set; }
@@ -326,7 +363,8 @@ namespace X.App.Com {
                     public Business business_info { get; set; }
                 }
 
-                public class Business {
+                public class Business
+                {
                     /// <summary>
                     /// 是否开通微信门店功能
                     /// 0、代表未开通
@@ -363,7 +401,8 @@ namespace X.App.Com {
             /// <summary>
             /// 授权信息对象
             /// </summary>
-            public class Authorization {
+            public class Authorization
+            {
                 public string appid { get; set; }
                 /// <summary>
                 /// 授权appid
@@ -390,7 +429,8 @@ namespace X.App.Com {
             /// <summary>
             /// 公众号授权信息
             /// </summary>
-            public class MpAuth_Info : mbase {
+            public class MpAuth_Info : mbase
+            {
                 /// <summary>
                 /// 授权信息
                 /// </summary>
@@ -398,8 +438,10 @@ namespace X.App.Com {
             }
         }
 
-        public class Media {
-            public static string DownImage(string tk, string mmid) {
+        public class Media
+        {
+            public static string DownImage(string tk, string mmid)
+            {
                 return Tools.DownImage("https://api.weixin.qq.com/cgi-bin/media/get?access_token=" + tk + "&media_id=" + mmid);
             }
         }
@@ -407,7 +449,8 @@ namespace X.App.Com {
         /// <summary>
         /// 用户相关
         /// </summary>
-        public class User {
+        public class User
+        {
             /// <summary>
             /// 获取单个用户信息
             /// </summary>
@@ -415,7 +458,8 @@ namespace X.App.Com {
             /// <param name="tk"></param>
             /// <param name="isweb"></param>
             /// <returns></returns>
-            public static uinfo GetUserInfo(string opid, string tk, bool isweb) {
+            public static uinfo GetUserInfo(string opid, string tk, bool isweb)
+            {
                 var json = "";
                 if (isweb) json = Tools.GetHttpData("https://api.weixin.qq.com/sns/userinfo?access_token=" + tk + "&openid=" + opid + "&lang=zh_CN");
                 else json = Tools.GetHttpData("https://api.weixin.qq.com/cgi-bin/user/info?access_token=" + tk + "&openid=" + opid + "&lang=zh_CN");
@@ -430,7 +474,8 @@ namespace X.App.Com {
             /// <param name="opid"></param>
             /// <param name="tk"></param>
             /// <returns></returns>
-            public static uinfo GetUserInfo(string opid, string tk) {
+            public static uinfo GetUserInfo(string opid, string tk)
+            {
                 return GetUserInfo(opid, tk, false);
             }
             /// <summary>
@@ -439,7 +484,8 @@ namespace X.App.Com {
             /// <param name="pus"></param>
             /// <param name="tk"></param>
             /// <returns></returns>
-            public static users GetMutiUserInfo(List<object> pus, string tk) {
+            public static users GetMutiUserInfo(List<object> pus, string tk)
+            {
                 var url = "https://api.weixin.qq.com/cgi-bin/user/info/batchget?access_token=" + tk;
                 var json = Tools.PostHttpData(url, Serialize.ToJson(new { user_list = pus }));
                 Loger.Info("getmutiuserinfo->" + Serialize.ToJson(new { user_list = pus }));
@@ -448,11 +494,13 @@ namespace X.App.Com {
                 return us;
             }
 
-            public class users : mbase {
+            public class users : mbase
+            {
                 public List<uinfo> user_info_list { get; set; }
             }
 
-            public class uinfo : mbase {
+            public class uinfo : mbase
+            {
                 /// <summary>
                 /// 用户是否订阅该公众号标识，值为0时，代表此用户没有关注该公众号，拉取不到其余信息。
                 /// </summary>
@@ -512,8 +560,10 @@ namespace X.App.Com {
         /// <summary>
         /// 支付相关
         /// </summary>
-        public class Pay {
-            public static Oxml MdOrder(string body, string order_no, string total, string notify_url, string openid, string appid, string mch_id, string mch_key, bool isapp) {
+        public class Pay
+        {
+            public static Oxml MdOrder(string body, string order_no, string total, string notify_url, string appid, string mch_id, string mch_key)
+            {
                 var url = "https://api.mch.weixin.qq.com/pay/unifiedorder";
 
                 var ps = new Dictionary<string, string>();
@@ -525,8 +575,7 @@ namespace X.App.Com {
                 ps.Add("total_fee", total);
                 ps.Add("spbill_create_ip", Tools.GetClientIP());
                 ps.Add("notify_url", notify_url);
-                ps.Add("trade_type", isapp ? "APP" : "JSAPI");//"NATIVE");
-                ps.Add("openid", openid);
+                ps.Add("trade_type", "NATIVE");
                 var topostxml = ToSign(ps, true, mch_key);
 
                 var odxml = Tools.PostHttpData(url, topostxml);
@@ -539,11 +588,14 @@ namespace X.App.Com {
             /// </summary>
             /// <param name="nt"></param>
             /// <returns></returns>
-            public static bool ValidNotify(Ntxml nt, string mch_id, string appid, string mch_key) {
-                if (nt == null || string.IsNullOrEmpty(nt.sign)) {
+            public static bool ValidNotify(Ntxml nt, string mch_id, string appid, string mch_key)
+            {
+                if (nt == null || string.IsNullOrEmpty(nt.sign))
+                {
                     return false;
                 }
-                if (nt.mch_id != mch_id || nt.appid != appid) {
+                if (nt.mch_id != mch_id || nt.appid != appid)
+                {
                     return false;
                 }
                 var ps = new Dictionary<string, string>();
@@ -577,7 +629,8 @@ namespace X.App.Com {
             /// 付款金额（元）
             /// </param>
             /// <returns></returns>
-            public static payrsp PayToOpenid(string appid, string mchid, string openid, string no, int amount, string cert_path, string signkey) {
+            public static payrsp PayToOpenid(string appid, string mchid, string openid, string no, int amount, string cert_path, string signkey)
+            {
                 var dict = new Dictionary<string, string>();
                 dict.Add("mch_appid", appid);
                 dict.Add("mchid", mchid);
@@ -590,7 +643,8 @@ namespace X.App.Com {
                 dict.Add("spbill_create_ip", Tools.GetClientIP());
                 var to_md5 = "";
                 var xml_data = "<xml>";
-                foreach (var d in dict.OrderBy(o => o.Key)) {
+                foreach (var d in dict.OrderBy(o => o.Key))
+                {
                     if (!string.IsNullOrEmpty(d.Value)) to_md5 += d.Key + "=" + d.Value + "&";
                     xml_data += "<" + d.Key + ">" + d.Value + "</" + d.Key + ">";
                 }
@@ -608,7 +662,8 @@ namespace X.App.Com {
             /// <param name="total_fee">总金额（分）</param>
             /// <param name="refund_fee">退款金额（分）</param>
             /// <returns></returns>
-            public static Ruxml Refund(string appid, string mchid, string openid, string wx_order_no, string refund_no, string total_fee, string refund_fee, String signkey, String cert_path) {
+            public static Ruxml Refund(string appid, string mchid, string openid, string wx_order_no, string refund_no, string total_fee, string refund_fee, String signkey, String cert_path)
+            {
                 var url = "https://api.mch.weixin.qq.com/secapi/pay/refund";
 
                 var ps = new Dictionary<string, string>();
@@ -622,7 +677,8 @@ namespace X.App.Com {
                 ps.Add("op_user_id", mchid);
                 var xml_data = "<xml>";
                 var to_md5 = "";
-                foreach (var d in ps.OrderBy(o => o.Key)) {
+                foreach (var d in ps.OrderBy(o => o.Key))
+                {
                     if (!string.IsNullOrEmpty(d.Value)) to_md5 += d.Key + "=" + d.Value + "&";
                     xml_data += "<" + d.Key + ">" + d.Value + "</" + d.Key + ">";
                 }
@@ -636,7 +692,8 @@ namespace X.App.Com {
             /// <summary>
             /// 下单XML
             /// </summary>
-            public class Oxml : xml {
+            public class Oxml : xml
+            {
                 /// <summary>
                 /// 调用接口提交的公众账号ID
                 /// </summary>
@@ -686,7 +743,8 @@ namespace X.App.Com {
             /// <summary>
             /// 退款XML
             /// </summary>
-            public class Ruxml : xml {
+            public class Ruxml : xml
+            {
                 /// <summary>
                 /// SUCCESS退款申请接收成功，结果通过退款查询接口查询
                 /// FAIL 提交业务失败
@@ -779,7 +837,8 @@ namespace X.App.Com {
             /// <summary>
             /// 闭关订单XML
             /// </summary>
-            public class Clxml : xml {
+            public class Clxml : xml
+            {
                 /// <summary>
                 /// 微信分配的公众账号ID
                 /// </summary>
@@ -809,7 +868,8 @@ namespace X.App.Com {
             /// <summary>
             /// 支付回调XML
             /// </summary>
-            public class Ntxml : xml {
+            public class Ntxml : xml
+            {
                 public string appid { get; set; }
                 public string bank_type { get; set; }
                 public string cash_fee { get; set; }
@@ -828,7 +888,8 @@ namespace X.App.Com {
             }
 
             [XmlType("xml")]
-            public class payrsp {
+            public class payrsp
+            {
                 /// <summary>
                 /// 返回状态码
                 /// SUCCESS/FAIL
@@ -886,20 +947,26 @@ namespace X.App.Com {
         /// <summary>
         /// 消息
         /// </summary>
-        public class Msg {
-            public static MsgObj Get(string appid, string tk_xml, string sign, string nonce, string timestamp) {
-                try {
+        public class Msg
+        {
+            public static MsgObj Get(string appid, string tk_xml, string sign, string nonce, string timestamp)
+            {
+                try
+                {
                     var xml = tk_xml;
                     if (xml.IndexOf("<Encrypt>") > 0) xml = Crypt.DecryptMsg(appid, sign, timestamp, nonce, xml);
                     var obj = new MsgObj(xml);
                     return obj;
-                } catch (WxExcep wex) {
+                }
+                catch (WxExcep wex)
+                {
                     Loger.Error(wex);
                     return null;
                 }
             }
 
-            public class MsgObj {
+            public class MsgObj
+            {
                 public string FromUserName { get { return GetString("FromUserName"); } }
                 public string ToUserName { get { return GetString("ToUserName"); } }
                 public int CreateTime { get { return GetInt("CreateTime"); } }
@@ -907,12 +974,14 @@ namespace X.App.Com {
 
                 private Dictionary<string, string> dict = new Dictionary<string, string>();
 
-                public string GetString(string name) {
+                public string GetString(string name)
+                {
                     if (dict.ContainsKey(name)) return dict[name];
                     return "";
                 }
 
-                public int GetInt(string name) {
+                public int GetInt(string name)
+                {
                     if (dict.ContainsKey(name)) return dict[name] == null ? 0 : int.Parse(dict[name]);
                     return 0;
                 }
@@ -920,12 +989,14 @@ namespace X.App.Com {
                 /// <summary>
                 /// Initializes a new instance of the MsgObj class.
                 /// </summary>
-                public MsgObj(string xml) {
+                public MsgObj(string xml)
+                {
                     if (string.IsNullOrEmpty(xml)) return;
                     var doc = new XmlDocument();
                     doc.LoadXml(xml);
                     var root = doc.FirstChild;
-                    foreach (XmlNode n in root.ChildNodes) {
+                    foreach (XmlNode n in root.ChildNodes)
+                    {
                         var v = "";
                         if (n.NodeType == XmlNodeType.CDATA) v = n.FirstChild.InnerText;
                         else v = n.InnerText;
@@ -933,10 +1004,12 @@ namespace X.App.Com {
                     }
                 }
 
-                public string ToXml(string appid) {
+                public string ToXml(string appid)
+                {
                     var sb_str = new StringBuilder();
                     sb_str.Append("<xml>");
-                    foreach (var k in dict.Keys) {
+                    foreach (var k in dict.Keys)
+                    {
                         if ("CreateTime|Latitude|Longitude|Precision".IndexOf(k) < 0) sb_str.Append("<" + k + "><![CDATA[" + dict[k] + "]]></" + k + ">");
                         else sb_str.Append("<" + k + ">" + dict[k] + "</" + k + ">");
                     }
@@ -944,45 +1017,52 @@ namespace X.App.Com {
                     return Crypt.EncryptMsg(appid, sb_str.ToString(), Tools.GetGreenTime(""), Tools.GetRandRom(9, 3));
                 }
 
-                public void AddValue(string name, string value) {
+                public void AddValue(string name, string value)
+                {
                     dict.Add(name, value);
                 }
 
             }
         }
 
-        public class WxExcep : Exception {
+        public class WxExcep : Exception
+        {
             /// <summary>
             /// Initializes a new instance of the WxExcep class.
             /// </summary>
             public WxExcep(string msg)
-                : base(msg) {
+                : base(msg)
+            {
                 if (msg.IndexOf("{") == 0) error = X.Core.Utility.Serialize.FromJson<Err>(msg);
                 else error = new Err(msg);
             }
 
             public Err error { get; set; }
 
-            public class Err {
+            public class Err
+            {
                 public string errcode { get; set; }
                 public string errmsg { get; set; }
                 /// <summary>
                 /// Initializes a new instance of the Err class.
                 /// </summary>
-                public Err(string msg) {
+                public Err(string msg)
+                {
                     errmsg = msg;
                 }
             }
         }
 
-        class AES {
+        class AES
+        {
             /// <summary>
             /// 解密方法
             /// </summary>
             /// <param name="Input">密文</param>
             /// <param name="EncodingAESKey"></param>
             /// <returns></returns>
-            public static string Decrypt(String Input, string EncodingAESKey, ref string appid) {
+            public static string Decrypt(String Input, string EncodingAESKey, ref string appid)
+            {
                 byte[] Key;
                 Key = Convert.FromBase64String(EncodingAESKey + "=");
                 byte[] Iv = new byte[16];
@@ -1009,7 +1089,8 @@ namespace X.App.Com {
             /// <param name="EncodingAESKey"></param>
             /// <param name="appid"></param>
             /// <returns></returns>
-            public static String Encrypt(String Input, string EncodingAESKey, string appid) {
+            public static String Encrypt(String Input, string EncodingAESKey, string appid)
+            {
                 byte[] Key;
                 Key = Convert.FromBase64String(EncodingAESKey + "=");
                 byte[] Iv = new byte[16];
@@ -1031,34 +1112,40 @@ namespace X.App.Com {
             }
 
             #region 私有方法
-            static UInt32 HostToNetworkOrder(UInt32 inval) {
+            static UInt32 HostToNetworkOrder(UInt32 inval)
+            {
                 UInt32 outval = 0;
                 for (int i = 0; i < 4; i++)
                     outval = (outval << 8) + ((inval >> (i * 8)) & 255);
                 return outval;
             }
-            static Int32 HostToNetworkOrder(Int32 inval) {
+            static Int32 HostToNetworkOrder(Int32 inval)
+            {
                 Int32 outval = 0;
                 for (int i = 0; i < 4; i++)
                     outval = (outval << 8) + ((inval >> (i * 8)) & 255);
                 return outval;
             }
-            static string CreateRandCode(int codeLen) {
+            static string CreateRandCode(int codeLen)
+            {
                 string codeSerial = "2,3,4,5,6,7,a,c,d,e,f,h,i,j,k,m,n,p,r,s,t,A,C,D,E,F,G,H,J,K,M,N,P,Q,R,S,U,V,W,X,Y,Z";
-                if (codeLen == 0) {
+                if (codeLen == 0)
+                {
                     codeLen = 16;
                 }
                 string[] arr = codeSerial.Split(',');
                 string code = "";
                 int randValue = -1;
                 Random rand = new Random(unchecked((int)DateTime.Now.Ticks));
-                for (int i = 0; i < codeLen; i++) {
+                for (int i = 0; i < codeLen; i++)
+                {
                     randValue = rand.Next(0, arr.Length - 1);
                     code += arr[randValue];
                 }
                 return code;
             }
-            static String AES_encrypt(String Input, byte[] Iv, byte[] Key) {
+            static String AES_encrypt(String Input, byte[] Iv, byte[] Key)
+            {
                 var aes = new RijndaelManaged();
                 //秘钥的大小，以位为单位
                 aes.KeySize = 256;
@@ -1072,8 +1159,10 @@ namespace X.App.Com {
                 var encrypt = aes.CreateEncryptor(aes.Key, aes.IV);
                 byte[] xBuff = null;
 
-                using (var ms = new MemoryStream()) {
-                    using (var cs = new CryptoStream(ms, encrypt, CryptoStreamMode.Write)) {
+                using (var ms = new MemoryStream())
+                {
+                    using (var cs = new CryptoStream(ms, encrypt, CryptoStreamMode.Write))
+                    {
                         byte[] xXml = Encoding.UTF8.GetBytes(Input);
                         cs.Write(xXml, 0, xXml.Length);
                     }
@@ -1082,7 +1171,8 @@ namespace X.App.Com {
                 String Output = Convert.ToBase64String(xBuff);
                 return Output;
             }
-            static String AES_encrypt(byte[] Input, byte[] Iv, byte[] Key) {
+            static String AES_encrypt(byte[] Input, byte[] Iv, byte[] Key)
+            {
                 var aes = new RijndaelManaged();
                 //秘钥的大小，以位为单位
                 aes.KeySize = 256;
@@ -1102,8 +1192,10 @@ namespace X.App.Com {
                 Array.Copy(pad, 0, msg, Input.Length, pad.Length);
                 #endregion
 
-                using (var ms = new MemoryStream()) {
-                    using (var cs = new CryptoStream(ms, encrypt, CryptoStreamMode.Write)) {
+                using (var ms = new MemoryStream())
+                {
+                    using (var cs = new CryptoStream(ms, encrypt, CryptoStreamMode.Write))
+                    {
                         cs.Write(msg, 0, msg.Length);
                     }
                     xBuff = ms.ToArray();
@@ -1112,27 +1204,32 @@ namespace X.App.Com {
                 String Output = Convert.ToBase64String(xBuff);
                 return Output;
             }
-            static byte[] KCS7Encoder(int text_length) {
+            static byte[] KCS7Encoder(int text_length)
+            {
                 int block_size = 32;
                 // 计算需要填充的位数
                 int amount_to_pad = block_size - (text_length % block_size);
-                if (amount_to_pad == 0) {
+                if (amount_to_pad == 0)
+                {
                     amount_to_pad = block_size;
                 }
                 // 获得补位所用的字符
                 char pad_chr = chr(amount_to_pad);
                 string tmp = "";
-                for (int index = 0; index < amount_to_pad; index++) {
+                for (int index = 0; index < amount_to_pad; index++)
+                {
                     tmp += pad_chr;
                 }
                 return Encoding.UTF8.GetBytes(tmp);
             }
-            static char chr(int a) {
+            static char chr(int a)
+            {
 
                 byte target = (byte)(a & 0xFF);
                 return (char)target;
             }
-            static byte[] AES_decrypt(String Input, byte[] Iv, byte[] Key) {
+            static byte[] AES_decrypt(String Input, byte[] Iv, byte[] Key)
+            {
                 RijndaelManaged aes = new RijndaelManaged();
                 aes.KeySize = 256;
                 aes.BlockSize = 128;
@@ -1142,8 +1239,10 @@ namespace X.App.Com {
                 aes.IV = Iv;
                 var decrypt = aes.CreateDecryptor(aes.Key, aes.IV);
                 byte[] xBuff = null;
-                using (var ms = new MemoryStream()) {
-                    using (var cs = new CryptoStream(ms, decrypt, CryptoStreamMode.Write)) {
+                using (var ms = new MemoryStream())
+                {
+                    using (var cs = new CryptoStream(ms, decrypt, CryptoStreamMode.Write))
+                    {
                         byte[] xXml = Convert.FromBase64String(Input);
                         byte[] msg = new byte[xXml.Length + 32 - xXml.Length % 32];
                         Array.Copy(xXml, msg, xXml.Length);
@@ -1153,9 +1252,11 @@ namespace X.App.Com {
                 }
                 return xBuff;
             }
-            static byte[] decode2(byte[] decrypted) {
+            static byte[] decode2(byte[] decrypted)
+            {
                 int pad = (int)decrypted[decrypted.Length - 1];
-                if (pad < 1 || pad > 32) {
+                if (pad < 1 || pad > 32)
+                {
                     pad = 0;
                 }
                 byte[] res = new byte[decrypted.Length - pad];
@@ -1165,7 +1266,8 @@ namespace X.App.Com {
             #endregion
         }
 
-        public class Crypt {
+        public class Crypt
+        {
             static string otoken = "lioDqc3SIgmEo3lo3D8nO8hLYVa0BcDMZd55KidrUG4NGEWDyDSpC9naTVZuIoWP";
             static string msgencrypt = "BdR8DXlQXulijO5crf68us3CjUUcalRKkDOo62DZ0HV";
 
@@ -1177,13 +1279,15 @@ namespace X.App.Com {
             /// <param name="sMsgBody"></param>
             /// <param name="sSigture"></param>
             /// <returns></returns>
-            static void VerifySignature(string sTimeStamp, string sNonce, string sMsgBody, string sSigture) {
+            static void VerifySignature(string sTimeStamp, string sNonce, string sMsgBody, string sSigture)
+            {
                 var hash = GenarateSinature(sTimeStamp, sNonce, sMsgBody);
                 Debug.WriteLine("VerifySignature->" + sTimeStamp);
                 Debug.WriteLine("VerifySignature->" + sNonce);
                 Debug.WriteLine("VerifySignature->" + sMsgBody);
                 Debug.WriteLine("VerifySignature:" + hash + "<->" + sSigture);
-                if (hash != sSigture) {
+                if (hash != sSigture)
+                {
                     throw new WxExcep("签名验证错误。");
                 }
             }
@@ -1195,7 +1299,8 @@ namespace X.App.Com {
             /// <param name="msgencrypt"></param>
             /// <param name="msgsignature"></param>
             /// <returns></returns>
-            static string GenarateSinature(string timestamp, string nonce, string msgencrypt) {
+            static string GenarateSinature(string timestamp, string nonce, string msgencrypt)
+            {
                 var ps = new List<string>();
                 ps.Add(otoken);
                 ps.Add(timestamp);
@@ -1219,17 +1324,21 @@ namespace X.App.Com {
             /// <param name="sPostData">密文，对应POST请求的数据</param>
             /// <param name="sMsg">解密后的原文，当return返回0时有效</param>
             /// <returns>成功0，失败返回对应的错误码</returns>
-            public static string DecryptMsg(string appid, string sMsgSignature, string sTimeStamp, string sNonce, string sPostData) {
+            public static string DecryptMsg(string appid, string sMsgSignature, string sTimeStamp, string sNonce, string sPostData)
+            {
                 if (msgencrypt.Length != 43) throw new WxExcep("AESKey不正确。");
 
                 XmlDocument doc = new XmlDocument();
                 XmlNode root;
                 string sEncryptMsg;
-                try {
+                try
+                {
                     doc.LoadXml(sPostData);
                     root = doc.FirstChild;
                     sEncryptMsg = root["Encrypt"].InnerText;
-                } catch (Exception) {
+                }
+                catch (Exception)
+                {
                     throw new WxExcep("XML解析失败");
                 }
 
@@ -1237,11 +1346,16 @@ namespace X.App.Com {
 
                 string cpid = "";
                 var sMsg = "";
-                try {
+                try
+                {
                     sMsg = AES.Decrypt(sEncryptMsg, msgencrypt, ref cpid);
-                } catch (FormatException) {
+                }
+                catch (FormatException)
+                {
                     throw new WxExcep("BASE64解密异常");
-                } catch (Exception) {
+                }
+                catch (Exception)
+                {
                     throw new WxExcep("AES 解密失败");
                 }
 
@@ -1260,13 +1374,17 @@ namespace X.App.Com {
             /// <returns>
             /// 成功0，失败返回对应的错误码
             /// </returns>
-            public static string EncryptMsg(string appid, string sReplyMsg, string sTimeStamp, string sNonce) {
+            public static string EncryptMsg(string appid, string sReplyMsg, string sTimeStamp, string sNonce)
+            {
                 if (msgencrypt.Length != 43) throw new WxExcep("AESKey不正确。");
 
                 string raw = "";
-                try {
+                try
+                {
                     raw = AES.Encrypt(sReplyMsg, msgencrypt, appid);
-                } catch (Exception) {
+                }
+                catch (Exception)
+                {
                     throw new WxExcep("AES 加密失败");
                 }
 
@@ -1296,7 +1414,8 @@ namespace X.App.Com {
         /// <summary>
         /// 微信Xml
         /// </summary>
-        public class xml {
+        public class xml
+        {
             /// <summary>
             /// SUCCESS/FAIL
             /// 此字段是通信标识，非交易标识，交易是否成功需要查看result_code来判断
@@ -1309,22 +1428,26 @@ namespace X.App.Com {
             /// </summary>
             public string return_msg { get; set; }
         }
-        public class web_token : mbase {
+        public class web_token : mbase
+        {
             public string access_token { get; set; }
             public int expires_in { get; set; }
             public string refresh_token { get; set; }
             public string openid { get; set; }
             public string scope { get; set; }
         }
-        class tick : mbase {
+        class tick : mbase
+        {
             public string ticket { get; set; }
             public int expires_in { get; set; }
         }
-        class token : mbase {
+        class token : mbase
+        {
             public string access_token { get; set; }
             public int expires { get; set; }
         }
-        public class mbase {
+        public class mbase
+        {
             public string errcode { get; set; }
             public string errmsg { get; set; }
         }

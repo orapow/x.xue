@@ -19,11 +19,10 @@ namespace X.App.Apis
             base.InitApi();
 
             var uk = GetReqParms("ukey");
-            if (!string.IsNullOrEmpty(uk)) cu = CacheHelper.Get<x_user>(uk);
+            if (!string.IsNullOrEmpty(uk)) cu = DB.x_user.FirstOrDefault(o => o.ukey == uk);
             //cu = DB.x_user.FirstOrDefault(o => o.user_id == 1);
 
             if (nduser && cu == null) throw new XExcep("0x0005");
-
         }
     }
 }

@@ -25,23 +25,12 @@ namespace X.App.Com
             }
         }
 
-        //public static Rsp Logout(string key)
-        //{
-        //    try
-        //    {
-        //        var json = Tools.PostHttpData(gateway + "/Logout", "ukey=" + key);
-        //        if (string.IsNullOrEmpty(json)) throw new Exception("服务器返回空");
-        //        return new Rsp();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return new Rsp()
-        //        {
-        //            msg = e.Message,
-        //            err = true
-        //        };
-        //    }
-        //}
+        public static Rsp Logout(string key)
+        {
+            var json = Tools.PostHttpData("http://www.xinxuezaixian.com/index.php?m=Jshizhuc&a=userLogout&ukey=" + key, "");
+            if (string.IsNullOrEmpty(json)) throw new Exception("服务器返回空");
+            return new Rsp();
+        }
     }
 
     public class UserRsp

@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    #parse("_top.html");
+    #parse("_top.html")
     <div class="breadcrumb g-container"> <i class="icona-dingwei"></i>当前位置： <a href="#">首页</a> <b>&gt;</b> <a href="#">$sbname</a> </div>
     <div class="g-bd1 g-container f-cb" id="J_PaperLayout">
         <div class="g-sd1">
@@ -325,12 +325,25 @@
                 if (d.issucc) {
                     id = d.msg;
                     x.cookie.del("xx.cart.$!sb");
-                    if (down) $("#fr_down").attr("src", "/paper/down-" + id + ".html");
+                    if (down) {
+                        if ("$!vip" == "True") { do_down(); }
+                        else do_pay();
+                    }
                     else x.alert("当前试卷已经保存，可以组卷记录里查看！")
                 } else if (d.code == "0x0005") {
                     window.location.href = "/login--" + x.base64.encode(document.location.href) + ".html";
                 }
             });
+        }
+
+        function do_down() {
+            $("#fr_down").attr("src", "/paper/down-" + id + ".html");
+        }
+
+        function do_pay() {
+            x.openwin("/user/pay-1-" + id + ".html", "在线支付", function (d) {
+                if (d == "succ") do_down();
+            }, { w: 300, h: 400 });
         }
 
     </script>

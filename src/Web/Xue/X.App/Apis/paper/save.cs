@@ -27,6 +27,12 @@ namespace X.App.Apis.paper
             var ids = Serialize.FromJson<Dictionary<long, int>>(Context.Server.HtmlDecode(qids));
             if (ids == null || ids.Count() == 0) throw new XExcep("T试题参数错误");
             if (ids.Count(o => o.Value == 0) > 0) throw new XExcep("T有试题未设置分数");
+            var limit = 0;
+            if (cu.etime > DateTime.Now) limit = cfg.vip_ques_count;
+            else limit = cfg.unvip_ques_count;
+
+            if (DB.x_paper.Count(o => o.user_id == cu.user_id && o.ctime.Value.Date == DateTime.Now.Date) >= limit) throw new XExcep("T今日组卷数量已达上限，请明日再来组卷。");
+            //这里要限制组卷次数 cfg.vip_ques_count;cfg.unvip_ques_count ↑
 
             x_paper pg = null;
             if (pid > 0) pg = DB.x_paper.FirstOrDefault(o => o.paper_id == pid && o.user_id == cu.user_id);

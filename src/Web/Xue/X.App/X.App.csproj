@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AopSdk">
+      <HintPath>..\..\..\..\libs\AopSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Gma.QrCodeNet.Encoding.Net35">
+      <HintPath>..\..\..\..\libs\Gma.QrCodeNet.Encoding.Net35.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
@@ -69,19 +75,28 @@
     <Compile Include="Apis\mgr\logout.cs" />
     <Compile Include="Apis\paper\save.cs" />
     <Compile Include="Apis\question\search.cs" />
+    <Compile Include="Apis\user\fav\del.cs" />
+    <Compile Include="Apis\user\order\del.cs" />
+    <Compile Include="Apis\user\order\md.cs" />
+    <Compile Include="Apis\user\order\st.cs" />
+    <Compile Include="Apis\user\down\del.cs" />
+    <Compile Include="Apis\user\paper\del.cs" />
     <Compile Include="Apis\xapi.cs" />
     <Compile Include="Apis\_web.cs" />
     <Compile Include="Com\Config.cs" />
     <Compile Include="Com\Sdk.cs" />
+    <Compile Include="Com\Wx.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="Views\com\err.cs" />
     <Compile Include="Views\com\code.cs" />
     <Compile Include="Views\com\dict.cs" />
     <Compile Include="Views\com\getpos.cs" />
     <Compile Include="Views\index.cs" />
+    <Compile Include="Views\logout.cs" />
     <Compile Include="Views\mgr\dict\edit.cs" />
     <Compile Include="Views\mgr\dict\list.cs" />
     <Compile Include="Views\mgr\dict\select.cs" />
+    <Compile Include="Views\notify.cs" />
     <Compile Include="Views\paper\down.cs" />
     <Compile Include="Views\login.cs" />
     <Compile Include="Views\mgr\admin\edit.cs" />
@@ -109,6 +124,12 @@
     <Compile Include="Views\mgr\subject\select.cs" />
     <Compile Include="Views\paper\edit.cs" />
     <Compile Include="Views\question.cs" />
+    <Compile Include="Views\user\papers.cs" />
+    <Compile Include="Views\user\down.cs" />
+    <Compile Include="Views\user\favs.cs" />
+    <Compile Include="Views\user\info.cs" />
+    <Compile Include="Views\user\orders.cs" />
+    <Compile Include="Views\user\pay.cs" />
     <Compile Include="Views\xview.cs" />
     <Compile Include="Views\com\view.cs" />
     <Compile Include="Views\mgr\index.cs" />

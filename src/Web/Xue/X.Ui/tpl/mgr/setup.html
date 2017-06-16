@@ -25,28 +25,31 @@
                 <x:text title="网站名" name="name" def="$!cfg.name" size="2" />
                 <x:text title="域名" name="domain" def="$!cfg.domain" size="3" />
                 <hr />
-                <x:text title="登陆地址" name="gateway" def="$!cfg.gateway" size="6" />
+                <x:text title="登陆地址" name="gateway" def="$!cfg.xx_gateway" size="6" />
             </div>
             <div class="tb">
-                <x:text title="单次下载金额" name="down_price" def="$!cfg.down_price" size="2" />
+                <x:row title="单次下载"><x:text title="每卷 元" name="down_price" def="$!cfg.down_price" size="1" /></x:row>
+                <x:row title="重复下载"><x:text title="免费 天" name="down_repeat" def="$!cfg.down_repeat" size="1" /></x:row>
                 <hr />
                 <x:text title="包月金额" name="month_price" def="$!cfg.month_price" size="2" />
                 <x:text title="半年金额" name="half_price" def="$!cfg.half_price" size="2" />
                 <x:text title="包年金额" name="year_price" def="$!cfg.year_price" size="2" />
                 <hr />
-                <x:text title="Vip组卷试题数" name="vip_ques_count" def="$!cfg.vip_ques_count" size="2" />
-                <x:text title="非Vip组卷试题数" name="unvip_ques_count" def="$!cfg.unvip_ques_count" size="2" />
+                <x:row title="Vip组卷"><x:text title="每天 次" name="vip_ques_count" def="$!cfg.vip_ques_count" size="1" /></x:row>
+                <x:row title="非Vip组卷"><x:text title="每天 次" name="unvip_ques_count" def="$!cfg.unvip_ques_count" size="1" /></x:row>
             </div>
             <div class="tb">
                 <x:pick title="支付方式" name="pay_ways" src="loc:微信|支付宝" def="$!cfg.pay_ways" mode="2" count="0" />
                 <hr />
-                <x:text title="appid" name="wx_appid" def="$!cfg.wx_appid" size="4" />
-                <x:text title="appsecret" name="wx_scr" def="$!cfg.wx_scr" size="5" />
-                <x:text title="商户号" name="wx_mch_id" def="$!cfg.wx_mch_id" size="2" />
+                <x:text title="公众号ID" name="wx_appid" def="$!cfg.wx_appid" size="4" />
+                <x:text title="微信商户ID" name="wx_mch_id" def="$!cfg.wx_mch_id" size="2" />
+                <x:text title="支付Key" name="wx_mch_key" def="$!cfg.wx_mch_key" size="6" tp="3" />
                 <hr />
-                <x:text title="appid" name="ap_appid" def="$!cfg.ap_appid" size="4" />
-                <x:text title="appsecret" name="ap_scr" def="$!cfg.ap_scr" size="5" />
-                <x:text title="商户号" name="ap_mch_id" def="$!cfg.ap_mch_id" size="2" />
+                <x:text title="应用ID" name="ap_appid" def="$!cfg.ap_appid" size="4" />
+                <x:text title="应用网关" name="ap_gateway" def="$!cfg.ap_gateway" size="5" />
+                <x:text title="阿里公钥" name="ap_ali_key" def="$!cfg.ap_ali_key" size="6" tp="3" />
+                <x:text title="商户公钥" name="ap_pub_key" def="$!cfg.ap_pub_key" size="6" tp="3" />
+                <x:text title="商户私钥" name="ap_mch_key" def="$!cfg.ap_mch_key" size="6" tp="3" />
             </div>
             <div class="btns">
                 <button type="submit" class="btn btn-primary"><i class="icon-ok"></i>提交保存</button>

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>在线支付</title>
+    <meta charset="utf-8" />
+    <link href="/css/x.dialog.css" rel="stylesheet" />
+    <script src="/js/jq_1.10.1.js"></script>
+    <script src="/js/x.js"></script>
+    <style type="text/css">
+        body { margin: 0; padding: 0; }
+        .panel { border: 1px solid #ccc; padding: 5px 10px; border-radius: 5px; font-size: 1em; text-align: center; }
+        .panel p { margin: 5px; }
+        .btns { margin-top: 0px; text-align: center; }
+        .btns .btn { padding: 10px; cursor: pointer; display: inline-block; background: #efefef; width: 100px; text-align: center; }
+        .btns .btn.on { background: #009e9d; color: white; }
+        .qr_code { text-align: center; }
+        .qr_code p { font-size: 12px; color: #808080; text-align: center; }
+        .qr_code img { width: 160px; }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <p>$desc</p>
+        <p style="font-size:20px;color:red;font-weight:bold;">￥$am</p>
+    </div>
+    #if($cfg.pay_ways.length==0)
+    <p style="text-align: center;line-height: 1.5em;padding: 10px;font-size: 16px; margin:0px;">在线支付功能正在维护中...</p>
+    #else
+    <p style="text-align: center;line-height: 1.5em;padding: 10px;font-size: 16px; margin:0px;">请选择支付方式</p>
+    #end
+    <div class="btns">#if($cfg.pay_ways.indexof("[1]")>=0)<span class="btn">微信支付</span>#end #if($cfg.pay_ways.indexof("[2]")>=0)<span class="btn">支付宝付款</span>#end</div>
+    <div class="qr_code" style="display:none;">
+        <p style="">请扫描下面二维码完成支付</p>
+        <img src="" id="code" />
+    </div>
+    <script type="text/javascript">
+        var wx_code, ap_code;
+
+        $(function () {
+            $(".btns .btn").click(function () {
+                $(".btns .btn").removeClass("on");
+                $(this).addClass("on");
+                show_qrcode($(this).index() + 1)
+            });
+            //$(".btns .btn:eq(0)").click();
+        });
+
+        function show_qrcode(p) {
+            $(".qr_code").show();
+            if (p == 1) {
+                if (wx_code) $("#code").attr("src", wx_code);
+                else getcode(1);
+            }
+            else if (p == 2) {
+                if (ap_code) $("#code").attr("src", ap_code);
+                else getcode(2);
+            }
+        }
+
+        function getcode(p) {
+            $(".qr_code").hide();
+            x.doapi("user.order.md", { tp: "$!tp", val: "$!val", platform: p }, function (d) {
+                if (!d.issucc) return;
+                if (p == 1) wx_code = "data:image/png;base64," + d.qr_code;
+                else if (p == 2) ap_code = "data:image/png;base64," + d.qr_code;
+                show_qrcode(p);
+                getstatus(d.order_id);
+            }, false);
+        }
+
+        function getstatus(id) {
+            setTimeout(function () {
+                x.doapi("user.order.st", { id: id }, function (d) {
+                    if (!d.issucc) return;
+                    if (d.status != 2) { getstatus(id); return; }
+                    if ("$!tp" == "1") parent.x.dialog.getCurrent().returnValue = "succ";
+                    top.x.closewin();
+                }, false);
+            }, 2000)
+        }
+
+    </script>
+</body>
+</html>

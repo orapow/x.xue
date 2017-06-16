@@ -19,9 +19,9 @@
 .ui-dialog-statusbar { float: left; margin-right: 20px; padding: 6px 0; line-height: 1.428571429; font-size: 14px; color: #888; white-space: nowrap; }
 .ui-dialog-statusbar label:hover { color: #333; }
 .ui-dialog-statusbar input, .ui-dialog-statusbar .label { vertical-align: middle; }
-.ui-dialog-button .btn { margin-left: 5px; background-image: none; }
+.ui-dialog-button .btn { margin-left: 5px; background-image: none; padding: 6px 15px; border: 1px solid #ccc; border-radius: 5px; }
 .ui-dialog-button .btn:hover { opacity: 0.7; background-color: #f5f5f5; }
-.ui-dialog-button .btn-primary { background-color: #009e9d; }
+.ui-dialog-button .btn-primary { background-color: #009e9d; color: white; border-color: #009e9d; }
 .ui-dialog-button .btn-primary:hover { background-color: #009e9d; }
 
 .win.icon { width: 32px; height: 32px; background: url(/img/tip.jpg); margin: 0px; display: inline-block; *display: inline:*zoom:1; vertical-align: middle; padding: 0; border: none; }
