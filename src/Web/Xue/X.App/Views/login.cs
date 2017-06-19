@@ -25,7 +25,7 @@ namespace X.App.Views
             base.InitView();
 
             if (cu != null) Context.Response.Redirect(back);
-            if (string.IsNullOrEmpty(ukey)) Context.Response.Redirect("http://www.xinxuezaixian.com/index.php?m=Jshizhuc&a=userLogin&back_url=http://" + cfg.domain + "/login-{uk}-" + back + ".html");
+            if (string.IsNullOrEmpty(ukey)) Context.Response.Redirect(cfg.xx_gateway + "http://" + cfg.domain + "/login-{uk}-" + back + ".html");
 
             var usp = Com.Sdk.GetUser(ukey);
             if (usp.user_info == null || usp.user_info.id == 0) throw new XExcep("T用户登陆超时");

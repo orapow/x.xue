@@ -63,6 +63,7 @@
     <Content Include="res\css\xx\main.min.css" />
     <Content Include="res\css\xx\manual.min.css" />
     <Content Include="res\css\xx\my.css" />
+    <Content Include="res\css\xx\smarte.min.css" />
     <Content Include="res\css\xx\paperediting.min.css" />
     <Content Include="res\css\xx\spriter-mix.min.css" />
     <Content Include="res\css\xx\ui-dialog.css" />
@@ -210,10 +211,11 @@
     <Content Include="tpl\mgr\subject\list.html" />
     <Content Include="tpl\mgr\user\list.html" />
     <Content Include="tpl\paper - 复制%282%29.html" />
+    <Content Include="tpl\paper\list.html" />
     <Content Include="tpl\paper\down.html" />
     <Content Include="tpl\paper2.html" />
-    <Content Include="tpl\paper\view.html" />
     <Content Include="tpl\paper\edit.html" />
+    <Content Include="tpl\paper\create.html" />
     <Content Include="tpl\user\down.html" />
     <Content Include="tpl\user\info.html" />
     <Content Include="tpl\user\favs.html" />

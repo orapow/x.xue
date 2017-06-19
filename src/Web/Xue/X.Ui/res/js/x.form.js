@@ -277,6 +277,7 @@
                 "left": i.offset().left
             });
 
+            dom.find("div.c").css("max-height", ($(document).height() - i.offset().top) * 0.8);
             dom.show();
         },
         ok: function () {

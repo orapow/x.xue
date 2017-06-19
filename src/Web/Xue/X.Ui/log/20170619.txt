@@ -1,0 +1,202 @@
+
+时间：2017-06-19 10:04:50,463 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：8001 
+
+时间：2017-06-19 10:06:01,050 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：78589 
+
+时间：2017-06-19 10:06:46,302 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：123841 
+X.Json.JsonSerializationException: Error converting value 1 to type 'System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]'. Path '', line 1, position 1. ---> System.ArgumentException: Could not cast or convert from System.Int64 to System.Collections.Generic.Dictionary`2[System.Int32,System.Int32].
+   在 X.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   在 X.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   在 X.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   在 X.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   在 X.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   在 X.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 X.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   在 X.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 X.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 X.Core.Utility.Serialize.FromJson[T](String json) 位置 D:\Pro\x.xue\src\Xc\Core\Utility\Serialize.cs:行号 36
+   在 X.App.Apis.paper.create.Execute() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Apis\paper\create.cs:行号 30
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-19 10:09:36,863 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"未知错误代码(T出题选项不能为空)","code":"T出题选项不能为空"} 
+时间：294402 
+
+时间：2017-06-19 10:10:06,962 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 筛选条件","code":"0x0003"} 
+时间：324501 
+
+时间：2017-06-19 10:10:45,251 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 筛选条件","code":"0x0003"} 
+时间：2575 
+
+时间：2017-06-19 10:11:02,647 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：19971 
+X.Json.JsonReaderException: Invalid property identifier character: &. Path '', line 1, position 1.
+   在 X.Json.JsonTextReader.ParseProperty()
+   在 X.Json.JsonTextReader.ParseObject()
+   在 X.Json.JsonTextReader.ReadInternal()
+   在 X.Json.JsonTextReader.Read()
+   在 X.Json.Serialization.JsonSerializerInternalReader.CheckedRead(JsonReader reader)
+   在 X.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   在 X.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   在 X.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   在 X.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 X.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   在 X.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 X.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 X.Core.Utility.Serialize.FromJson[T](String json) 位置 D:\Pro\x.xue\src\Xc\Core\Utility\Serialize.cs:行号 36
+   在 X.App.Apis.paper.create.Execute() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Apis\paper\create.cs:行号 30
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-19 10:20:46,649 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"缺少参数 筛选条件","code":"0x0003"} 
+时间：603973 
+
+时间：2017-06-19 10:21:35,890 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：653214 
+
+时间：2017-06-19 10:26:31,931 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：949256 
+System.ArgumentOutOfRangeException: startIndex 不能大于字符串长度。
+参数名: startIndex
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.question.count.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-19 10:26:40,051 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：957375 
+System.ArgumentOutOfRangeException: startIndex 不能大于字符串长度。
+参数名: startIndex
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.question.count.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-19 10:27:24,947 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：1002271 
+System.ArgumentOutOfRangeException: startIndex 不能大于字符串长度。
+参数名: startIndex
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.question.count.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-19 10:39:52,264 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：22245 
+System.ArgumentOutOfRangeException: startIndex 不能大于字符串长度。
+参数名: startIndex
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.question.count.Execute() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Apis\question\count.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-19 10:40:17,491 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：47472 
+System.ArgumentOutOfRangeException: startIndex 不能大于字符串长度。
+参数名: startIndex
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.question.count.Execute() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Apis\question\count.cs:行号 33
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-19 11:28:49,673 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：3155 
+System.InvalidOperationException: 没有为类型“System.Boolean”和“System.Func`2[X.Data.x_question,System.Boolean]”定义二进制运算符 Or。
+   在 System.Linq.Expressions.Expression.GetUserDefinedBinaryOperatorOrThrow(ExpressionType binaryType, String name, Expression left, Expression right, Boolean liftToNull)
+   在 System.Linq.Expressions.Expression.Or(Expression left, Expression right, MethodInfo method)
+   在 System.Linq.Expressions.Expression.Or(Expression left, Expression right)
+   在 X.App.Apis.question.count.Execute() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Apis\question\count.cs:行号 40
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-19 11:28:56,894 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：10377 
+System.InvalidOperationException: 没有为类型“System.Boolean”和“System.Func`2[X.Data.x_question,System.Boolean]”定义二进制运算符 Or。
+   在 System.Linq.Expressions.Expression.GetUserDefinedBinaryOperatorOrThrow(ExpressionType binaryType, String name, Expression left, Expression right, Boolean liftToNull)
+   在 System.Linq.Expressions.Expression.Or(Expression left, Expression right, MethodInfo method)
+   在 System.Linq.Expressions.Expression.Or(Expression left, Expression right)
+   在 X.App.Apis.question.count.Execute() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Apis\question\count.cs:行号 40
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-19 12:00:57,657 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：150205 
+System.ArgumentOutOfRangeException: startIndex 不能大于字符串长度。
+参数名: startIndex
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.question.count.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31

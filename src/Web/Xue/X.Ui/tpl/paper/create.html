@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>智能组卷 - $cfg.name</title>
+    <link rel="stylesheet" href="/plug/bs/v2.3.2.css" />
+    <link rel="stylesheet" href="/css/xx/my.css" />
+    <link rel="stylesheet" href="/css/xx/base.min.css" />
+    <link rel="stylesheet" href="/css/xx/spriter-mix.min.css" />
+    <link rel="stylesheet" href="/css/xx/main.min.css" />
+    <link rel="stylesheet" href="/css/xx/manual.min.css" />
+    <link rel="stylesheet" href="/css/xx/smarte.min.css" />
+    <link rel="stylesheet" href="/css/x.dialog.css" />
+    <script type="text/javascript">
+        window.OT2 = {}; // 全局命名空间
+    </script>
+    <script type="text/javascript" src="/js/xx/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/xx/underscore-min.js"></script>
+    <script type="text/javascript" src="/js/xx/util.min.js"></script>
+    <style type="text/css">
+        body { overflow-x: hidden; }
+        #div_copy { position: absolute; overflow: hidden; top: 500px; }
+        .move { -webkit-transition: left 5s ease; transition: left 5s ease; left: 1000px; }
+        .baskrt-list { max-height: 220px; overflow-y: auto; padding-bottom: 20px; }
+        .breadcrumb { padding: initial; background-color: transparent; }
+        .qtype-selected li { display: none; }
+    </style>
+</head>
+<body>
+    #parse("_top.html")
+    <div class="breadcrumb g-container"> <i class="icona-dingwei"></i>当前位置： <a href="/">首页</a> <b>&gt;</b> <a href="#">$sbname</a> </div>
+    #if($lt==1)
+    <div class="search-type d-search-type g-container">
+        <div class="type-items">
+            <div class="type-tit">教材：</div>
+            <div class="type-conbox">
+                <div class="type-con">
+                    <div class="con-items">
+                        #foreach($b in $bk1)
+                        <a href="create-${lt}-${b.value}.html" class="#if($b1==$b.value)type-active#end">$b.name</a>
+                        #end
+                    </div>
+                </div>
+            </div>
+        </div>
+        #if($bk2.count>0)
+        <div class="type-items">
+            <div class="type-tit">年级：</div>
+            <div class="type-conbox">
+                <div class="type-con">
+                    <div class="con-items">
+                        #foreach($b in $bk2)
+                        <a href="create-${lt}-${b.value}.html" class="#if($b2==$b.value)type-active#end">$b.name</a>
+                        #end
+                    </div>
+                </div>
+            </div>
+        </div>
+        #end
+    </div>
+    #end
+
+    #macro( getLeft $list)
+    #foreach($l in $list)
+    #set( $sub = $T.getLeft($l.value))
+    <li class="#if($sub.Count==0)t2end#end" data-val="$l.value" data-name="#if($lt==1)cp#elseif($sub.Count()==0)kg#end">
+        <div class="t2hd">
+            <span> </span><a href="javascript:;" data-id="$l.value"><b class="checkbox"></b><em>$l.name</em></a>
+        </div>
+        <ul class="t2bd">
+            #getLeft($sub)
+        </ul>
+    </li>
+    #end
+    #end
+
+    <div class="g-container f-cb" style="margin-bottom:50px;">
+        <div class="g-sd1">
+            <div class="chapter-con f-usn" onselectstart="return false">
+                <h1> 选择#if($lt==1)章节#else知识点#end </h1>
+                <div id="J_Tree" class="t2-tree-smart">
+                    <div class="t2-tree">
+                        #set( $list=$T.getLeft("0") )
+                        #if(!$list || $list.Count()==0)
+                        <p style="padding:10px 10px 10px 30px;text-align:center;font-size:14px;">#if($lt==1)暂无章节信息#else暂无知识点#end</p>
+                        #else
+                        <ul class="t2bd">
+                            #getLeft($list)
+                        </ul>
+                        #end
+                    </div>
+                </div>
+                <script>
+                    $(function () {
+                        $(".t2hd span").click(function () {
+                            $(this).parent('li > div').parent('li').toggleClass("t2on");
+                            event.stopPropagation();
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="g-mn1">
+            <div class="g-mn1c" style="background: #fff none repeat scroll 0 0;">
+                <!-- 章节 -->
+                <div class="smarter-section" id="J_ResultRegion">
+                    <h3 class="result-head">已选章节：（<b>0</b>个）<a href="javascript:;" onclick="do_clear();"><i class="icona-del1"></i> 清空</a></h3>
+                    <div class="section-itemsbox">
+                        <p class="smart-empty-tip">您未选择课程章节！</p>
+                    </div>
+                    <!--<h3>试卷设置</h3>
+                    <div class="smart-paper-setting">
+                        <div id="J_Difficulty" class="q-set f-usn">
+                            <em>试卷难度：</em>
+                            <span class="radiobox checked">
+                                <i class="icona-radio"></i>
+                                <input type="radio" name="difficult_index" value="" style="display:none" checked="" />不限
+                            </span>
+                            <span class="radiobox ">
+                                <i class="icona-radio"></i>
+                                <input type="radio" name="difficult_index" value="1" style="display:none" />容易
+                            </span>
+                            <span class="radiobox ">
+                                <i class="icona-radio"></i>
+                                <input type="radio" name="difficult_index" value="3" style="display:none" />普通
+                            </span>
+                            <span class="radiobox ">
+                                <i class="icona-radio"></i>
+                                <input type="radio" name="difficult_index" value="5" style="display:none" />困难
+                            </span>
+                        </div>
+                        <div id="J_SelectType" class="q-set f-usn q-select-type">
+                            <em>出卷方式：</em>
+                            <span class="radiobox checked">
+                                <i class="icona-radio"></i>
+                                <input type="radio" name="joinType" value="unjoin" style="display:none" checked="" />关联出题
+                            </span>
+                            <b class="icona-help1 J_IconTip">提示</b><div class="t-tip" style="left: 188.15625px; top: 240px; position: absolute; display: none;"><i class="icona-dia-tri"></i>匹配出来的试题包含的知识点（章节），最少有一个在已选的知识点（章节）中，这个方式适用于期末考试、学业考试、升学考试等试卷类型。出题的综合性较强。</div>
+                            <span class="radiobox">
+                                <i class="icona-radio"></i>
+                                <input type="radio" name="joinType" value="join" style="display:none" />精准出题
+                            </span>
+                            <b class="icona-help1 J_IconTip">提示</b><div class="t-tip" style="left: 304.3125px; top: 240px; position: absolute; display: none;"><i class="icona-dia-tri"></i>匹配出来的试题包含的知识点（章节）。都在已选的知识点（章节）中，这个方式保证了组卷的精准性，避免超纲试题的出现，适用于同步类型的试卷。</div>
+                        </div>
+                        <div id="J_Nj" class="q-set f-usn">
+                            <em>适用年级：</em>
+                            <span class="checkbox checked">
+                                <i class="icona-check"></i>
+                                <input type="checkbox" name="grade_id[]" checked="" value="10" style="display:none" />高一
+                            </span>
+                            <span class="checkbox checked">
+                                <i class="icona-check"></i>
+                                <input type="checkbox" name="grade_id[]" checked="" value="11" style="display:none" />高二
+                            </span>
+                            <span class="checkbox checked">
+                                <i class="icona-check"></i>
+                                <input type="checkbox" name="grade_id[]" checked="" value="12" style="display:none" />高三
+                            </span>
+                            <span class="checkbox checked">
+                                <i class="icona-check"></i>
+                                <input type="checkbox" name="grade_id[]" checked="" value="13" style="display:none" />选修
+                            </span>
+                            <em id="J_NjError">*适用年级至少选择一个！</em>
+                        </div>
+                    </div>-->
+                    <h3>题型/题量设置</h3>
+                    <div class="section-table">
+                        <div class="qtype-zone f-cb" id="J_TypeItems">
+                            <div class="w f-fl">
+                                <div class="qtype-selected">
+                                    <ul>
+                                        #foreach($p in $topics)
+                                        <li class="t-item" data-id="$p.key">
+                                            <b class="t-mark">0 道试题可用</b>
+                                            <span>$p.value </span>
+                                            <div><input type="text" class="tx_count" value="1" />道</div>
+                                        </li>
+                                        #end
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="qtype-list f-fr">
+                                <dl>
+                                    <dd><!-- 学科题型种类 -->#foreach($p in $topics)<a href="javascript:;" class="" data-id="$p.key">$p.value</a>#end</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="smarter-footer">
+                    <button class="set-btn" type="submit" style="display:none;" onclick="do_create();">生成试卷</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/xx/global.min.js"></script>
+    <script src="/js/x.js"></script>
+
+    <script type="text/javascript">
+        var cids = [];
+        $(function () {
+            $(".qtype-list a").click(function () {
+                $(this).toggleClass("active");
+                $(".qtype-selected li:eq(" + $(this).index() + ")").toggle();
+                if ($(".qtype-selected li:visible").size() > 0) $(".set-btn").show();
+                else $(".set-btn").hide();
+            });
+            $(".qtype-list a:eq(0)").click();
+            $(".qtype-list a:eq(1)").click();
+
+            $(".t2hd a").click(function () {
+                $(this).toggleClass("checked");
+                var sel = $(this).hasClass("checked")
+                $(this).parent().next().find("li").each(function () {
+                    if (sel) $(this).find(".t2hd a").addClass("checked");
+                    else { $(this).find(".t2hd a").removeClass("checked"); }
+                });
+                if (!sel) {
+                    $(this).parents(".t2bd").each(function () {
+                        $(this).prev().find("a").removeClass("checked");
+                    })
+                } else {
+                    $(this).parents(".t2bd").each(function () {
+                        if ($(this).find(">li").size() === $(this).find(">li > .t2hd a.checked").size())
+                            $(this).prev().find("a").addClass("checked");
+                    });
+                }
+
+                show_select();
+                load_count();
+
+            });
+        });
+
+        function do_clear() {
+            $(".section-itemsbox .section-items").each(function () {
+                $(this).find(".J_DelBtn").click();
+            });
+        }
+
+        function show_select() {
+            cids = [];
+            update_selected(".t2-tree > ul");
+            var ul = $(".section-itemsbox");
+            ul.empty();
+            for (var c in cids) {
+                ul.append('<div class="section-items"><p class="section-itemstxt">' + cids[c].val + '</p><p class="section-itemsclose J_DelBtn" onclick="do_remove(' + cids[c].id + ')"><span><i class="icona-cha2"></i></span></p></div>');
+            }
+            if (cids.length == 0) ul.html('<p class="smart-empty-tip">您未选择课程章节或知识点！</p>');
+            $(".result-head b").text(cids.length);
+        }
+
+        function load_count() {
+            var pids = "";
+            $(".t2hd a.checked").each(function () {
+                pids += "[" + $(this).attr("data-id") + "]";
+            });
+            var tids = "";
+            $(".qtype-list .active").each(function () {
+                tids += $(this).attr("data-id") + ",";
+            });
+            x.doapi("question.count", { pids: pids, tp: "$lt", tids: tids, sub: "$!sb", bk: "$!bk" }, function (d) {
+                for (var k in d.items)
+                    $(".t-item[data-id='" + k + "']").find(".t-mark").text((d.items[k] > 999 ? "999+" : d.items[k]) + " 道题可用");
+            }, false);
+        }
+
+        function do_create() {
+            var pids = "";
+            $(".t2hd a.checked").each(function () {
+                pids += "[" + $(this).attr("data-id") + "]";
+            })
+            var tids = {};
+            $(".qtype-selected li:visible").each(function () {
+                tids[$(this).attr("data-id")] = $(this).find(".tx_count").val();
+            });
+            x.confirm("生成试卷会清空试题篮，确定要生成吗？", function () {
+                x.doapi("paper.create", { pids: pids, tp: "$lt", tids: JSON.stringify(tids), sub: "$!sb", bk: "$!bk" }, function (d) {
+                    x.cookie.set("xx.cart.$sb", JSON.stringify(d.items));
+                    x.alert("智能组卷成功，确定跳转到试题编辑", function () {
+                        document.location.href = "/paper/edit.html";
+                    })
+                }, "正在生成试卷，请稍后...");
+            });
+        }
+
+        function update_selected(ul) {
+            $(ul).find(">li").each(function () {
+                var bta = $(this).find("> .t2hd a");
+                if (bta.hasClass("checked")) cids.push({ id: bta.attr("data-id"), val: bta.find("em").text() });
+                else update_selected($(this).find(">.t2hd").next());
+            })
+        }
+        function do_remove(id) {
+            $(".t2-tree [data-id='" + id + "']").click();
+        }
+    </script>
+    <a class="return" href="javascript:;" style="right: 4.5px; display: none;"><i class="icona-top"></i></a>
+</body>
+</html>

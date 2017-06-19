@@ -35,16 +35,16 @@ var x = (function ($) {
                 setTimeout(function () { dia.close(); }, sec * 1000);
             }
         },
-        doapi: function (api, ps, callback, showtip) {
-            if (showtip == undefined) showtip = true;
-            if (showtip) x.loading();
+        doapi: function (api, ps, callback, msg) {
+            if (msg == undefined) msg = true;
+            if (msg) x.loading(msg === true ? "" : msg);
             $.ajax({
                 type: "POST",
                 data: ps,
                 url: "/api/" + api,
                 dataType: "json",
                 success: function (d) {
-                    if (showtip) x.closewin();
+                    if (msg) x.closewin();
                     if (!d.issucc) x.alert(d.msg || d.errcode);
                     if (callback) {
                         try {
@@ -56,7 +56,7 @@ var x = (function ($) {
                     }
                 },
                 error: function () {
-                    if (showtip) x.closewin();
+                    if (msg) x.closewin();
                     throw ("api地址调用出错->" + api);
                 },
             })
