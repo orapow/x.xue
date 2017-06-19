@@ -17,7 +17,7 @@ namespace X.App.Apis.mgr.paper {
             if (!string.IsNullOrEmpty(key))
                 q = q.Where(o => o.topic.Contains(key));
             var list = q.OrderBy(o => o.user_id).Skip((page - 1) * limit).Take(limit);
-
+            
             var r = new Resp_List();
             r.page = page;
             r.count = q.Count();
@@ -25,7 +25,13 @@ namespace X.App.Apis.mgr.paper {
                 p_id = o.paper_id,
                 subject = getSub(o.subject.Value),
                 o.topic,
-                o.qids
+                o.qids,
+                ctime=o.ctime.Value.ToString("yyyy-MM-dd HH:mm"),
+                o.user_id,
+                o.area,
+                o.qcount,
+                o.group,
+                o.price
 
             });
             return r;

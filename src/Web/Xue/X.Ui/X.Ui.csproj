@@ -198,6 +198,8 @@
     <Content Include="tpl\mgr\main.html" />
     <Content Include="tpl\mgr\paper\edit.html" />
     <Content Include="tpl\mgr\paper\list.html" />
+    <Content Include="tpl\mgr\paper\question\qedit.html" />
+    <Content Include="tpl\mgr\paper\question\qlist.html" />
     <Content Include="tpl\mgr\question\edit.html" />
     <Content Include="tpl\mgr\question\list.html" />
     <Content Include="tpl\mgr\setup.html" />

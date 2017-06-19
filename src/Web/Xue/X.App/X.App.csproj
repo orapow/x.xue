@@ -60,6 +60,12 @@
     <Compile Include="Apis\mgr\book\del.cs" />
     <Compile Include="Apis\mgr\book\list.cs" />
     <Compile Include="Apis\mgr\book\save.cs" />
+    <Compile Include="Apis\mgr\paper\del.cs" />
+    <Compile Include="Apis\mgr\paper\list.cs" />
+    <Compile Include="Apis\mgr\paper\question\del.cs" />
+    <Compile Include="Apis\mgr\paper\question\qlist.cs" />
+    <Compile Include="Apis\mgr\paper\question\save.cs" />
+    <Compile Include="Apis\mgr\paper\save.cs" />
     <Compile Include="Apis\mgr\question\list.cs" />
     <Compile Include="Apis\mgr\question\save.cs" />
     <Compile Include="Apis\mgr\setup.cs" />
@@ -96,6 +102,10 @@
     <Compile Include="Views\mgr\dict\edit.cs" />
     <Compile Include="Views\mgr\dict\list.cs" />
     <Compile Include="Views\mgr\dict\select.cs" />
+    <Compile Include="Views\mgr\paper\edit.cs" />
+    <Compile Include="Views\mgr\paper\list.cs" />
+    <Compile Include="Views\mgr\paper\question\qedit.cs" />
+    <Compile Include="Views\mgr\paper\question\qlist.cs" />
     <Compile Include="Views\notify.cs" />
     <Compile Include="Views\paper\down.cs" />
     <Compile Include="Views\login.cs" />

@@ -8,27 +8,41 @@
     <div class="title">
         <span class="main">试卷编辑</span>-<span class="sub">试卷管理</span>
     </div>
-    <x:form api="">
-
+    <x:form api="mgr.paper.save">
+        <input type="hidden" name="id" value="$!item.paper_id" x-check="" />
+        <x:text title="创建老师" name="user_id" size="4" def="$!item.user_id" />
         <x:pick title="科目" src="url:/mgr/subject/select.html" name="sub" count="1" def="$!sub" no="1" to="bk" callback="sub_selected" />
-        <x:text title="标题" name="topic" size="4" def="$!item.topic" />
-        <div>$!item.qids</div>
-        <div>
-            #foreach($Item in $!st)
-            <p>试题：$!Item</p>
-            #end
-        </div>
+        <x:text title="试卷标题" name="topic" size="4" def="$!item.topic" />
+        <x:text title="地区" name="area" size="4" def="$!item.area" />
+        <x:text title="适用年级" name="group" size="4" def="$!item.group" />
+        <x:text title="价格" name="price" size="4" def="$!item.price" />
         <div class="btns">
             <button type="submit" class="btn btn-primary"><i class="icon-ok"></i>提交保存</button>
         </div>
     </x:form>
     <br />
     <br />
+
     <script type="text/javascript">
+
+
         $(function () {
             $("form:eq(0)").xform({
+                callback: function (d) {
+                    if (!d.issucc) return;
+                    if ("$!p_id") { document.location.href = "list.html"; return; }
 
-            });
+                    x.confirm("是否继续添加", function () {
+                        try {
+
+                        } catch (e) { }
+                    }, function () {
+                        document.location.href = "list.html";
+                    });
+
+
+                }
+            })
 
 
         });

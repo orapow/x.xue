@@ -51,7 +51,11 @@
                 { txt: "编辑", ico: "edit", link: "edit-{qid}.html", confirm: false },
                 { txt: "删除", ico: "remove", act: "del" },
                 //{ txt: "答案与解析", ico: "edit", link: "/mgr/answer/list-{qid}.html", confirm: false }
-                { txt: "答案与解析", ico: "edit", act: "answer", confirm: false }
+                // { txt: "答案与解析", ico: "edit", act: "answer", confirm: false },
+                { txt: "答案与解析", ico: "edit", act: "answer", confirm: false },
+                
+
+               
             ]
         };
 
@@ -75,7 +79,7 @@
         }
 
         function show_answer(id) {
-            x.openwin("/mgr/answer/list-"+(id)+".html","答案与解析", function () {
+            x.openwin("/mgr/answer/list-" + (id) + ".html", "答案与解析", function () {
                 g.getlist()
             }, { w: 600, h: 400 });
 

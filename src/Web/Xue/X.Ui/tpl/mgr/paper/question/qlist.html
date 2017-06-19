@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    #parse("mgr/com/_head.html")
+    <title>试卷编辑 - $cfg.name</title>
+</head>
+<body>
+    <div class="title">
+        <span class="main">试卷编辑</span>-<span class="sub">试卷管理</span>
+    </div>
+
+    <div class="search">
+        <x:form>
+            <x:text title="搜索：题目" name="key" size="4" />
+            <button type="submit" class="btn btn-primary"><i class="icon-search"></i>搜索</button>
+            <button type="reset" class="btn"><i class="icon-remove"></i>清除</button>
+            <div class="btns">
+                <a class="btn btn-primary" id="btn_add" href="qedit-$!{p_id}.html"><i class="icon-plus"></i>录入试题</a>
+            </div>
+        </x:form>
+    </div>
+  
+    <div class="gridpanel"></div>
+    <script type="text/javascript">
+        $(function () {
+            $("form:eq(0)").xform({
+                callback: function (d) {
+                    d.page = 1;
+                    g.getlist(d);
+                }
+            });
+
+
+        });
+        var cfg = {
+            el: ".gridpanel",
+            searchcon: { page: 1, limit: 30, id: "$!{item.paper_id}" },
+            api: "mgr.paper.question.qlist",
+            fs: [
+                { t: "题号", f: "{qid}", w: "60" },
+                { t: "题目", f: "{cot}", w: "320" },
+                { t: "题型", f: "{type}", w: "60" },
+                { t: "分值", f: "{score}", w: "60" },
+            ],
+            btns: [
+                { txt: "删除", ico: "remove", act: "del" },
+            ]
+        }
+
+        cfg.cellclick = function (act, d) {
+            switch (act) {
+                case "del":
+                    dodel(d);
+                    break;
+            }
+        }
+        var g = x.grid.init(cfg);
+
+        function dodel(d) {
+            x.doapi("mgr.paper.question.del", { id: d.qid, pid: d.pid }, function () {
+                g.getlist();
+            });
+
+        }
+    </script>
+</body>
+</html>

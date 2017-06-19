@@ -1,0 +1,1190 @@
+
+时间：2017-06-16 09:53:44,558 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：113795 
+System.NotSupportedException: SQL Server 未处理 NText、Text、Xml 或 Image 数据类型的比较。
+   在 System.Data.Linq.SqlClient.ValidateNoInvalidComparison.VisitBinaryOperator(SqlBinary bo)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitExpression(SqlExpression exp)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSelectCore(SqlSelect select)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSelect(SqlSelect select)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlSupersetValidator.Validate(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlProvider.BuildQuery(ResultShape resultShape, Type resultType, SqlNode node, ReadOnlyCollection`1 parentParameters, SqlNodeAnnotations annotations)
+   在 System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.GetQueryText(Expression query)
+   在 System.Data.Linq.DataQuery`1.ToString()
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 19
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:01:20,207 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：14679 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 17
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:01:46,956 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：41429 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 17
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:02:23,111 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：77583 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 17
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:04:54,595 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：13298 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:05:23,125 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：41828 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:07:12,459 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：151162 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:07:41,221 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：179924 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:11:04,972 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40749 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:17:11,140 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：22492 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:21:29,549 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：280901 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:22:16,387 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：327738 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:22:37,633 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：348984 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 10:23:18,414 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：4455 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 13:41:52,864 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：569410 
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   在 System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   在 System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   在 System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   在 System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 13:43:13,397 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：649944 
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   在 System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   在 System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   在 System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   在 System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 13:53:18,635 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：322964 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 13:53:21,501 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：325830 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 13:53:39,112 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：343441 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 13:53:45,474 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：349804 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 20
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:03:56,220 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：233417 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:04:43,560 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：280757 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:06:41,802 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：398998 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:28:09,556 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：12289 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 44
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:28:54,261 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：56994 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 44
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:33:25,761 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：328494 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:34:07,793 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：370526 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:35:17,155 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：439888 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:36:13,714 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：496447 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:37:04,368 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：547101 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:38:05,948 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：608681 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:39:32,453 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：695186 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:40:38,113 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：760847 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:41:08,883 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：791616 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:43:21,114 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：7690 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 46
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:44:25,513 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：72089 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:45:00,592 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：107168 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:46:37,041 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：2175 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 46
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:48:51,379 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：136513 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:49:23,237 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：168371 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:49:32,276 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：177410 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:50:23,205 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：2369 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 46
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:55:03,113 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：197928 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:56:42,309 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：16665 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:57:25,339 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：59694 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 14:58:07,886 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：102241 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 15:03:21,427 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：150046 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 15:03:54,775 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：183394 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 15:05:09,510 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：10376 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 47
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 15:05:42,124 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42991 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 15:05:48,210 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：49076 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 15:06:22,287 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：83153 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 15:07:24,138 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：145004 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 15:08:49,461 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：18203 
+System.ArgumentOutOfRangeException: 索引和长度必须引用该字符串内的位置。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 47
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 16:13:18,358 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：11207 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 46
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 16:13:36,590 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：29439 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 46
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 16:13:43,139 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35988 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 46
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 16:13:51,556 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：44405 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 46
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 16:14:08,623 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：61472 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 46
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 17:38:37,597 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：521690 
+System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 找不到网络路径。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 X.App.Views.mgr.xmg.InitDict()
+   在 X.App.Views.mgr.paper.edit.InitDict()
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+
+时间：2017-06-16 17:38:49,005 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：533099 
+System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 找不到网络路径。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 X.App.Views.mgr.xmg.InitDict()
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+
+时间：2017-06-16 17:38:49,005 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：533099 
+System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 找不到网络路径。
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 X.App.Views.mgr.xmg.InitDict()
+   在 X.App.Views.mgr.paper.edit.InitDict()
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+
+时间：2017-06-16 17:39:52,105 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：596199 
+System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 找不到网络路径。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 X.App.Apis.mgr.xmg.InitApi()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 28
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+
+时间：2017-06-16 17:39:52,121 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：596215 
+System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 找不到网络路径。
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 X.App.Apis.mgr.xmg.InitApi()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 28
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+
+时间：2017-06-16 17:39:52,144 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：596238 
+System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 找不到网络路径。
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 X.App.Apis.mgr.xmg.InitApi()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 28
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+
+时间：2017-06-16 17:39:52,144 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：596238 
+System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 找不到网络路径。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 X.App.Apis.mgr.xmg.InitApi()
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 28
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+
+时间：2017-06-16 18:04:32,430 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：12199 
+System.NotSupportedException: 对于方法 String.Contains，只支持可在客户端上求值的参数。
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.TranslateStringMethod(SqlMethodCall mc)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitMethodCall(SqlMethodCall mc)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitExpression(SqlExpression exp)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSelectCore(SqlSelect select)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitSelect(SqlSelect select)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitAlias(SqlAlias a)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSource(SqlSource source)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSelectCore(SqlSelect select)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitSelect(SqlSelect select)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Convert(SqlNode node, SqlFactory sql, ProviderMode providerMode)
+   在 System.Data.Linq.SqlClient.SqlProvider.BuildQuery(ResultShape resultShape, Type resultType, SqlNode node, ReadOnlyCollection`1 parentParameters, SqlNodeAnnotations annotations)
+   在 System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.Json.Serialization.JsonArrayContract.CreateWrapper(Object list)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value)
+   在 X.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value)
+   在 X.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   在 X.Json.JsonConvert.SerializeObject(Object value, Formatting formatting, JsonSerializerSettings settings)
+   在 X.Json.JsonConvert.SerializeObject(Object value, JsonSerializerSettings settings)
+   在 X.Core.Utility.Serialize.ToJson(Object o, Boolean ignore) 位置 F:\HT\xue\src\Xc\Core\Utility\Serialize.cs:行号 26
+   在 X.Core.Utility.Serialize.ToJson(Object o) 位置 F:\HT\xue\src\Xc\Core\Utility\Serialize.cs:行号 18
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 18:05:32,818 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：17833 
+System.NotSupportedException: 对于方法 String.Contains，只支持可在客户端上求值的参数。
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.TranslateStringMethod(SqlMethodCall mc)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitMethodCall(SqlMethodCall mc)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitExpression(SqlExpression exp)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSelectCore(SqlSelect select)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitSelect(SqlSelect select)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitAlias(SqlAlias a)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSource(SqlSource source)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSelectCore(SqlSelect select)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitSelect(SqlSelect select)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Convert(SqlNode node, SqlFactory sql, ProviderMode providerMode)
+   在 System.Data.Linq.SqlClient.SqlProvider.BuildQuery(ResultShape resultShape, Type resultType, SqlNode node, ReadOnlyCollection`1 parentParameters, SqlNodeAnnotations annotations)
+   在 System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.Json.Serialization.JsonArrayContract.CreateWrapper(Object list)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value)
+   在 X.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value)
+   在 X.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   在 X.Json.JsonConvert.SerializeObject(Object value, Formatting formatting, JsonSerializerSettings settings)
+   在 X.Json.JsonConvert.SerializeObject(Object value, JsonSerializerSettings settings)
+   在 X.Core.Utility.Serialize.ToJson(Object o, Boolean ignore) 位置 F:\HT\xue\src\Xc\Core\Utility\Serialize.cs:行号 26
+   在 X.Core.Utility.Serialize.ToJson(Object o) 位置 F:\HT\xue\src\Xc\Core\Utility\Serialize.cs:行号 18
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 18:06:01,637 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46653 
+System.NotSupportedException: 对于方法 String.Contains，只支持可在客户端上求值的参数。
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.TranslateStringMethod(SqlMethodCall mc)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitMethodCall(SqlMethodCall mc)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitExpression(SqlExpression exp)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSelectCore(SqlSelect select)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitSelect(SqlSelect select)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitAlias(SqlAlias a)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSource(SqlSource source)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSelectCore(SqlSelect select)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitSelect(SqlSelect select)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Convert(SqlNode node, SqlFactory sql, ProviderMode providerMode)
+   在 System.Data.Linq.SqlClient.SqlProvider.BuildQuery(ResultShape resultShape, Type resultType, SqlNode node, ReadOnlyCollection`1 parentParameters, SqlNodeAnnotations annotations)
+   在 System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.Json.Serialization.JsonArrayContract.CreateWrapper(Object list)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value)
+   在 X.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value)
+   在 X.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   在 X.Json.JsonConvert.SerializeObject(Object value, Formatting formatting, JsonSerializerSettings settings)
+   在 X.Json.JsonConvert.SerializeObject(Object value, JsonSerializerSettings settings)
+   在 X.Core.Utility.Serialize.ToJson(Object o, Boolean ignore) 位置 F:\HT\xue\src\Xc\Core\Utility\Serialize.cs:行号 26
+   在 X.Core.Utility.Serialize.ToJson(Object o) 位置 F:\HT\xue\src\Xc\Core\Utility\Serialize.cs:行号 18
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 18:06:54,697 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：99713 
+System.NotSupportedException: 对于方法 String.Contains，只支持可在客户端上求值的参数。
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.TranslateStringMethod(SqlMethodCall mc)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitMethodCall(SqlMethodCall mc)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitExpression(SqlExpression exp)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSelectCore(SqlSelect select)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitSelect(SqlSelect select)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitAlias(SqlAlias a)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSource(SqlSource source)
+   在 System.Data.Linq.SqlClient.SqlVisitor.VisitSelectCore(SqlSelect select)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitSelect(SqlSelect select)
+   在 System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   在 System.Data.Linq.SqlClient.PostBindDotNetConverter.Convert(SqlNode node, SqlFactory sql, ProviderMode providerMode)
+   在 System.Data.Linq.SqlClient.SqlProvider.BuildQuery(ResultShape resultShape, Type resultType, SqlNode node, ReadOnlyCollection`1 parentParameters, SqlNodeAnnotations annotations)
+   在 System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.Json.Serialization.JsonArrayContract.CreateWrapper(Object list)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 X.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value)
+   在 X.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value)
+   在 X.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   在 X.Json.JsonConvert.SerializeObject(Object value, Formatting formatting, JsonSerializerSettings settings)
+   在 X.Json.JsonConvert.SerializeObject(Object value, JsonSerializerSettings settings)
+   在 X.Core.Utility.Serialize.ToJson(Object o, Boolean ignore) 位置 F:\HT\xue\src\Xc\Core\Utility\Serialize.cs:行号 26
+   在 X.Core.Utility.Serialize.ToJson(Object o) 位置 F:\HT\xue\src\Xc\Core\Utility\Serialize.cs:行号 18
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 18:09:42,657 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：14742 
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   在 System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   在 System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   在 System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   在 System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 53
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 18:10:01,614 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：33699 
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Data.Linq.CommonDataServices.GetKeyFromPredicate(MetaType type, Dictionary`2 keys, Expression mex, Expression vex)
+   在 System.Data.Linq.CommonDataServices.GetKeysFromPredicate(MetaType type, Dictionary`2 keys, Expression expr)
+   在 System.Data.Linq.CommonDataServices.GetKeyValues(MetaType type, LambdaExpression predicate)
+   在 System.Data.Linq.CommonDataServices.GetCachedObject(Expression query)
+   在 System.Data.Linq.SqlClient.SqlProvider.GetCachedResult(Expression query)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 53
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-16 18:11:23,623 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：59204 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Apis.mgr.paper.edit.Execute() 位置 F:\HT\xue\src\Web\Xue\X.App\Apis\mgr\paper\edit.cs:行号 32
+   在 X.Web.Apis.Api.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
