@@ -188,7 +188,7 @@
                                                             <tr><th>得&nbsp;&nbsp;分</th><td></td></tr>
                                                         </tbody>
                                                     </table>-->
-                                                    <p><strong><b class="t-order">$T.GetNum($velocityCount)</b>、<span class="contenteditable" data-edit="type">$id</span><span data-paperset="12">（共<b class="t-num">$ques.Count()</b>题；共<b class="t-score">0</b>分）</span></strong></p>
+                                                    <p><strong><b class="t-order">$T.GetNum($velocityCount)</b>、<span class="contenteditable" data-edit="大题名称">$id</span><span data-paperset="12">（共<b class="t-num">$ques.Count()</b>题；共<b class="t-score">0</b>分）</span></strong></p>
                                                     <div class="types-btngroup">
                                                         <a class="score-btn J_MultiSetScore" href="javascript:;" onclick="setBagScore(this)"><i class="icona-jiexi1"></i>批量设置得分</a>
                                                         <a class="del-btn J_DelQByType" href="javascript:;"><i class="icona-del3"></i>删除</a>
@@ -199,7 +199,7 @@
                                                     #set($no=$no+1)
                                                     <div class="paper-question f-usn" onselectstart="return false" data-qid="${q.id}" data-easy="$q.easy">
                                                         <div class="question-txt">
-                                                            <div class="question-num"><span class="q-sn">$no</span>. <span class="q-scoreval" data-score="0">（0分）</span>$q.topic</div>
+                                                            <div class="question-num"><span class="q-sn">$no</span>. <span class="q-scoreval" data-score="$!q.score">（$!q.score分）</span>$q.topic</div>
                                                         </div>
                                                         <div class="question-btngroup">
                                                             <a target="_blank" href="/question/detail/2775206" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
@@ -289,6 +289,13 @@
             $(".club-summary .t3 strong").text(esy == easy[1] ? "容易" : esy == easy[2] ? "普通" : "困难");
             $(".club-summary .t2 strong").text(ct);
             $(".club-summary .t1 strong").text(score);
+
+            $(".paper-part").each(function () {
+                var sum = 0;
+                $(this).find(".q-scoreval").each(function () { sum += parseInt($(this).attr("data-score")) });
+                $(this).find(".t-score").text(sum);
+            });
+
         }
 
         function do_save(down) {

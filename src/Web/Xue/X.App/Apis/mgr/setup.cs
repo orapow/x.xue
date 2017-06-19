@@ -97,7 +97,7 @@ namespace X.App.Apis.mgr
             cfg.wx_mch_key = wx_mch_key;
 
             cfg.year_price = year_price;
-            cfg.xx_gateway = gateway;
+            cfg.xx_gateway = Context.Server.HtmlDecode(gateway);
 
             Config.SaveConfig(cfg);
             return new XResp();

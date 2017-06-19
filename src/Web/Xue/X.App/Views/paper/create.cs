@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using X.App.Apis;
+using X.Core.Utility;
 using X.Data;
 
-namespace X.App.Views
+namespace X.App.Views.paper
 {
-    public class question : _web
-    {
-        /// <summary>
-        /// 左边显示
-        /// 1、章节
-        /// 2、知识点
-        /// </summary>
+    public class create : _web
+    {        /// <summary>
+             /// 左边显示
+             /// 1、章节
+             /// 2、短信点
+             /// </summary>
         public int lt { get; set; }
         /// <summary>
         /// 教材
@@ -59,18 +58,6 @@ namespace X.App.Views
             dict["bk"] = bk;
 
             dict.Add("topics", ques.GroupBy(o => o.topic).Select(o => o.Key).ToList().ToDictionary(v => v.Value + "", n => GetDictName("question.topic", n.Value)));
-            dict.Add("ques", ques.OrderByDescending(o => o.mtime).Take(15).ToList().Select(o => new
-            {
-                tp = GetDictName("question.topic", o.topic),
-                ty = GetDictName("question.type", o.type),
-                ey = GetDictName("question.easy", o.easy),
-                kgs = GetDictName("xx.knowledge", o.knowledge),
-                content = Context.Server.HtmlDecode(o.title),
-                o.hits,
-                id = o.question_id
-            }).ToList());
-            dict.Add("count", ques.Count());
-
         }
 
         public List<x_dict> getLeft(string up)
@@ -84,6 +71,5 @@ namespace X.App.Views
 
             return list;
         }
-
     }
 }

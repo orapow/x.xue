@@ -15,6 +15,8 @@ namespace X.App.Views.paper
         {
             base.InitDict();
 
+            dict.Add("date", DateTime.Now.ToString("yyyy年MM月dd日"));
+
             var json = Context.Server.UrlDecode(GetReqParms("xx.cart." + sub));
             if (string.IsNullOrEmpty(json)) { dict.Add("empty", 1); return; }
 
@@ -22,7 +24,6 @@ namespace X.App.Views.paper
             if (qids == null || qids.Keys.Count == 0) dict.Add("empty", 1);
 
             dict.Add("ids", qids.Keys);
-            dict.Add("date", DateTime.Now.ToString("yyyy年MM月dd日"));
             dict.Add("vip", cu.etime > DateTime.Now);
         }
 
@@ -34,7 +35,8 @@ namespace X.App.Views.paper
             {
                 topic = Context.Server.HtmlDecode(o.title),
                 id = o.question_id,
-                o.easy
+                o.easy,
+                score = o.score ?? 0
             }).ToList();
         }
 

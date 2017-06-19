@@ -211,7 +211,7 @@
                 <div class="basket-head"> 共计：（<span>0</span>）道题 </div>
                 <div class="baskrt-list"></div>
             </div>
-            <div class="basket-foot"> <a id="to-paper-edit" data-method="post" class="basket-btn" href="/paper/edit.html" style="">生成试卷</a> <a id="to-paper-admin-cancel" class="basket-btn" href="http://zujuan.21cnjy.com/question" style="display: none">取消</a> </div>
+            <div class="basket-foot"> <a id="to-paper-edit" data-method="post" class="basket-btn" href="javascript:;" onclick="do_edit()" style="">生成试卷</a> <a id="to-paper-admin-cancel" class="basket-btn" href="http://zujuan.21cnjy.com/question" style="display: none">取消</a> </div>
         </div>
     </div>
 
@@ -320,6 +320,10 @@
             updatecart();
         }
 
+        function do_edit() {
+            if ($(".basket-head span").text() == "0") { x.alert("试题篮为空，请选择试题！"); return; }
+            document.location.href = "/paper/edit.html";
+        }
         function updatecart() {
             var pan = $(".baskrt-list");
             pan.empty();

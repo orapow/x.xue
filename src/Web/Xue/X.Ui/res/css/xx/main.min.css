@@ -88,8 +88,8 @@ img { border: 0; vertical-align: top; }
 .nav-items .item { display: block; line-height: 50px; text-indent: 18px; font-size: 16px; color: #fff; }
 .nav-items .item i { position: absolute; right: 10px; top: 22px; }
 .data, .item-list { position: relative; }
-.item-list { display: none; width: 240px; height: 326px; padding: 14px 18px 10px 0; background: #fff; border: 1px solid #ccd5d8; z-index: 10; box-shadow: 0 0 5px #ccc; }
-.item-list h3 { font-size: 14px; font-weight: 700; text-indent: 14px; }
+.item-list { display: none; width: 240px; padding: 14px 18px 10px 0; background: #fff; border: 1px solid #ccd5d8; z-index: 10; box-shadow: 0 0 5px #ccc; }
+.item-list h3 { font-size: 14px; font-weight: 700; text-indent: 14px; line-height: normal; }
 .item-list a { display: inline-block; margin-left: 9px; padding: 5px; line-height: 18px; color: #333; }
 .item-list a:hover { background: #009e9d; color: #fff; border-radius: 5px; }
 .nav-list { float: left; }

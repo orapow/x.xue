@@ -79,7 +79,9 @@
     <Compile Include="Apis\com\upload.cs" />
     <Compile Include="Apis\mgr\login.cs" />
     <Compile Include="Apis\mgr\logout.cs" />
+    <Compile Include="Apis\paper\create.cs" />
     <Compile Include="Apis\paper\save.cs" />
+    <Compile Include="Apis\question\count.cs" />
     <Compile Include="Apis\question\search.cs" />
     <Compile Include="Apis\user\fav\del.cs" />
     <Compile Include="Apis\user\order\del.cs" />
@@ -89,6 +91,7 @@
     <Compile Include="Apis\user\paper\del.cs" />
     <Compile Include="Apis\xapi.cs" />
     <Compile Include="Apis\_web.cs" />
+    <Compile Include="Com\DynamicLinqExpressions.cs" />
     <Compile Include="Com\Config.cs" />
     <Compile Include="Com\Sdk.cs" />
     <Compile Include="Com\Wx.cs" />
@@ -107,6 +110,7 @@
     <Compile Include="Views\mgr\paper\question\qedit.cs" />
     <Compile Include="Views\mgr\paper\question\qlist.cs" />
     <Compile Include="Views\notify.cs" />
+    <Compile Include="Views\paper\list.cs" />
     <Compile Include="Views\paper\down.cs" />
     <Compile Include="Views\login.cs" />
     <Compile Include="Views\mgr\admin\edit.cs" />
@@ -132,6 +136,7 @@
     <Compile Include="Views\mgr\subject\edit.cs" />
     <Compile Include="Views\mgr\subject\list.cs" />
     <Compile Include="Views\mgr\subject\select.cs" />
+    <Compile Include="Views\paper\create.cs" />
     <Compile Include="Views\paper\edit.cs" />
     <Compile Include="Views\question.cs" />
     <Compile Include="Views\user\papers.cs" />
