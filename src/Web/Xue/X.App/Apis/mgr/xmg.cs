@@ -5,48 +5,24 @@ using X.Core.Cache;
 using X.Data;
 using X.Web;
 
-namespace X.App.Apis.mgr {
-    public class xmg : xapi {
+namespace X.App.Apis.mgr
+{
+    public class xmg : xapi
+    {
         protected x_mgr mg = null;
-        /// <summary>
-        /// 功能权限码
-        /// #是默认码
-        /// 为空说明不需要验证
-        /// </summary>
-        protected virtual int powercode {
-            get {
-                return 3;
-            }
-        }
-        protected override void InitApi() {
+
+        protected override void InitApi()
+        {
             base.InitApi();
 
-            //var key = GetReqParms("mg_keys");
-            //if (string.IsNullOrEmpty(key)) throw new XExcep("0x0006");
+            var key = GetReqParms("mgr_ad");
+            var id = CacheHelper.Get<long>("mgr." + key);
 
-            mg = DB.x_mgr.FirstOrDefault(o => o.mgr_id == 1);// CacheHelper.Get<x_mgr>("mgr." + key);
-            if (mg == null) throw new XExcep("0x0004");
+            mg = DB.x_mgr.FirstOrDefault(o => o.mgr_id == id);
+            if (mg == null) throw new XExcep("0x0005");
 
-            //CacheHelper.Save("mgr." + id, mg, 60 * 60);
-
-            ValidPower();
+            CacheHelper.Save("mgr." + key, id, 60 * 20);
         }
 
-        /// <summary>
-        /// 是否有权限
-        /// </summary>
-        private bool HasPower() {
-            return true;
-            //return mg.role_id < 3 ? mg.role_id == powercode : true;
-        }
-
-        /// <summary>
-        /// 验证权限
-        /// </summary>
-        private void ValidPower() {
-            if (!HasPower()) {
-                throw new XExcep("0x0040");
-            }
-        }
     }
 }

@@ -2,19 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     #parse("mgr/com/_head.html")
-    <title>试题管理 - $cfg.name</title>
+    <title>试卷管理 - $cfg.name</title>
 </head>
 <body>
     <div class="title">
-        <span class="main">试卷管理</span>-<span class="sub">试卷管理</span>
+        <span class="main">试卷列表</span>-<span class="sub">试卷管理</span>
     </div>
     <div class="search">
         <x:form>
-            <x:text title="搜索：试卷" name="key" size="4" />
+            <x:pick title="科目" src="url:/mgr/subject/select.html" name="sub" count="1" /><x:text title="搜索：试卷" name="key" size="4" />
             <button type="submit" class="btn btn-primary"><i class="icon-search"></i>搜索</button>
             <button type="reset" class="btn"><i class="icon-remove"></i>清除</button>
             <div class="btns">
-                <a class="btn btn-primary" id="btn_add" href="edit.html">录入试卷</a>
+                <a class="btn btn-primary" id="btn_add" href="edit.html"><i class="icon-plus"></i>录入试卷</a>
             </div>
         </x:form>
     </div>
@@ -31,32 +31,30 @@
             searchcon: { page: 1, limit: 30 },
             api: "mgr.paper.list",
             fs: [
-                { t: "科目", f: "{subject}", w: "120", algin: "left" },
-                { t: "试卷标题", f: "{topic}", w: "160", algin: "left" },
-                { t: "地区", f: "{area}", w: "160", algin: "left" },
-                { t: "适用年级", f: "{group}", w: "120", algin: "left" },
-                { t: "题目集合", f: "{qids}", w: "120", algin: "left" },
-                { t: "题目数", f: "{qcount}", w: "60", algin: "left" },
-                { t: "价格", f: "{price}", w: "60", algin: "left" },
-                { t: "创建时间", f: "{ctime}", w: "120", algin: "left" },
-
+                { t: "科目", f: "{subject}", w: 80, align: "center" },
+                { t: "标题", f: "{topic}", w: 220 },
+                { t: "类型", f: "{type}", w: 80, align: "center" },
+                { t: "地区", f: "{area}", w: 80, align: "center" },
+                { t: "适用年级", f: "{group}", w: "120", align: "center" },
+                { t: "题目数", f: "{qcount}", w: "60", align: "center" },
+                { t: "价格", f: "{price}", w: "60", align: "center" },
+                { t: "创建时间", f: "{ctime}", w: "120", align: "center" },
+                { t: "修改时间", f: "{mtime}", w: "120", align: "center" }
             ],
             btns: [
                 { txt: "编辑", ico: "edit", link: "edit-{p_id}.html", confirm: false },
                 { txt: "删除", ico: "remove", act: "del" },
-                { txt: "试题管理", ico: "edit", link: "question/qlist-{p_id}.html" }, 
+                { txt: "试题管理", ico: "edit", act: "ques", confirm: false },
             ]
         }
 
         cfg.cellclick = function (act, d) {
             switch (act) {
-
-
-
-
-
                 case "del":
                     dodel(d.p_id);
+                    break;
+                case "ques":
+                    x.openwin("question/qlist-" + d.p_id + ".html", "试卷管理", function () { g.getlist() }, { w: 800, h: 460 });
                     break;
             }
         }

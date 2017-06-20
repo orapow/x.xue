@@ -9,21 +9,26 @@ namespace X.App.Views.mgr.group
     public class select : xmg
     {
         private List<item> data = new List<item>();
-        protected override int powercode
+        public int ag { get; set; }
+        protected override string GetParmNames
         {
             get
             {
-                return 1;
+                return "ag";
             }
         }
         protected override void InitDict()
         {
-            var tree = new XTree();
-            tree.LoadList += tree_LoadList;
-            tree.InitTree("", 1);
-            var list = tree.OutTree();
-            list.Insert(0, new item() { id = "0", name = "无" });
-            dict.Add("dict", list);
+            if (ag > 0) dict.Add("dict", GetDictList("xx.group", "0").Where(o => o.f3 == ag));
+            else
+            {
+                var tree = new XTree();
+                tree.LoadList += tree_LoadList;
+                tree.InitTree("", 1);
+                var list = tree.OutTree();
+                list.Insert(0, new item() { id = "0", name = "无" });
+                dict.Add("dict", list);
+            }
         }
 
         List<TreeNode> tree_LoadList(object id)

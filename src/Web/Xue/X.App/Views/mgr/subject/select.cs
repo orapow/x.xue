@@ -9,13 +9,6 @@ namespace X.App.Views.mgr.subject
     public class select : xmg
     {
         private List<item> data = new List<item>();
-        protected override int powercode
-        {
-            get
-            {
-                return 1;
-            }
-        }
         protected override void InitDict()
         {
             var tree = new XTree();
@@ -37,17 +30,15 @@ namespace X.App.Views.mgr.subject
                 id = m.upval == "0" ? m.value : m.upval + "-" + m.value,
                 cid = m.dict_id,
                 value = id.Equals(0) ? "0000" : m.value,
-                img = m.img,
-                jp = m.jp
+                data = m.f3
             }).ToList<TreeNode>();
         }
 
         public class item : TreeNode
         {
             public long cid { get; set; }
-            public string img { get; set; }
+            public int? data { get; set; }
             public string value { get; set; }
-            public string jp { get; set; }
             public item() : base("") { }
         }
 

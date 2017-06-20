@@ -13,11 +13,6 @@ namespace X.App.Apis.mgr.chapter
     {
         [ParmsAttr(min = 1)]
         public int id { get; set; }
-        protected override int powercode {
-            get {
-                return 1;
-            }
-        }
 
         protected override XResp Execute()
         {
@@ -36,13 +31,8 @@ namespace X.App.Apis.mgr.chapter
                 else e.upval = e.upval.Replace("-" + ent.value, "");
             }
 
-            //var goods = DB.x_goods.Where(o => o.cate_id.StartsWith(ent.value));
-            //foreach (var g in goods.ToList()) g.cate_id = "";
-
             DB.x_dict.DeleteOnSubmit(ent);
-
             CacheHelper.Remove("dict." + ent.code);
-
             SubmitDBChanges();
 
             return new XResp();

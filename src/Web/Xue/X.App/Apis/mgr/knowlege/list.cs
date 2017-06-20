@@ -16,13 +16,6 @@ namespace X.App.Apis.mgr.knowledge
 
         string code = "xx.knowledge";
 
-        protected override int powercode
-        {
-            get
-            {
-                return 1;
-            }
-        }
         protected override XResp Execute()
         {
             var r = new Resp_List();

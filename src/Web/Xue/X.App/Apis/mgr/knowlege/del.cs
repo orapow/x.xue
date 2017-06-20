@@ -13,11 +13,6 @@ namespace X.App.Apis.mgr.knowledge
     {
         [ParmsAttr(min = 1)]
         public int id { get; set; }
-        protected override int powercode {
-            get {
-                return 1;
-            }
-        }
 
         protected override XResp Execute()
         {

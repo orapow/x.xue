@@ -186,11 +186,11 @@
     <Content Include="tpl\mgr\admin\list.html" />
     <Content Include="tpl\mgr\answer\edit.html" />
     <Content Include="tpl\mgr\answer\list.html" />
-    <Content Include="tpl\mgr\com\err.html" />
     <Content Include="tpl\mgr\com\_head.html" />
     <Content Include="tpl\mgr\deposit\manual.html" />
     <Content Include="tpl\mgr\dict\edit.html" />
     <Content Include="tpl\mgr\dict\list.html" />
+    <Content Include="tpl\mgr\err.html" />
     <Content Include="tpl\mgr\knowledge\edit.html" />
     <Content Include="tpl\mgr\knowledge\list.html" />
     <Content Include="tpl\mgr\chapter\edit.html" />

@@ -17,13 +17,6 @@ namespace X.App.Apis.mgr.chapter
 
         string code = "xx.chapter";
 
-        protected override int powercode
-        {
-            get
-            {
-                return 1;
-            }
-        }
         protected override XResp Execute()
         {
             var r = new Resp_List();

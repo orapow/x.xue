@@ -244,6 +244,7 @@
 
             dom.delegate(".pick-item", "click", function () {
                 var item = $(this);
+                if (item.attr("disable")) return;
                 if (pick.count == 1) {
                     dom.find(".pick-item.btn-primary").removeClass("btn-primary");
                     item.addClass("btn-primary");
@@ -277,22 +278,25 @@
                 "left": i.offset().left
             });
 
-            dom.find("div.c").css("max-height", ($(document).height() - i.offset().top) * 0.8);
             dom.show();
+            dom.find("div.c").css("max-height", (($(document).height() - i.offset().top - dom.find("div.h").height() - dom.find("div.b").height()) * 0.8));
         },
         ok: function () {
             var vals = "";
             var texts = "";
+            var datas = "";
             var i = pick.ct;
             var c = this.count;
             dom.find(".pick-item.btn-primary").each(function () {
                 if (vals) { texts += "、"; }
                 if (c === 1) {
                     vals += $(this).attr("x-val");
-                    texts += $(this).text();
+                    texts += $(this).text().replace("├", "").replace("└", "").replace(/　/g, "");
+                    datas += $(this).attr("data-data");
                 } else {
                     vals += "[" + $(this).attr("x-val") + "]";
-                    texts += $(this).text();
+                    texts += $(this).text().replace("├", "").replace("└", "").replace(/　/g, "");
+                    datas += $(this).attr("data-data");
                 }
             });
             i.attr("x-val", vals)
@@ -311,7 +315,7 @@
             }
 
             var cb = pick.ct.parent().attr("x-callback");
-            if (cb) eval(cb + "('" + vals + "','" + texts + "')");
+            if (cb) eval(cb + "('" + vals + "','" + texts + "','" + datas + "')");
 
         },
         hide: function () { dom.hide(); }
