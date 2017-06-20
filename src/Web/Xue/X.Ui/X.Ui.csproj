@@ -188,6 +188,7 @@
     <Content Include="tpl\mgr\answer\list.html" />
     <Content Include="tpl\mgr\com\err.html" />
     <Content Include="tpl\mgr\com\_head.html" />
+    <Content Include="tpl\mgr\deposit\manual.html" />
     <Content Include="tpl\mgr\dict\edit.html" />
     <Content Include="tpl\mgr\dict\list.html" />
     <Content Include="tpl\mgr\knowledge\edit.html" />
@@ -197,6 +198,8 @@
     <Content Include="tpl\mgr\book\edit.html" />
     <Content Include="tpl\mgr\book\list.html" />
     <Content Include="tpl\mgr\main.html" />
+    <Content Include="tpl\mgr\order\detail.html" />
+    <Content Include="tpl\mgr\order\list.html" />
     <Content Include="tpl\mgr\paper\edit.html" />
     <Content Include="tpl\mgr\paper\list.html" />
     <Content Include="tpl\mgr\paper\question\qedit.html" />

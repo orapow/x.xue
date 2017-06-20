@@ -42,9 +42,9 @@ namespace X.App.Apis.mgr.user
                 u.school,
                 u.tel,
                 u.headimg,
-                u.balance,
+                balance=u.balance,
                 ctime = u.ctime.Value.ToString("yyyy-MM-dd HH:mm"),
-              //  etime = u.etime.Value.ToString("yyyy-MM-dd HH:mm")
+                etime = u.etime.Value.ToString("yyyy-MM-dd HH:mm")
             }).ToList();
             r.count = q.Count();
 

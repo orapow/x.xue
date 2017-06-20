@@ -26,16 +26,16 @@ namespace X.App.Apis.mgr.deposit
             if (user == null) throw new XExcep("0x0018");
             if (amount <= 0) throw new XExcep("0x0019");
 
-            var depositItem = new x_charge();
-            depositItem.x_user = user;
-            depositItem.amount = amount;
-            depositItem.result = "后台充值成功";
-            depositItem.user_id = user.user_id;
-            depositItem.audit_status = 2;
-            depositItem.audit_time = DateTime.Now;
-            depositItem.audit_user = mg.mgr_id;
-            depositItem.ctime = DateTime.Now;
-
+            //var depositItem = new x_charge();
+            //depositItem.x_user = user;
+            //depositItem.amount = amount;
+            //depositItem.result = "后台充值成功";
+            //depositItem.user_id = user.user_id;
+            //depositItem.audit_status = 2;
+            //depositItem.audit_time = DateTime.Now;
+            //depositItem.audit_user = mg.mgr_id;
+            //depositItem.ctime = DateTime.Now;
+           
             user.balance += amount;
 
             SubmitDBChanges();

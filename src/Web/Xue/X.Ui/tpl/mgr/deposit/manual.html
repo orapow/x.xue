@@ -23,7 +23,7 @@
 </head>
 <body>
     <div class="title">
-        <span class="main">手动充值</span> - <span class="sub">会员充值</span>
+        <span class="main">会员管理</span> - <span class="sub">会员充值</span>
     </div>
     <div class="form">
         <x:form api="mgr.deposit.manual">
@@ -58,12 +58,12 @@
             if ("$!item.cover") $(".img[x-val='$!item.cover']").addClass("on");
 
             $("form:eq(0)").xform({
-                callback: function (d) { document.location.href = '/mgr/deposit/list.html'; }
+                callback: function (d) { document.location.href = '/mgr/user/list.html'; }
             });
 
         });
 
-        var um = UM.getEditor("id_desc");
+    //    var um = UM.getEditor("id_desc");
 
         function doManualDeposit() {
             if (confirm("请确定是否手动进行充值，操作无法取消")) {
