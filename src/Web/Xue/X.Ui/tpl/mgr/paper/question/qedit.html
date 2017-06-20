@@ -7,37 +7,29 @@
     <script src="/plug/um/umeditor.question.config.js"></script>
     <script src="/plug/um/umeditor.min.js"></script>
     <style type="text/css">
-        #id_name {
-            width: 800px;
-        }
-
-        .edui-container {
-            display: inline-block;
-            vertical-align: top;
-        }
+        body { margin: 0; padding: 0; }
+        .edui-container { display: inline-block; vertical-align: top; }
+        #id_nam { display: none; }
+        .x-pick .c { max-height: 280px; }
     </style>
 </head>
 <body>
     <div class="title">
-        <span class="main">试题编辑</span> - <span class="sub">试题管理</span>
+        <a href="qlist-$!{p_id}.html" class="btn"><i class="icon-arrow-left"></i> 返回试题列表</a>
     </div>
     <x:form api="mgr.paper.question.save">
         <input type="hidden" name="id" value="$!item.question_id" x-check="" />
-        <input type="hidden" name="p_id" value="$!item.paper_id" x-check="" />
-        <x:row>
-            <x:pick title="科目" src="url:/mgr/subject/select.html" name="sub" count="1" def="$!sub" no="1" to="bk" callback="sub_selected" />
-            <x:pick title="教材" src="url:/mgr/book/select{p}.html" name="bk" count="1" def="$!bk" no="1" to="cp" />
-            <x:pick title="章节" src="url:/mgr/chapter/select-{p}.html" name="cp" count="1" def="$!cp" no="1" />
-        </x:row>
+        <input type="hidden" name="p_id" value="$!p_id" x-check="" />
         <x:row>
             <x:pick title="题型" src="dict:question.topic" name="topic" count="1" def="$!item.topic" />
             <x:pick title="题类" src="dict:question.type" name="type" count="1" def="$!item.type" />
             <x:pick title="难易度" src="dict:question.easy" name="easy" count="1" def="$!item.easy" />
         </x:row>
-        <x:pick title="知识点" src="url:/mgr/knowledge/select-{p}.html" name="kg" count="5" def="$!kg" no="1" />
-        <x:text title="分数" name="score" size="4" def="$!item.score" />
-        <x:text title="题目" name="name" size="6" def="$!item.title" tp="3" chk="no" />
-        <x:text title="来源" name="src" size="4" def="$!item.topic" />
+        <x:row>
+            <x:pick title="知识点" src="url:/mgr/knowledge/select--${paper.subject}.html" name="kg" count="5" no="1" def="$!kg" />
+            <x:text title="分数" name="score" size="1" def="$!item.score" />
+        </x:row>
+        <x:text title="题目" name="name" size="1" def="$!item.title" tp="3" chk="no" />
         <div class="btns">
             <button type="submit" class="btn btn-primary"><i class="icon-ok"></i>提交保存</button>
         </div>
@@ -46,46 +38,16 @@
     <br />
     <script type="text/javascript">
 
-        var ue_name = UM.getEditor('id_name', { initialFrameHeight: 200 });
+        var ue_name = UM.getEditor('id_name', { initialFrameHeight: 200, initialFrameWidth: 600 });
 
         $(function () {
             $("form:eq(0)").xform({
                 callback: function (d) {
                     if (!d.issucc) return;
-                    if ("$!id") { document.location.href = "qlist-$!{item.paper_id}.html"; return; }
-
-                    x.confirm("是否继续添加", function () {
-                        try {
-                            $("[name='kg']").attr("x-val", "").find("span").text("请选择");
-                            $("#id_kgs").val("");
-                            $("#id_src").val("");
-                            $("#id_score").val("")
-                            ue_name.setContent("");
-                        } catch (e) { }
-                    }, function () {
-                        document.location.href = "qlist-$!{item.paper_id}.html";
-                    });
+                    document.location.href = "qlist-$!{p_id}.html";
                 }
             });
-
-            if ("$!id") {
-                $("[name='bk']").attr("x-parms", "$!item.subject");
-                $("[name='kg']").attr("x-parms", "$!item.subject");
-                $("[name='cp']").attr("x-parms", "$!item.book");
-            }
         });
-
-        function sub_selected(ids, vals) {
-            $("[name='kg']").attr("x-parms", ids);
-        }
-
-        function show_knowledge() {
-            var sb = $("[name='sub']").attr("x-val");
-            x.openwin("/mgr/knowledge/choose-" + sb + ".html", "选择知识点", function (d) {
-                $("#id_kg").val(d.vals);
-                $("#id_kgs").val(d.ids);
-            });
-        }
 
     </script>
 </body>

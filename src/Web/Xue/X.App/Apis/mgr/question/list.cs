@@ -42,7 +42,7 @@ namespace X.App.Apis.mgr.question
                 ty = GetDictName("question.type", o.type),
                 ey = GetDictName("question.easy", o.easy),
                 title = Context.Server.HtmlDecode(o.title),
-                score=o.score,
+                score = o.score,
                 kg = GetDictName("xx.knowledge", o.knowledge),
                 ctime = o.ctime.Value.ToString("yy-MM-dd HH:mm")
             });
@@ -54,6 +54,7 @@ namespace X.App.Apis.mgr.question
         string getSub(int s)
         {
             var sb = GetDict("xx.subject", s + "");
+            if (sb == null) return "";
             return GetDictName("xx.age", sb.f3) + "->" + sb.name;
         }
     }

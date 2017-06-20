@@ -11,11 +11,6 @@ using X.Web.Com;
 namespace X.App.Apis.mgr.dict {
     public class del : xmg {
         public int id { get; set;}
-        protected override int powercode {
-            get {
-                return 1;
-            }
-        }
 
         protected override XResp Execute() {
             var dic = DB.x_dict.FirstOrDefault(o => o.dict_id == id);

@@ -16,13 +16,6 @@ namespace X.App.Apis.mgr.book
 
         string code = "xx.book";
 
-        protected override int powercode
-        {
-            get
-            {
-                return 1;
-            }
-        }
         protected override XResp Execute()
         {
             var r = new Resp_List();
@@ -32,7 +25,6 @@ namespace X.App.Apis.mgr.book
             tree.InitTree("", 5);
             dt = DateTime.Now;
             r.items = tree.OutTree();
-
             return r;
         }
 

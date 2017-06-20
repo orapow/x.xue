@@ -131,7 +131,7 @@
       <Column Name="book" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="type" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="area" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="[group]" Member="group" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[group]" Member="group" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
       <Column Name="topic" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
       <Column Name="qids" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="setting" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />

@@ -24,7 +24,7 @@ namespace X.App.Views.paper
             if (qids == null || qids.Keys.Count == 0) dict.Add("empty", 1);
 
             dict.Add("ids", qids.Keys);
-            dict.Add("vip", cu.etime > DateTime.Now);
+            if (cu != null) dict.Add("vip", cu.etime > DateTime.Now);
         }
 
         public object GetQues(string k)

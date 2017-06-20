@@ -2,26 +2,50 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using X.Core.Utility;
+using X.Web;
 //using Newtonsoft.Json;
 
-namespace X.App.Views.mgr.paper {
-    public class edit : xmg {
+namespace X.App.Views.mgr.paper
+{
+    public class edit : xmg
+    {
         public int p_id { get; set; }
 
-        protected override string GetParmNames {
-            get {
+        protected override string GetParmNames
+        {
+            get
+            {
                 return "p_id";
             }
         }
 
-        protected override void InitDict() {
+        protected override void InitDict()
+        {
             base.InitDict();
-            if (p_id > 0) {
+            if (p_id > 0)
+            {
                 var q = DB.x_paper.FirstOrDefault(o => o.paper_id == p_id);
-                dict.Add("sub", q.subject + "|" + GetDictName("xx.subject", q.subject));
+                if (q == null) throw new XExcep("T试题不存在");
+                var sub = GetDict("xx.subject", q.subject + "");
+                dict.Add("sub", q.subject + "|" + sub.name);
+                dict.Add("ag", sub.f3);
+                dict.Add("bk", q.book + "|" + GetDictName("xx.book", q.book));
+                dict.Add("group", q.group + "|" + GetDictName("xx.group", q.group));
                 dict.Add("item", q);
+                var set = Serialize.FromJson<object>(q.setting);
+                if (set != null)
+                {
+                    dict.Add("pset", set);
+                    var pcfg = Serialize.FromJson<Dictionary<string, bool>>(q.setting, "cfg");
+                    if (pcfg != null)
+                    {
+                        var cs = "";
+                        foreach (var c in pcfg) if (c.Value) cs += "[" + c.Key + "]";
+                        dict.Add("pcfg", cs);
+                    }
+                }
             }
-
         }
 
         //protected override void InitDict() {

@@ -36,28 +36,6 @@ namespace X.App.Views.paper
             }
         }
 
-        //public override byte[] GetResponse()
-        //{
-        //    InitView();
-        //    var doc = new XWPFDocument();
-        //    var p2 = doc.CreateParagraph();
-        //    //XWPFRun r1 = p2.CreateRun();
-        //    //r1.SetText("test");
-
-        //    var r2 = p2.CreateRun();
-        //    var fs = File.Open("d:\\1.jpg", FileMode.Open, FileAccess.Read);
-        //    r2.AddPicture(fs, (int)PictureType.JPEG, "1.jpg", 400, 600);
-        //    fs.Close();
-
-        //    var dc = File.OpenWrite("d:\\1.docx");
-        //    doc.Write(dc);
-        //    doc.Close();
-
-        //    var ms = new MemoryStream();
-        //    doc.Write(ms);
-        //    return ms.ToArray();
-        //}
-
         protected override void InitView()
         {
             base.InitView();

@@ -2,24 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     #parse("mgr/com/_head.html")
-    <title>试卷编辑 - $cfg.name</title>
+    <title>试题管理 - $cfg.name</title>
+    <style type="text/css">
+        body { margin: 0; padding: 0; }
+        .cur_paper { font-size: 14px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; }
+    </style>
 </head>
 <body>
-    <div class="title">
-        <span class="main">试卷编辑</span>-<span class="sub">试卷管理</span>
+    <div class="cur_paper">
+        当前试卷：$paper.topic
     </div>
-
     <div class="search">
         <x:form>
-            <x:text title="搜索：题目" name="key" size="4" />
+            <x:text title="试题内容" name="key" size="4" />
             <button type="submit" class="btn btn-primary"><i class="icon-search"></i>搜索</button>
             <button type="reset" class="btn"><i class="icon-remove"></i>清除</button>
             <div class="btns">
-                <a class="btn btn-primary" id="btn_add" href="qedit-$!{p_id}.html"><i class="icon-plus"></i>录入试题</a>
+                <a class="btn btn-primary" id="btn_add" href="qedit--$!{p_id}.html"><i class="icon-plus"></i>录入试题</a>
             </div>
         </x:form>
     </div>
-  
     <div class="gridpanel"></div>
     <script type="text/javascript">
         $(function () {
@@ -29,20 +31,21 @@
                     g.getlist(d);
                 }
             });
-
-
         });
         var cfg = {
             el: ".gridpanel",
-            searchcon: { page: 1, limit: 30, id: "$!{item.paper_id}" },
+            searchcon: { page: 1, limit: 30, pid: "$!p_id" },
+            exheight: 20,
             api: "mgr.paper.question.qlist",
             fs: [
-                { t: "题号", f: "{qid}", w: "60" },
                 { t: "题目", f: "{cot}", w: "320" },
-                { t: "题型", f: "{type}", w: "60" },
-                { t: "分值", f: "{score}", w: "60" },
+                { t: "题型", f: "{topic}", w: "60", align: "center" },
+                { t: "题类", f: "{type}", w: "60", align: "center" },
+                { t: "难易度", f: "{easy}", w: "60", align: "center" },
+                { t: "分值", f: "{score}", w: "60", align: "center" },
             ],
             btns: [
+                { txt: "编辑", ico: "edit", link: "qedit-{qid}-${p_id}.html", confirm: false },
                 { txt: "删除", ico: "remove", act: "del" },
             ]
         }
@@ -60,7 +63,6 @@
             x.doapi("mgr.paper.question.del", { id: d.qid, pid: d.pid }, function () {
                 g.getlist();
             });
-
         }
     </script>
 </body>

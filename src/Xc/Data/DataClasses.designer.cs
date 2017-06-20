@@ -2769,7 +2769,7 @@ namespace X.Data
 		
 		private System.Nullable<int> _area;
 		
-		private System.Nullable<int> _group;
+		private string _group;
 		
 		private string _topic;
 		
@@ -2805,7 +2805,7 @@ namespace X.Data
     partial void OntypeChanged();
     partial void OnareaChanging(System.Nullable<int> value);
     partial void OnareaChanged();
-    partial void OngroupChanging(System.Nullable<int> value);
+    partial void OngroupChanging(string value);
     partial void OngroupChanged();
     partial void OntopicChanging(string value);
     partial void OntopicChanged();
@@ -2951,8 +2951,8 @@ namespace X.Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[group]", Storage="_group", DbType="Int")]
-		public System.Nullable<int> group
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[group]", Storage="_group", DbType="NVarChar(250)")]
+		public string group
 		{
 			get
 			{

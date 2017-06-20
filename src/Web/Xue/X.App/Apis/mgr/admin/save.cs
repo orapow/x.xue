@@ -18,14 +18,6 @@ namespace X.App.Apis.mgr.admin
         public string password { get; set; }//密码
         public String mail { get; set; }
         public int role { get; set; }//权限(1:客服,2:财务)
-        protected override int powercode
-        {
-            get
-            {
-                return 1;
-            }
-        }
-
 
 
         protected override Web.Com.XResp Execute()

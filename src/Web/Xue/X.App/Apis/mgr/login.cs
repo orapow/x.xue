@@ -10,7 +10,7 @@ using X.Web.Com;
 
 namespace X.App.Apis.mgr
 {
-    public class login : Api
+    public class login : xapi
     {
         /// <summary>
         /// 用户名
@@ -29,13 +29,13 @@ namespace X.App.Apis.mgr
         {
             var c = CacheHelper.Get<string>("img.code." + uin);
             CacheHelper.Remove("img.code." + uin);
-            if (c == null || c != code) throw new XExcep("0x0022");
-            var ad = DB.x_mgr.SingleOrDefault(o => o.uin == uin);
+            if (c == null || c != code) throw new XExcep("0x0007");
 
-            if (ad == null || ad.pwd != Secret.MD5(pwd)) throw new XExcep("0x0023");
+            var ad = DB.x_mgr.SingleOrDefault(o => o.uin == uin);
+            if (ad == null || ad.pwd != Secret.MD5(pwd)) throw new XExcep("0x0006");
             var ukey = Guid.NewGuid().ToString();
 
-            CacheHelper.Save("mgr." + ad.ukey, ad, 60 * 20);
+            CacheHelper.Save("mgr." + ad.ukey, ad.mgr_id, 60 * 20);
 
             SubmitDBChanges();
             return new XResp() { msg = ad.ukey };

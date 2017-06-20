@@ -2,63 +2,44 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using X.Core.Utility;
+using X.Web;
 using X.Web.Com;
 
-namespace X.App.Apis.mgr.paper.question {
-    public class qlist:xmg {
-        public int id { get; set; }
+namespace X.App.Apis.mgr.paper.question
+{
+    public class qlist : xmg
+    {
+        public int pid { get; set; }
         public int page { get; set; }
         public int limit { get; set; }
-        public string topic { get; set; }
-        public string qids { get; set; }
-        public string qtype { get; set; }
 
-        protected override XResp Execute() {
-
-            var p = DB.x_paper.FirstOrDefault(o => o.paper_id == id);
-
-            var ids = X.Core.Utility.Serialize.FromJson<Dictionary<string, int>>(p.qids);
+        protected override XResp Execute()
+        {
+            var p = DB.x_paper.FirstOrDefault(o => o.paper_id == pid);
+            if (p == null) throw new XExcep("T试卷不存在");
 
             var r = new Resp_List();
+            r.page = page;
+            r.count = 0;
 
-            r.items = DB.x_question.Where(o => ids.Keys.Contains(o.question_id + "")).Select(o => new {
+            var ids = Serialize.FromJson<Dictionary<string, int>>(p.qids);
+            if (ids == null) return r;
+
+            var q = DB.x_question
+                .Where(o => ids.Keys.Contains(o.question_id + ""));
+
+            r.items = q.Select(o => new
+            {
                 qid = o.question_id,
                 cot = Context.Server.HtmlDecode(o.title),
                 score = o.score,
-                type = GetDictName("question.topic", o.topic),
-                pid = p.paper_id,
-                ctime = o.ctime
+                topic = GetDictName("question.topic", o.topic),
+                type = GetDictName("question.type", o.type),
+                easy = GetDictName("question.easy", o.easy)
             });
 
-
-            //var q = from pa in DB.x_paper
-            //        where pa.paper_id == id
-            //        select pa;
-
-            //string jsonString = q.FirstOrDefault().qids;
-
-            //string sArras = jsonString.Replace('\"', ' ').Replace('{', ' ').Replace('}', ' ');
-            //string[] sArray = sArras.Split(',');
-            //string qi = "";
-
-            //object[] qids = new object[sArray.Length];
-
-            //var r = new Resp_List();
-
-            //for (int i = 0; i < sArray.Length; i++) {
-            //    //获取试卷的每个试题的id
-            //    //LastIndexOf 以特定字符截取
-            //    qi = sArray[i].Substring(1, sArray[i].LastIndexOf(":") - 1);
-            //    qids[i] = DB.x_question.FirstOrDefault(o => o.question_id == Int32.Parse(qi)).question_id;
-            //}
-
-            //r.items = DB.x_question.Where(o => qids.Contains(o.question_id + "")).Select(o => new {
-            //    qid=qids,
-            //    cot = Context.Server.HtmlDecode(o.title),
-            //    score = o.score,
-            //    type = GetDictName("question.topic", o.topic)
-
-            //});
+            r.count = q.Count();
 
             return r;
 

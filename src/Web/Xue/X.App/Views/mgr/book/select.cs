@@ -9,11 +9,12 @@ namespace X.App.Views.mgr.book
     public class select : xmg
     {
         public int sub { get; set; }
+        public int top { get; set; }
         protected override string GetParmNames
         {
             get
             {
-                return "sub";
+                return "sub-top";
             }
         }
 
@@ -22,17 +23,22 @@ namespace X.App.Views.mgr.book
 
         protected override void InitDict()
         {
-            var tree = new XTree();
-            tree.LoadList += tree_LoadList;
-            tree.InitTree("");
-            var list = tree.OutTree();
-            list.Insert(0, new item() { id = "0", name = "无" });
-            dict.Add("dict", list);
+            if (top > 0) dict.Add("dict", GetDictList(code, "0").Where(o => o.f3 == sub));
+            else
+            {
+                var tree = new XTree();
+                tree.LoadList += tree_LoadList;
+                tree.InitTree("");
+                var list = tree.OutTree();
+                list.Insert(0, new item() { id = "0", name = "无" });
+                dict.Add("dict", list);
+            }
         }
 
         List<TreeNode> tree_LoadList(object id)
         {
             var list = GetDictList(code, id + "").Where(o => o.f3 == sub);
+            //if (id + "" != "0") list = list.Where(o => o.upval == upv + "");
             return list.Select(m => new item()
             {
                 name = m.name,
