@@ -48,6 +48,7 @@
     <Compile Include="Apis\mgr\answer\del.cs" />
     <Compile Include="Apis\mgr\answer\list.cs" />
     <Compile Include="Apis\mgr\answer\save.cs" />
+    <Compile Include="Apis\mgr\deposit\manual.cs" />
     <Compile Include="Apis\mgr\dict\del.cs" />
     <Compile Include="Apis\mgr\dict\list.cs" />
     <Compile Include="Apis\mgr\dict\save.cs" />
@@ -60,6 +61,8 @@
     <Compile Include="Apis\mgr\book\del.cs" />
     <Compile Include="Apis\mgr\book\list.cs" />
     <Compile Include="Apis\mgr\book\save.cs" />
+    <Compile Include="Apis\mgr\order\del.cs" />
+    <Compile Include="Apis\mgr\order\list.cs" />
     <Compile Include="Apis\mgr\paper\del.cs" />
     <Compile Include="Apis\mgr\paper\list.cs" />
     <Compile Include="Apis\mgr\paper\question\del.cs" />
@@ -75,6 +78,7 @@
     <Compile Include="Apis\mgr\subject\del.cs" />
     <Compile Include="Apis\mgr\subject\list.cs" />
     <Compile Include="Apis\mgr\subject\save.cs" />
+    <Compile Include="Apis\mgr\user\list.cs" />
     <Compile Include="Apis\mgr\xmg.cs" />
     <Compile Include="Apis\com\upload.cs" />
     <Compile Include="Apis\mgr\login.cs" />
@@ -102,13 +106,17 @@
     <Compile Include="Views\com\getpos.cs" />
     <Compile Include="Views\index.cs" />
     <Compile Include="Views\logout.cs" />
+    <Compile Include="Views\mgr\deposit\manual.cs" />
     <Compile Include="Views\mgr\dict\edit.cs" />
     <Compile Include="Views\mgr\dict\list.cs" />
     <Compile Include="Views\mgr\dict\select.cs" />
+    <Compile Include="Views\mgr\order\detail.cs" />
+    <Compile Include="Views\mgr\order\list.cs" />
     <Compile Include="Views\mgr\paper\edit.cs" />
     <Compile Include="Views\mgr\paper\list.cs" />
     <Compile Include="Views\mgr\paper\question\qedit.cs" />
     <Compile Include="Views\mgr\paper\question\qlist.cs" />
+    <Compile Include="Views\mgr\user\list.cs" />
     <Compile Include="Views\notify.cs" />
     <Compile Include="Views\paper\list.cs" />
     <Compile Include="Views\paper\down.cs" />
