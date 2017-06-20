@@ -39,7 +39,7 @@ namespace X.App.Views.paper
         protected override void InitView()
         {
             base.InitView();
-            pg = DB.x_paper.FirstOrDefault(o => o.user_id == cu.user_id && o.paper_id == id);
+            pg = DB.x_paper.FirstOrDefault(o => o.paper_id == id);
             if (pg == null) throw new XExcep("T试卷不存在");
             x_down down = null;
             if (pg.x_down.Count() == 0)

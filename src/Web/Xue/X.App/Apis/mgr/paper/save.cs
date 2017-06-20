@@ -36,7 +36,7 @@ namespace X.App.Apis.mgr.paper
             var pcfg = new
             {
                 cfg = new Dictionary<string, bool>() {
-                    { "2",papercfg.Contains("[2]")},
+                    { "1",papercfg.Contains("[1]")},
                     { "3",papercfg.Contains("[3]")},
                     { "4",papercfg.Contains("[4]")},
                     { "5",papercfg.Contains("[5]")},

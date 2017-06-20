@@ -24,7 +24,7 @@
             <x:pick title="适用年级" src="url:/mgr/group/select-$!{ag}.html" name="group" count="5" def="$!group" />
         </x:row>
         <x:text title="价格" tip="￥ " name="price" size="1" chk="no|tp:num" def="$!item.price" />
-        <x:pick title="配置" name="papercfg" count="0" mode="2" src="loc:密封线-2|主标题-3|副标题-5|注意事项-4|考试时间-7|考生填写-9|总评分区-11|分大题-10|大题注释-12" callback="cfg_selected" def="$!pcfg" />
+        <x:pick title="配置" name="papercfg" count="0" mode="2" src="loc:密封线-1|主标题-3|副标题-5|注意事项-4|考试时间-7|考生填写-9|总评分区-11|分大题-10|大题注释-12" callback="cfg_selected" def="$!pcfg" />
         <hr />
         <x:text title="副标题" name="stopic" size="4" def="$!pset.stopic" />
         <x:text title="注意事项" name="notice" size="5" tp="3" def="$!pset.notice" />

@@ -34,7 +34,7 @@ namespace X.App.Views.user
             base.InitDict();
             if (tp == 1)
             {
-                var p = DB.x_paper.FirstOrDefault(o => o.paper_id == val && o.user_id == cu.user_id);
+                var p = DB.x_paper.FirstOrDefault(o => o.paper_id == val);
                 if (p == null) throw new XExcep("T试卷不存在");
                 dict.Add("desc", "下载试卷【" + p.topic + "（" + p.paper_id + "）】");
             }
