@@ -36,7 +36,7 @@
                                                 <p> <span><i class="icona-time2"></i>下载时间：$p.date</span> <span><i class="icona-leixing"></i>学科：$p.sub</span> </p>
                                             </div>
                                         </div>
-                                        <div class="search-list-right"> <a href="javascript:;" class="download-btn" onclick="download('$!p.id')"><i class="icona-download1"></i>下载</a> </div>
+                                        <div class="search-list-right"> <a href="javascript:;" class="download-btn" onclick="do_down('$!p.id')"><i class="icona-download1"></i>下载</a> </div>
                                     </li>
                                     #end
                                 </ul>
@@ -57,6 +57,7 @@
         </div>
     </div>
     #parse("user/_foot.html")
+    <iframe id="fr_down" style="display:none;"></iframe>
     <script type="text/javascript">
         var page = parseInt("$!page") || 1;
 
@@ -85,6 +86,20 @@
         }
 
         createPage(parseInt("$!pc"))
+
+        function do_down(id) {
+            x.doapi("paper.predown", { pid: id }, function (d) {
+                if (!d.issucc) return;
+                if (!d.msg) do_pay(id);
+                else $("#fr_down").attr("src", "/paper/down-" + d.msg + ".html");
+            });
+        }
+
+        function do_pay(id) {
+            x.openwin("/user/pay-1-" + id + ".html", "在线支付", function (d) {
+                if (d == "succ") do_down(id);
+            }, { w: 300, h: 400 });
+        }
 
     </script>
 </body>

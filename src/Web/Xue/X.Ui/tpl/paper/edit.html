@@ -332,10 +332,7 @@
                 if (d.issucc) {
                     id = d.msg;
                     x.cookie.del("xx.cart.$!sb");
-                    if (down) {
-                        if ("$!vip" == "True") { do_down(); }
-                        else do_pay();
-                    }
+                    if (down) do_down();
                     else x.alert("当前试卷已经保存，可以组卷记录里查看！")
                 } else if (d.code == "0x0005") {
                     window.location.href = "/login--" + x.base64.encode(document.location.href) + ".html";
@@ -344,7 +341,11 @@
         }
 
         function do_down() {
-            $("#fr_down").attr("src", "/paper/down-" + id + ".html");
+            x.doapi("paper.predown", { pid: id }, function (d) {
+                if (!d.issucc) return;
+                if (!d.msg) do_pay();
+                else $("#fr_down").attr("src", "/paper/down-" + d.msg + ".html");
+            });
         }
 
         function do_pay() {

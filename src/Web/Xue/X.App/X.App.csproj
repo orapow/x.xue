@@ -83,6 +83,7 @@
     <Compile Include="Apis\com\upload.cs" />
     <Compile Include="Apis\mgr\login.cs" />
     <Compile Include="Apis\mgr\logout.cs" />
+    <Compile Include="Apis\paper\candown.cs" />
     <Compile Include="Apis\paper\create.cs" />
     <Compile Include="Apis\paper\save.cs" />
     <Compile Include="Apis\question\count.cs" />

@@ -44,7 +44,7 @@ namespace X.App.Views
 
             if (od.pid > 0)
             {
-                var down = new x_down() { ctime = DateTime.Now, paper_id = od.pid };
+                var down = new x_down() { ctime = DateTime.Now, paper_id = od.pid, dkey = Secret.MD5(Guid.NewGuid().ToString()) };
                 od.x_user.x_down.Add(down);
             }
             else if (od.etime != null)

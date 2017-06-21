@@ -107,11 +107,7 @@
                     </div>
                 </div>
                 <div class="search-list-right" style="text-align:right;">
-                    #if($vip=="True")
-                    <a href="/paper/down-${p.id}.html" target="_blank" class="download-btn"><i class="icona-download1"></i>下载</a>
-                    #else
-                    <a href="javascript:;" onclick="do_pay($p.id)" class="download-btn"><i class="icona-download1"></i>下载</a>
-                    #end
+                    <a href="javascript:;" onclick="do_down($p.id)" class="download-btn"><i class="icona-download1"></i>下载</a>
                 </div>
             </li>
             #end
@@ -145,14 +141,17 @@
 
         createPage(parseInt("$!pc" || "0"))
 
-        function to_down(id) {
-            if ("$!vip" == "True") { do_down(id); }
-            else do_pay(id);
+        function do_down(id) {
+            x.doapi("paper.predown", { pid: id }, function (d) {
+                if (!d.issucc) return;
+                if (!d.msg) do_pay(id);
+                else $("#fr_down").attr("src", "/paper/down-" + d.msg + ".html");
+            });
         }
 
         function do_pay(id) {
             x.openwin("/user/pay-1-" + id + ".html", "在线支付", function (d) {
-                if (d == "succ") $("#fr_down").attr("src", "/paper/down-" + id + ".html");
+                if (d == "succ") do_down();
             }, { w: 300, h: 400 });
         }
 
