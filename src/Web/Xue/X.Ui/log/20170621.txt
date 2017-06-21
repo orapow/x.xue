@@ -1,0 +1,186 @@
+
+时间：2017-06-21 09:36:18,229 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：46923 
+System.InvalidOperationException: 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.Data.x_dict.GetDictList(String code, String upval, DataClassesDataContext db)
+   在 X.Web.XFace.GetDictList(String code, String upval)
+   在 X.App.Views._web.getSubject(Int32 age)
+   在 X.App.Views._web.InitView()
+   在 X.Web.Views.View.GetResponse()
+   在 X.Web.XApp.ProcessRequest(HttpContext c)
+
+时间：2017-06-21 09:36:19,066 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：47760 
+System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 找不到网络路径。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.Data.x_dict.GetDictList(String code, String upval, DataClassesDataContext db)
+   在 X.Web.XFace.GetDictList(String code, String upval)
+   在 X.App.Views._web.getSubject(Int32 age)
+   在 X.App.Views._web.InitView()
+   在 X.Web.Views.View.GetResponse()
+   在 X.Web.XApp.ProcessRequest(HttpContext c)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+
+时间：2017-06-21 09:37:34,762 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：32584 
+System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 找不到网络路径。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.Data.x_dict.GetDictList(String code, String upval, DataClassesDataContext db) 位置 D:\Pro\x.xue\src\Xc\Data\DataClasses.cs:行号 71
+   在 X.Web.XFace.GetDictList(String code, String upval) 位置 D:\Pro\x.xue\src\Web\X.Web\XFace.cs:行号 175
+   在 X.App.Views._web.getSubject(Int32 age) 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:行号 48
+   在 X.App.Views._web.InitView() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:行号 25
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 94
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+
+时间：2017-06-21 09:38:28,114 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：7000 
+
+时间：2017-06-21 09:40:40,033 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"参数不正确 订单类型的值要大于1","code":"0x0004"} 
+时间：138919 
+
+时间：2017-06-21 09:47:26,105 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"未知错误代码(T试卷不存在)","code":"T试卷不存在"} 
+时间：59886 
+
+时间：2017-06-21 09:50:38,387 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：64580 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Views.paper.down.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\paper\down.cs:行号 60
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-21 09:50:41,001 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：67193 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Views.paper.down.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\paper\down.cs:行号 60
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-21 09:51:03,716 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：89908 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Views.paper.down.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\paper\down.cs:行号 60
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-21 09:51:31,528 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：320 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Views.paper.down.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\paper\down.cs:行号 60
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-21 09:52:26,863 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：55655 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Views.paper.down.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\paper\down.cs:行号 60
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-21 09:52:36,141 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：64933 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Views.paper.down.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\paper\down.cs:行号 60
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31

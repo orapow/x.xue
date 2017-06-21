@@ -13,13 +13,6 @@ namespace X.App.Apis.mgr.deposit
         public string uid { get; set; }
         public decimal amount { get; set; }
 
-        protected override int powercode
-        {
-            get
-            {
-                return 2;
-            }
-        }
         protected override XResp Execute()
         {
             var user = DB.x_user.SingleOrDefault(o => o.uid == uid || o.tel == uid);

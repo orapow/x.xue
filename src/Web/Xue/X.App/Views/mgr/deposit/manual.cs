@@ -10,12 +10,5 @@ namespace X.App.Views.mgr.deposit
 {
     public class manual : xmg
     {
-        protected override int powercode
-        {
-            get
-            {
-                return 2;
-            }
-        }
     }
 }
