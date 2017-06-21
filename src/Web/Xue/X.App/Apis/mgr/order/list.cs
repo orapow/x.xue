@@ -10,11 +10,6 @@ namespace X.App.Apis.mgr.order {
         public int limit { get; set; }
         public int st { get; set; }
         public string key { get; set; }
-        protected override int powercode {
-            get {
-                return 1;
-            }
-        }
         protected override XResp Execute() {
             var r = new Resp_List();
             var q = from o in DB.x_order

@@ -16,12 +16,6 @@ namespace X.App.Apis.mgr.user
         public int page { get; set; }
         public int limit { get; set; }
         public string key { get; set; }
-        protected override int powercode {
-            get {
-                return 1;
-            }
-        }
-
         protected override XResp Execute()
         {
             var r = new Resp_List();

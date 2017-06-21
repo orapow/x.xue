@@ -4,12 +4,6 @@ using X.Web;
 namespace X.App.Views.mgr.order {
     public class detail : xmg {
         public int id { get; set; }
-        protected override int powercode {
-            get {
-                return 1;
-            }
-        }
-
         protected override string GetParmNames {
             get {
                 return "id";

@@ -1,0 +1,63 @@
+
+时间：2017-06-21 09:23:14,862 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：5908 
+
+时间：2017-06-21 09:23:14,863 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：5909 
+
+时间：2017-06-21 09:27:14,651 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：245697 
+
+时间：2017-06-21 09:28:31,477 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"验证码不正确 ","code":"0x0007"} 
+时间：322523 
+
+时间：2017-06-21 09:31:19,880 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：490925 
+
+时间：2017-06-21 09:36:25,053 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：310 
+
+时间：2017-06-21 09:47:22,233 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：6346 
+
+时间：2017-06-21 09:49:14,683 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：118796 
+
+时间：2017-06-21 09:52:34,753 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：318866 

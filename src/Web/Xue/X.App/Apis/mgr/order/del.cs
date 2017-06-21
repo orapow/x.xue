@@ -8,12 +8,7 @@ using X.Web.Com;
 namespace X.App.Apis.mgr.order {
     public class del:xmg {
         public int id { get; set;}
-        protected override int powercode {
-            get {
-                return 1;
-
-            }
-        }
+        
         protected override XResp Execute() {
             var ord = DB.x_order.FirstOrDefault(o => o.order_id == id);
             if (ord == null)
