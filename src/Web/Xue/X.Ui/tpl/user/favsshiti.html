@@ -65,7 +65,7 @@
                                                 </div>
                                             </div>
                                             <div class="exam-foot">
-                                                <p class="exam-foot-left"> <a target="_blank" href="http://zujuan.21cnjy.com/question/detail/3356238"><i class="icona-jiexi"></i>查看解析</a>#if($q.id) <a href="javascript:;" onclick="OT2_QCollect($q.id,$q.qid,this)"><i class="icona-quxiaosc"></i>取消收藏</a>#end </p>
+                                                <p class="exam-foot-left"> <a href="javascript:;" onclick="jiexi($q.id)"><i class="icona-jiexi"></i>查看解析</a>#if($q.id) <a href="javascript:;" onclick="OT2_QCollect($q.id,$q.qid,this)"><i class="icona-quxiaosc"></i>取消收藏</a>#end </p>
                                                 <p class="exam-foot-right"> <span>组卷次数：$q.hits次</span> <a class="addbtn J_AddQuestion" href="javascript:;"><b>+</b>选题</a> </p>
                                             </div>
                                         </div>
@@ -101,8 +101,26 @@
     </div>
     #parse("user/_foot.html")
 
+
+
+    <!--试题篮-->
+
+    <div class="basket" id="J_Basket">
+        <div class="basket-tit">
+            <p><i class="icona-gouwulan"></i><em>试题篮</em></p>
+            <span><i class="icona-gouwuleft"></i></span>
+        </div>
+        <div class="basket-con">
+            <div class="basket-count01">
+                <div class="basket-head"> 共计：（<span>0</span>）道题 </div>
+                <div class="baskrt-list"></div>
+            </div>
+            <div class="basket-foot"> <a id="to-paper-edit" data-method="post" class="basket-btn" href="javascript:;" onclick="do_edit()" style="">生成试卷</a> <a id="to-paper-admin-cancel" class="basket-btn" href="http://zujuan.21cnjy.com/question" style="display: none">取消</a> </div>
+        </div>
+    </div>
+
     <script type="text/javascript">
-        function OT2_QCollect(id,qid, bt) {
+        function OT2_QCollect(id, qid, bt) {
             var i = $(bt).find("i");
 
             if (i.hasClass("icona-shoucang")) {
@@ -112,11 +130,15 @@
             } else {
                 i.parent().html('<i class="icona-shoucang"></i>收藏');
                 x.doapi("user.fav.del", { cid: id, tp: 1 }, function () {
-                   // window.location.reload();
+                    // window.location.reload();
                 });
                 alert("delete");
             }
+        }
 
+        function jiexi(id) {
+            x.openwin("answer-" + id + ".html", "查看解析", function () {
+            });
         }
     </script>
 </body>
