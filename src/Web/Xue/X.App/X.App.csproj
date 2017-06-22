@@ -89,6 +89,7 @@
     <Compile Include="Apis\question\count.cs" />
     <Compile Include="Apis\question\search.cs" />
     <Compile Include="Apis\user\fav\del.cs" />
+    <Compile Include="Apis\user\fav\save.cs" />
     <Compile Include="Apis\user\order\del.cs" />
     <Compile Include="Apis\user\order\md.cs" />
     <Compile Include="Apis\user\order\st.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Com\Sdk.cs" />
     <Compile Include="Com\Wx.cs" />
     <Compile Include="Global.cs" />
+    <Compile Include="Views\answer.cs" />
     <Compile Include="Views\com\err.cs" />
     <Compile Include="Views\com\code.cs" />
     <Compile Include="Views\com\dict.cs" />
@@ -148,9 +150,10 @@
     <Compile Include="Views\paper\create.cs" />
     <Compile Include="Views\paper\edit.cs" />
     <Compile Include="Views\question.cs" />
+    <Compile Include="Views\user\favsshiti.cs" />
     <Compile Include="Views\user\papers.cs" />
     <Compile Include="Views\user\down.cs" />
-    <Compile Include="Views\user\favs.cs" />
+    <Compile Include="Views\user\favsshijuan.cs" />
     <Compile Include="Views\user\info.cs" />
     <Compile Include="Views\user\orders.cs" />
     <Compile Include="Views\user\pay.cs" />

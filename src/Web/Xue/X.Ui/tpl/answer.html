@@ -49,13 +49,27 @@
             padding: initial;
             background-color: transparent;
         }
+
+        .answer {
+            padding: 0 18px;
+            padding-top: 15px;
+            padding-right: 18px;
+            padding-bottom: 0px;
+            padding-left: 18px;
+            border-top: 1px dashed #dcdcdc;
+            border-top-width: 1px;
+            border-top-style: dashed;
+            border-top-color: rgb(220, 220, 220);
+            font-size: 14px !important;
+            color: #333;
+        }
     </style>
 </head>
 <body>
-    #parse("_top.html")
-    <div class="breadcrumb g-container"> <i class="icona-dingwei"></i>当前位置： <a href="/">首页</a> <b>&gt;</b> <a href="#">$sbname</a> </div>
+
+    <!--#parse("_top.html")-->
     #if($lt==1)
-    <div class="search-type d-search-type g-container">
+    <!--<div class="search-type d-search-type g-container">
         <div class="type-items">
             <div class="type-tit">教材：</div>
             <div class="type-conbox">
@@ -82,25 +96,25 @@
             </div>
         </div>
         #end
-    </div>
+    </div>-->
     #end
 
     #macro( getLeft $list)
     #foreach($l in $list)
     #set( $sub = $T.getLeft($l.value))
-    <li class="#if($sub.Count==0)t2end#end" data-val="$l.value" data-name="#if($lt==1)cp#elseif($sub.Count()==0)kg#end">
+    <!--<li class="#if($sub.Count==0)t2end#end" data-val="$l.value" data-name="#if($lt==1)cp#elseif($sub.Count()==0)kg#end">
         <div class="t2hd">
             <span></span><a href="javascript:;"><em>$l.name</em></a>
         </div>
         <ul class="t2bd">
             #getLeft($sub)
         </ul>
-    </li>
+    </li>-->
     #end
     #end
 
     <div class="g-container f-cb">
-        <div class="g-sd1">
+        <!--<div class="g-sd1">
             <div class="chapter-con f-usn" onselectstart="return false">
                 <h1> 选择#if($lt==1)章节#else知识点#end </h1>
                 <div id="J_Tree" class="t2-tree-smart0">
@@ -124,10 +138,10 @@
                     });
                 </script>
             </div>
-        </div>
+        </div>-->
         <div class="g-mn1">
             <div class="g-mn1c">
-                <div class="tag-type">
+                <!--<div class="tag-type">
                     #if($topics.count()>0)
                     <div class="tag-items">
                         <div class="tag-tit">题型：</div>
@@ -185,7 +199,7 @@
                     </div>
                     <a class="select-btn" href="javascript:;" onclick="$('.addbtn.J_AddQuestion').click()">选择本页全部试题</a>
                     <div class="total"> 共计：<b>$count</b> 题 </div>
-                </div>
+                </div>-->
                 <div class="search-list">
                     <ul id="J_QuestionList">
                         #foreach($q in $ques)
@@ -197,39 +211,51 @@
                                 </div>
                                 <div class="exam-con">
                                     <div class="exam-q">
-                                        是否收藏：$q.fid
+                                        <!--收藏ID：$q.fid-->
                                         $q.content
                                     </div>
                                 </div>
-                                <div class="exam-foot">
+                                <div class="answer">
+                                    <strong>[考点]</strong>#foreach($a in $ques)
+                                    $a.kgs<br />
+                                    #end
+                                    <br />
+                                    <strong>[答案]</strong>#foreach($a in $ans)
+                                    $a.result<br />
+                                    #end
+                                    <br />
+                                    <strong>[解析]</strong>#foreach($a in $ans)
+                                    $a.remark<br />
+                                    #end
+                                </div>
+                                <!--<div class="exam-foot">
                                     <p class="exam-foot-left"> <a href="javascript:;" onclick="jiexi($q.id)"><i class="icona-jiexi"></i>查看解析</a> #if($!q.fid==0)<a href="javascript:;" onclick="OT2_QCollect($q.id,this)"><i class="icona-shoucang"></i>收藏</a>#else<a href="javascript:;" onclick=" OT2_QCollect($q.id,=OT2_QCollect($q.id, this)"=this)"><i class="icona-quxiaosc"></i>取消收藏</a>#end </p>
                                     <p class="exam-foot-right"> <span>组卷次数：$q.hits次</span> <a class="addbtn J_AddQuestion" href="javascript:;"><b>+</b>选题</a> </p>
-                                </div>
+                                </div>-->
                             </div>
                         </li>
                         #end
                     </ul>
                 </div>
 
-                #if($count>15)
+                <!--#if($count>15)-->
                 <div class="page">
                     <div class="pagenum"></div>
                 </div>
-                #end
+                <!--#end-->
 
-                <div class="null-page" style="width:100%;text-align: center;color:#333;font-size: 14px;margin-top: 80px; #if($ques.Count()>0)display:none#end">
+                <!--<div class="null-page" style="width:100%;text-align: center;color:#333;font-size: 14px;margin-top: 80px;">
                     <img src="/img/xx/blank.png" /><br />
                     <br />
                     <span style="font-size: 16px; color: #666666; font-family:Microsoft YaHei">未搜索到相关数据!</span>
-                </div>
+                </div>-->
 
             </div>
         </div>
     </div>
 
     <!--试题篮-->
-
-    <div class="basket" id="J_Basket">
+    <!--<div class="basket" id="J_Basket">
         <div class="basket-tit">
             <p><i class="icona-gouwulan"></i><em>试题篮</em></p>
             <span><i class="icona-gouwuleft"></i></span>
@@ -241,7 +267,7 @@
             </div>
             <div class="basket-foot"> <a id="to-paper-edit" data-method="post" class="basket-btn" href="javascript:;" onclick="do_edit()" style="">生成试卷</a> <a id="to-paper-admin-cancel" class="basket-btn" href="http://zujuan.21cnjy.com/question" style="display: none">取消</a> </div>
         </div>
-    </div>
+    </div>-->
 
     <script src="/js/xx/global.min.js"></script>
     <script src="/js/x.js"></script>
@@ -382,20 +408,20 @@
             var i = $(bt).find("i");
             if (i.hasClass("icona-shoucang")) {
                 x.doapi("user.fav.save", { id: id, type: 1, sub: "$!sb" }, function () {
-                   // window.location.reload();
+                    window.location.reload();
                     i.parent().html('<i class="icona-quxiaosc"></i>取消收藏')
                 });
             } else {
                 i.parent().html('<i class="icona-shoucang"></i>收藏');
                 x.doapi("user.fav.del", { cid: id, tp: 1 }, function () {
-                    //window.location.reload();
+                    window.location.reload();
                 });
                 //alert("delete");
             }
         }
 
         function jiexi(id) {
-            x.openwin("answer-"+id+".html", "查看解析", function () {
+            x.openwin("", "查看解析", function () {
             });
         }
     </script>

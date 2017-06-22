@@ -2,10 +2,8 @@
 using System.Linq;
 using X.Web.Com;
 
-namespace X.App.Apis.question
-{
-    public class search : xapi
-    {
+namespace X.App.Apis.question {
+    public class search : _web {
         public int sub { get; set; }
         public int bk { get; set; }
         public int tp { get; set; }
@@ -18,8 +16,7 @@ namespace X.App.Apis.question
         public int limit { get; set; }
         public int sort { get; set; }
 
-        protected override XResp Execute()
-        {
+        protected override XResp Execute() {
             var r = new Resp_List();
             r.page = page;
 
@@ -27,24 +24,31 @@ namespace X.App.Apis.question
                     where qs.subject == sub
                     select qs;
 
-            if (page == 0) page = 1;
-            if (limit == 0 || limit > 50) limit = 10;
+            if (page == 0)
+                page = 1;
+            if (limit == 0 || limit > 50)
+                limit = 10;
 
-            if (bk > 0) q = q.Where(o => o.book == bk);
-            if (cp > 0)
-            {
+            if (bk > 0)
+                q = q.Where(o => o.book == bk);
+            if (cp > 0) {
                 var cps = GetDictList("xx.chapter", "00").Where(o => o.upval != null && (o.upval == (cp + "") || o.upval.StartsWith(cp + "-"))).Select(o => o.value);
                 q = q.Where(o => cps.Contains(o.chapter + "") || o.chapter == cp);
             }
-            if (tp > 0) q = q.Where(o => o.topic == tp);
-            if (ey > 0) q = q.Where(o => o.easy == ey);
-            if (ty > 0) q = q.Where(o => o.type == ty);
-            if (kg > 0) q = q.Where(o => o.knowledge.Contains("[" + kg + "]"));
-            if (kgc >= 3) q = q.Where(o => o.knowledgecount >= 3);
-            else if (kgc > 0) q = q.Where(o => o.knowledgecount == kgc);
+            if (tp > 0)
+                q = q.Where(o => o.topic == tp);
+            if (ey > 0)
+                q = q.Where(o => o.easy == ey);
+            if (ty > 0)
+                q = q.Where(o => o.type == ty);
+            if (kg > 0)
+                q = q.Where(o => o.knowledge.Contains("[" + kg + "]"));
+            if (kgc >= 3)
+                q = q.Where(o => o.knowledgecount >= 3);
+            else if (kgc > 0)
+                q = q.Where(o => o.knowledgecount == kgc);
 
-            switch (sort)
-            {
+            switch (sort) {
                 case 11:
                     q = q.OrderBy(o => o.mtime);
                     break;
@@ -59,20 +63,25 @@ namespace X.App.Apis.question
                     break;
             }
 
-            r.items = q.Skip((page - 1) * limit).Take(limit).ToList().Select(o => new
-            {
+            r.items = q.Skip((page - 1) * limit).Take(limit).ToList().Select(o => new {
                 tp = GetDictName("question.topic", o.topic),
                 ty = GetDictName("question.type", o.type),
                 ey = GetDictName("question.easy", o.easy),
                 kgs = GetDictName("xx.knowledge", o.knowledge),
                 content = Context.Server.HtmlDecode(o.title),
                 o.hits,
-                id = o.question_id
+                id = o.question_id,
+                fid = cu == null || cu.x_fav.Count(f => f.cid == o.question_id) == 0 ? 0 : 1
             }).ToList();
 
             r.count = q.Count();
             return r;
         }
 
+        //int getfav(int qid) {
+        //    if (cu == null) return 0;
+        //    var f=cu.x_fav.FirstOrDefault()
+        //    cu == null || cu.x_fav.Count(f => f.cid == o.question_id) == 0 ? 0 : 1
+        //}
     }
 }
