@@ -224,9 +224,9 @@
     <Content Include="tpl\paper\create.html" />
     <Content Include="tpl\answer.html" />
     <Content Include="tpl\user\down.html" />
-    <Content Include="tpl\user\favsshiti.html" />
+    <Content Include="tpl\user\fav-1.html" />
     <Content Include="tpl\user\info.html" />
-    <Content Include="tpl\user\favsshijuan.html" />
+    <Content Include="tpl\user\fav-2.html" />
     <Content Include="tpl\question.html" />
     <Content Include="tpl\user\papers.html" />
     <Content Include="tpl\user\orders.html" />

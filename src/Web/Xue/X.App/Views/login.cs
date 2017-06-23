@@ -28,7 +28,7 @@ namespace X.App.Views
             if (string.IsNullOrEmpty(ukey)) Context.Response.Redirect(cfg.xx_gateway + "http://" + cfg.domain + "/login-{uk}-" + back + ".html");
 
             var usp = Com.Sdk.GetUser(ukey);
-            if (usp.user_info == null || usp.user_info.id == 0) throw new XExcep("T用户登陆超时");
+            if (usp.user_info == null || usp.user_info.id == 0) Context.Response.Redirect(cfg.xx_gateway + "http://" + cfg.domain + "/login-{uk}-" + back + ".html");
 
             var u = usp.user_info;
             cu = DB.x_user.FirstOrDefault(o => o.tel == u.tel);

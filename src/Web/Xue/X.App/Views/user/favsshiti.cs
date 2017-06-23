@@ -32,7 +32,6 @@ namespace X.App.Views.user {
                     .Select(o => new {
                         id = o.fav_id,
                         qid = o.cid,
-
                         to = GetDictName("question.topic", DB.x_question.FirstOrDefault(qu => qu.question_id == o.cid).topic),
                         ty = GetDictName("question.type", DB.x_question.FirstOrDefault(qu => qu.question_id == o.cid).type),
                         ey = GetDictName("question.easy", DB.x_question.FirstOrDefault(qu => qu.question_id == o.cid).easy),

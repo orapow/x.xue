@@ -17,38 +17,13 @@
     <script type="text/javascript" src="/js/xx/underscore-min.js"></script>
     <script type="text/javascript" src="/js/xx/util.min.js"></script>
 
-    <script src="../../res/js/jq_2.1.4.js" type="text/javascript"></script>
-    <script src="../../res/js/x.js"></script>
-    <script src="../../res/js/x.grid.js"></script>
-    <script src="../../res/js/x.form.js"></script>
-
     <style type="text/css">
-        body {
-            overflow-x: hidden;
-        }
-
-        #div_copy {
-            position: absolute;
-            overflow: hidden;
-            top: 500px;
-        }
-
-        .move {
-            -webkit-transition: left 5s ease;
-            transition: left 5s ease;
-            left: 1000px;
-        }
-
-        .baskrt-list {
-            max-height: 220px;
-            overflow-y: auto;
-            padding-bottom: 20px;
-        }
-
-        .breadcrumb {
-            padding: initial;
-            background-color: transparent;
-        }
+        body { overflow-x: hidden; }
+        #div_copy { position: absolute; overflow: hidden; top: 500px; }
+        .move { -webkit-transition: left 5s ease; transition: left 5s ease; left: 1000px; }
+        .baskrt-list { max-height: 220px; overflow-y: auto; padding-bottom: 20px; }
+        .breadcrumb { padding: initial; background-color: transparent; }
+        .tag-con a { height: 22px; line-height: 22px; vertical-align: middle; }
     </style>
 </head>
 <body>
@@ -180,8 +155,8 @@
                         <span class="checkbox">
                             <i class="icona-check"></i>
                             <input type="checkbox" name="show_answer_explain" value="0" style="display:none" />
-                            显示答案与解析
-                        </span> （提示：点击题干可显示答案与解析）
+                            显示答案
+                        </span>
                     </div>
                     <a class="select-btn" href="javascript:;" onclick="$('.addbtn.J_AddQuestion').click()">选择本页全部试题</a>
                     <div class="total"> 共计：<b>$count</b> 题 </div>
@@ -197,12 +172,11 @@
                                 </div>
                                 <div class="exam-con">
                                     <div class="exam-q">
-                                        是否收藏：$q.fid
                                         $q.content
                                     </div>
                                 </div>
                                 <div class="exam-foot">
-                                    <p class="exam-foot-left"> <a href="javascript:;" onclick="jiexi($q.id)"><i class="icona-jiexi"></i>查看解析</a> #if($!q.fid==0)<a href="javascript:;" onclick="OT2_QCollect($q.id,this)"><i class="icona-shoucang"></i>收藏</a>#else<a href="javascript:;" onclick=" OT2_QCollect($q.id,=OT2_QCollect($q.id, this)"=this)"><i class="icona-quxiaosc"></i>取消收藏</a>#end </p>
+                                    <p class="exam-foot-left"> <a href="javascript:;" onclick="show_jiexi($q.id)"><i class="icona-jiexi"></i>查看解析</a> #if($!q.fid==0)<a href="javascript:;" onclick="OT2_QCollect($q.id, this)"><i class="icona-shoucang"></i>收藏</a>#else<a href="javascript:;" onclick="OT2_QCollect($q.id, this)"><i class="icona-quxiaosc"></i>取消收藏</a>#end </p>
                                     <p class="exam-foot-right"> <span>组卷次数：$q.hits次</span> <a class="addbtn J_AddQuestion" href="javascript:;"><b>+</b>选题</a> </p>
                                 </div>
                             </div>
@@ -262,11 +236,6 @@
             event.stopPropagation();
         });
 
-        $(".item-list a").click(function () {
-            x.cookie.set("xx.sub", $(this).attr("data-id"));
-            document.location.href = "/question-$!{lt}.html";
-        });
-
         $(".search-list").delegate(".J_AddQuestion", "click", function (d) {
             var li = $(this).parents("[data-qid]");
             var cn = li.attr("data-tp");
@@ -319,7 +288,7 @@
                 for (var i in d.items) {
                     var r = d.items[i];
                     var ct = cart[r.tp] || [];
-                    cot.append('<li data-qid="' + r.id + '" data-tp="' + r.tp + '"><div class="search-exam"><div class="exam-head"><p class="exam-head-left"> <span>题型：' + r.tp + '</span><i class="line"></i> <span>题类：' + r.ty + '</span><i class="line"></i> <span>难易度：' + r.ey + '</span> </p><p class="exam-head-right"> <span></span> </p></div><div class="exam-con"><div class="exam-q">' + r.content + '</div></div><div class="exam-foot"><p class="exam-foot-left"> <a target="_blank" href="http://zujuan.21cnjy.com/question/detail/3356238"><i class="icona-jiexi"></i>查看解析</a> <a href="javascript:;" onclick="OT2_QCollect(' + r.id + ',this)">' + (r.fid == 0 ? '<i class="icona-shoucang"></i>收藏</a>' : '<i class="icona-quxiaosc"></i>取消收藏') + '</a></p><p class="exam-foot-right"> <span>组卷次数：' + r.hits + '次</span> <a class="' + (ct.indexOf(r.id + "") < 0 ? "addbtn" : "removebtn") + ' J_AddQuestion" href="javascript:;">' + (ct.indexOf(r.id + "") < 0 ? '<b>+</b> 选题' : "<b>-</b> 移除") + '</a> </p></div></div></li>');
+                    cot.append('<li data-qid="' + r.id + '" data-tp="' + r.tp + '"><div class="search-exam"><div class="exam-head"><p class="exam-head-left"> <span>题型：' + r.tp + '</span><i class="line"></i> <span>题类：' + r.ty + '</span><i class="line"></i> <span>难易度：' + r.ey + '</span> </p><p class="exam-head-right"> <span></span> </p></div><div class="exam-con"><div class="exam-q">' + r.content + '</div></div><div class="exam-foot"><p class="exam-foot-left"> <a target="_blank" href="javascript:;" onclick="show_jiexi(' + r.id + ')"><i class="icona-jiexi"></i>查看解析</a> <a href="javascript:;" onclick="OT2_QCollect(' + r.id + ',this)">' + (r.fid == 0 ? '<i class="icona-shoucang"></i>收藏</a>' : '<i class="icona-quxiaosc"></i>取消收藏') + '</a></p><p class="exam-foot-right"> <span>组卷次数：' + r.hits + '次</span> <a class="' + (ct.indexOf(r.id + "") < 0 ? "addbtn" : "removebtn") + ' J_AddQuestion" href="javascript:;">' + (ct.indexOf(r.id + "") < 0 ? '<b>+</b> 选题' : "<b>-</b> 移除") + '</a> </p></div></div></li>');
                 }
                 createPage(d.count);
             });
@@ -378,26 +347,25 @@
 
         init();
 
+        function show_jiexi(id) {
+            x.openwin("/answer-" + id + ".html", "查看解析", null, { w: 600, h: 400 });
+        }
+
         function OT2_QCollect(id, bt) {
             var i = $(bt).find("i");
             if (i.hasClass("icona-shoucang")) {
-                x.doapi("user.fav.save", { id: id, type: 1, sub: "$!sb" }, function () {
-                   // window.location.reload();
+                x.doapi("user.fav.save", { id: id, type: 1, sub: "$!sb" }, function (d) {
+                    if (!d.issucc) return;
                     i.parent().html('<i class="icona-quxiaosc"></i>取消收藏')
                 });
             } else {
-                i.parent().html('<i class="icona-shoucang"></i>收藏');
-                x.doapi("user.fav.del", { cid: id, tp: 1 }, function () {
-                    //window.location.reload();
+                x.doapi("user.fav.del", { cid: id, tp: 1 }, function (d) {
+                    if (!d.issucc) return;
+                    i.parent().html('<i class="icona-shoucang"></i>收藏');
                 });
-                //alert("delete");
             }
         }
 
-        function jiexi(id) {
-            x.openwin("answer-"+id+".html", "查看解析", function () {
-            });
-        }
     </script>
     <a class="return" href="javascript:;" style="right: 4.5px; display: none;"><i class="icona-top"></i></a>
 </body>

@@ -43,7 +43,8 @@ namespace X.App.Views.paper
                 mt = o.mtime.Value.ToString("yyyy-MM-dd"),
                 dc = o.x_down.Count(),
                 tp = GetDictName("paper.type", o.type),
-                id = o.paper_id
+                id = o.paper_id,
+                fav = cu == null || cu.x_fav.Count(f => f.cid == o.paper_id && f.type == 2) == 0 ? 0 : 1
             }));
             dict.Add("pc", q.Count());
 

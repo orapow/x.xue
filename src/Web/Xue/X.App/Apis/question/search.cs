@@ -2,8 +2,10 @@
 using System.Linq;
 using X.Web.Com;
 
-namespace X.App.Apis.question {
-    public class search : _web {
+namespace X.App.Apis.question
+{
+    public class search : _web
+    {
         public int sub { get; set; }
         public int bk { get; set; }
         public int tp { get; set; }
@@ -16,7 +18,16 @@ namespace X.App.Apis.question {
         public int limit { get; set; }
         public int sort { get; set; }
 
-        protected override XResp Execute() {
+        protected override bool nduser
+        {
+            get
+            {
+                return false;
+            }
+        }
+
+        protected override XResp Execute()
+        {
             var r = new Resp_List();
             r.page = page;
 
@@ -31,7 +42,8 @@ namespace X.App.Apis.question {
 
             if (bk > 0)
                 q = q.Where(o => o.book == bk);
-            if (cp > 0) {
+            if (cp > 0)
+            {
                 var cps = GetDictList("xx.chapter", "00").Where(o => o.upval != null && (o.upval == (cp + "") || o.upval.StartsWith(cp + "-"))).Select(o => o.value);
                 q = q.Where(o => cps.Contains(o.chapter + "") || o.chapter == cp);
             }
@@ -48,7 +60,8 @@ namespace X.App.Apis.question {
             else if (kgc > 0)
                 q = q.Where(o => o.knowledgecount == kgc);
 
-            switch (sort) {
+            switch (sort)
+            {
                 case 11:
                     q = q.OrderBy(o => o.mtime);
                     break;
@@ -63,7 +76,8 @@ namespace X.App.Apis.question {
                     break;
             }
 
-            r.items = q.Skip((page - 1) * limit).Take(limit).ToList().Select(o => new {
+            r.items = q.Skip((page - 1) * limit).Take(limit).ToList().Select(o => new
+            {
                 tp = GetDictName("question.topic", o.topic),
                 ty = GetDictName("question.type", o.type),
                 ey = GetDictName("question.easy", o.easy),
