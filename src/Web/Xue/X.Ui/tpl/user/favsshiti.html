@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="/css/xx/my.css" />
+    <script type="text/javascript" src="/js/xx/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="/css/xx/base.min.css" />
+    <link rel="stylesheet" href="/css/xx/spriter-mix.min.css" />
+    <link rel="stylesheet" href="/css/xx/main.min.css" />
+    <link rel="stylesheet" href="/css/xx/inner-user.min.css" />
+    <link rel="stylesheet" href="/css/xx/ui-dialog.css" />
+    #parse("mgr/com/_head.html")
+    <title>我的收藏</title>
+</head>
+
+<body>
+    #parse("user/_top.html")
+    <div class="min">
+        <div class="min03">
+            <div class="g-bd1 f-cb g-container">
+                #parse("user/_left.html")
+                <div class="g-mn1">
+                    <div class="g-mn1c">
+                        <div class="user-con">
+                            <h1>试题收藏</h1>
+                            <div class="search-type">
+                                <div class="type-items">
+                                    <div class="type-tit">学段：</div>
+                                    <div class="type-conbox">
+                                        <div class="type-con">
+                                            <div class="con-items"> <a href="#" class="type-active">小学</a> <a href="#">初中</a> <a href="#">高中</a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="type-items">
+                                    <div class="type-tit">学科：</div>
+                                    <div class="type-conbox">
+                                        <div class="type-con">
+                                            <div class="con-items"> <a href="#">语文</a> <a href="#" class="type-active">数学</a> <a href="#">英语</a> <a href="#">科学</a> <a href="#">政治思品</a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    $(function () {
+                                        $(".con-items a").click(function () {
+                                            $(this).toggleClass("type-active").siblings("a").removeClass("type-active")
+                                        })
+                                    })
+                                </script>
+                            </div>
+
+                            <div class="search-list">
+                                #if($pc>0)
+                                <ul id="J_QuestionList">
+                                    #foreach($q in $ps)
+                                    <li data-qid="$q.id" data-tp="$q.tp">
+                                        <div class="search-exam">
+                                            <div class="exam-head">
+                                                <p class="exam-head-left"> <span>题型：$q.to</span><i class="line"></i> <span>题类：$q.ty</span><i class="line"></i> <span>难易度：$q.ey</span> </p>
+                                                <p class="exam-head-right"> <span></span> </p>
+                                            </div>
+                                            <div class="exam-con">
+                                                <div class="exam-q">
+                                                    $q.content
+                                                </div>
+                                            </div>
+                                            <div class="exam-foot">
+                                                <p class="exam-foot-left"> <a href="javascript:;" onclick="jiexi($q.id)"><i class="icona-jiexi"></i>查看解析</a>#if($q.id) <a href="javascript:;" onclick="OT2_QCollect($q.id,$q.qid,this)"><i class="icona-quxiaosc"></i>取消收藏</a>#end </p>
+                                                <p class="exam-foot-right"> <span>组卷次数：$q.hits次</span> <a class="addbtn J_AddQuestion" href="javascript:;"><b>+</b>选题</a> </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    #end
+                                </ul>
+                            </div>
+
+                            <!--#if($count>15)
+                            <div class="page">
+                                <div class="pagenum"></div>
+                            </div>
+                            #end-->
+                            #else
+
+                            <div class="null-page" style="width:100%;text-align: center;color:#333;font-size: 14px;margin-top: 80px; ">
+                                <img src="/img/xx/gvd_03.png" /><br /><br />
+                                <span style="font-size: 16px; color: #cdcdcd; font-family:Microsoft YaHei">暂无记录！</span>
+                            </div>
+                            #end
+                            <div class="page"> </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    #parse("user/_foot.html")
+
+
+
+    <!--试题篮-->
+
+    <div class="basket" id="J_Basket">
+        <div class="basket-tit">
+            <p><i class="icona-gouwulan"></i><em>试题篮</em></p>
+            <span><i class="icona-gouwuleft"></i></span>
+        </div>
+        <div class="basket-con">
+            <div class="basket-count01">
+                <div class="basket-head"> 共计：（<span>0</span>）道题 </div>
+                <div class="baskrt-list"></div>
+            </div>
+            <div class="basket-foot"> <a id="to-paper-edit" data-method="post" class="basket-btn" href="javascript:;" onclick="do_edit()" style="">生成试卷</a> <a id="to-paper-admin-cancel" class="basket-btn" href="http://zujuan.21cnjy.com/question" style="display: none">取消</a> </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function OT2_QCollect(id, qid, bt) {
+            var i = $(bt).find("i");
+
+            if (i.hasClass("icona-shoucang")) {
+                x.doapi("user.fav.save", { id: id, type: 1, sub: "$!sb" }, function () {
+                    i.parent().html('<i class="icona-quxiaosc"></i>取消收藏')
+                });
+            } else {
+                i.parent().html('<i class="icona-shoucang"></i>收藏');
+                x.doapi("user.fav.del", { cid: id, tp: 1 }, function () {
+                    // window.location.reload();
+                });
+                alert("delete");
+            }
+        }
+
+        function jiexi(id) {
+            x.openwin("answer-" + id + ".html", "查看解析", function () {
+            });
+        }
+    </script>
+</body>
+</html>

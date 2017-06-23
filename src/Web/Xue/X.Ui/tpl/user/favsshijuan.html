@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="/css/xx/my.css" />
+    <script type="text/javascript" src="/js/xx/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="/css/xx/base.min.css" />
+    <link rel="stylesheet" href="/css/xx/spriter-mix.min.css" />
+    <link rel="stylesheet" href="/css/xx/main.min.css" />
+    <link rel="stylesheet" href="/css/xx/inner-user.min.css" />
+    <link rel="stylesheet" href="/css/xx/ui-dialog.css" />
+    <script src="../../res/js/jq_2.1.4.js" type="text/javascript"></script>
+    <script src="../../res/js/x.js"></script>
+    <script src="../../res/js/x.grid.js"></script>
+    <script src="../../res/js/x.form.js"></script>
+
+    
+    <title>我的收藏</title>
+</head>
+
+<body>
+    #parse("user/_top.html")
+    <div class="min">
+        <div class="min03">
+            <div class="g-bd1 f-cb g-container">
+                #parse("user/_left.html")
+                <div class="g-mn1">
+                    <div class="g-mn1c">
+                        <div class="user-con">
+                            <h1>试卷收藏</h1>
+                            <div class="userzj-list">
+                                #if($pc>0)
+                                <ul class="f-cb">
+                                    #foreach($p in $ps)
+                                    <li>
+                                        <a href="javascript:;" onclick="do_delete('$!p.id')" class="icon-trash J_TrashIt">删除</a>
+                                        <div class="search-list-left">
+                                            <div class="test-pic"> <i class="icona-test"></i> </div>
+                                            <div class="test-txt">
+                                                <p class="test-txt-p1"><a href="#" target="_blank" data-cut="30">$p.title</a></p>
+                                                <p> #if($!p.date)<span><i class="icona-time2"></i>下载时间：$p.date.ctime</span> #end<span><i class="icona-leixing"></i>科目：$p.sub</span><span><i class="icona-leixing"></i>试卷类型：$p.type</span> </p>
+                                            </div>
+                                        </div>
+                                        <div class="search-list-right"> <a href="javascript:;" class="download-btn" onclick="do_down('$!p.id')"><i class="icona-download1"></i>下载</a> </div>
+                                    </li>
+                                    #end
+                                </ul>
+                                #else
+                                <div class="null-page" style="width:100%;text-align: center;color:#333;font-size: 14px;margin-top: 80px; ">
+                                    <img src="/img/xx/gvd_03.png" /><br /><br />
+                                    <span style="font-size: 16px; color: #cdcdcd; font-family:Microsoft YaHei">暂无记录！</span>
+                                </div>
+                                #end
+                            </div>
+
+                            <div class="page"> </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    #parse("user/_foot.html")
+
+    <script type="text/javascript">
+        function do_delete(id) {
+            x.doapi("user.fav.del", { id: id, }, function () {
+                window.location.reload();
+            });
+        }
+    </script>
+</body>
+</html>

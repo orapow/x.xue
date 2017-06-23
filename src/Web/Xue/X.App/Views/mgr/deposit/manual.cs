@@ -6,9 +6,8 @@ using X.Core.Utility;
 using X.Data;
 using X.Web;
 
-namespace X.App.Views.mgr.deposit
-{
-    public class manual : xmg
-    {
+namespace X.App.Views.mgr.deposit {
+    public class manual : xmg {
+
     }
 }

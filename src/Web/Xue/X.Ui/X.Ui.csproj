@@ -53,6 +53,7 @@
     <Content Include="dat\urls.x" />
     <Content Include="App.ashx" />
     <Content Include="dat\codes.x" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="res\css\mgr\x.dialog.css" />
     <Content Include="res\css\x.dialog.css" />
     <Content Include="res\css\x.form.css" />
@@ -221,9 +222,11 @@
     <Content Include="tpl\paper2.html" />
     <Content Include="tpl\paper\edit.html" />
     <Content Include="tpl\paper\create.html" />
+    <Content Include="tpl\answer.html" />
     <Content Include="tpl\user\down.html" />
+    <Content Include="tpl\user\favsshiti.html" />
     <Content Include="tpl\user\info.html" />
-    <Content Include="tpl\user\favs.html" />
+    <Content Include="tpl\user\favsshijuan.html" />
     <Content Include="tpl\question.html" />
     <Content Include="tpl\user\papers.html" />
     <Content Include="tpl\user\orders.html" />
