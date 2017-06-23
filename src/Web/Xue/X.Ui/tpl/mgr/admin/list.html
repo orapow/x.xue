@@ -51,10 +51,7 @@
         cfg.cellclick = function (act, d) {
             switch (act) {
                 case "del":
-                    dodel(d.id);
-                    break;
-                case "edit":
-                    show_edit(d.id);
+                    dodel(d.mgr_id);
                     break;
             }
         };

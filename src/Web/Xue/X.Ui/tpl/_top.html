@@ -39,3 +39,9 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(".item-list a").click(function () {
+        x.cookie.set("xx.sub", $(this).attr("data-id"));
+        document.location.reload();// = "/question-$!{lt}.html";
+    });
+</script>

@@ -22,7 +22,7 @@ namespace X.App.Views.mgr
 
             dict.Add("tqc", DB.x_question.Count(o => o.ctime.Value.Date == DateTime.Now.Date));
             dict.Add("tpc", DB.x_paper.Count(o => (o.user_id == 0 || o.user_id == null) && o.ctime.Value.Date == DateTime.Now.Date));
-            dict.Add("tdc", DB.x_down.Count(o => o.ctime.Value == DateTime.Now.Date));
+            dict.Add("tdc", DB.x_down.Count(o => o.ctime.Value.Date == DateTime.Now.Date));
             dict.Add("tcc", DB.x_order.Where(o => o.status == 2 && o.etime != null && o.ctime.Value.Date == DateTime.Now.Date).Sum(o => o.amount) ?? 0);
             dict.Add("tsc", DB.x_paper.Count(o => o.user_id > 0 && o.ctime.Value.Date == DateTime.Now.Date));
 

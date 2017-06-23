@@ -107,6 +107,7 @@
                     </div>
                 </div>
                 <div class="search-list-right" style="text-align:right;">
+                    <a href="javascript:;" onclick="do_fav(this,$p.id)">#if($p.fav==1)<i class="icona-quxiaosc"></i>取消收藏</a>#else<i class="icona-shoucang"></i>收藏</a>#end
                     <a href="javascript:;" onclick="do_down($p.id)" class="download-btn"><i class="icona-download1"></i>下载</a>
                 </div>
             </li>
@@ -147,6 +148,21 @@
                 if (!d.msg) do_pay(id);
                 else $("#fr_down").attr("src", "/paper/down-" + d.msg + ".html");
             });
+        }
+
+        function do_fav(bt, id) {
+            var i = $(bt).find("i");
+            if (i.hasClass("icona-shoucang")) {
+                x.doapi("user.fav.save", { cid: id, tp: 2 }, function (d) {
+                    if (!d.issucc) return;
+                    i.parent().html('<i class="icona-quxiaosc"></i>取消收藏')
+                });
+            } else {
+                x.doapi("user.fav.del", { cid: id, tp: 2 }, function (d) {
+                    if (!d.issucc) return;
+                    i.parent().html('<i class="icona-shoucang"></i>收藏');
+                });
+            }
         }
 
         function do_pay(id) {

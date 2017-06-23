@@ -8,16 +8,10 @@
     <link rel="stylesheet" href="/css/xx/spriter-mix.min.css" />
     <link rel="stylesheet" href="/css/xx/main.min.css" />
     <link rel="stylesheet" href="/css/xx/inner-user.min.css" />
-    <link rel="stylesheet" href="/css/xx/ui-dialog.css" />
-    <script src="../../res/js/jq_2.1.4.js" type="text/javascript"></script>
-    <script src="../../res/js/x.js"></script>
-    <script src="../../res/js/x.grid.js"></script>
-    <script src="../../res/js/x.form.js"></script>
-
-    
+    <link rel="stylesheet" href="/css/x.dialog.css" />
+    <script src="/js/x.js"></script>
     <title>我的收藏</title>
 </head>
-
 <body>
     #parse("user/_top.html")
     <div class="min">
@@ -33,7 +27,7 @@
                                 <ul class="f-cb">
                                     #foreach($p in $ps)
                                     <li>
-                                        <a href="javascript:;" onclick="do_delete('$!p.id')" class="icon-trash J_TrashIt">删除</a>
+                                        <a href="javascript:;" onclick="do_delete('$!p.cid')" class="icon-trash J_TrashIt">删除</a>
                                         <div class="search-list-left">
                                             <div class="test-pic"> <i class="icona-test"></i> </div>
                                             <div class="test-txt">
@@ -52,14 +46,11 @@
                                 </div>
                                 #end
                             </div>
-
-                            <div class="page"> </div>
-
-
-
-
-
-
+                            #if($pc>15)
+                            <div class="page">
+                                <div class="pagenum"></div>
+                            </div>
+                            #end
                         </div>
                     </div>
                 </div>
@@ -69,11 +60,29 @@
     #parse("user/_foot.html")
 
     <script type="text/javascript">
+        var page = parseInt("$!page") || 1;
+
         function do_delete(id) {
-            x.doapi("user.fav.del", { id: id, }, function () {
+            x.doapi("user.fav.del", { cid: id, tp: 2 }, function () {
                 window.location.reload();
             });
         }
+
+        function createPage(c) {
+            if (c <= 2) return;
+            var html = "";
+            if (page > 3) html += "<a href='fav-1-" + (page - 1) + ".html" + "'>上页</a>";
+            var i = Math.max(page - 2, 1);
+            var max = Math.ceil(c / 2);
+            for (; i <= max && i <= page + 2; i++) {
+                html += "<a class='" + (i == page ? "current" : "") + "' href='fav-1-" + i + ".html" + "'>" + i + "</a>";
+            }
+            if (page < max - 2) html += "<a href='fav-1-" + (page + 1) + ".html" + "'>下页</a>";
+            $(".page").show().find(".pagenum").html(html);
+        }
+
+        createPage(parseInt("$!pc" || "0"));
+
     </script>
 </body>
 </html>
