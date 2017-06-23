@@ -1,0 +1,649 @@
+
+时间：2017-06-23 09:19:29,023 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：142873 
+
+时间：2017-06-23 09:19:39,062 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：152912 
+
+时间：2017-06-23 09:20:13,382 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：187232 
+
+时间：2017-06-23 09:20:35,971 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：209822 
+
+时间：2017-06-23 09:21:25,926 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：259776 
+
+时间：2017-06-23 09:21:28,739 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：262590 
+
+时间：2017-06-23 09:21:31,209 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：265060 
+
+时间：2017-06-23 09:21:33,412 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：267262 
+
+时间：2017-06-23 09:21:35,630 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：269480 
+
+时间：2017-06-23 09:21:51,546 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：285396 
+
+时间：2017-06-23 09:21:54,342 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：288192 
+
+时间：2017-06-23 09:22:02,107 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：295958 
+
+时间：2017-06-23 09:22:07,192 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：301042 
+
+时间：2017-06-23 09:22:09,245 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：303095 
+
+时间：2017-06-23 09:25:20,650 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：494500 
+
+时间：2017-06-23 09:25:26,556 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：500406 
+
+时间：2017-06-23 09:25:27,816 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：501666 
+
+时间：2017-06-23 09:25:29,474 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：503324 
+
+时间：2017-06-23 09:25:30,508 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：504358 
+
+时间：2017-06-23 09:25:48,005 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：521855 
+
+时间：2017-06-23 09:26:05,462 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：539312 
+
+时间：2017-06-23 09:26:07,888 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：541739 
+
+时间：2017-06-23 09:26:13,115 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：546965 
+
+时间：2017-06-23 09:26:41,876 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：575727 
+
+时间：2017-06-23 09:28:10,927 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：664778 
+
+时间：2017-06-23 09:28:31,897 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：685747 
+
+时间：2017-06-23 09:28:33,317 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：687167 
+
+时间：2017-06-23 09:28:35,163 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：689013 
+
+时间：2017-06-23 09:28:36,624 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：690474 
+
+时间：2017-06-23 09:28:37,588 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：691438 
+
+时间：2017-06-23 09:28:38,976 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：692826 
+
+时间：2017-06-23 09:28:39,905 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：693755 
+
+时间：2017-06-23 09:28:41,742 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：695592 
+
+时间：2017-06-23 09:28:44,688 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：698539 
+
+时间：2017-06-23 09:28:45,802 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：699653 
+
+时间：2017-06-23 09:28:46,712 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：700563 
+
+时间：2017-06-23 09:28:47,688 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：701539 
+
+时间：2017-06-23 09:34:52,312 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1066162 
+
+时间：2017-06-23 09:34:55,103 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1068953 
+
+时间：2017-06-23 09:34:56,806 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1070656 
+
+时间：2017-06-23 09:34:58,986 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1072837 
+
+时间：2017-06-23 09:34:59,970 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1073820 
+
+时间：2017-06-23 09:35:00,701 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1074551 
+
+时间：2017-06-23 09:35:01,521 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1075372 
+
+时间：2017-06-23 09:35:24,641 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1098491 
+
+时间：2017-06-23 09:35:25,920 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1099771 
+
+时间：2017-06-23 09:35:26,757 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1100608 
+
+时间：2017-06-23 09:35:27,447 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1101297 
+
+时间：2017-06-23 09:35:30,606 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1104456 
+
+时间：2017-06-23 09:35:50,383 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1124234 
+
+时间：2017-06-23 09:35:53,817 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1127668 
+
+时间：2017-06-23 09:41:15,596 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：355 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Views.question.<InitDict>b__10_5(x_question o) 位置 F:\HT\xue\src\Web\Xue\X.App\Views\question.cs:行号 59
+   在 System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.App.Views.question.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\question.cs:行号 59
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:42:16,877 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：10726 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Views.question.<InitDict>b__10_5(x_question o) 位置 F:\HT\xue\src\Web\Xue\X.App\Views\question.cs:行号 59
+   在 System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.App.Views.question.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\question.cs:行号 59
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:42:38,535 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：32384 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Views.question.<InitDict>b__10_5(x_question o) 位置 F:\HT\xue\src\Web\Xue\X.App\Views\question.cs:行号 59
+   在 System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.App.Views.question.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\question.cs:行号 59
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:47:36,295 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：271763 
+NVelocity.Exception.ParseErrorException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+     ---> NVelocity.Runtime.Parser.ParseException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+    
+   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
+   在 NVelocity.Template.Process()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:48:06,541 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：302009 
+NVelocity.Exception.ParseErrorException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+     ---> NVelocity.Runtime.Parser.ParseException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+    
+   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
+   在 NVelocity.Template.Process()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:48:07,789 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：303257 
+NVelocity.Exception.ParseErrorException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+     ---> NVelocity.Runtime.Parser.ParseException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+    
+   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
+   在 NVelocity.Template.Process()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:48:08,664 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：304132 
+NVelocity.Exception.ParseErrorException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+     ---> NVelocity.Runtime.Parser.ParseException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+    
+   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
+   在 NVelocity.Template.Process()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:51:32,987 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：20704 
+
+时间：2017-06-23 09:51:35,003 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：22721 
+
+时间：2017-06-23 09:52:55,541 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：103259 
+
+时间：2017-06-23 09:53:21,981 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：129699 
+
+时间：2017-06-23 09:53:24,191 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：131909 
+
+时间：2017-06-23 09:53:37,404 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：145122 
+
+时间：2017-06-23 09:54:22,692 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：190410 
+
+时间：2017-06-23 11:01:59,907 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：3575040 
+
+时间：2017-06-23 11:03:07,349 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：3055 
+
+时间：2017-06-23 11:43:16,047 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：2411753 
+
+时间：2017-06-23 11:53:04,925 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：8819 
+
+时间：2017-06-23 11:53:41,073 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：44967 
+
+时间：2017-06-23 12:16:40,833 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：774171 

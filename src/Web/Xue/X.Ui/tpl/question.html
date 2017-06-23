@@ -197,12 +197,13 @@
                                 </div>
                                 <div class="exam-con">
                                     <div class="exam-q">
+                                        是否登录："$!{cu.user_id}"
                                         是否收藏：$q.fid
                                         $q.content
                                     </div>
                                 </div>
                                 <div class="exam-foot">
-                                    <p class="exam-foot-left"> <a href="javascript:;" onclick="jiexi($q.id)"><i class="icona-jiexi"></i>查看解析</a> #if($!q.fid==0)<a href="javascript:;" onclick="OT2_QCollect($q.id,this)"><i class="icona-shoucang"></i>收藏</a>#else<a href="javascript:;" onclick=" OT2_QCollect($q.id,=OT2_QCollect($q.id, this)"=this)"><i class="icona-quxiaosc"></i>取消收藏</a>#end </p>
+                                    <p class="exam-foot-left"> <a href="javascript:;" onclick="jiexi($q.id)"><i class="icona-jiexi"></i>查看解析</a> #if($!q.fid!=0)<a href="javascript:;" onclick="OT2_QCollect($q.id,this)"><i class="icona-shoucang"></i>收藏</a>#else<a href="javascript:;" onclick="OT2_QCollect($q.id,this)"><i class="icona-quxiaosc"></i>取消收藏</a>#end </p>
                                     <p class="exam-foot-right"> <span>组卷次数：$q.hits次</span> <a class="addbtn J_AddQuestion" href="javascript:;"><b>+</b>选题</a> </p>
                                 </div>
                             </div>
@@ -382,20 +383,21 @@
             var i = $(bt).find("i");
             if (i.hasClass("icona-shoucang")) {
                 x.doapi("user.fav.save", { id: id, type: 1, sub: "$!sb" }, function () {
-                   // window.location.reload();
+                    //parent.location.reload();
+                    if ("$!cu.user_id" == "" || "$!cu.user_id" == "undefined") return;
                     i.parent().html('<i class="icona-quxiaosc"></i>取消收藏')
                 });
             } else {
                 i.parent().html('<i class="icona-shoucang"></i>收藏');
                 x.doapi("user.fav.del", { cid: id, tp: 1 }, function () {
                     //window.location.reload();
+                    sparent.location.reload();
                 });
-                //alert("delete");
             }
         }
 
         function jiexi(id) {
-            x.openwin("answer-"+id+".html", "查看解析", function () {
+            x.openwin("answer-" + id + ".html", "查看解析", function () {
             });
         }
     </script>

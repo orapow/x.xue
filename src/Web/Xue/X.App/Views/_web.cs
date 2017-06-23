@@ -12,7 +12,7 @@ namespace X.App.Views
     {
         protected string sub = "";
         protected x_user cu { get; set; }
-
+        
         protected virtual bool nduser { get { return false; } }
 
         protected override void InitView()
