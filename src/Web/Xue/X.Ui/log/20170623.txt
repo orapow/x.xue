@@ -647,3 +647,361 @@ Was expecting one of:
 出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
 时间：774171 
+
+时间：2017-06-23 13:07:17,842 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：6626 
+
+时间：2017-06-23 13:07:20,534 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：9318 
+
+时间：2017-06-23 13:07:22,376 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：11160 
+
+时间：2017-06-23 13:43:08,538 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：33036 
+
+时间：2017-06-23 14:02:18,897 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：451732 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:02:34,330 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：467165 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:04:06,367 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：559201 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:11,316 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：624151 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:12,907 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：625742 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:20,241 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：633076 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:21,780 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：634615 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:22,901 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：635736 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:45,076 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：657911 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:46,454 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：659289 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:06:02,501 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：675336 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:06:03,624 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：676459 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:06:38,210 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：9242 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:21:00,999 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：872030 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:21:08,293 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：879325 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:25:27,113 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：1138145 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:26:05,037 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：1176069 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:35:12,436 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：1723468 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:36:26,682 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：1797713 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:50:16,345 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：270415 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:50:30,662 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：284732 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:50:54,059 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：308129 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:52:52,042 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：426112 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:52:58,900 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：432970 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:53:16,894 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：450964 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:00:02,164 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39009 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:05:44,807 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39518 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:06:00,957 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：55668 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:07:48,164 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：13083 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:13:28,059 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：10278 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:13:34,606 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：16825 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:14:59,623 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：2286 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:15:18,091 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：20754 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
