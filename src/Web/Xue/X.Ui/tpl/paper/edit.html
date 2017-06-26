@@ -200,9 +200,10 @@
                                                             <div class="question-num"><span class="q-sn">$no</span>. <span class="q-scoreval" data-score="$!q.score">（$!q.score分）</span>$q.topic</div>
                                                         </div>
                                                         <div class="question-btngroup">
-                                                            <a target="_blank" href="/question/detail/2775206" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
+                                                            <a target="_blank" href="javascript:;" onclick="show_jiexi($q.id)" class="jx-btn"><i class="icona-jiexi1"></i>答案解析</a>
                                                             <a class="score-btn" href="javascript:;" onclick="setScore(this)"><i class="icona-jiexi1"></i>设定得分</a>
-                                                            <a class="sc-btn" href="javascript:;" onclick="do_Fav($q.id)"><i class="icona-shoucangs"></i>收藏</a>
+                                                            #if($!q.fid==0)<a href="javascript:;" onclick="OT2_QCollect($q.id, this)"><i class="icona-shoucang"></i>收藏</a>#else<a href="javascript:;" onclick="OT2_QCollect($q.id, this)"><i class="icona-quxiaosc"></i>取消收藏</a>#end
+                                                            <!--<a class="sc-btn" href="javascript:;" onclick="OT2_QCollect($q.id,this)"><i class="icona-shoucangs"></i>收藏</a>-->
                                                             <a class="del-btn" href="javascript:;" onclick="do_Del($q.id)"><i class="icona-del3"></i>删除</a>
                                                         </div>
                                                     </div>
@@ -352,6 +353,24 @@
             }, { w: 300, h: 400 });
         }
 
+        function show_jiexi(id) {
+            x.openwin("/answer-" + id + ".html", "查看解析", null, { w: 600, h: 400 });
+        }
+
+        function OT2_QCollect(id, bt) {
+            var i = $(bt).find("i");
+            if (i.hasClass("icona-shoucang")) {
+                x.doapi("user.fav.save", { cid: id, tp: 1, sub: "$!sb" }, function (d) {
+                    if (!d.issucc) return;
+                    i.parent().html('<i class="icona-quxiaosc"></i>取消收藏')
+                });
+            } else {
+                x.doapi("user.fav.del", { cid: id, tp: 1 }, function (d) {
+                    if (!d.issucc) return;
+                    i.parent().html('<i class="icona-shoucang"></i>收藏');
+                });
+            }
+        }
     </script>
     <iframe id="fr_down" style="display:none;"></iframe>
     <a class="return" href="javascript:;" style="right: 4.5px; display: none;"><i class="icona-top"></i></a>

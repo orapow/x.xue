@@ -27,6 +27,13 @@ namespace X.App.Apis.paper
             var ids = Serialize.FromJson<Dictionary<long, int>>(Context.Server.HtmlDecode(qids));
             if (ids == null || ids.Count() == 0) throw new XExcep("T试题参数错误");
             if (ids.Count(o => o.Value == 0) > 0) throw new XExcep("T有试题未设置分数");
+            //试题被组卷成功后 试题组卷次数加1
+            var que = DB.x_question.Where(o => ids.Keys.Contains(o.question_id));
+            foreach (var q in que) {
+                q.hits += 1;
+            }
+            SubmitDBChanges();
+            
             var limit = 0;
             if (cu.etime > DateTime.Now) limit = cfg.vip_ques_count;
             else limit = cfg.unvip_ques_count;
