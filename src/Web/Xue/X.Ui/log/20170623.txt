@@ -1,1074 +1,1007 @@
 
-时间：2017-06-23 09:12:30,891 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：35639 
-System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接) ---> System.ComponentModel.Win32Exception (0x80004005): 找不到网络路径。
-   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
-   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   在 System.Data.SqlClient.SqlConnection.Open()
-   在 System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
-   在 System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
-   在 System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
-   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
-   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
-   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
-   在 X.App.Views.mgr.xmg.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\mgr\xmg.cs:行号 26
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-ClientConnectionId:00000000-0000-0000-0000-000000000000
-Error Number:53,State:0,Class:20
-
-时间：2017-06-23 09:22:03,594 
+时间：2017-06-23 09:19:29,023 
 级别：ERROR 
 出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
-时间：608342 
+时间：142873 
 
-时间：2017-06-23 09:34:33,275 
+时间：2017-06-23 09:19:39,062 
 级别：ERROR 
 出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
-时间：13001 
-
-时间：2017-06-23 09:34:40,003 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
-时间：19729 
-
-时间：2017-06-23 09:34:49,543 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
-时间：29269 
-
-时间：2017-06-23 09:35:04,734 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：44460 
-NVelocity.Exception.ResourceNotFoundException: Unable to find resource 'user/fav-1.html.html'
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 09:38:37,506 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：214 
-System.ArgumentException: 已添加了具有相同键的项。
-   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
-   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
-   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
-   在 X.App.Views.user.fav.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\user\fav.cs:行号 56
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 09:46:48,168 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
-时间：465987 
-
-时间：2017-06-23 09:55:52,204 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
-时间：1010023 
-
-时间：2017-06-23 09:55:58,700 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
-时间：1016519 
-
-时间：2017-06-23 09:56:01,526 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
-时间：1019345 
-
-时间：2017-06-23 09:56:13,119 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
-时间：1030938 
-
-时间：2017-06-23 09:56:30,632 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：1048451 
-NVelocity.Exception.ResourceNotFoundException: Unable to find resource 'user/favsshiti.html'
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 09:56:46,462 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
-时间：1064281 
+时间：152912 
 
-时间：2017-06-23 09:57:14,098 
+时间：2017-06-23 09:20:13,382 
 级别：ERROR 
 出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
-时间：1091917 
-
-时间：2017-06-23 09:58:20,384 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：10033 
-NVelocity.Exception.ResourceNotFoundException: Unable to find resource 'user/favsshiti.html'
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 09:58:20,575 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
-时间：10224 
-
-时间：2017-06-23 09:58:45,727 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T用户登陆超时)","code":"T用户登陆超时"} 
-时间：35377 
-
-时间：2017-06-23 10:03:39,979 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：170589 
-NVelocity.Exception.ResourceNotFoundException: Unable to find resource 'user/favsshiti.html'
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:03:45,547 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：176156 
-NVelocity.Exception.ResourceNotFoundException: Unable to find resource 'user/favsshiti.html'
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:04:47,249 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：237858 
-NVelocity.Exception.ResourceNotFoundException: Unable to find resource 'user/favsshijuan.html'
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:08:57,714 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：20235 
-NVelocity.Exception.ParseErrorException: Encountered "<EOF>" at line 28, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "<EOF>" at line 28, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   在 NVelocity.Template.Process()
-   --- 内部异常堆栈跟踪的结尾 ---
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:09:02,647 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：25168 
-NVelocity.Exception.ParseErrorException: Encountered "<EOF>" at line 28, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "<EOF>" at line 28, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   在 NVelocity.Template.Process()
-   --- 内部异常堆栈跟踪的结尾 ---
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:09:12,438 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：34959 
-NVelocity.Exception.ParseErrorException: Encountered "<EOF>" at line 25, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "<EOF>" at line 25, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   在 NVelocity.Template.Process()
-   --- 内部异常堆栈跟踪的结尾 ---
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:09:22,954 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：45475 
-NVelocity.Exception.ParseErrorException: Encountered "<EOF>" at line 26, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "<EOF>" at line 26, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   在 NVelocity.Template.Process()
-   --- 内部异常堆栈跟踪的结尾 ---
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:09:39,554 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：62075 
-NVelocity.Exception.ParseErrorException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   在 NVelocity.Template.Process()
-   --- 内部异常堆栈跟踪的结尾 ---
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:09:42,250 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：64771 
-NVelocity.Exception.ParseErrorException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   在 NVelocity.Template.Process()
-   --- 内部异常堆栈跟踪的结尾 ---
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:09:45,646 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：68167 
-NVelocity.Exception.ParseErrorException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   在 NVelocity.Template.Process()
-   --- 内部异常堆栈跟踪的结尾 ---
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:09:47,795 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：70316 
-NVelocity.Exception.ParseErrorException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   在 NVelocity.Template.Process()
-   --- 内部异常堆栈跟踪的结尾 ---
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:09:51,028 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：73549 
-NVelocity.Exception.ParseErrorException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   在 NVelocity.Template.Process()
-   --- 内部异常堆栈跟踪的结尾 ---
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:09:55,770 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：78291 
-NVelocity.Exception.ParseErrorException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   在 NVelocity.Template.Process()
-   --- 内部异常堆栈跟踪的结尾 ---
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:09:59,090 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：81611 
-NVelocity.Exception.ParseErrorException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   在 NVelocity.Template.Process()
-   --- 内部异常堆栈跟踪的结尾 ---
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:10:04,211 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：86732 
-NVelocity.Exception.ParseErrorException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-     ---> NVelocity.Runtime.Parser.ParseException: Encountered "<EOF>" at line 24, column 9.
-Was expecting one of:
-    "(" ...
-    <RPAREN> ...
-    <ESCAPE_DIRECTIVE> ...
-    <SET_DIRECTIVE> ...
-    "\\\\" ...
-    "\\" ...
-    <TEXT> ...
-    <SINGLE_LINE_COMMENT> ...
-    "*#" ...
-    "*#" ...
-    <STRING_LITERAL> ...
-    <END> ...
-    "if" ...
-    "stop" ...
-    <NUMBER_LITERAL> ...
-    <WORD> ...
-    <IDENTIFIER> ...
-    <DOT> ...
-    "{" ...
-    "}" ...
-    
-   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
-   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
-   在 NVelocity.Template.Process()
-   --- 内部异常堆栈跟踪的结尾 ---
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 108
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 10:10:50,382 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
-时间：132903 
+时间：187232 
 
-时间：2017-06-23 10:10:53,895 
+时间：2017-06-23 09:20:35,971 
 级别：ERROR 
 出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
-时间：136416 
+时间：209822 
 
-时间：2017-06-23 10:16:32,271 
+时间：2017-06-23 09:21:25,926 
 级别：ERROR 
 出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T试卷不存在)","code":"T试卷不存在"} 
-时间：296826 
-
-时间：2017-06-23 10:16:42,404 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T试卷不存在)","code":"T试卷不存在"} 
-时间：306960 
-
-时间：2017-06-23 10:17:32,999 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T试卷不存在)","code":"T试卷不存在"} 
-时间：357555 
-
-时间：2017-06-23 10:21:47,892 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T试题不存在)","code":"T试题不存在"} 
-时间：321 
-
-时间：2017-06-23 10:30:44,644 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
-时间：537073 
+时间：259776 
 
-时间：2017-06-23 10:31:28,314 
+时间：2017-06-23 09:21:28,739 
 级别：ERROR 
 出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
-时间：580743 
+时间：262590 
 
-时间：2017-06-23 10:33:34,316 
+时间：2017-06-23 09:21:31,209 
 级别：ERROR 
 出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
-时间：706744 
+时间：265060 
 
-时间：2017-06-23 10:56:55,140 
+时间：2017-06-23 09:21:33,412 
 级别：ERROR 
 出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
-时间：108087 
+时间：267262 
 
-时间：2017-06-23 10:56:57,631 
+时间：2017-06-23 09:21:35,630 
 级别：ERROR 
 出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
-时间：110578 
+时间：269480 
 
-时间：2017-06-23 10:56:59,730 
+时间：2017-06-23 09:21:51,546 
 级别：ERROR 
 出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
-时间：112677 
+时间：285396 
 
-时间：2017-06-23 10:57:03,912 
+时间：2017-06-23 09:21:54,342 
 级别：ERROR 
 出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
 错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
-时间：116859 
+时间：288192 
 
-时间：2017-06-23 11:07:33,706 
+时间：2017-06-23 09:22:02,107 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：295958 
+
+时间：2017-06-23 09:22:07,192 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：301042 
+
+时间：2017-06-23 09:22:09,245 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：303095 
+
+时间：2017-06-23 09:25:20,650 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：494500 
+
+时间：2017-06-23 09:25:26,556 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：500406 
+
+时间：2017-06-23 09:25:27,816 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：501666 
+
+时间：2017-06-23 09:25:29,474 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：503324 
+
+时间：2017-06-23 09:25:30,508 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：504358 
+
+时间：2017-06-23 09:25:48,005 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：521855 
+
+时间：2017-06-23 09:26:05,462 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：539312 
+
+时间：2017-06-23 09:26:07,888 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：541739 
+
+时间：2017-06-23 09:26:13,115 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：546965 
+
+时间：2017-06-23 09:26:41,876 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：575727 
+
+时间：2017-06-23 09:28:10,927 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：664778 
+
+时间：2017-06-23 09:28:31,897 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：685747 
+
+时间：2017-06-23 09:28:33,317 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：687167 
+
+时间：2017-06-23 09:28:35,163 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：689013 
+
+时间：2017-06-23 09:28:36,624 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：690474 
+
+时间：2017-06-23 09:28:37,588 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：691438 
+
+时间：2017-06-23 09:28:38,976 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：692826 
+
+时间：2017-06-23 09:28:39,905 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：693755 
+
+时间：2017-06-23 09:28:41,742 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：695592 
+
+时间：2017-06-23 09:28:44,688 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：698539 
+
+时间：2017-06-23 09:28:45,802 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：699653 
+
+时间：2017-06-23 09:28:46,712 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：700563 
+
+时间：2017-06-23 09:28:47,688 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：701539 
+
+时间：2017-06-23 09:34:52,312 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1066162 
+
+时间：2017-06-23 09:34:55,103 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1068953 
+
+时间：2017-06-23 09:34:56,806 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1070656 
+
+时间：2017-06-23 09:34:58,986 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1072837 
+
+时间：2017-06-23 09:34:59,970 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1073820 
+
+时间：2017-06-23 09:35:00,701 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1074551 
+
+时间：2017-06-23 09:35:01,521 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1075372 
+
+时间：2017-06-23 09:35:24,641 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1098491 
+
+时间：2017-06-23 09:35:25,920 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1099771 
+
+时间：2017-06-23 09:35:26,757 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1100608 
+
+时间：2017-06-23 09:35:27,447 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1101297 
+
+时间：2017-06-23 09:35:30,606 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1104456 
+
+时间：2017-06-23 09:35:50,383 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1124234 
+
+时间：2017-06-23 09:35:53,817 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1127668 
+
+时间：2017-06-23 09:41:15,596 
 级别：FATAL 
 出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
 错误：致命错误 
-时间：215699 
-System.ArgumentException: 已添加了具有相同键的项。
-   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
-   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
-   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
-   在 X.App.Views._web.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:行号 42
-   在 X.App.Views.user.fav.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\user\fav.cs:行号 29
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 11:08:19,563 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：213 
-System.ArgumentException: 已添加了具有相同键的项。
-   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
-   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
-   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
-   在 X.App.Views._web.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:行号 42
-   在 X.App.Views.user.fav.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\user\fav.cs:行号 29
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 11:08:55,303 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：608 
-System.ArgumentException: 已添加了具有相同键的项。
-   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
-   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
-   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
-   在 X.App.Views._web.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:行号 42
-   在 X.App.Views.user.fav.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\user\fav.cs:行号 29
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 11:08:59,591 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：4897 
-System.ArgumentException: 已添加了具有相同键的项。
-   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
-   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
-   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
-   在 X.App.Views._web.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:行号 42
-   在 X.App.Views.user.fav.InitDict() 位置 D:\Pro\x.xue\src\Web\Xue\X.App\Views\user\fav.cs:行号 29
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
-
-时间：2017-06-23 11:42:31,765 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
-时间：36698 
-
-时间：2017-06-23 11:51:31,505 
-级别：FATAL 
-出错类：X.Web.XApp property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
-错误：致命错误 
-时间：446745 
+时间：355 
 System.NullReferenceException: 未将对象引用设置到对象的实例。
-   在 X.App.Views.paper.down.InitDict()
-   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:行号 95
-   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\x.xue\src\Web\X.Web\XApp.cs:行号 31
+   在 X.App.Views.question.<InitDict>b__10_5(x_question o) 位置 F:\HT\xue\src\Web\Xue\X.App\Views\question.cs:行号 59
+   在 System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.App.Views.question.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\question.cs:行号 59
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:42:16,877 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：10726 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Views.question.<InitDict>b__10_5(x_question o) 位置 F:\HT\xue\src\Web\Xue\X.App\Views\question.cs:行号 59
+   在 System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.App.Views.question.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\question.cs:行号 59
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:42:38,535 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：32384 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.App.Views.question.<InitDict>b__10_5(x_question o) 位置 F:\HT\xue\src\Web\Xue\X.App\Views\question.cs:行号 59
+   在 System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 X.App.Views.question.InitDict() 位置 F:\HT\xue\src\Web\Xue\X.App\Views\question.cs:行号 59
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 95
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:47:36,295 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：271763 
+NVelocity.Exception.ParseErrorException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+     ---> NVelocity.Runtime.Parser.ParseException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+    
+   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
+   在 NVelocity.Template.Process()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:48:06,541 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：302009 
+NVelocity.Exception.ParseErrorException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+     ---> NVelocity.Runtime.Parser.ParseException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+    
+   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
+   在 NVelocity.Template.Process()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:48:07,789 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：303257 
+NVelocity.Exception.ParseErrorException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+     ---> NVelocity.Runtime.Parser.ParseException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+    
+   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
+   在 NVelocity.Template.Process()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:48:08,664 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：304132 
+NVelocity.Exception.ParseErrorException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+     ---> NVelocity.Runtime.Parser.ParseException: Encountered "null" at line 200, column 50.
+Was expecting one of:
+    "[" ...
+    "(" ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    "!" ...
+    
+   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
+   在 NVelocity.Template.Process()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 09:51:32,987 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：20704 
+
+时间：2017-06-23 09:51:35,003 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：22721 
+
+时间：2017-06-23 09:52:55,541 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：103259 
+
+时间：2017-06-23 09:53:21,981 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：129699 
+
+时间：2017-06-23 09:53:24,191 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：131909 
+
+时间：2017-06-23 09:53:37,404 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：145122 
+
+时间：2017-06-23 09:54:22,692 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：190410 
+
+时间：2017-06-23 11:01:59,907 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：3575040 
+
+时间：2017-06-23 11:03:07,349 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：3055 
+
+时间：2017-06-23 11:43:16,047 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：2411753 
+
+时间：2017-06-23 11:53:04,925 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：8819 
+
+时间：2017-06-23 11:53:41,073 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：44967 
+
+时间：2017-06-23 12:16:40,833 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：774171 
+
+时间：2017-06-23 13:07:17,842 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：6626 
+
+时间：2017-06-23 13:07:20,534 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：9318 
+
+时间：2017-06-23 13:07:22,376 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：11160 
+
+时间：2017-06-23 13:43:08,538 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：33036 
+
+时间：2017-06-23 14:02:18,897 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：451732 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:02:34,330 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：467165 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:04:06,367 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：559201 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:11,316 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：624151 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:12,907 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：625742 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:20,241 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：633076 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:21,780 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：634615 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:22,901 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：635736 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:45,076 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：657911 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:05:46,454 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：659289 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:06:02,501 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：675336 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:06:03,624 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：676459 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:06:38,210 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：9242 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:21:00,999 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：872030 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:21:08,293 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：879325 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:25:27,113 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：1138145 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:26:05,037 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：1176069 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:35:12,436 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：1723468 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:36:26,682 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：1797713 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:50:16,345 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：270415 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:50:30,662 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：284732 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:50:54,059 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：308129 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:52:52,042 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：426112 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:52:58,900 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：432970 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 14:53:16,894 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：450964 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:00:02,164 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39009 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:05:44,807 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39518 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:06:00,957 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：55668 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:07:48,164 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：13083 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:13:28,059 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：10278 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:13:34,606 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：16825 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:14:59,623 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：2286 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-23 15:15:18,091 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：20754 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 X.Web.Views.View.GetResponse() 位置 F:\HT\xue\src\Web\X.Web\Views\View.cs:行号 108
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 F:\HT\xue\src\Web\X.Web\XApp.cs:行号 31

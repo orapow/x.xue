@@ -53,7 +53,6 @@
     <Content Include="dat\urls.x" />
     <Content Include="App.ashx" />
     <Content Include="dat\codes.x" />
-    <Content Include="HtmlPage1.html" />
     <Content Include="res\css\mgr\x.dialog.css" />
     <Content Include="res\css\x.dialog.css" />
     <Content Include="res\css\x.form.css" />

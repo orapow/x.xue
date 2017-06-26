@@ -354,7 +354,7 @@
         function OT2_QCollect(id, bt) {
             var i = $(bt).find("i");
             if (i.hasClass("icona-shoucang")) {
-                x.doapi("user.fav.save", { id: id, type: 1, sub: "$!sb" }, function (d) {
+                x.doapi("user.fav.save", { cid: id, tp: 1, sub: "$!sb" }, function (d) {
                     if (!d.issucc) return;
                     i.parent().html('<i class="icona-quxiaosc"></i>取消收藏')
                 });

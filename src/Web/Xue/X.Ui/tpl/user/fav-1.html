@@ -62,7 +62,7 @@
                                                 </div>
                                             </div>
                                             <div class="exam-foot">
-                                                <p class="exam-foot-left"> <a href="javascript:;" onclick="show_jiexi($q.id)"><i class="icona-jiexi"></i>查看解析</a>#if($q.id) <a href="javascript:;" onclick="OT2_QCollect($q.id, $q.qid, this)"><i class="icona-quxiaosc"></i>取消收藏</a>#end </p>
+                                                <p class="exam-foot-left"> <a href="javascript:;" onclick="show_jiexi($q.qid)"><i class="icona-jiexi"></i>查看解析</a>#if($q.id) <a href="javascript:;" onclick="OT2_QCollect($q.id, $q.qid, this)"><i class="icona-quxiaosc"></i>取消收藏</a>#end </p>
                                                 <p class="exam-foot-right"> <span>组卷次数：$q.hits次</span> <a class="addbtn J_AddQuestion" href="javascript:;"><b>+</b>选题</a> </p>
                                             </div>
                                         </div>
@@ -114,12 +114,12 @@
             var i = $(bt).find("i");
 
             if (i.hasClass("icona-shoucang")) {
-                x.doapi("user.fav.save", { id: id, type: 1, sub: "$!sb" }, function () {
+                x.doapi("user.fav.save", { cid: qid, tp: 1, sub: "$!sb" }, function () {
                     i.parent().html('<i class="icona-quxiaosc"></i>取消收藏')
                 }, false);
             } else {
                 i.parent().html('<i class="icona-shoucang"></i>收藏');
-                x.doapi("user.fav.del", { cid: id, tp: 1 }, function () {
+                x.doapi("user.fav.del", { cid: qid, tp: 1 }, function () {
                     $(bt).parents("li[data-qid]").remove();
                 }, false);
             }
