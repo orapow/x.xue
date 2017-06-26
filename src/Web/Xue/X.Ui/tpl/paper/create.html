@@ -65,7 +65,7 @@
     #set( $sub = $T.getLeft($l.value))
     <li class="#if($sub.Count==0)t2end#end" data-val="$l.value" data-name="#if($lt==1)cp#elseif($sub.Count()==0)kg#end">
         <div class="t2hd">
-            <span> </span><a href="javascript:;" data-id="$l.value"><b class="checkbox"></b><em>$l.name</em></a>
+            <span> </span><a href="javascript:;" data-id="$l.value"><b class="checkbox"></b><em> $l.name</em></a>
         </div>
         <ul class="t2bd">
             #getLeft($sub)
@@ -108,61 +108,6 @@
                     <div class="section-itemsbox">
                         <p class="smart-empty-tip">您未选择课程章节！</p>
                     </div>
-                    <!--<h3>试卷设置</h3>
-                    <div class="smart-paper-setting">
-                        <div id="J_Difficulty" class="q-set f-usn">
-                            <em>试卷难度：</em>
-                            <span class="radiobox checked">
-                                <i class="icona-radio"></i>
-                                <input type="radio" name="difficult_index" value="" style="display:none" checked="" />不限
-                            </span>
-                            <span class="radiobox ">
-                                <i class="icona-radio"></i>
-                                <input type="radio" name="difficult_index" value="1" style="display:none" />容易
-                            </span>
-                            <span class="radiobox ">
-                                <i class="icona-radio"></i>
-                                <input type="radio" name="difficult_index" value="3" style="display:none" />普通
-                            </span>
-                            <span class="radiobox ">
-                                <i class="icona-radio"></i>
-                                <input type="radio" name="difficult_index" value="5" style="display:none" />困难
-                            </span>
-                        </div>
-                        <div id="J_SelectType" class="q-set f-usn q-select-type">
-                            <em>出卷方式：</em>
-                            <span class="radiobox checked">
-                                <i class="icona-radio"></i>
-                                <input type="radio" name="joinType" value="unjoin" style="display:none" checked="" />关联出题
-                            </span>
-                            <b class="icona-help1 J_IconTip">提示</b><div class="t-tip" style="left: 188.15625px; top: 240px; position: absolute; display: none;"><i class="icona-dia-tri"></i>匹配出来的试题包含的知识点（章节），最少有一个在已选的知识点（章节）中，这个方式适用于期末考试、学业考试、升学考试等试卷类型。出题的综合性较强。</div>
-                            <span class="radiobox">
-                                <i class="icona-radio"></i>
-                                <input type="radio" name="joinType" value="join" style="display:none" />精准出题
-                            </span>
-                            <b class="icona-help1 J_IconTip">提示</b><div class="t-tip" style="left: 304.3125px; top: 240px; position: absolute; display: none;"><i class="icona-dia-tri"></i>匹配出来的试题包含的知识点（章节）。都在已选的知识点（章节）中，这个方式保证了组卷的精准性，避免超纲试题的出现，适用于同步类型的试卷。</div>
-                        </div>
-                        <div id="J_Nj" class="q-set f-usn">
-                            <em>适用年级：</em>
-                            <span class="checkbox checked">
-                                <i class="icona-check"></i>
-                                <input type="checkbox" name="grade_id[]" checked="" value="10" style="display:none" />高一
-                            </span>
-                            <span class="checkbox checked">
-                                <i class="icona-check"></i>
-                                <input type="checkbox" name="grade_id[]" checked="" value="11" style="display:none" />高二
-                            </span>
-                            <span class="checkbox checked">
-                                <i class="icona-check"></i>
-                                <input type="checkbox" name="grade_id[]" checked="" value="12" style="display:none" />高三
-                            </span>
-                            <span class="checkbox checked">
-                                <i class="icona-check"></i>
-                                <input type="checkbox" name="grade_id[]" checked="" value="13" style="display:none" />选修
-                            </span>
-                            <em id="J_NjError">*适用年级至少选择一个！</em>
-                        </div>
-                    </div>-->
                     <h3>题型/题量设置</h3>
                     <div class="section-table">
                         <div class="qtype-zone f-cb" id="J_TypeItems">
@@ -226,10 +171,8 @@
                             $(this).prev().find("a").addClass("checked");
                     });
                 }
-
                 show_select();
                 load_count();
-
             });
         });
 
