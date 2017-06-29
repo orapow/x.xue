@@ -66,6 +66,7 @@
     <Content Include="res\css\xx\smarte.min.css" />
     <Content Include="res\css\xx\paperediting.min.css" />
     <Content Include="res\css\xx\spriter-mix.min.css" />
+    <Content Include="res\css\xx\preview.css" />
     <Content Include="res\css\xx\ui-dialog.css" />
     <Content Include="res\img\files\avi.png" />
     <Content Include="res\img\files\bmp.png" />
@@ -222,6 +223,7 @@
     <Content Include="tpl\paper\edit.html" />
     <Content Include="tpl\paper\create.html" />
     <Content Include="tpl\answer.html" />
+    <Content Include="tpl\paper\view.html" />
     <Content Include="tpl\user\down.html" />
     <Content Include="tpl\user\fav-1.html" />
     <Content Include="tpl\user\info.html" />

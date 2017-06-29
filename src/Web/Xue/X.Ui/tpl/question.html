@@ -18,12 +18,38 @@
     <script type="text/javascript" src="/js/xx/util.min.js"></script>
 
     <style type="text/css">
-        body { overflow-x: hidden; }
-        #div_copy { position: absolute; overflow: hidden; top: 500px; }
-        .move { -webkit-transition: left 5s ease; transition: left 5s ease; left: 1000px; }
-        .baskrt-list { max-height: 220px; overflow-y: auto; padding-bottom: 20px; }
-        .breadcrumb { padding: initial; background-color: transparent; }
-        .tag-con a { height: 22px; line-height: 22px; vertical-align: middle; }
+        body {
+            overflow-x: hidden;
+        }
+
+        #div_copy {
+            position: absolute;
+            overflow: hidden;
+            top: 500px;
+        }
+
+        .move {
+            -webkit-transition: left 5s ease;
+            transition: left 5s ease;
+            left: 1000px;
+        }
+
+        .baskrt-list {
+            max-height: 220px;
+            overflow-y: auto;
+            padding-bottom: 20px;
+        }
+
+        .breadcrumb {
+            padding: initial;
+            background-color: transparent;
+        }
+
+        .tag-con a {
+            height: 22px;
+            line-height: 22px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
@@ -149,15 +175,16 @@
                 <div class="sort">
                     <div class="sort-left">
                         <input type="hidden" name="sortField" value="time" />
-                        排序： <a href="javascript:;" id="sort-time" class="time sort-active">时间<i class="icona-sort3"></i></a> <a href="javascript:;" id="sort-count" class="count">组卷次数<i class="icona-down"></i></a>
+                        排序： <a href="javascript:;" id="sort-time" class="time sort-active">时间<i class="icona-sort3"></i></a>
+                        <a href="javascript:;" id="sort-count" class="count">组卷次数<i class="icona-down"></i></a>
                     </div>
-                    <div class="switch-detail f-fl">
+                    <!--<div class="switch-detail f-fl">
                         <span class="checkbox">
                             <i class="icona-check"></i>
                             <input type="checkbox" name="show_answer_explain" value="0" style="display:none" />
                             显示答案
                         </span>
-                    </div>
+                    </div>-->
                     <a class="select-btn" href="javascript:;" onclick="$('.addbtn.J_AddQuestion').click()">选择本页全部试题</a>
                     <div class="total"> 共计：<b>$count</b> 题 </div>
                 </div>
@@ -274,8 +301,35 @@
             kgc: 0
         }
 
-        function loadsearch(d) {
+
+        $("#sort-time").click(function () {
+            var ob = $(this);
+            if (!ob.hasClass('time sort-active')) {
+                var s = ob.next().removeClass('sort-active');
+                ob.addClass('time sort-active');
+            }
+            var d = { page: 1 };
+            var s = 12;
+            loadsearch(d, s);
+        });
+
+        $("#sort-count").click(function () {
+            var ob = $(this);
+            if (!ob.hasClass('count sort-active')) {
+                var s = ob.prev().removeClass('sort-active');
+                ob.addClass('count sort-active');
+            }
+            var d = { page: 1 };
+            var s = 22;
+            loadsearch(d, s);
+        });
+
+        function loadsearch(d, s) {
             data = jQuery.extend(data, d);
+            if (s != undefined)
+                data.sort = s;
+            else
+                data.sort = d.sort;
             if (!data.page) data.page = 1;
             x.doapi("question.search", data, function (d) {
                 if (!d.issucc) return;
@@ -296,14 +350,14 @@
 
         function createPage(c) {
             var html = "";
-            if (data.page > 2) html += "<a onclick='loadsearch({page:" + (data.page - 1) + "})'>上页</a>";
+            if (data.page > 2) html += "<a onclick='loadsearch({page:" + (data.page - 1) + ",sort:" + (data.sort) + "})'>上页</a>";
             var i = Math.max(data.page - 2, 1);
             var max = Math.ceil(c / data.limit);;
             for (; i <= max && i <= data.page + 2; i++) {
-                html += "<a class='" + (i == data.page ? "current" : "") + "' onclick='loadsearch({page:" + i + "})'>" + i + "</a>";
+                html += "<a class='" + (i == data.page ? "current" : "") + "' onclick='loadsearch({page:" + i + ",sort:" + (data.sort) + "})'>" + i + "</a>";
             }
-            if (data.page < max - 2) html += "<a data-page='+' onclick='loadsearch({page:" + (data.page + 1) + "})'>下页</a>";
-            html += "<input type='text' value='" + data.page + "' style='border: 1px solid #dcdcdc;width: 40px;text-align: center;color: #666;line-height: 32px;padding: 0;border-radius: 0;margin-bottom: 0;height: 32px;display: inline;vertical-align: top;'/><a onclick='loadsearch({page:$(this).prev().val()})'>跳转</a>";
+            if (data.page < max - 2) html += "<a data-page='+' onclick='loadsearch({page:" + (data.page + 1) + ",sort:" + (data.sort) + "})'>下页</a>";
+            html += "<input type='text' value='" + data.page + "' style='border: 1px solid #dcdcdc;width: 40px;text-align: center;color: #666;line-height: 32px;padding: 0;border-radius: 0;margin-bottom: 0;height: 32px;display: inline;vertical-align: top;'/><a onclick='loadsearch({page:$(this).prev().val(),sort:data.sort})'>跳转</a>";
             $(".page").show().find(".pagenum").html(html);
         }
 

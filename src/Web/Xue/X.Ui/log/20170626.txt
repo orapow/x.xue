@@ -1,11 +1,133 @@
 
-Ê±¼ä£º2017-06-26 17:11:36,634 
+Ê±¼ä£º2017-06-26 13:55:49,097 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º113733 
+
+Ê±¼ä£º2017-06-26 13:55:51,546 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º116182 
+
+Ê±¼ä£º2017-06-26 13:56:23,447 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º148084 
+
+Ê±¼ä£º2017-06-26 13:57:04,502 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º189138 
+
+Ê±¼ä£º2017-06-26 13:57:05,982 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º190618 
+
+Ê±¼ä£º2017-06-26 14:05:57,691 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º722328 
+
+Ê±¼ä£º2017-06-26 14:09:54,107 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º958743 
+
+Ê±¼ä£º2017-06-26 14:14:13,122 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º1217758 
+
+Ê±¼ä£º2017-06-26 14:14:17,318 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º1221954 
+
+Ê±¼ä£º2017-06-26 14:15:44,855 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º1309491 
+
+Ê±¼ä£º2017-06-26 14:20:03,427 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º1568063 
+
+Ê±¼ä£º2017-06-26 14:20:13,531 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º1578168 
+
+Ê±¼ä£º2017-06-26 14:20:21,307 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º1585943 
+
+Ê±¼ä£º2017-06-26 14:25:21,534 
 ¼¶±ğ£ºFATAL 
 ³ö´íÀà£ºX.Web.XApp property: [(null)] 
-³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
 ´íÎó£ºÖÂÃü´íÎó 
-Ê±¼ä£º104938 
-System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓëÍøÂçÏà¹ØµÄ»òÌØ¶¨ÓÚÊµÀıµÄ´íÎó¡£Î´ÕÒµ½»òÎŞ·¨·ÃÎÊ·şÎñÆ÷¡£ÇëÑéÖ¤ÊµÀıÃû³ÆÊÇ·ñÕıÈ·²¢ÇÒ SQL Server ÒÑÅäÖÃÎªÔÊĞíÔ¶³ÌÁ¬½Ó¡£ (provider: Named Pipes Provider, error: 40 - ÎŞ·¨´ò¿ªµ½ SQL Server µÄÁ¬½Ó) ---> System.ComponentModel.Win32Exception (0x80004005): ÓÃ»§Ãû»òÃÜÂë²»ÕıÈ·¡£
+Ê±¼ä£º31731 
+System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓëÍøÂçÏà¹ØµÄ»òÌØ¶¨ÓÚÊµÀıµÄ´íÎó¡£Î´ÕÒµ½»òÎŞ·¨·ÃÎÊ·şÎñÆ÷¡£ÇëÑéÖ¤ÊµÀıÃû³ÆÊÇ·ñÕıÈ·²¢ÇÒ SQL Server ÒÑÅäÖÃÎªÔÊĞíÔ¶³ÌÁ¬½Ó¡£ (provider: Named Pipes Provider, error: 40 - ÎŞ·¨´ò¿ªµ½ SQL Server µÄÁ¬½Ó) ---> System.ComponentModel.Win32Exception (0x80004005): ÕÒ²»µ½ÍøÂçÂ·¾¶¡£
+   ÔÚ System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ÔÚ System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ÔÚ System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   ÔÚ System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ÔÚ System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ÔÚ System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   ÔÚ System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   ÔÚ System.Data.SqlClient.SqlConnection.Open()
+   ÔÚ System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.Data.x_dict.GetDictList(String code, String upval, DataClassesDataContext db) Î»ÖÃ F:\HT\xue\src\Xc\Data\DataClasses.cs:ĞĞºÅ 71
+   ÔÚ X.Web.XFace.GetDictList(String code, String upval) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XFace.cs:ĞĞºÅ 175
+   ÔÚ X.Web.XFace.GetDict(String code, String val) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XFace.cs:ĞĞºÅ 180
+   ÔÚ X.App.Views._web.InitView() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\_web.cs:ĞĞºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 94
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+
+Ê±¼ä£º2017-06-26 14:25:21,534 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º31731 
+System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓëÍøÂçÏà¹ØµÄ»òÌØ¶¨ÓÚÊµÀıµÄ´íÎó¡£Î´ÕÒµ½»òÎŞ·¨·ÃÎÊ·şÎñÆ÷¡£ÇëÑéÖ¤ÊµÀıÃû³ÆÊÇ·ñÕıÈ·²¢ÇÒ SQL Server ÒÑÅäÖÃÎªÔÊĞíÔ¶³ÌÁ¬½Ó¡£ (provider: Named Pipes Provider, error: 40 - ÎŞ·¨´ò¿ªµ½ SQL Server µÄÁ¬½Ó) ---> System.ComponentModel.Win32Exception (0x80004005): ÕÒ²»µ½ÍøÂçÂ·¾¶¡£
    ÔÚ System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
    ÔÚ System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
    ÔÚ System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
@@ -26,27 +148,22 @@ System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓ
    ÔÚ System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
    ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
    ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   ÔÚ X.Data.x_dict.GetDictList(String code, String upval, DataClassesDataContext db) Î»ÖÃ D:\Pro\x.xue\src\Xc\Data\DataClasses.cs:ĞĞºÅ 71
-   ÔÚ X.Web.XFace.GetDictList(String code, String upval) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XFace.cs:ĞĞºÅ 175
-   ÔÚ X.App.Views._web.getSubject(Int32 age) Î»ÖÃ D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:ĞĞºÅ 48
-   ÔÚ X.App.Views._web.InitView() Î»ÖÃ D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:ĞĞºÅ 25
-   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 94
-   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+   ÔÚ X.Data.x_dict.GetDictList(String code, String upval, DataClassesDataContext db) Î»ÖÃ F:\HT\xue\src\Xc\Data\DataClasses.cs:ĞĞºÅ 71
+   ÔÚ X.Web.XFace.GetDictList(String code, String upval) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XFace.cs:ĞĞºÅ 175
+   ÔÚ X.Web.XFace.GetDict(String code, String val) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XFace.cs:ĞĞºÅ 180
+   ÔÚ X.App.Views._web.InitView() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\_web.cs:ĞĞºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 94
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
 ClientConnectionId:00000000-0000-0000-0000-000000000000
-Error Number:1326,State:0,Class:20
+Error Number:53,State:0,Class:20
 
-Ê±¼ä£º2017-06-26 17:12:20,567 
+Ê±¼ä£º2017-06-26 14:25:21,537 
 ¼¶±ğ£ºFATAL 
 ³ö´íÀà£ºX.Web.XApp property: [(null)] 
-³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
 ´íÎó£ºÖÂÃü´íÎó 
-Ê±¼ä£º148871 
-System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓëÍøÂçÏà¹ØµÄ»òÌØ¶¨ÓÚÊµÀıµÄ´íÎó¡£Î´ÕÒµ½»òÎŞ·¨·ÃÎÊ·şÎñÆ÷¡£ÇëÑéÖ¤ÊµÀıÃû³ÆÊÇ·ñÕıÈ·²¢ÇÒ SQL Server ÒÑÅäÖÃÎªÔÊĞíÔ¶³ÌÁ¬½Ó¡£ (provider: Named Pipes Provider, error: 40 - ÎŞ·¨´ò¿ªµ½ SQL Server µÄÁ¬½Ó) ---> System.ComponentModel.Win32Exception (0x80004005): ÓÃ»§Ãû»òÃÜÂë²»ÕıÈ·¡£
-   ÔÚ System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
-   ÔÚ System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   ÔÚ System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   ÔÚ System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   ÔÚ System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+Ê±¼ä£º31734 
+System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓëÍøÂçÏà¹ØµÄ»òÌØ¶¨ÓÚÊµÀıµÄ´íÎó¡£Î´ÕÒµ½»òÎŞ·¨·ÃÎÊ·şÎñÆ÷¡£ÇëÑéÖ¤ÊµÀıÃû³ÆÊÇ·ñÕıÈ·²¢ÇÒ SQL Server ÒÑÅäÖÃÎªÔÊĞíÔ¶³ÌÁ¬½Ó¡£ (provider: Named Pipes Provider, error: 40 - ÎŞ·¨´ò¿ªµ½ SQL Server µÄÁ¬½Ó) ---> System.ComponentModel.Win32Exception (0x80004005): ÕÒ²»µ½ÍøÂçÂ·¾¶¡£
    ÔÚ System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
    ÔÚ System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
    ÔÚ System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
@@ -62,42 +179,410 @@ System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓ
    ÔÚ System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
    ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
    ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   ÔÚ X.Data.x_dict.GetDictList(String code, String upval, DataClassesDataContext db) Î»ÖÃ D:\Pro\x.xue\src\Xc\Data\DataClasses.cs:ĞĞºÅ 71
-   ÔÚ X.Web.XFace.GetDictList(String code, String upval) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XFace.cs:ĞĞºÅ 175
-   ÔÚ X.App.Views._web.getSubject(Int32 age) Î»ÖÃ D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:ĞĞºÅ 48
-   ÔÚ X.App.Views._web.InitView() Î»ÖÃ D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:ĞĞºÅ 25
-   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 94
-   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+   ÔÚ X.Data.x_dict.GetDictList(String code, String upval, DataClassesDataContext db) Î»ÖÃ F:\HT\xue\src\Xc\Data\DataClasses.cs:ĞĞºÅ 71
+   ÔÚ X.Web.XFace.GetDictList(String code, String upval) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XFace.cs:ĞĞºÅ 175
+   ÔÚ X.Web.XFace.GetDict(String code, String val) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XFace.cs:ĞĞºÅ 180
+   ÔÚ X.App.Views._web.InitView() Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\_web.cs:ĞĞºÅ 24
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 94
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
 ClientConnectionId:00000000-0000-0000-0000-000000000000
-Error Number:1326,State:0,Class:20
+Error Number:53,State:0,Class:20
 
-Ê±¼ä£º2017-06-26 17:12:20,567 
+Ê±¼ä£º2017-06-26 15:02:18,988 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º2249185 
+
+Ê±¼ä£º2017-06-26 15:02:23,050 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º2253247 
+
+Ê±¼ä£º2017-06-26 15:02:33,054 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º2263251 
+
+Ê±¼ä£º2017-06-26 15:03:13,107 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º2303304 
+
+Ê±¼ä£º2017-06-26 15:13:38,771 
 ¼¶±ğ£ºFATAL 
 ³ö´íÀà£ºX.Web.XApp property: [(null)] 
-³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(D:\Pro\x.xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
 ´íÎó£ºÖÂÃü´íÎó 
-Ê±¼ä£º148871 
-System.Data.SqlClient.SqlException (0x80131904): ÔÚÓë SQL Server ½¨Á¢Á¬½ÓÊ±³öÏÖÓëÍøÂçÏà¹ØµÄ»òÌØ¶¨ÓÚÊµÀıµÄ´íÎó¡£Î´ÕÒµ½»òÎŞ·¨·ÃÎÊ·şÎñÆ÷¡£ÇëÑéÖ¤ÊµÀıÃû³ÆÊÇ·ñÕıÈ·²¢ÇÒ SQL Server ÒÑÅäÖÃÎªÔÊĞíÔ¶³ÌÁ¬½Ó¡£ (provider: Named Pipes Provider, error: 40 - ÎŞ·¨´ò¿ªµ½ SQL Server µÄÁ¬½Ó) ---> System.ComponentModel.Win32Exception (0x80004005): ÓÃ»§Ãû»òÃÜÂë²»ÕıÈ·¡£
-   ÔÚ System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   ÔÚ System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   ÔÚ System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   ÔÚ System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   ÔÚ System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   ÔÚ System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   ÔÚ System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   ÔÚ System.Data.SqlClient.SqlConnection.Open()
-   ÔÚ System.Data.Linq.SqlClient.SqlConnectionManager.UseConnection(IConnectionUser user)
-   ÔÚ System.Data.Linq.SqlClient.SqlProvider.get_IsSqlCe()
-   ÔÚ System.Data.Linq.SqlClient.SqlProvider.InitializeProviderMode()
+Ê±¼ä£º52217 
+NVelocity.Exception.MethodInvocationException: Invocation of method 'GetQues' in  X.App.Views.paper.edit threw exception System.NotSupportedException : ²»ÄÜÔÚ²éÑ¯ÔËËã·û(Contains ÔËËã·û³ıÍâ)µÄ LINQ to SQL ÊµÏÖÖĞÊ¹ÓÃ±¾µØĞòÁĞ¡£ ---> System.NotSupportedException: ²»ÄÜÔÚ²éÑ¯ÔËËã·û(Contains ÔËËã·û³ıÍâ)µÄ LINQ to SQL ÊµÏÖÖĞÊ¹ÓÃ±¾µØĞòÁĞ¡£
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.CoerceToSequence(SqlNode node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitAggregate(Expression sequence, LambdaExpression lambda, SqlNodeType aggType, Type returnType)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSequenceOperatorCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitBinary(BinaryExpression b)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitBinary(BinaryExpression b)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitConditional(ConditionalExpression cond)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitNew(NewExpression qn)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSelect(Expression sequence, LambdaExpression selector)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSequenceOperatorCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.ConvertOuter(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
    ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
    ÔÚ System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
    ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
    ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   ÔÚ X.Data.x_dict.GetDictList(String code, String upval, DataClassesDataContext db) Î»ÖÃ D:\Pro\x.xue\src\Xc\Data\DataClasses.cs:ĞĞºÅ 71
-   ÔÚ X.Web.XFace.GetDictList(String code, String upval) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XFace.cs:ĞĞºÅ 175
-   ÔÚ X.App.Views._web.getSubject(Int32 age) Î»ÖÃ D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:ĞĞºÅ 48
-   ÔÚ X.App.Views._web.InitView() Î»ÖÃ D:\Pro\x.xue\src\Web\Xue\X.App\Views\_web.cs:ĞĞºÅ 25
-   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 94
-   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ D:\Pro\x.xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
-ClientConnectionId:00000000-0000-0000-0000-000000000000
-Error Number:1326,State:0,Class:20
+   ÔÚ X.App.Views.paper.edit.GetQues(String k) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\paper\edit.cs:ĞĞºÅ 38
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 108
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 15:15:03,300 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º15052 
+NVelocity.Exception.MethodInvocationException: Invocation of method 'GetQues' in  X.App.Views.paper.edit threw exception System.NotSupportedException : ²»ÄÜÔÚ²éÑ¯ÔËËã·û(Contains ÔËËã·û³ıÍâ)µÄ LINQ to SQL ÊµÏÖÖĞÊ¹ÓÃ±¾µØĞòÁĞ¡£ ---> System.NotSupportedException: ²»ÄÜÔÚ²éÑ¯ÔËËã·û(Contains ÔËËã·û³ıÍâ)µÄ LINQ to SQL ÊµÏÖÖĞÊ¹ÓÃ±¾µØĞòÁĞ¡£
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.CoerceToSequence(SqlNode node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitAggregate(Expression sequence, LambdaExpression lambda, SqlNodeType aggType, Type returnType)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSequenceOperatorCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitBinary(BinaryExpression b)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitBinary(BinaryExpression b)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitConditional(ConditionalExpression cond)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitNew(NewExpression qn)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSelect(Expression sequence, LambdaExpression selector)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSequenceOperatorCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.ConvertOuter(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.App.Views.paper.edit.GetQues(String k) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\paper\edit.cs:ĞĞºÅ 38
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 108
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 15:26:43,573 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º2866 
+NVelocity.Exception.MethodInvocationException: Invocation of method 'GetQues' in  X.App.Views.paper.edit threw exception System.NotSupportedException : ²»ÄÜÔÚ²éÑ¯ÔËËã·û(Contains ÔËËã·û³ıÍâ)µÄ LINQ to SQL ÊµÏÖÖĞÊ¹ÓÃ±¾µØĞòÁĞ¡£ ---> System.NotSupportedException: ²»ÄÜÔÚ²éÑ¯ÔËËã·û(Contains ÔËËã·û³ıÍâ)µÄ LINQ to SQL ÊµÏÖÖĞÊ¹ÓÃ±¾µØĞòÁĞ¡£
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.CoerceToSequence(SqlNode node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitAggregate(Expression sequence, LambdaExpression lambda, SqlNodeType aggType, Type returnType)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSequenceOperatorCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitBinary(BinaryExpression b)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitBinary(BinaryExpression b)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitConditional(ConditionalExpression cond)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitNew(NewExpression qn)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSelect(Expression sequence, LambdaExpression selector)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSequenceOperatorCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.ConvertOuter(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.App.Views.paper.edit.GetQues(String k) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\paper\edit.cs:ĞĞºÅ 37
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 108
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 15:26:48,743 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º8035 
+NVelocity.Exception.MethodInvocationException: Invocation of method 'GetQues' in  X.App.Views.paper.edit threw exception System.NotSupportedException : ²»ÄÜÔÚ²éÑ¯ÔËËã·û(Contains ÔËËã·û³ıÍâ)µÄ LINQ to SQL ÊµÏÖÖĞÊ¹ÓÃ±¾µØĞòÁĞ¡£ ---> System.NotSupportedException: ²»ÄÜÔÚ²éÑ¯ÔËËã·û(Contains ÔËËã·û³ıÍâ)µÄ LINQ to SQL ÊµÏÖÖĞÊ¹ÓÃ±¾µØĞòÁĞ¡£
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.CoerceToSequence(SqlNode node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitAggregate(Expression sequence, LambdaExpression lambda, SqlNodeType aggType, Type returnType)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSequenceOperatorCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitBinary(BinaryExpression b)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitBinary(BinaryExpression b)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitConditional(ConditionalExpression cond)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitNew(NewExpression qn)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSelect(Expression sequence, LambdaExpression selector)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSequenceOperatorCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.ConvertOuter(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.App.Views.paper.edit.GetQues(String k) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\paper\edit.cs:ĞĞºÅ 37
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 108
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 15:28:17,995 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º97287 
+NVelocity.Exception.MethodInvocationException: Invocation of method 'GetQues' in  X.App.Views.paper.edit threw exception System.NotSupportedException : ²»ÄÜÔÚ²éÑ¯ÔËËã·û(Contains ÔËËã·û³ıÍâ)µÄ LINQ to SQL ÊµÏÖÖĞÊ¹ÓÃ±¾µØĞòÁĞ¡£ ---> System.NotSupportedException: ²»ÄÜÔÚ²éÑ¯ÔËËã·û(Contains ÔËËã·û³ıÍâ)µÄ LINQ to SQL ÊµÏÖÖĞÊ¹ÓÃ±¾µØĞòÁĞ¡£
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.CoerceToSequence(SqlNode node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitAggregate(Expression sequence, LambdaExpression lambda, SqlNodeType aggType, Type returnType)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSequenceOperatorCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitBinary(BinaryExpression b)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitBinary(BinaryExpression b)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitConditional(ConditionalExpression cond)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitNew(NewExpression qn)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSelect(Expression sequence, LambdaExpression selector)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitSequenceOperatorCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.QueryConverter.ConvertOuter(Expression node)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
+   ÔÚ System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   ÔÚ System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   ÔÚ System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ÔÚ System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ÔÚ X.App.Views.paper.edit.GetQues(String k) Î»ÖÃ F:\HT\xue\src\Web\Xue\X.App\Views\paper\edit.cs:ĞĞºÅ 37
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 108
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 15:38:07,470 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º138240 
+
+Ê±¼ä£º2017-06-26 15:38:07,472 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º138242 
+
+Ê±¼ä£º2017-06-26 15:38:07,479 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º138249 
+
+Ê±¼ä£º2017-06-26 16:18:22,747 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º2127552 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.paper.create.InitDict()
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 16:18:28,058 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º2132863 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.paper.create.InitDict()
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 16:18:48,912 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º2153718 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.paper.create.InitDict()
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 16:18:57,104 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º2161909 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.paper.create.InitDict()
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 16:19:06,483 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º2171289 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.paper.create.InitDict()
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 16:25:01,109 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º2525914 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.paper.create.InitDict()
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 16:25:04,312 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º2529117 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.paper.create.InitDict()
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 16:43:12,394 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º311 
+
+Ê±¼ä£º2017-06-26 16:45:43,978 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º8412 
+
+Ê±¼ä£º2017-06-26 16:45:55,556 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÑéÖ¤Âë²»ÕıÈ· ","code":"0x0007"} 
+Ê±¼ä£º19991 
+
+Ê±¼ä£º2017-06-26 17:14:06,166 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"È±ÉÙ²ÎÊı É¸Ñ¡Ìõ¼ş","code":"0x0003"} 
+Ê±¼ä£º319979 
+
+Ê±¼ä£º2017-06-26 17:14:08,515 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º322328 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.paper.edit.InitDict()
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 17:14:26,412 
+¼¶±ğ£ºFATAL 
+³ö´íÀà£ºX.Web.XApp property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Fatal(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:68) - 
+´íÎó£ºÖÂÃü´íÎó 
+Ê±¼ä£º340225 
+System.NullReferenceException: Î´½«¶ÔÏóÒıÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀı¡£
+   ÔÚ X.App.Views.paper.create.InitDict()
+   ÔÚ X.Web.Views.View.GetResponse() Î»ÖÃ F:\HT\xue\src\Web\X.Web\Views\View.cs:ĞĞºÅ 95
+   ÔÚ X.Web.XApp.ProcessRequest(HttpContext c) Î»ÖÃ F:\HT\xue\src\Web\X.Web\XApp.cs:ĞĞºÅ 31
+
+Ê±¼ä£º2017-06-26 17:35:10,231 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º63841 
+
+Ê±¼ä£º2017-06-26 17:35:45,881 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º99491 
+
+Ê±¼ä£º2017-06-26 17:35:50,785 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º104394 
+
+Ê±¼ä£º2017-06-26 17:36:32,620 
+¼¶±ğ£ºERROR 
+³ö´íÀà£ºError property: [(null)] 
+³ö´íÎ»ÖÃ£ºX.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+´íÎó£º{"issucc":false,"msg":"ÓÃ»§µÇÂ½³¬Ê± ","code":"0x0005"} 
+Ê±¼ä£º146230 

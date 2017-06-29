@@ -149,6 +149,7 @@
     <Compile Include="Views\mgr\subject\select.cs" />
     <Compile Include="Views\paper\create.cs" />
     <Compile Include="Views\paper\edit.cs" />
+    <Compile Include="Views\paper\view.cs" />
     <Compile Include="Views\question.cs" />
     <Compile Include="Views\user\fav.cs" />
     <Compile Include="Views\user\favsshiti.cs" />

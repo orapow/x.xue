@@ -74,6 +74,9 @@ namespace X.App.Apis.question
                 case 22:
                     q = q.OrderByDescending(o => o.hits);
                     break;
+                default:
+                    q = q.OrderByDescending(o => o.mtime);
+                    break;
             }
 
             r.items = q.Skip((page - 1) * limit).Take(limit).ToList().Select(o => new
