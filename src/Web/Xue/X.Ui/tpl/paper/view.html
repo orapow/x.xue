@@ -21,14 +21,45 @@
     <script type="text/javascript" src="/res/js/xx/underscore-min.js"></script>
     <script type="text/javascript" src="/res/js/xx/util.min.js"></script>
     <style type="text/css">
-        body { overflow-x: hidden; }
-        #div_copy { position: absolute; overflow: hidden; top: 500px; }
-        .move { -webkit-transition: left 5s ease; transition: left 5s ease; left: 1000px; }
-        .baskrt-list { max-height: 220px; overflow-y: auto; padding-bottom: 20px; }
-        .breadcrumb { padding: initial; background-color: transparent; }
-        .search-list { margin-left: auto; }
-        .dj-detail ul li { height: auto; }
-        .dj-detail ul li a { width: auto; padding: 0; }
+        body {
+            overflow-x: hidden;
+        }
+
+        #div_copy {
+            position: absolute;
+            overflow: hidden;
+            top: 500px;
+        }
+
+        .move {
+            -webkit-transition: left 5s ease;
+            transition: left 5s ease;
+            left: 1000px;
+        }
+
+        .baskrt-list {
+            max-height: 220px;
+            overflow-y: auto;
+            padding-bottom: 20px;
+        }
+
+        .breadcrumb {
+            padding: initial;
+            background-color: transparent;
+        }
+
+        .search-list {
+            margin-left: auto;
+        }
+
+        .dj-detail ul li {
+            height: auto;
+        }
+
+            .dj-detail ul li a {
+                width: auto;
+                padding: 0;
+            }
     </style>
 </head>
 <body>
@@ -220,7 +251,8 @@
 
         init();
 
+        var ss = $('.nav-list ul li').eq(3);
+        ss.addClass("nav-active");
     </script>
-
 </body>
 </html>

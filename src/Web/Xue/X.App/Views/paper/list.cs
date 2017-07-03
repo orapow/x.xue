@@ -25,6 +25,7 @@ namespace X.App.Views.paper
         protected override void InitDict()
         {
             base.InitDict();
+            dict.Add("papers", "nav-active");
 
             var q = from p in DB.x_paper
                     where (p.subject + "") == sub && (p.user_id == null || p.user_id == 0)

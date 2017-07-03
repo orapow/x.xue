@@ -30,6 +30,7 @@ namespace X.App.Views.paper
         protected override void InitDict()
         {
             base.InitDict();
+            dict.Add("create", "nav-active");
             var ques = from q in DB.x_question where (q.subject + "") == sub select q;
             if (lt == 1)
             {

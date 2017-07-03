@@ -41,9 +41,9 @@ namespace X.App.Views.paper
             }).FirstOrDefault());
 
             ids = Serialize.FromJson<Dictionary<string, int>>(paper.qids);
-
+           
             var ques = DB.x_question.Where(o => ids.Keys.Contains(o.question_id + ""));
-
+            
             var big = ques.GroupBy(o => o.topic).Select(o => new
             {
                 name = GetDictName("question.topic", o.Key),
