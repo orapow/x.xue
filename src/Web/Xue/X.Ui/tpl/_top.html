@@ -25,23 +25,32 @@
         </div>
         <div class="nav-list">
             <ul>
-                <li> <a class="" href="/">首页</a> </li>
-                <li class="complex-nav-item">
+                <li> <a class="$!index" href="/">首页</a> </li>
+                <li class="complex-nav-item $!question">
                     <a href="javascript:;">手动组卷</a>
                     <div class="dd-list"> <a href="/question-1.html"><i>章节同步选题</i></a> <a href="/question-2.html"><i>知识点选题</i></a> </div>
                 </li>
-                <li class="complex-nav-item">
+                <li class="complex-nav-item $!create">
                     <a href="javascript:;" class="">智能组卷</a>
                     <div class="dd-list"> <a href="/paper/create-1.html"><i>章节智能组卷</i></a> <a href="/paper/create-2.html"><i>知识点智能组卷</i></a> </div>
                 </li>
-                <li> <a class="" href="/paper/list.html">试卷库</a> </li>
+                <li> <a class="$!papers" href="/paper/list.html">试卷库</a> </li>
             </ul>
         </div>
     </div>
 </div>
+<style type="text/css">
+    .nav-active{
+        background: #1b6b6a;
+    }
+</style>
 <script type="text/javascript">
     $(".item-list a").click(function () {
         x.cookie.set("xx.sub", $(this).attr("data-id"));
         document.location.reload();// = "/question-$!{lt}.html";
+    });
+
+    $('.nav-list').on('click', function (evt) {
+        $(this).parent('li').toggleClass('nav-active');
     });
 </script>

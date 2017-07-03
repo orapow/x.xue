@@ -26,6 +26,7 @@ namespace X.App.Views {
 
         protected override void InitDict() {
             base.InitDict();
+            dict.Add("question", "nav-active");
             var ques = from q in DB.x_question where (q.subject + "") == sub select q;
             if (lt == 1) {
                 var bk_list = GetDictList("xx.book", "00").Where(o => (o.f3 + "") == sub).ToList();
