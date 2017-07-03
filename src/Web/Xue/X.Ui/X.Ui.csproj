@@ -63,10 +63,10 @@
     <Content Include="res\css\xx\main.min.css" />
     <Content Include="res\css\xx\manual.min.css" />
     <Content Include="res\css\xx\my.css" />
+    <Content Include="res\css\xx\preview.css" />
     <Content Include="res\css\xx\smarte.min.css" />
     <Content Include="res\css\xx\paperediting.min.css" />
     <Content Include="res\css\xx\spriter-mix.min.css" />
-    <Content Include="res\css\xx\preview.css" />
     <Content Include="res\css\xx\ui-dialog.css" />
     <Content Include="res\img\files\avi.png" />
     <Content Include="res\img\files\bmp.png" />

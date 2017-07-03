@@ -14,8 +14,8 @@
     <x:form api="mgr.paper.save">
         <input type="hidden" name="id" value="$!item.paper_id" x-check="" />
         <x:row>
-            <x:pick title="科目" src="url:/mgr/subject/select.html" name="sub" count="1" def="$!sub" chk="no" callback="sub_selected" />
-            <x:pick title="教材" src="url:/mgr/book/select-$!{item.subject}-1.html" name="book" count="1" def="$!bk" chk="no" />
+            <x:pick title="科目" src="url:/mgr/subject/select.html" name="sub" count="1" no="1" def="$!sub" chk="no" callback="sub_selected" />
+            <x:pick title="教材" src="url:/mgr/book/select-$!{item.subject}-1.html" name="book" no="1" count="1" def="$!bk" chk="no" />
         </x:row>
         <x:text title="试卷标题" name="topic" size="5" def="$!item.topic" />
         <x:row>
