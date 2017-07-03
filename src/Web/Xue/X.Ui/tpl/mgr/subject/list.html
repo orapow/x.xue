@@ -21,11 +21,10 @@
     <div class="gridpanel">
     </div>
     <script type="text/javascript">
-
         $("form:eq(0)").xform({
             callback: function (d) {
                 d.page = 1;
-                ct = d.cate;
+                //ct = d.cate;
                 g.getlist(d);
             }
         })
@@ -71,6 +70,7 @@
         }
 
         function show_edit(id) {
+            var ct = $("[name='age']").attr("x-val");
             x.openwin("edit-" + (id || "") + "-" + ct + ".html", "编辑科目", function () {
                 g.getlist();
             }, { w: 400, h: 300 });

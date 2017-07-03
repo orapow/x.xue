@@ -1,0 +1,7 @@
+
+时间：2017-07-03 10:25:43,368 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(F:\HT\xue\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0005"} 
+时间：1038117 

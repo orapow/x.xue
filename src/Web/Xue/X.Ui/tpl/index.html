@@ -4,18 +4,54 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="/css/xx/my.css" />
     <title>首页</title>
+    <link rel="stylesheet" href="/css/xx/my.css" />
+    <link rel="stylesheet" href="/css/xx/base.min.css" />
+    <link rel="stylesheet" href="/css/xx/spriter-mix.min.css" />
+    <link rel="stylesheet" href="/css/xx/main.min.css" />
+    <link rel="stylesheet" href="/css/xx/manual.min.css" />
+    <link rel="stylesheet" href="/css/x.dialog.css" />
+    <script type="text/javascript">
+        window.OT2 = {}; // 全局命名空间
+    </script>
+    <script type="text/javascript" src="/js/xx/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/xx/underscore-min.js"></script>
+    <script type="text/javascript" src="/js/xx/util.min.js"></script>
+
     <style type="text/css">
         .us { float: right; display: inline-block; padding-left: 35px; background: url(/img/xx/asd.png) 10px no-repeat; font-size: 14px; color: #444; line-height: 75px; }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        #div_copy {
+            position: absolute;
+            overflow: hidden;
+            top: 500px;
+        }
+
+        .move {
+            -webkit-transition: left 5s ease;
+            transition: left 5s ease;
+            left: 1000px;
+        }
+    </style>
+
+    <style type="text/css">
+        .nav-items:hover .item-list{
+            display:block;
+        }
     </style>
 </head>
 
 <body>
-    <div class="top">
+    #parse("_top.html")
+    <!--<div class="top">
         <div class="top01">
             <img src="/img/xx/sy_02.jpg" /><a class="us" href="/user/info.html">个人中心#if($cu)，$cu.name#end</a>
         </div>
         <div class="toyin"></div>
-    </div>
+    </div>-->
     <div class="min">
         <div class="min01">
             <div class="right">
@@ -37,5 +73,7 @@
         <p>全国客服电话：400-000-101 Copyright © 1995-2015 xinxuewang.com, All Rights Reserved</p>
         <p>新学网有限公司 湘ICP备1101177774号-7</p>
     </div>
+    <script src="/js/xx/global.min.js"></script>
+    <script src="/js/x.js"></script>
 </body>
 </html>
