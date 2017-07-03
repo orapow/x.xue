@@ -21,79 +21,33 @@
     <script type="text/javascript" src="/res/js/xx/underscore-min.js"></script>
     <script type="text/javascript" src="/res/js/xx/util.min.js"></script>
     <style type="text/css">
-        body {
-            overflow-x: hidden;
-        }
-
-        #div_copy {
-            position: absolute;
-            overflow: hidden;
-            top: 500px;
-        }
-
-        .move {
-            -webkit-transition: left 5s ease;
-            transition: left 5s ease;
-            left: 1000px;
-        }
-
-        .baskrt-list {
-            max-height: 220px;
-            overflow-y: auto;
-            padding-bottom: 20px;
-        }
-
-        .breadcrumb {
-            padding: initial;
-            background-color: transparent;
-        }
-
-        .search-list {
-            margin-left: auto;
-        }
+        body { overflow-x: hidden; }
+        #div_copy { position: absolute; overflow: hidden; top: 500px; }
+        .move { -webkit-transition: left 5s ease; transition: left 5s ease; left: 1000px; }
+        .baskrt-list { max-height: 220px; overflow-y: auto; padding-bottom: 20px; }
+        .breadcrumb { padding: initial; background-color: transparent; }
+        .search-list { margin-left: auto; }
+        .dj-detail ul li { height: auto; }
+        .dj-detail ul li a { width: auto; padding: 0; }
     </style>
 </head>
 <body>
-    <script type="text/javascript">
-        $(".item-list a").click(function () {
-            x.cookie.set("xx.sub", $(this).attr("data-id"));
-            document.location.reload();// = "/question-$!{lt}.html";
-        });
-    </script>
-    <div class="head">
-        <div class="head01">
-            <p>新学网在线-组卷</p>
-            <a href="/user/info.html">个人中心#if($cu)，$cu.name#end</a>
-        </div>
-    </div>
-    <div class="breadcrumb g-container"> <i class="icona-dingwei"></i>当前位置： <a href="/">首页</a></div>
+    #parse("_top.html")
+    <div class="breadcrumb g-container"> <i class="icona-dingwei"></i>当前位置： <a href="/">首页</a> <b>&gt;</b> <a href="/paper/list.html">试卷库</a></div>
     <div class="preview-con g-container">
         <div class="f-fl f-w" style="float:left;">
             <div class="dj-preview">
-                #foreach($q in $paper)
                 <div class="preview-title">
-                    <h1> $q.topic</h1>
+                    <h1>#if($paper.area.length>0)【$paper.area】 #end$paper.topic</h1>
                     <p>
-                        <span><i class="icona-time2"></i>修改时间：$q.ctime</span>
-                        <span><i class="icona-download"></i>下载次数：$q.dc</span>
-                        <span><i class="icona-leixing"></i>类型：$q.tp</span>
-                        <span class="editfooter"><a target="_blank" style="display:none" data-method="post" href="/paper/admin-edit?pid=199099&amp;xd=2&amp;chid=3"><i class="icona-bianji"></i>编辑</a></span>
+                        <span><i class="icona-time2"></i>修改时间：$paper.ctime</span>
+                        <span><i class="icona-download"></i>下载次数：$paper.dc</span>
+                        <span><i class="icona-leixing"></i>类型：$paper.tp</span>
                     </p>
                 </div>
-                #end
                 <div class="preview-act f-cb">
                     <a class="select-btn" href="javascript:;" onclick="$('.addbtn.J_AddQuestion').click()">选择试卷全部试题</a>
-                    <!--<a class="select-all act-link" href="javascript:;" onclick="Paper.addAllToBasket()">选择试卷全部试题</a>-->
                     <span class="tip-words">*点击此按钮，可全选试卷全部试题，进行试卷编辑</span>
-                    <div class="switch-detail f-fl">
-                        <span class="checkbox" id="j-switch-analyticbox">
-                            <i class="icona-check f-fl"></i>
-                            <input type="checkbox" name="show_answer_explain" value="0" style="display:none" />
-                            显示答案与解析
-                        </span>
-                        （提示：点击题干可显示答案与解析）
-                    </div>
-
                 </div>
                 <div class="preview-body" id="J_PaperBody">
                     #set($no=0)
@@ -108,16 +62,12 @@
                                 <div class="search-exam">
                                     <div class="exam-con">
                                         <div class="exam-q">
-
-                                            $no.  #foreach($q in $paper)（2017•$!paper.area） #end<span class="q-scoreval" data-score="20">（$q.score分）</span>$q.content
-
+                                            $no.<span class="q-scoreval" data-score="20">（$q.score分）</span>$q.content
                                         </div>
                                         <div class="exam-s">
                                             <span class="op-item" style="width: 219px; margin-right: 0px; height: 28px; clear: none;"><span class="op-item-nut" style="margin-top: 2px;">A、</span><span class="op-item-meat" style="margin-top: 2px;"><img class="mathml" src="" style="vertical-align: middle;" /></span></span>
                                         </div>
-
                                     </div>
-
                                     <div class="exam-foot">
                                         <p class="exam-foot-left">
                                             <a href="javascript:;" onclick="show_jiexi($q.id)"><i class="icona-jiexi"></i>查看解析</a>
@@ -132,83 +82,26 @@
                         </ul>
                     </div>
                     #end
-                    <!--<div class="search-list">
-                        #set($no=0)
-                        <ul id="J_QuestionList">
-                            #foreach($q in $ques)
-                            #set($no=$no+1)
-                            <li data-qid="$q.id" data-tp="$q.tp">
-                                <div class="search-exam">
-                                    <div class="exam-head">
-                                        <p class="exam-head-left"> <span>题型：$q.tp</span><i class="line"></i> <span>题类：$q.ty</span><i class="line"></i> <span>难易度：$q.ey</span> </p>
-                                        <p class="exam-head-right"> <span></span> </p>
-                                    </div>
-                                    <div class="exam-con">
-                                        <div class="exam-q">
-                                             $no. （2017·湖州）<span>$q.content</span>
-                                        </div>
-                                    </div>
-                                    <div class="exam-foot">
-                                        <p class="exam-foot-left"> <a href="javascript:;" onclick="show_jiexi($q.id)"><i class="icona-jiexi"></i>查看解析</a> #if($!q.fid==0)<a href="javascript:;" onclick="OT2_QCollect($q.id, this)"><i class="icona-shoucang"></i>收藏</a>#else<a href="javascript:;" onclick="OT2_QCollect($q.id, this)"><i class="icona-quxiaosc"></i>取消收藏</a>#end </p>
-                                        <p class="exam-foot-right"><a class="addbtn J_AddQuestion" href="javascript:;"><b>+</b>选题</a> </p>
-                                    </div>
-                                </div>
-                            </li>
-                            #end
-                        </ul>
-                    </div>-->
                 </div>
             </div>
         </div>
         <div class="dj-about" style="width:248px;float:left">
             <div class="view-toolbars f-cb">
-                <a href="javascript:;" onclick="paper.download(199099)" class="download-btn"><i class="icona-download1"></i>下载试卷</a>
-                <!--<a target="_blank" style="display:none" data-method="post" href="/paper/admin-edit?pid=199099&amp;xd=2&amp;chid=3"><i class="icona-bianji"></i>编辑</a>
-                <a href="javascript:;" onclick="paper.setAnswerSheet(199099)"><i class="icona-dtk2"></i>答题卡下载</a>
-                <a href="/paper/test?pid=199099"><i class="icona-ceshi"></i>在线测试</a>
-
-                <a href="javascript:;" onclick="collect(199099,this)">
-                    <i class="icona-shoucang"></i><span>
-                        收藏试卷
-                    </span>
-                </a>
-                <a href="javascript:;" onclick="paper.showPie(199099)"><i class="icona-fenxi2"></i>分析试卷</a>-->
+                <a href="javascript:;" onclick="do_down($id)" class="download-btn" style="margin:0;"><i class="icona-download1"></i>下载试卷</a>
+                #if($paps.count()>0)
+                <div class="dj-detail" style="margin-top:20px;">
+                    <ul>
+                        #foreach($p in $paps)
+                        <li><a href="/paper/view-${p.paper_id}.html">$p.topic</a></li>
+                        #end
+                    </ul>
+                </div>
+                #end
             </div>
-            <!--<div class="dj-img">
-                    <a href="/help/request" target="_blank">
-                        <img src="/images/paper.png" alt="">
-                    </a>
-            </div>-->
-
-            <div class="dj-detail">
-                <h1>相关试卷 <span class="spread">收起∨</span></h1>
-                <ul>
-                    #foreach($p in $paps)
-
-                    <li><a href="javascript:;" onclick="paper($p.paper_id)">$p.topic</a></li>
-                    #end
-                </ul>
-
-            </div>
-            <script type="text/javascript">
-                //相关试卷展开收起
-                $(document).ready(function () {
-                    $('.spread').click(function () {
-                        if ($(".dj-detail ul").css('display') == 'none') {
-                            $(this).html("收起∨");
-                            $(".dj-detail ul").slideDown(300);
-                        } else {
-                            $(this).html("展开∧");
-                            $(".dj-detail ul").slideUp(300);
-                        }
-                    })
-                });
-            </script>
         </div>
     </div>
 
     <!--试题篮-->
-
     <div class="basket" id="J_Basket">
         <div class="basket-tit">
             <p><i class="icona-gouwulan"></i><em>试题篮</em></p>
@@ -223,12 +116,12 @@
         </div>
     </div>
 
+    <iframe id="fr_down" style="display:none;"></iframe>
     <script src="/js/xx/global.min.js"></script>
     <script src="/js/x.js"></script>
 
     <script type="text/javascript">
         var cart = {};
-
 
         $(".basket-tit").click(function () {
             var right = $(this).parent().css("right");
@@ -278,26 +171,11 @@
                 pan.append('<p title="' + t + '">' + t + '：<span>' + cart[t].length + '</span> 道<i class="icona-del1 f-fr" onclick="removecart(this)"></i></p>')
             }
             $(".basket-head").html(" 共计：（<span>" + ct + "</span>）道题 ");
-            x.cookie.set("xx.cart.$!sb" , JSON.stringify(cart));
+            x.cookie.set("xx.cart.$!sb", JSON.stringify(cart));
         }
-
-        //var data = {
-        //    sub: "$!sb",
-        //    bk: "$!bk",
-        //    page: 1,
-        //    sort: 12,
-        //    limit: 15,
-        //    kg: 0,
-        //    cp: 0,
-        //    tp: 0,
-        //    ey: 0,
-        //    ty: 0,
-        //    kgc: 0
-        //}
 
         function show_jiexi(id) {
             x.openwin("/answer-" + id + ".html", "查看解析", null, { w: 600, h: 400 });
-
         }
 
         function OT2_QCollect(id, bt) {
@@ -314,6 +192,34 @@
                 });
             }
         }
+
+        function do_down(id) {
+            x.doapi("paper.predown", { pid: id }, function (d) {
+                if (!d.issucc) return;
+                if (!d.msg) do_pay(id);
+                else $("#fr_down").attr("src", "/paper/down-" + d.msg + ".html");
+            });
+        }
+
+        function do_pay(id) {
+            x.openwin("/user/pay-1-" + id + ".html", "在线支付", function (d) {
+                if (d == "succ") do_down();
+            }, { w: 300, h: 400 });
+        }
+
+        function init() {
+            cart = JSON.parse(x.cookie.get("xx.cart.$sb") || "{}");
+            updatecart();
+            for (var tp in cart) {
+                var ct = cart[tp];
+                for (var i in ct) {
+                    $("[data-qid='" + ct[i] + "']").find(".J_AddQuestion").attr("class", "removebtn J_AddQuestion").html("<b>-</b> 移除");
+                }
+            }
+        }
+
+        init();
+
     </script>
 
 </body>

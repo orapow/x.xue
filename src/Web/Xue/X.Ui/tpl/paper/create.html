@@ -65,7 +65,7 @@
     #set( $sub = $T.getLeft($l.value))
     <li class="#if($sub.Count==0)t2end#end" data-val="$l.value" data-name="#if($lt==1)cp#elseif($sub.Count()==0)kg#end">
         <div class="t2hd">
-            <span> </span><a href="javascript:;" data-id="$l.value"><b class="checkbox"></b><em> $l.name</em></a>
+            <span> </span><a href="javascript:;" data-id="$l.value"><b class="checkbox"></b><em> $l.name </em></a>
         </div>
         <ul class="t2bd">
             #getLeft($sub)
