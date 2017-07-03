@@ -32,14 +32,20 @@ namespace X.App.Views.user
         protected override void InitDict()
         {
             base.InitDict();
+            decimal am = 0;
             if (tp == 1)
             {
                 var p = DB.x_paper.FirstOrDefault(o => o.paper_id == val);
                 if (p == null) throw new XExcep("T试卷不存在");
                 dict.Add("desc", "下载试卷【" + p.topic + "（" + p.paper_id + "）】");
+                am = p.user_id == null && p.price > 0 ? p.price.Value : cfg.down_price;
             }
-            else dict.Add("desc", "Vip服务续费到：" + ((cu.etime == null || cu.etime < DateTime.Now) ? DateTime.Now.AddMonths(val).ToString("yyyy-MM-dd HH:mm:ss") : cu.etime.Value.AddMonths(val).ToString("yyyy-MM-dd HH:mm:ss")));
-            dict.Add("am", getamount());
+            else
+            {
+                am = getamount();
+                dict.Add("desc", "Vip服务续费到：" + ((cu.etime == null || cu.etime < DateTime.Now) ? DateTime.Now.AddMonths(val).ToString("yyyy-MM-dd HH:mm:ss") : cu.etime.Value.AddMonths(val).ToString("yyyy-MM-dd HH:mm:ss")));
+            }
+            dict.Add("am", am);
         }
         decimal getamount()
         {

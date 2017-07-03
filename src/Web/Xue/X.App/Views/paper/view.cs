@@ -14,6 +14,7 @@ namespace X.App.Views.paper
         Dictionary<string, int> ids = null;
         public int id { get; set; }
         string[] nums = "|一|二|三|四|五|六|七|八|九|十|十一|十二|十三|十四|十五|十六|十七|十八|十九|二十".Split('|');
+
         protected override string GetParmNames
         {
             get
@@ -49,7 +50,6 @@ namespace X.App.Views.paper
                 o.Key,
                 count = o.Count(),
                 score = o.Sum(q => q.score),
-
             });
 
             dict.Add("bigs", big);
