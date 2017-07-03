@@ -60,7 +60,7 @@
     </div>
     #end
 
-    #macro( getLeft $list)
+    #macro( getAiLeft $list)
     #foreach($l in $list)
     #set( $sub = $T.getLeft($l.value))
     <li class="#if($sub.Count==0)t2end#end" data-val="$l.value" data-name="#if($lt==1)cp#elseif($sub.Count()==0)kg#end">
@@ -68,7 +68,7 @@
             <span> </span><a href="javascript:;" data-id="$l.value"><b class="checkbox"></b><em> $l.name </em></a>
         </div>
         <ul class="t2bd">
-            #getLeft($sub)
+            #getAiLeft($sub)
         </ul>
     </li>
     #end
@@ -85,7 +85,7 @@
                         <p style="padding:10px 10px 10px 30px;text-align:center;font-size:14px;">#if($lt==1)暂无章节信息#else暂无知识点#end</p>
                         #else
                         <ul class="t2bd">
-                            #getLeft($list)
+                            #getAiLeft($list)
                         </ul>
                         #end
                     </div>
