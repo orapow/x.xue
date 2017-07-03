@@ -38,20 +38,23 @@ namespace X.App.Apis.user.order
         protected override XResp Execute()
         {
             var od = new x_order() { ctime = DateTime.Now, platform = platform, user_id = cu.user_id };
-            var am = getamount();
-            if (am == -1) throw new XExcep("T购买时长不正确");
+            decimal am = 0;
             if (tp == 1)
             {
-                var p = DB.x_paper.FirstOrDefault(o => o.paper_id == val && o.user_id == cu.user_id);
+                var p = DB.x_paper.FirstOrDefault(o => o.paper_id == val);
                 if (p == null) throw new XExcep("T试卷不存在，无法下单！");
+                if (p.user_id > 0 && p.user_id != cu.user_id) throw new XExcep("T不能下载别人的组卷");
                 od.desc = "下载试卷【" + p.topic + "(" + p.paper_id + ")】";
                 od.pid = val;
+                am = p.user_id == null && p.price > 0 ? p.price.Value : cfg.down_price;
             }
             else
             {
                 var et = cu.etime == null || cu.etime < DateTime.Now ? DateTime.Now.AddMonths(val) : cu.etime.Value.AddMonths(val);
                 od.desc = (val == 12 ? "包年" : "包月") + "订单，服务到期：" + et.ToString("yyyy-MM-dd HH:mm:ss");
                 od.etime = et;
+                am = getamount();
+                if (am == -1) throw new XExcep("T购买时长不正确");
             }
             od.amount = am;
             od.no = DateTime.Now.ToString("yyyyMMddHHmmssfff") + Tools.GetRandRom(5);
