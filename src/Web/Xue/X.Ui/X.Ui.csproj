@@ -236,6 +236,7 @@
     <Content Include="tpl\user\_top.html" />
     <Content Include="tpl\user\_left.html" />
     <Content Include="tpl\_top.html" />
+    <Content Include="tpl\choose.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

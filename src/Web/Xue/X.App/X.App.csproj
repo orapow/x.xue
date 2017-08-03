@@ -103,6 +103,7 @@
     <Compile Include="Com\Wx.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="Views\answer.cs" />
+    <Compile Include="Views\choose.cs" />
     <Compile Include="Views\com\err.cs" />
     <Compile Include="Views\com\code.cs" />
     <Compile Include="Views\com\dict.cs" />

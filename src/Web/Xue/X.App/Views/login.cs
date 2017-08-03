@@ -24,7 +24,7 @@ namespace X.App.Views
         {
             base.InitView();
 
-            if (cu != null) Context.Response.Redirect(back);
+            if (cu != null && !string.IsNullOrEmpty(back)) Context.Response.Redirect(back);
             if (string.IsNullOrEmpty(ukey)) Context.Response.Redirect(cfg.xx_gateway + "http://" + cfg.domain + "/login-{uk}-" + back + ".html");
 
             var usp = Com.Sdk.GetUser(ukey);
@@ -52,7 +52,7 @@ namespace X.App.Views
             Context.Response.SetCookie(new System.Web.HttpCookie("ukey", ukey));
 
             if (!string.IsNullOrEmpty(back)) Context.Response.Redirect(Secret.FormBase64(back));
-            else Context.Response.Redirect("/index.html");
+            else Context.Response.Redirect("/user/info.html");
 
         }
     }

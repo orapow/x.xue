@@ -46,22 +46,22 @@ namespace X.Data.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.0.120;Initial Catalog=x.xue;Persist Security Info=True;User I" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.0.120;Initial Catalog=x.yfj;Persist Security Info=True;User I" +
             "D=sa;Password=sa123")]
-        public string x_xueConnectionString {
+        public string x_yfjConnectionString {
             get {
-                return ((string)(this["x_xueConnectionString"]));
+                return ((string)(this["x_yfjConnectionString"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.0.120;Initial Catalog=x.yfj;Persist Security Info=True;User I" +
-            "D=sa;Password=sa123")]
-        public string x_yfjConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.0.254;Initial Catalog=x.xue;Persist Security Info=True;User I" +
+            "D=sa;Password=123")]
+        public string x_xueConnectionString {
             get {
-                return ((string)(this["x_yfjConnectionString"]));
+                return ((string)(this["x_xueConnectionString"]));
             }
         }
     }
